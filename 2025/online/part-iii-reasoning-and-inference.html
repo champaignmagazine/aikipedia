@@ -4,8 +4,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css"></head><body>
 <header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
-<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
-<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="part-ii-training-learning-and-data.html">← Part II. Training, Learning and Data</a><a href="part-iv-alignment-safety-and-interpretability.html">Part IV. Alignment, Safety and Interpretability →</a></nav><h1 id="part-iii.-reasoning-and-inference">Part III. Reasoning and Inference</h1>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.23.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.23 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="part-ii-training-learning-and-data.html">← Part II. Training, Learning and Data</a><a href="part-iv-alignment-safety-and-interpretability.html">Part IV. Alignment, Safety and Interpretability →</a></nav><h1 id="part-iii.-reasoning-and-inference">Part III. Reasoning and Inference</h1>
 <h2 id="chain-of-thought-prompting">Chain-of-Thought Prompting</h2>
 <p><em>Internal Concept ID AIKC-000007 · 1 record in 2025</em></p>
 <p><a id="aik-2025-f-p-cotprompt"></a></p>
@@ -75,7 +75,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>How to read this text.</em> This is the corrected collection text of an original 2025 publication. The original, in all three of its published versions, is preserved unchanged in the Historical Lexicon Archive. A bracketed number such as <code>[C07]</code> marks a passage changed from the original; the correction register gives the original wording, the revision and the evidence for each. <code>[E01]</code> marks an editorial addition. Unmarked text is the original's wording, rearranged into AES sections; the register's concordance (§3) maps each passage to its source.</p>
+<p><em>How to read this text.</em> This is the corrected collection text of an original 2025 publication. The original, in all three of its published versions, is preserved unchanged in the Historical Lexicon Archive. A bracketed number such as <code>[C07]</code> marks a passage changed from the original; the correction register gives the original wording, the revision and the evidence for each. <code>[E01]</code> marks an editorial addition. Unmarked text is the original's wording, rearranged into AES sections.</p>
 <h5 id="definition">1. Definition</h5>
 <p>Chain-of-Thought (CoT) prompting is a prompt-engineering technique for large language models that elicits intermediate reasoning steps (a "chain of thought") before producing a final answer.</p>
 <h5 id="origin-and-historical-development">2. Origin and Historical Development</h5>
@@ -230,13 +230,13 @@
 <li><strong>Status of this text.</strong> Independently reviewed and accepted by the editor. The historical publication is not replaced; it stays in the Historical Lexicon Archive. The dated record is in Appendix G.</li>
 <li><strong>Base version.</strong> The original post publishes three versions. This text is based on the third, which the post declares final. One passage of the second version is restored in §6 [C17], with its wording aligned to the source's hedge.</li>
 <li><strong>Source-date rule.</strong> Every source used to correct the historical body was available by October 30, 2025, the original publication date; the latest is [R4], June 8, 2025. No later development has been added.</li>
-<li><strong>Qualified claim.</strong> The original said CoT "remains valuable … when working with smaller or mid-sized models." It gave no source. Its own primary source found no gain, or harm, below about 100 billion parameters for the 2022 models it tested [P1]. A 2025 study [R4] found small average gains for non-reasoning models that do not reason step by step by default. That study grouped models by reasoning behavior, not size. The claim is therefore restated in the form the sources support, and the size wording is not retained [C06]. The editor adopted this wording on November 10, 2026 (O2).</li>
-<li><strong>Proposed substitutions.</strong> [R2] and [R4] stand in for the original's unspecified "related technical reports" [C05]. They are the preparer's choice, not the original's. The editor accepted them on November 10, 2026 (O1).</li>
+<li><strong>Qualified claim.</strong> The original said CoT "remains valuable … when working with smaller or mid-sized models." It gave no source. Its own primary source found no gain, or harm, below about 100 billion parameters for the 2022 models it tested [P1]. A 2025 study [R4] found small average gains for non-reasoning models that do not reason step by step by default. That study grouped models by reasoning behavior, not size. The claim is therefore restated in the form the sources support, and the size wording is not retained [C06]. The editor adopted this wording.</li>
+<li><strong>Proposed substitutions.</strong> [R2] and [R4] stand in for the original's unspecified "related technical reports" [C05]. They are the preparer's choice, not the original's. The editor accepted them.</li>
 <li><strong>Worked example.</strong> The tennis-ball exemplar in §3.1 follows the exemplar in Wei et al.'s Figure 1 with light rewording. The juggler problem is the original contributor's own.</li>
 <li><strong>Precursors.</strong> Later literature cites Nye et al. (2021, "scratchpads") alongside Wei et al. as an origin of the technique; see, for example, [R1]. That precursor is noted here but not added to the historical body.</li>
-<li><strong>Editorial addition.</strong> Table 1 [E01] is not in the original. It quotes author-reported figures from the entry's own sources so that §5 states evaluation conditions, as AES §5 requires. The editor ruled on November 10, 2026 to keep it, as a labeled addition (O4).</li>
-<li><strong>Affiliation note.</strong> Two authors of [R1] list Anthropic affiliations, and the corrections were prepared by an Anthropic model. That correction [C08] was therefore checked independently: Muse Spark 1.3 found it warranted (register O5, closed), and DeepSeek-V4.1 confirmed it at the primary record. DeepSeek's check of the affiliations themselves was at register level only (register v0.3, §1).</li>
-<li><strong>Application list.</strong> The original called CoT "a standard technique in" the six areas listed in §4 but gave no source for any of them. On the editor's ruling (O3), the list is kept and the phrase is changed to "used in" [C18]. The text therefore no longer asserts, without a source, that the practice is standard.</li>
+<li><strong>Editorial addition.</strong> Table 1 [E01] is not in the original. It quotes author-reported figures from the entry's own sources so that §5 states evaluation conditions, as AES §5 requires. The editor ruled to keep it, as a labeled addition.</li>
+<li><strong>Affiliation note.</strong> Two authors of [R1] list Anthropic affiliations, and the corrections were prepared by an Anthropic model. That correction [C08] was therefore checked independently: Muse Spark 1.3 found it warranted, and DeepSeek-V4.1 confirmed it at the primary record. DeepSeek's check of the affiliations themselves was at register level only.</li>
+<li><strong>Application list.</strong> The original called CoT "a standard technique in" the six areas listed in §4 but gave no source for any of them. On the editor's ruling, the list is kept and the phrase is changed to "used in" [C18]. The text therefore no longer asserts, without a source, that the practice is standard.</li>
 </ol>
 <h5 id="credits">Credits</h5>
 <ul>
@@ -266,7 +266,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<p><em>Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
 <h4 id="l3-s12-chain-of-verification-cove-type-s">L3-S12 — Chain-of-Verification (CoVe) (type S)</h4>
 <p><strong>Date of Appearance:</strong> 2023 <em>(corrected — C02; Dhuliawala et al., arXiv:2309.11495, September 2023)</em><br />
 <strong>Headword note:</strong> published as "Chain-of-Verification (CoV)"; the paper's abbreviation is <strong>CoVe</strong>, used here.</p>
@@ -295,7 +295,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<p><em>Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
 <h4 id="l3-s8-controllable-generation-frameworks-type-s">L3-S8 — Controllable Generation Frameworks (type S)</h4>
 <p><strong>Date of Appearance:</strong> as published. No findings.</p>
 <p><em>As published:</em> <strong>Definition</strong>: Structured approaches for fine-grained control over generative model outputs through semantic steering, attribute manipulation, and constraint satisfaction. <strong>Why 2025</strong>: Moved beyond simple prompting to enable precise creative control in image, video, and text generation.</p>
@@ -392,7 +392,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<p><em>Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
 <h4 id="l3-s6-multi-agent-debate-systems-type-s">L3-S6 — Multi-Agent Debate Systems (type S)</h4>
 <p><strong>Date of Appearance:</strong> May 2023 <em>(corrected — C03; Du et al., arXiv:2305.14325)</em></p>
 <p><em>As published:</em> <strong>Definition</strong>: Frameworks where multiple AI agents argue different positions or perspectives before reaching a conclusion, improving reasoning quality and reducing bias. <strong>Why 2025</strong>: Emerged as a practical technique for complex decision-making and fact-checking applications.</p>
@@ -667,7 +667,7 @@
 </tr>
 </tbody>
 </table>
-<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<p><em>Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
 <h4 id="l3-s7-speculative-decoding-type-s">L3-S7 — Speculative Decoding (type S)</h4>
 <p><strong>Date of Appearance:</strong> November 30, 2022 <em>(corrected — C01; Leviathan, Kalman &amp; Matias, arXiv:2211.17192; Chen et al., arXiv:2302.01318, February 2023)</em></p>
 <p><em>As published:</em> <strong>Definition</strong>: Inference optimization technique where a small "draft" model generates candidate tokens that a larger model verifies in parallel, dramatically reducing latency. <strong>Why 2025</strong>: Became standard in production systems as latency requirements tightened for interactive applications.</p>
@@ -694,13 +694,13 @@
 </tr>
 </tbody>
 </table>
-<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<p><em>Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
 <h4 id="l3-s2-test-time-compute-scaling-type-e">L3-S2 — Test-Time Compute Scaling (type E)</h4>
 <p><strong>Date of Appearance:</strong> 2024–2025 (crystallization; OpenAI o1, September 2024 — as the entry itself records). No appearance correction.</p>
 <p><em>As published:</em> <strong>Definition</strong>: Methods that improve model performance by allocating more computational resources during inference (e.g., longer reasoning chains, more sampling attempts) rather than only during training. <strong>Why 2025</strong>: Became a key alternative to pre-training scaling as models like o1 demonstrated dramatic improvements through inference-time computation.</p>
 <p><em>Note:</em> the full entry is corrected at C06 (restoration — Mathematical Framework equations restored from the published formulas) — see below.</p>
 <h4 id="corrected-full-entry-test-time-compute-scaling-l3-s2">Corrected full entry — Test-Time Compute Scaling (L3-S2)</h4>
-<p><strong>Aikipedia Entry — 2025 Edition</strong> <em>(corrected canonical text v0.3; correction C06 applied, marked [C06])</em></p>
+<p><strong>Aikipedia Entry — 2025 Edition</strong> <em>(corrected canonical text; correction C06 applied, marked [C06])</em></p>
 <h5 id="definition-3">Definition</h5>
 <p>Test-Time Compute Scaling refers to methods that improve AI model performance by allocating additional computational resources during inference rather than only during training. Instead of generating responses immediately, models invest extra time in iterative reasoning, self-correction, verification, and exploration of multiple solution paths before producing final outputs.</p>
 <h5 id="historical-context-1">Historical Context</h5>
@@ -726,8 +726,8 @@
 <p>For a model policy π and input x, traditional inference produces:</p>
 <p>y = π(x)</p>
 <p>Test-time scaling introduces compute budget C:</p>
-<p>y = argmax_{y ∈ 𝒴(x, C)} R(y)</p>
-<p>where 𝒴(x, C) is the set of candidate responses generated using compute budget C, and R is a reward/verification function. [C06 — equations restored from the published formulas (the formula images' alt texts in the stored post); see the register]</p>
+<p>y = argmax<sub>y ∈ 𝒴(x, C)</sub> R(y)</p>
+<p>where 𝒴(x, C) is the set of candidate responses generated using compute budget C, and R is a reward/verification function. [C06 — equations restored from the published formulas (the formula images' alt texts in the stored post)]</p>
 <p>The performance of o1 consistently improves with more reinforcement learning (train-time compute) and with more time spent thinking (test-time compute).</p>
 <h5 id="notable-systems-papers-2025-1">Notable Systems / Papers (2025)</h5>
 <ul>
@@ -739,7 +739,7 @@
 </ul>
 <h5 id="applications-1">Applications</h5>
 <ul>
-<li><strong>Mathematical Problem Solving</strong>: o1 achieved 93% on AIME 2024 with extended inference, placing it among the top 500 students nationally</li>
+<li><strong>Mathematical Problem Solving</strong>: o1 achieved 93% on AIME 2024 when 1,000 samples per problem were reranked with a learned scoring function (74% for a single sample; 83% for consensus among 64 samples), placing it among the top 500 students nationally[C07 — the 93% figure is qualified with the selection procedure that produced it; a single sample scored 74% and consensus among 64 samples 83% (OpenAI, "Learning to reason with LLMs," September 12, 2024); original: "o1 achieved 93% on AIME 2024 with extended inference, placing it among the top 500 students nationally"]</li>
 <li><strong>Scientific Reasoning</strong>: Outperforming PhD-level experts on specialized knowledge benchmarks</li>
 <li><strong>Code Generation</strong>: Testing and iteratively improving generated code before returning results</li>
 <li><strong>Multi-Step Planning</strong>: Breaking complex tasks into verified sub-steps with correction loops</li>

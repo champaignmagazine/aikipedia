@@ -1,6 +1,6 @@
 # Changelog
 
-## 2025 collection, Series Volume 1 · proof, Collection v1.0 — draft v0.22 (not for publication)
+## 2025 collection, Series Volume 1 · proof, Collection v1.0 — draft v0.23 (not for publication)
 
 *Aikipedia 2025: Annual Collection* is published in two editions, built from the same sources:
 

@@ -25,7 +25,7 @@ def land(title, css, body, up=''):
 YEAR = '''<p class="kicker">Aikipedia · Series Volume 1</p><h1>Aikipedia 2025: Annual Collection</h1>
 <p class="lede">The sixteen Aikipedia publications of 2025 as corrected reference texts and as a historical archive, with six entries commissioned for the collection. Edited by W.H.L.; Champaign Magazine, November 2026.</p>
 <div class="two"><div class="box"><h3><a href="online/index.html">Online edition</a></h3><p>The complete collection as web pages, with search, and full-post transcriptions of all sixteen original posts in the Historical Lexicon Archive.</p></div>
-<div class="box"><h3><a href="pdf/%s">PDF edition</a></h3><p>The collection as a 7 × 10 in book, with the entry texts of record in the archive for four posts. The two editions differ only there.</p></div></div>''' % PDF.name
+<div class="box"><h3><a href="pdf/%s">PDF edition</a></h3><p>The collection as a 7 × 10 in book, with selected transcriptions in the archive for four posts. The two editions differ only there.</p></div></div>''' % PDF.name
 (R / '2025' / 'index.html').write_text(land('Aikipedia 2025: Annual Collection', 'online/assets/style.css', YEAR, '../'), encoding='utf-8')
 ROOT = '''<p class="kicker">Champaign Magazine</p><h1>Aikipedia</h1>
 <p class="lede">A knowledge repository devoted to emerging AI terms and concepts, written by leading AI models and edited by W.H.L., collected each year in an annual volume.</p>

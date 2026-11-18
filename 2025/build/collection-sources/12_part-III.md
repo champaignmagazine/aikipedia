@@ -30,7 +30,7 @@ Prompting Methods · Reasoning · Evaluation
 | **Base version** | Version 3, which the post declares final (one passage of Version 2 restored at C17) |
 | **Entry ID** | AIK-2025-F-P-COTPROMPT (Internal Concept ID AIKC-000007) |
 
-*How to read this text.* This is the corrected collection text of an original 2025 publication. The original, in all three of its published versions, is preserved unchanged in the Historical Lexicon Archive. A bracketed number such as `[C07]` marks a passage changed from the original; the correction register gives the original wording, the revision and the evidence for each. `[E01]` marks an editorial addition. Unmarked text is the original's wording, rearranged into AES sections; the register's concordance (§3) maps each passage to its source.
+*How to read this text.* This is the corrected collection text of an original 2025 publication. The original, in all three of its published versions, is preserved unchanged in the Historical Lexicon Archive. A bracketed number such as `[C07]` marks a passage changed from the original; the correction register gives the original wording, the revision and the evidence for each. `[E01]` marks an editorial addition. Unmarked text is the original's wording, rearranged into AES sections.
 
 ##### 1. Definition
 
@@ -180,13 +180,13 @@ Related records in the Aikipedia 2025 collection (editorial cross-references, no
 1. **Status of this text.** Independently reviewed and accepted by the editor. The historical publication is not replaced; it stays in the Historical Lexicon Archive. The dated record is in Appendix G.
 2. **Base version.** The original post publishes three versions. This text is based on the third, which the post declares final. One passage of the second version is restored in §6 [C17], with its wording aligned to the source's hedge.
 3. **Source-date rule.** Every source used to correct the historical body was available by October 30, 2025, the original publication date; the latest is [R4], June 8, 2025. No later development has been added.
-4. **Qualified claim.** The original said CoT "remains valuable … when working with smaller or mid-sized models." It gave no source. Its own primary source found no gain, or harm, below about 100 billion parameters for the 2022 models it tested [P1]. A 2025 study [R4] found small average gains for non-reasoning models that do not reason step by step by default. That study grouped models by reasoning behavior, not size. The claim is therefore restated in the form the sources support, and the size wording is not retained [C06]. The editor adopted this wording on November 10, 2026 (O2).
-5. **Proposed substitutions.** [R2] and [R4] stand in for the original's unspecified "related technical reports" [C05]. They are the preparer's choice, not the original's. The editor accepted them on November 10, 2026 (O1).
+4. **Qualified claim.** The original said CoT "remains valuable … when working with smaller or mid-sized models." It gave no source. Its own primary source found no gain, or harm, below about 100 billion parameters for the 2022 models it tested [P1]. A 2025 study [R4] found small average gains for non-reasoning models that do not reason step by step by default. That study grouped models by reasoning behavior, not size. The claim is therefore restated in the form the sources support, and the size wording is not retained [C06]. The editor adopted this wording.
+5. **Proposed substitutions.** [R2] and [R4] stand in for the original's unspecified "related technical reports" [C05]. They are the preparer's choice, not the original's. The editor accepted them.
 6. **Worked example.** The tennis-ball exemplar in §3.1 follows the exemplar in Wei et al.'s Figure 1 with light rewording. The juggler problem is the original contributor's own.
 7. **Precursors.** Later literature cites Nye et al. (2021, "scratchpads") alongside Wei et al. as an origin of the technique; see, for example, [R1]. That precursor is noted here but not added to the historical body.
-8. **Editorial addition.** Table 1 [E01] is not in the original. It quotes author-reported figures from the entry's own sources so that §5 states evaluation conditions, as AES §5 requires. The editor ruled on November 10, 2026 to keep it, as a labeled addition (O4).
-9. **Affiliation note.** Two authors of [R1] list Anthropic affiliations, and the corrections were prepared by an Anthropic model. That correction [C08] was therefore checked independently: Muse Spark 1.3 found it warranted (register O5, closed), and DeepSeek-V4.1 confirmed it at the primary record. DeepSeek's check of the affiliations themselves was at register level only (register v0.3, §1).
-10. **Application list.** The original called CoT "a standard technique in" the six areas listed in §4 but gave no source for any of them. On the editor's ruling (O3), the list is kept and the phrase is changed to "used in" [C18]. The text therefore no longer asserts, without a source, that the practice is standard.
+8. **Editorial addition.** Table 1 [E01] is not in the original. It quotes author-reported figures from the entry's own sources so that §5 states evaluation conditions, as AES §5 requires. The editor ruled to keep it, as a labeled addition.
+9. **Affiliation note.** Two authors of [R1] list Anthropic affiliations, and the corrections were prepared by an Anthropic model. That correction [C08] was therefore checked independently: Muse Spark 1.3 found it warranted, and DeepSeek-V4.1 confirmed it at the primary record. DeepSeek's check of the affiliations themselves was at register level only.
+10. **Application list.** The original called CoT "a standard technique in" the six areas listed in §4 but gave no source for any of them. On the editor's ruling, the list is kept and the phrase is changed to "used in" [C18]. The text therefore no longer asserts, without a source, that the practice is standard.
 
 ##### Credits
 
@@ -207,7 +207,7 @@ Accepted by the editor, W.H.L. The dated record of this entry (versions, audits,
 |---|---|---|---|
 | S / P | L3-12 | 2023-09 | 2025-12-02 |
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 #### L3-S12 — Chain-of-Verification (CoVe) (type S)
 
@@ -233,7 +233,7 @@ Accepted by the editor, W.H.L. The dated record of this entry (versions, audits,
 |---|---|---|---|
 | S / P | L3-8 | as published (2025) | 2025-12-02 |
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 #### L3-S8 — Controllable Generation Frameworks (type S)
 
@@ -335,7 +335,7 @@ The KV-Cache stores the K and V vectors for all previously generated tokens. In 
 |---|---|---|---|
 | S / P | L3-6 | 2023-05 | 2025-12-02 |
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 #### L3-S6 — Multi-Agent Debate Systems (type S)
 
@@ -543,7 +543,7 @@ Accepted by the editor, W.H.L. The dated record of this entry (versions, audits,
 |---|---|---|---|
 | S / P | L3-7 | 2022-11-30 | 2025-12-02 |
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 #### L3-S7 — Speculative Decoding (type S)
 
@@ -566,7 +566,7 @@ Accepted by the editor, W.H.L. The dated record of this entry (versions, audits,
 |---|---|---|---|
 | E / P | L3-2 | 2024–2025 | 2025-12-02 |
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 #### L3-S2 — Test-Time Compute Scaling (type E)
 
@@ -578,7 +578,7 @@ Accepted by the editor, W.H.L. The dated record of this entry (versions, audits,
 
 #### Corrected full entry — Test-Time Compute Scaling (L3-S2)
 
-**Aikipedia Entry — 2025 Edition** *(corrected canonical text v0.3; correction C06 applied, marked [C06])*
+**Aikipedia Entry — 2025 Edition** *(corrected canonical text; correction C06 applied, marked [C06])*
 
 ##### Definition
 
@@ -626,7 +626,7 @@ Test-time scaling introduces compute budget C:
 
 y = argmax_{y ∈ 𝒴(x, C)} R(y)
 
-where 𝒴(x, C) is the set of candidate responses generated using compute budget C, and R is a reward/verification function. [C06 — equations restored from the published formulas (the formula images' alt texts in the stored post); see the register]
+where 𝒴(x, C) is the set of candidate responses generated using compute budget C, and R is a reward/verification function. [C06 — equations restored from the published formulas (the formula images' alt texts in the stored post)]
 
 The performance of o1 consistently improves with more reinforcement learning (train-time compute) and with more time spent thinking (test-time compute).
 
@@ -640,7 +640,7 @@ The performance of o1 consistently improves with more reinforcement learning (tr
 
 ##### Applications
 
-- **Mathematical Problem Solving**: o1 achieved 93% on AIME 2024 with extended inference, placing it among the top 500 students nationally
+- **Mathematical Problem Solving**: o1 achieved 93% on AIME 2024 when 1,000 samples per problem were reranked with a learned scoring function (74% for a single sample; 83% for consensus among 64 samples), placing it among the top 500 students nationally[C07 — the 93% figure is qualified with the selection procedure that produced it; a single sample scored 74% and consensus among 64 samples 83% (OpenAI, "Learning to reason with LLMs," September 12, 2024); original: "o1 achieved 93% on AIME 2024 with extended inference, placing it among the top 500 students nationally"]
 - **Scientific Reasoning**: Outperforming PhD-level experts on specialized knowledge benchmarks
 - **Code Generation**: Testing and iteratively improving generated code before returning results
 - **Multi-Step Planning**: Breaking complex tasks into verified sub-steps with correction loops

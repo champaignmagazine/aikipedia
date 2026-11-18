@@ -37,6 +37,7 @@ CSS = FONTCSS + r'''
 :root{--ink:#14213d;--muted:#5d6b78;--accent:#0b1f4d;--red:#d7161e;--rule:#cfd6dd}
 @page{size:7in 10in;margin:0.95in 0.85in 0.95in 0.95in;
   @bottom-center{content:counter(page);font:500 9pt 'Mono';color:#55606b;vertical-align:top;padding-top:12pt}}
+@page :right{@bottom-center{content:'Aikipedia 2025\00A0\00A0\00A0·\00A0\00A0\00A0' counter(page)}}
 @page title{@bottom-center{content:none}}
 html{font-family:'Serif','Noto Serif CJK SC','Noto Color Emoji',serif;font-size:11pt;line-height:1.5;color:var(--ink);-webkit-print-color-adjust:exact;font-kerning:normal}
 body{margin:0}
@@ -56,7 +57,7 @@ section.f-20 p{text-align:left;hyphens:manual}
 .pname{display:block;font:800 30pt/1.1 'Sans';color:var(--accent);margin-top:.14in;padding-bottom:.2in;border-bottom:1.6pt solid var(--accent)}
 .olist{margin-top:.34in}
 .orow{display:flex;align-items:baseline;gap:5pt;font:400 10pt/1.35 'Sans';margin:0 0 4.5pt;color:inherit}
-.orow .ct{flex:0 1 auto}.orow .dots{flex:1;border-bottom:.6pt dotted #9aa5b1;transform:translateY(-3pt)}.orow .cn{font:500 9pt 'Mono'}.idp{white-space:nowrap}table td,table td strong,table td b{overflow-wrap:break-word}.idp code{overflow-wrap:normal}table.atoc{table-layout:fixed}li.thm{list-style:none;margin-left:-1.2em}
+.orow .ct{flex:0 1 auto;min-width:0}.orow .dots{flex:1;border-bottom:.6pt dotted #9aa5b1;transform:translateY(-3pt)}.orow .cn{font:500 9pt 'Mono';white-space:nowrap;flex:0 0 auto}.idp{white-space:nowrap}table td,table td strong,table td b{overflow-wrap:break-word}.idp code{overflow-wrap:normal}table.atoc{table-layout:fixed}li.thm{list-style:none;margin-left:-1.2em}
 .cmeta{font:500 9pt 'Mono';color:var(--muted);letter-spacing:.03em;margin:0 0 .14in;text-align:left}
 .recbar{border-left:2pt solid var(--accent);padding:.04in 0 .04in .12in;margin:.06in 0 .2in;font:400 9pt/1.55 'Sans';color:#2b3a4a;break-inside:avoid;break-after:avoid}
 .recbar .rid{font:600 9pt 'Mono';color:var(--accent)}.recbar .rt{font:600 10pt 'Sans';color:var(--ink)}
@@ -116,7 +117,7 @@ section.copyright p{text-align:left;margin:0 0 .09in}
 section.contents h1{break-before:page}
 .cgrp{font:700 8.5pt 'Mono';letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:.34in 0 .1in;padding-bottom:3pt;border-bottom:.8pt solid var(--accent);break-after:avoid}
 .crow{display:flex;align-items:baseline;gap:5pt;margin:0 0 3pt;break-inside:avoid;color:inherit}
-.crow .ct{flex:0 1 auto}.crow .dots{flex:1;border-bottom:.6pt dotted #9aa5b1;transform:translateY(-3pt)}.crow .cn{font:500 9pt 'Mono'}
+.crow .ct{flex:0 1 auto;min-width:0}.crow .dots{flex:1;border-bottom:.6pt dotted #9aa5b1;transform:translateY(-3pt)}.crow .cn{font:500 9pt 'Mono';white-space:nowrap;flex:0 0 auto}
 .crow.l1{font:500 11pt 'Sans';margin-top:6pt}.crow.l2{font:400 9.5pt 'Sans';padding-left:.22in;color:#2b3a4a}
 .sign{text-align:left;font-style:italic;margin-top:.2in}
 .placeholder{border:1pt dashed var(--red);padding:.06in .1in}
@@ -267,7 +268,7 @@ def build_html(pages):
     toc, secs = [], []
     for ci, ((gi, _), fp, title, c) in enumerate(chunks):
         g = ORDER[gi][0]
-        lv = ('1', '2') if fp[0] == '1' or fp == '20' else ('1',)
+        lv = ('1', '2') if fp[0] == '1' or fp == '20' or title == 'AI Disclosure' else ('1',)
         def mark(m, fp=fp, ci=ci, g=g):
             level, hid, inner = m.group(1), m.group(2), m.group(4)
             if level not in lv: return m.group(0)
@@ -304,6 +305,7 @@ def build_html(pages):
     appf = next((k for g, l, t, k, f in toc if l == '1' and t.startswith('Appendix F')), None)
     row = lambda key, label, cls='l1': f'<a class="crow {cls}" href="#toc{idx[key]}"><span class="ct">{label}</span><span class="dots"></span><span class="cn">{pages.get(key, "000")}</span></a>'
     for g, level, text, key, fp in toc:
+        if level == '2' and fp == '00' and text.startswith('5.5'): rows.append(row(key, html.escape(text), 'l2')); continue
         if level != '1': continue
         if g != cur:
             if cur == 'The Historical Record' and appf:
@@ -319,7 +321,8 @@ def build_html(pages):
         rows.append(row(key, label))
     body = body.replace('%CONTENTS%', ''.join(rows), 1)
     body = re.sub(r'<hr\s*/?>\s*(?=</section>|<div class="pbreak">)', '', body)  # no closing separator lines (editor, Nov 17, 14:28 CT)
-    global LAST_TOC; LAST_TOC = [(g, l, t, k) for g, l, t, k, f in toc]
+    global LAST_TOC, HEADINGS; LAST_TOC = [(g, l, t, k) for g, l, t, k, f in toc]
+    HEADINGS = [plain(re.sub(r'<span class="mk">.*?</span>', '', x)) for x in re.findall(r'<h[1-6][^>]*>(.*?)</h[1-6]>', body, re.S)]
     doc = f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Aikipedia 2025: Annual Collection</title><style>{CSS}</style></head><body>{body}</body></html>'
     return doc, {i: a for a, i in idx.items()}
 
@@ -380,17 +383,41 @@ def running_heads(src, dst, pages):
             c.setFillColorRGB(.45, .5, .56); c.setFont('Helvetica', 7.2)
             y = 10 * inch - 0.62 * inch
             from reportlab.pdfbase.pdfmetrics import stringWidth as _sw
-            lt = fit(left[i].upper(), 48); room = (7 - 0.95 - 0.85) * inch - _sw(lt, 'Helvetica', 7.2) - 14
-            rt = right[i]
-            while rt and _sw(rt, 'Helvetica', 7.2) > room: rt = rt[:-2].rstrip() + '…' if not rt.endswith('…') else rt[:-2].rstrip() + '…'
-            c.drawString(0.95 * inch, y, lt); c.drawRightString(7 * inch - 0.85 * inch, y, rt)
+            room = (7 - 0.95 - 0.85) * inch
+            def fitw(s):
+                while s and _sw(s, 'Helvetica', 7.2) > room: s = s[:-2].rstrip() + '…' if not s.endswith('…') else s[:-2].rstrip() + '…'
+                return s
+            # facing pages (editor's ruling, November 18, 2026, 13:01 CT): the volume and the group or Part on the
+            # left-hand (even-numbered) page, the current section or entry on the right-hand (odd-numbered) page
+            printed = i                    # the page's printed number: the cover is added after this step, unnumbered
+            if printed % 2 == 0:
+                lp = left[i].upper(); lt = 'AIKIPEDIA 2025' if lp == 'AIKIPEDIA 2025' else 'AIKIPEDIA 2025  ·  ' + lp
+                c.drawString(0.95 * inch, y, fitw(lt))
+            else:
+                c.drawRightString(7 * inch - 0.85 * inch, y, fitw(right[i] or left[i]))
             c.setStrokeColorRGB(.82, .85, .88); c.setLineWidth(.4); c.line(0.95 * inch, y - 5, 7 * inch - 0.85 * inch, y - 5)
             c.save(); buf.seek(0); page.merge_page(PdfReader(buf).pages[0])
             page.compress_content_streams()
+    # bookmarks: Chrome joins a wrapped heading's lines without a space ("WeCould"); restore each title from the heading text
+    heads = {re.sub(r'\s+', '', t): t for t in HEADINGS}
+    from pypdf.generic import NameObject, TextStringObject
+    def walk(node):
+        while node is not None:
+            node = node.get_object(); t = node.get('/Title')
+            if t is not None:
+                k = re.sub(r'\s+', '', str(t))
+                if k in heads and heads[k] != str(t): node[NameObject('/Title')] = TextStringObject(heads[k]); FIXED.append(heads[k])
+            if node.get('/First') is not None: walk(node['/First'])
+            node = node.get('/Next')
+    ol = w._root_object.get('/Outlines')
+    if ol is not None and ol.get_object().get('/First') is not None: walk(ol.get_object()['/First'])
+    # a trailing page with no text (the index's closing break) is dropped
+    while len(w.pages) > 1 and not (w.pages[-1].extract_text() or '').strip(): w.remove_page(len(w.pages) - 1); FIXED.append('trailing blank page removed')
     w.compress_identical_objects(remove_duplicates=True, remove_unreferenced=True)
     with open(dst, 'wb') as fh: w.write(fh)
 
 def g_is_part(t): return t.startswith('Part ')
+FIXED = []
 
 def main():
     p1 = WORK / 'pass1.pdf'
@@ -421,9 +448,11 @@ def main():
     w.set_page_label(1, len(w.pages) - 1, style='/D', start=1)
     w.compress_identical_objects(remove_duplicates=True, remove_unreferenced=True)
     w.add_metadata({'/Title': 'Aikipedia 2025: Annual Collection', '/Author': 'Edited by W.H.L.', '/Subject': 'Aikipedia, Series Volume 1', '/Creator': 'Champaign Magazine'})
+    print('heads step:', len([x for x in FIXED if x != 'trailing blank page removed']), 'bookmark titles restored;', [x for x in FIXED if x == 'trailing blank page removed'])
     out = OUT / f'{STEM}.pdf'
     with open(out, 'wb') as fh: w.write(fh)
     (OUT / 'anchor_pages.json').write_text(json.dumps(pages if not moved else pages2, indent=0))
     print('wrote', out, len(PdfReader(str(out)).pages), 'pages')
 
-main()
+if __name__ == "__main__":
+    main()

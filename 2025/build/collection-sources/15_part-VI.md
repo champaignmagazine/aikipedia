@@ -22,9 +22,9 @@
 
 *Text 2 (as published, corrections marked):* AI washing refers to misleading claims of AI integration in products. With 2024 scandals like Amazon’s “Just Walk Out” spilling into 2025 discussions, it prompts FTC cases and calls for transparency. Example: Samsung’s “AI-powered” washing machines, whose features include AI Ecobubble (Samsung Newsroom, March 13, 2024), presented here as an example of AI-washing claims; the characterization of such features as basic automation is this entry’s assessment.[C05]
 
-**Why It Matters in 2025**: As adoption hits 88%, it erodes trust; governance frameworks emphasize verification to sustain innovation.
+**Why It Matters in 2025**: With 88% of the 1,993 respondents in McKinsey's 2025 *State of AI* survey reporting regular AI use by their organizations in at least one business function, misleading AI claims erode trust; governance frameworks emphasize verification to sustain innovation.[C07 — the bare adoption figure is replaced with the surveyed population and the one-function threshold; the figure measures organizational AI use, not AI washing; original: "As adoption hits 88%, it erodes trust; governance frameworks emphasize verification to sustain innovation."]
 
-*Editorial note:* the published example cites nothing and presents the gloss as fact. Original sentence: "Example: Samsung’s “AI-powered” washing machines, where features like bubble optimization are basic automation." The example stays generic per ruling 1; the citation is to the bubble feature the entry names, verified at the Samsung Newsroom release before citing (see the register). The v0.1 C05 wording (Bespoke AI Washer with AI Wash+, IFA 2025) is superseded: that release documents sensing, not the bubble feature.
+*Editorial note:* the published example cites nothing and presents the gloss as fact. Original sentence: "Example: Samsung’s “AI-powered” washing machines, where features like bubble optimization are basic automation." The example stays generic; the citation is to the bubble feature the entry names, verified at the Samsung Newsroom release before citing. An earlier wording (Bespoke AI Washer with AI Wash+, IFA 2025) is superseded: that release documents sensing, not the bubble feature.
 
 
 ## Artificial Hivemind
@@ -82,8 +82,8 @@ The Artificial Hivemind challenges the core promise of diverse AI development. T
 
 #### L4-G10 — Edge AI (type S)
 
-**Public entry ID:** `AIK-2025-S-P-EDGEAI` — **Concept:** EDGEAI (registered as AIKC-000076 under L7-K10, November 12, 2026; this record links to that concept at registration).
-**Date of Appearance:** Not established. No factual finding from the audit beyond C04; framing annotation L4-6 applies.
+**Public entry ID:** `AIK-2025-S-P-EDGEAI` — **Concept:** EDGEAI (concept AIKC-000076).
+**Date of Appearance:** Not established. No factual finding from the audit beyond C04; framing annotation applies.
 **Contributor:** Grok 4.1. Two published short text states.
 
 *Text 1 (as published, corrections marked):* **Edge AI**: Local AI processing on devices; resurged in 2025 with SLMs and IoT, enabling real-time decisions.[C04 — the unattributed market-size figure is removed without replacement; original: "resurged in 2025 with SLMs and IoT, market projected at $11.8 billion, enabling real-time decisions."] Reduces latency but faces hardware limits.
@@ -167,7 +167,7 @@ The Artificial Hivemind challenges the core promise of diverse AI development. T
 
 #### L4-G7 — Frugal AI (type S)
 
-**Public entry ID:** `AIK-2025-S-P-FRUGALAI` — **Concept:** FRUGALAI (registered as AIKC-000077 under L7-K11, November 12, 2026; this record links to that concept at registration).
+**Public entry ID:** `AIK-2025-S-P-FRUGALAI` — **Concept:** FRUGALAI (concept AIKC-000077).
 **Date of Appearance:** Not established. No findings.
 **Contributor:** Grok 4.1. Two published short text states.
 
@@ -238,7 +238,7 @@ Stands as published.
 #### L4-G11 — Hyperautomation (type S)
 
 **Public entry ID:** `AIK-2025-S-P-HYPERAUTO` — **Concept:** HYPERAUTO.
-**Date of Appearance:** Not established. No appearance correction; framing annotation L4-6 applies.
+**Date of Appearance:** Not established. No appearance correction; framing annotation applies.
 **Contributor:** Grok 4.1. Two published short text states.
 
 *Text 1 (as published, corrections marked):* **Hyperautomation**: Integrating AI and RPA for full processes; 2025 adoption surges, with Gartner forecasting that by 2026, 30% of enterprises will automate more than half of their network activities (Gartner press release, September 18, 2024).[C02] Drives efficiency amid challenges like integration.
@@ -272,7 +272,7 @@ Stands as published.
 
 *Text 2 (as published, corrections marked):* Shadow AI is unsanctioned AI use by staff, risking security. In 2025, ties to ISO/IEC updates for risk management.[C04 — the unattributed employee-involvement figure clause is removed without replacement; original: "In 2025, surveys show 50% employee involvement, with executives leading; ties to ISO/IEC updates for risk management."] Example: Inputting proprietary data into public LLMs, leading to leaks.
 
-**Why It Matters in 2025**: With AI in 88% of firms, it amplifies compliance issues; policies and monitoring are key for secure scaling.
+**Why It Matters in 2025**: With 88% of the 1,993 respondents in McKinsey's 2025 *State of AI* survey reporting regular AI use by their organizations in at least one business function, unsanctioned use amplifies compliance issues; policies and monitoring are key for secure scaling.[C08 — the bare firm-share figure is replaced with the surveyed population and the one-function threshold; the figure measures organizational AI use, not shadow AI; original: "With AI in 88% of firms, it amplifies compliance issues; policies and monitoring are key for secure scaling."]
 
 *Editorial note:* the concept also has a 2026 entry: 'Aikipedia: New AI Lexicon (July–September 2026)' (post 16017, October 2, 2026) carries the Shadow AI entry as its 3rd entry of 24. This 2025 record is unchanged; the 2026 collection links its record to this concept.
 

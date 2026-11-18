@@ -16,10 +16,10 @@ Later years get their own folders when their collections are prepared.
 
 ## Status
 
-*Aikipedia 2025: Annual Collection* (Series Volume 1). This is a proof (Collection v1.0 — draft v0.22 (not for publication)); it is not the released edition. See [CHANGELOG.md](CHANGELOG.md).
+*Aikipedia 2025: Annual Collection* (Series Volume 1). This is a proof (Collection v1.0 — draft v0.23 (not for publication)); it is not the released edition. See [CHANGELOG.md](CHANGELOG.md).
 
 - [Online edition](https://champaignmagazine.github.io/aikipedia/2025/online/)
-- [PDF edition](https://champaignmagazine.github.io/aikipedia/2025/pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf)
+- [PDF edition](https://champaignmagazine.github.io/aikipedia/2025/pdf/Aikipedia_2025_Annual_Collection_proof-v0.23.pdf)
 
 ## Report an error
 

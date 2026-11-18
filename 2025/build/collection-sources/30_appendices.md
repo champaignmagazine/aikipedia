@@ -373,7 +373,7 @@ This revision proposes the following resolutions, on the checkers' advice, for t
 
 # Appendix D. Digest of Editorial Rulings, Aikipedia 2025
 
-*Digest by Claude Opus 5.5. Each ruling is the editor's; the full record of each is in the register and the rulings records. Rows to November 14, 11:55 CT, were checked by Muse Spark 1.3 on November 14, 2026. Rows from November 14, 12:29 CT, to November 16, 16:00 CT, were checked by Muse Spark 1.3 against the register's assignment log on November 16, 2026; where no time is recorded in the log, the row says so. The rows for 16:15 and 16:20 CT were added after GPT-6's final review and checked by Muse Spark 1.3 in the proof-v0.18 pass, November 16, 2026. The 22:21 CT row was checked as it states. Rows from November 16, 23:08 CT, to November 17, 14:33 CT, were checked by Muse Spark 1.3 in the proof-v0.20 check, November 17, 2026. Rows from November 17, 15:02 CT, were added in draft v0.21 and are not yet checked by the registrar.*
+*Digest by Claude Opus 5.5. Each ruling is the editor's; the full record of each is in the register and the rulings records. Rows to November 14, 11:55 CT, were checked by Muse Spark 1.3 on November 14, 2026. Rows from November 14, 12:29 CT, to November 16, 16:00 CT, were checked by Muse Spark 1.3 against the register's assignment log on November 16, 2026; where no time is recorded in the log, the row says so. The rows for 16:15 and 16:20 CT were added after GPT-6's final review and checked by Muse Spark 1.3 in the proof-v0.18 pass, November 16, 2026. The 22:21 CT row was checked as it states. Rows from November 16, 23:08 CT, to November 17, 14:33 CT, were checked by Muse Spark 1.3 in the proof-v0.20 check, November 17, 2026. Rows from November 17, 15:02 CT, were added in drafts v0.21 to v0.23 and are not yet checked by the registrar.*
 
 | Date | Ruling | By |
 |---|---|---|
@@ -425,7 +425,7 @@ This revision proposes the following resolutions, on the checkers' advice, for t
 | 2026-11-17, 21:02 CT | Annual Introduction v1.2 approved, its first section in GPT-6.2 Astra's v0.4, subject to the independent check of that section; GPT-6.2 Astra is a newer release than GPT-6 Astra and receives its own row in §5.5; the independent check of the essay, and the check of the four PDF entry-text archive sections against the online transcriptions, go to GLM 5.3 Flash or DeepSeek | Editor |
 | 2026-11-17, 21:36–22:07 CT | Check of the four PDF entry-text archive sections against the online transcriptions by GLM 5.3 Flash (hosted by Mistral Vibe): wording matches; GLM challenges findings MOE-7 and L3-6. Adjudication of the challenge by Kimi (Moonshot AI; release not stated), a provider that took part in neither text: both findings not upheld — the formulas are present in the published posts as images, and the archive gaps are losses from a text-only capture | Editor |
 | 2026-11-17, 22:15–22:29 CT | The editor confirms by eye that the formulas display on both live posts; the rulings that MOE-7 and L3-6 are not upheld are accepted; both C06 corrections (AIK-2025-F-P-MOE/C06, AIK-2025-E-P-TTCSCALE/C06) are to carry the published formulas, restored from the images' alt texts; the live posts stay unchanged for now | Editor |
-| 2026-11-17, 22:50 CT | Qwen4-Max's finding on Constitutional AI reference [6] stays unconfirmed (the registrar's ruling confirmed: a Qwen model checked that entry's archive text), carried as a known issue unless an eligible reviewer confirms it; Lexicon (6) is dropped from GLM 5.3 Flash's archive-check credits; contributor table v0.6 approved, subject to the builder's two notes | Editor |
+| 2026-11-17, 22:50 CT | Qwen4-Max's finding on Constitutional AI reference [6] stays unconfirmed (the registrar's ruling confirmed: a Qwen model checked that entry's archive text), carried as a known issue unless an eligible reviewer confirms it; Lexicon (6) is dropped from GLM 5.3 Flash's archive-check credits; contributor table v0.6 approved in direction, subject to the builder's two notes; the issued text subject to approval on sight | Editor |
 | 2026-11-17, 23:12 CT | The review of proof v0.21 is credited to GPT-6.2 Astra; the correction plan is approved: the RLVR revision (Muse Spark 1.3), the LExI correction (Claude Opus 5.5), the two corrections of the 88% figure (Muse Spark 1.3), the bibliography reconciled before v1.0, the index qualifier and a scripted recount | Editor |
 | 2026-11-17, 23:16 CT | The source check of the six commissioned entries is not made for now; the volume states that they were reviewed but not source-audited | Editor |
 | 2026-11-17, 23:19–23:29 CT | Reader-facing text does not show the internal editorial record, which goes to an appendix: rules R1–R14 of the reader-text sweep approved; the new Appendix G receives the provenance register and the moved record; the AI Disclosure table to be simplified by its compiler in v0.6 | Editor |
@@ -435,6 +435,15 @@ This revision proposes the following resolutions, on the checkers' advice, for t
 | 2026-11-18, 00:25–00:29 CT | The editor reads two source tables (s1, Table 4; Artificial Hivemind, Table 17) and closes GLM 5.3 Flash's check of the Annual Introduction's first section; the Context Engineering sentence stays as written | Editor |
 | 2026-11-18, 00:33 CT | Annual Introduction v1.4 approved: the essay's disclosure names its checker, GLM 5.3 Flash | Editor |
 | 2026-11-18, 10:37 CT | Proof v0.22 built before the registrar's work returns, so that the reader-text sweep and Appendix G can be seen early | Editor |
+| 2026-11-18, 13:01–13:10 CT | Running heads on facing pages: "AIKIPEDIA 2025 · " and the group on left-hand pages, the current section or entry on right-hand pages; the footer of each right-hand page reads "Aikipedia 2025 · page number", with more space before the number; from proof v0.23 | Editor |
+| 2026-11-18, 14:16 CT | Decisions A–L on the three reviews of proof v0.22 approved as proposed: the registrar's removals N1–N20 (N19 not applied) and K1–K10; Context Rot's notes condensed; three deletions in Emergent Misalignment; the obsolete notes in Chain-of-Thought Monitorability and Scheming deleted; "84 findings"; a new correction to Test-Time Compute Scaling, prepared by Muse Spark 1.3; everything removed goes to Appendix G | Editor |
+| 2026-11-18, 14:25–14:32 CT | Annual Introduction v1.5 and Volume Preface v1.2 approved; the second section's recusal note and "What this volume is" leave the reader text (the latter to Appendix G, its first sentence corrected) | Editor |
+| 2026-11-18, 15:30 CT | Reviewer of the Test-Time Compute Scaling correction: Grok 4.5. Qwen4-Max and GLM 5.3 Flash are set aside under the provider rule | Editor |
+| 2026-11-18, 15:38 CT | RLVR v0.6 approved, re-reviewed by Claude Opus 5.5; corrections AIK-2025-S-P-AIWASHING/C07 and AIK-2025-S-P-SHADOWAI/C08 (Lexicon (4)) approved in revision 1, with no further review; Volume Preface v1.3 approved | Editor |
+| 2026-11-18, 15:42 CT | Correction AIK-2025-E-P-TTCSCALE/C07 approved as written, as reviewed by Grok 4.5 | Editor |
+| 2026-11-18, 16:10 CT | Grok 4.5's review of TTCSCALE/C07 stands: a transcription-fidelity check does not bar a source check of a factual claim (the limit of the 22:50 CT ruling of November 17); the publication audit of proof v0.22 is credited to GPT-6.2 Astra; contributor table v0.7 commissioned | Editor |
+| 2026-11-18, 16:12 CT | Contributor table v0.7 approved, after the three row confirmations (Muse Spark 1.3, Claude Opus 5.5, GPT-6 Astra) | Editor |
+| 2026-11-18, 16:17 CT | Proof v0.23 built | Editor |
 
 *Checked against the Master Register's assignment log by Muse Spark 1.3: rows to November 14, 11:55 CT, on November 14, 2026 (draft v0.2 verification note; the X14 and Circuit Sparsity rows added on Muse's suggestion); rows to November 16, 16:00 CT, on November 16, 2026 (digest addendum check); the 22:21 CT row on November 16, 2026 (GPT-6 final-review reconciliation); the rows from November 16, 23:08 CT, to November 17, 14:33 CT, on November 17, 2026 (proof-v0.20 check), against the filed records and the build.*
 
@@ -469,7 +478,7 @@ GPT-6 did review two corrected texts with no OpenAI participation: *Generative U
 
 | Entry | Author | Reviewers |
 |---|---|---|
-| RLVR, Context Engineering | Muse Spark 1.3 (Meta) | GPT-6 |
+| RLVR, Context Engineering | Muse Spark 1.3 (Meta) | GPT-6; RLVR's 2026 revision also by Claude Opus 5.5 |
 | Context Rot | Claude Opus 5.5 | Muse Spark 1.3, GPT-6 |
 | Emergent Misalignment, Chain-of-Thought Monitorability, Scheming | GPT-6 | Claude Opus 5.5, Muse Spark 1.3 |
 
@@ -502,6 +511,7 @@ Claude Opus 5.5 is recused from every text written in whole or in part by an Ant
 
 - Conflicts: the corrections' preparer, Muse Spark 1.3, is not a contributor to this installment. Claude Opus 5.5 is recused (the installment's author is a Claude model) and reviewed procedure only. GPT-6 was not used as an independent reviewer of the corrected records
 
+- Correction AIK-2025-E-P-TTCSCALE/C07 (November 18, 2026): proposed by GPT-6.2 Astra (OpenAI) in its publication audit of proof v0.22; prepared by Muse Spark 1.3; reviewed by Grok 4.5 (xAI), which confirmed the figures against OpenAI's report. Grok 4.5 had earlier checked the first versions of the four full-post transcriptions, post 14221 among them; neither its conflict statement nor the builder's note naming it mentioned that check. The editor ruled (November 18, 2026, 16:10 CT) that a transcription-fidelity check does not bar a source check of a factual claim, and the review stands. Claude Opus 5.5 is recused and checked procedure only.
 **AIK-2025-F-P-CALM**
 
 - Conflicts: the corrections' preparer is an Anthropic model; Claude Sonnet 4.5 is named as an original reviewer, with no Claude text in the post (per the handoff). GPT-6 was not used as an independent reviewer of the corrected text
@@ -1776,6 +1786,12 @@ A-500  AI‑generated content may contain errors. See Disclaimer.
 - Revisions: v0.2 (November 4, 2026) — review items M1–M8 and additional corrections addressed; v0.3 (November 4, 2026) — AES v0.9 pilot restructure; v0.4 (November 4, 2026) — second-review items R1–R5 addressed (PPO sampling description corrected; adoption claims named and qualified; reinforcement fine-tuning chronology and grader scope clarified; supporting-reference URLs completed; print table-pagination instruction recorded in Editorial Notes); v0.4.1 (November 4, 2026) — Date of Appearance corrected to November 21, 2024 (Ai2 technical announcement; arXiv report November 22, 2024); §5.5 revised to distinguish demonstrated use of the method from adoption of the label; Tülu 3 gain figures added to §5.1 from [R1]; print-production instruction for the §3.2 table strengthened; v0.4.2 (November 14, 2026) — metadata-only revision: 'RLHF Enhancements' See Also target removed (no such item; editor's ruling, November 14, 2026, item 3); Public Entry IDs added to the remaining See Also targets; Format Standard line updated to AES v1.0
 - Status: Accepted (v0.4.1; this file v0.4.2, metadata-only revision), November 4, 2026 — the first approved full-length New Addition for Aikipedia 2025 and the AES v0.9 reference specimen; collection publication pending
 
+
+**Revision (v0.5 and v0.6, November 18, 2026).**
+
+- v0.5 (November 18, 2026) — proposed revision: §2 corrected (DeepSeekMath reward description; pre-2024 history with Liang et al., 2017, added as [P9]); Editorial Note 4 proposed. Reviewed by Claude Opus 5.5 (November 18, 2026): Change 2 adopted as written; Change 1 returned for the code precedent; the note returned under the reader-text rule. Superseded by v0.6 before approval; the entry was never issued at v0.5.
+- v0.6 (November 18, 2026) — proposed revision: §2 "Before the name" paragraph revised (CodeRL named, added as [P10]; data-filter claim narrowed to the mathematical-reasoning work surveyed); §2 history passage and §5.3 revised (spurious-rewards explanation attributed as the authors' hypothesis; Qwen2.5-Math-7B named); [P7] pinned to v1 (June 12, 2025); Editorial Note 3 added; Change 2 as proposed in v0.5. Re-reviewed by Claude Opus 5.5, November 18, 2026: adopted. Approved by the editor, W.H.L., November 18, 2026 (15:38 CT).
+
 ### Chain-of-Thought Prompting — `AIK-2025-F-P-COTPROMPT`
 
 **Metadata as recorded:**
@@ -2099,11 +2115,11 @@ Prepared by Claude Opus 5.5, November 12, 2026, for the corrected-original proce
 - **Byline.** The byline's "ChapGPT" is as published (L7-8).
 **Fingerprint.** SHA-256 of the rendered text (lines A-001 to A-305, UTF-8, newline-terminated): `477e19903c7fa038df81ac28b49d65aa11785e6885f40f344105246acb529cad`.
 
-### Archive header lines, Lexicon (4) and (6)
+### Archive header lines, Lexicon (4)
 
 **Record type:** Verbatim archive for corrected-text production (pilot procedure, step 1: preserve the historical text; never overwrite). This file supersedes the v0.1 summarized archive record (`l4-archive-text.md`), which is preserved unchanged. The re-issue to verbatim form follows the editor's ruling of November 12, 2026 (R2, option (a)). This v0.5 adds A-nnn line labels and a fingerprint to v0.4 (preserved unchanged), per the editor's ruling of November 16, 2026 (14:32 CT), item 3; no post wording is changed. v0.4 revised v0.3 by one word (“This entry is one of the cleanest.”, Frugal AI review), found by GLM 5.3 Flash in its fidelity check and confirmed by the holder against the live post. This v0.3 revises v0.2 (preserved unchanged) in form only, per the archive check of November 12, 2026 (Claude Opus 5.5): the five embedded-review headings are restored to top-level headings with their ⭐ markers; the archive's own headings and Key Citations apparatus are marked in square brackets; the opening-exchange paragraph join is named in the transcription notes. No post wording is changed.
 
-### Archive header lines, Lexicon (4) and (6)
+### Archive header lines, Lexicon (6)
 
 The first, at anchor level, passed; its check note is `L6-archive-check-note-muse-2026-11-14.md`. The second was a full line-by-line check of all 466 lines, against the rendered page and the stored content, and it was accepted with zero discrepancies. Its report is `L6-fidelity-check_Muse-Spark-1.3_2026-11-14.md`.
 
@@ -2113,6 +2129,308 @@ The first, at anchor level, passed; its check note is `L6-archive-check-note-mus
 
 *This revision adds the line "with Claude Opus 5.5, GPT-6 Astra, and Muse Spark 1.3" to the title page under the editor's name (editor's instruction of November 16, 2026, 23:15 CT). It otherwise keeps v0.4, which applies the editor's title-page decisions of November 16, 2026 (16:15 and 16:20 CT), and corrects the counts paragraph and the PDF scope sentence on GPT-6's final review of draft v0.15 (M1; error confirmed by Muse Spark 1.3; the replacement wording is GPT-6's). Muse Spark 1.3's v0.1 and Claude's v0.2–v0.4 are preserved. Nothing is left in brackets.*
 
-**AI Disclosure, §5.5: the compiler's note to contributor table v0.5.** 
+## G.5 Contributor table: compiler's note, identification notes and record notes
 
-*Compiled by Muse Spark 1.3. v0.5, November 17, 2026 (approved by the editor, W.H.L., November 17, 2026, 10:43 CT; the approval clarified at 14:33 CT to cover this amended draft, two credits added; issued by Muse Spark 1.3); supersedes v0.4 (November 16, 2026), preserved. Sources: the Master Register's record details (SHA-256 306bcb63…8161), the corrected texts' headers, the posts' bylines as recorded in the register, and the filed check reports. The editor is W.H.L., who facilitated the original dialogues, commissioned the new additions, approved every package, approved every identifier, which Muse Spark 1.3 assigned in the register, and conceived the cover and logo; this table lists models only, per its charge. Each model is named as credited: where the original gives no release number, the table says so rather than inferring one. "Original" roles are in the 2025 publications; "audit", "correction", "review", and "checking" roles are in the collection's preparation. Conflict and recusal statements for each record are in Appendix E. Checking roles rest on reports filed with the registrar, except the checks relayed by the builder — Grok 4.5's two archive checks; GLM 5.3 Flash's eight archive sections, cross-sample, and S-MOE v0.3 check; Qwen3-Max's three rebuilt transcriptions and COTPROMPT last third; DeepSeek-V4.1's three front-matter reviews — which the editor accepted by direction on November 16, 2026; the primary reports for those checks are not held by the registrar.*
+*Prepared by Muse Spark 1.3, November 18, 2026, for Appendix G (Provenance Register and Record Histories). Companion to contributor table v0.7 (§5.5). The builder places this text in Appendix G at the build that embeds table v0.7.*
+
+### Compiler's note
+
+Compiled by Muse Spark 1.3. Table v0.7 was issued November 18, 2026, per the editor's ruling of November 18, 2026, 16:10 CT ('Yes, issue v0.7'); the editor's approval follows on sight. It supersedes issued v0.6 (November 18, 2026), preserved. Sources: the Master Register's record details (SHA-256 `f86ea368…5c12` at issue), the corrected texts' headers, the posts' bylines as recorded in the register, and the filed check reports. The editor is W.H.L., who facilitated the original dialogues, commissioned the new additions, approved every package, approved every identifier, which Muse Spark 1.3 assigned in the register, and conceived the cover and logo; the table lists models only, per its charge. Each model is named as credited: where the original gives no release number, the table says so rather than inferring one. "Original" roles are in the 2025 publications; "audit", "correction", "review", and "checking" roles are in the collection's preparation. Conflict and recusal statements for each record are in Appendix E.
+
+Checking roles rest on reports filed with the registrar, except the checks relayed by the builder — Grok 4.5's two archive checks; GLM 5.3 Flash's seven archive sections, cross-sample, and S-MOE check; Qwen3-Max's three rebuilt transcriptions and COTPROMPT last third; DeepSeek-V4.1's three front-matter reviews — which the editor accepted by direction on November 16, 2026; the primary reports for those checks are not held by the registrar.
+
+Version history. v0.2 (November 15, 2026) updates the header and 7 rows for the archive-check program's outcomes since v0.1; no identities added or removed. v0.3 (November 16, 2026), approved by the editor with three updates, adds Qwen4-Max and Claude Fable 5.2, records GLM 5.3 Flash's blind first audit and the editor's rulings on it, incorporates the builder's seven corrections (checks reported complete, correction counts, transcription and assembly credits, DeepSeek's front-matter reviews), records GPT-6's release as GPT-6 Astra (editor-supplied), accepts the relayed checks by the editor's direction, and records the Volume Preface co-signers; updates the register SHA; no identities removed. v0.4 (November 16, 2026), issued on the editor's instruction of 16:32 CT and checked against the register, adds the cover and logo co-design credits, the draft v0.6 assembly credit, the extended assembly range, the Mixture of Depths review, the identifier and approvals wordings, and the row gloss; corrects the L4 version to v0.5; no identities added or removed. v0.5 (November 17, 2026), approved by the editor November 17, 2026, 10:43 CT (approval clarified at 14:33 CT to cover the amended draft) and issued by Muse Spark 1.3, records the excluded Lexicon (6) first audit in the Claude Opus 5.5 row, adds the second reviews to the DeepSeek-V4.1 and Qwen4-Max rows, records GPT-6's final whole-volume review and Muse Spark 1.3's draft v0.15 audit, and extends the assembly range to v0.15; no identities added or removed. v0.6 (November 18, 2026), issued per the editor's direction with approval to follow on sight, adds GPT-6.2 Astra and Kimi; adds the proof review to the Qwen4-Max row, the archive comparison and the first-section check to the GLM 5.3 Flash row, and the LExI correction credit to the Grok 4.5 row; records the Annual Introduction credits; changes the Volume Preface credits to co-author (see the record note below); drops Lexicon (6) from the GLM 5.3 Flash row (see the record note below); corrects the Lexicon (6) check credit to anchor level; fixes the GPT-6 Astra identification note; and simplifies the credits under the reader-text rule (draft and version numbers inside the credits become plain role descriptions; this note and the identification notes move here from §5.5). v0.7 (November 18, 2026), issued per the editor's ruling of 16:10 CT with approval to follow on sight, applies the three row confirmations: Muse Spark 1.3's Task 5 bibliography verification report and Task 6 sweep edit list; Claude Opus 5.5's recusal-exception and second-section corrections and update (the RLVR v0.6 re-review is not yet done and is not credited); GPT-6's AP-2025-01 addition in its own wording. It credits the publication audit of a later proof to GPT-6.2 Astra per the editor's identification ruling of 16:10 CT, adds Grok 4.5's review of correction /C07, and records the provider-rule screen of every row; no identities added or removed.
+
+### Identification notes
+
+**GPT-6 (OpenAI), release GPT-6 Astra.** Identification supplied by the editor: the ruling of November 14, 2026 (11:55 CT) recorded "release GPT-6"; the ruling of November 16, 2026 (11:52 CT) confirms the co-author and reviewer was GPT-6 Astra; the Volume Preface byline carries Astra from the ruling of November 17, 2026 (14:28 CT). GPT-6.2 Astra is a newer release, credited in its own row.
+
+**GPT-6.2 Astra (OpenAI).** Identification supplied by the editor: the byline "GPT-6.2 Astra" is in the editor's own words (ruling of November 17, 2026, 20:26 CT); it is a newer release than GPT-6 Astra (ruling of November 17, 2026, 21:02 CT). The proof review credited in its row is credited to GPT-6.2 Astra per the ruling of November 17, 2026, 23:12 CT. The report's own identification statement is recorded in the Master Register only. The publication audit of a later proof credited in its row is credited to GPT-6.2 Astra per the ruling of November 18, 2026, 16:10 CT ('Credit GPT-6.2 Astra'); the audit names no release, and the identification is supplied by the editor.
+
+**Qwen4-Max.** Identification editor-supplied; the exact release/build number is not exposed to the model. The proof review credited in its row is credited to Qwen4-Max per the ruling of November 17, 2026, 20:09 CT, which set aside the report's self-identification as a Claude model. The assigned blind audit of Circuit Sparsity stopped with no coverage: the Q4M- finding series is empty and must not be recorded as clean.
+
+**Kimi (Moonshot AI).** The model identifies as Kimi Chat (Moonshot AI) and states no release number is exposed to it; it could not confirm being Kimi K2 or Kimi K2 Thinking, and is credited in its own row, separate from the Kimi K2 and Kimi K2 Thinking rows.
+
+**GLM 5.3 Flash (Z.ai).** "Served by Mistral AI" describes the serving deployment, confirmed as a serving fact (editor's ruling, November 16, 2026); the model is Z.ai's.
+
+**DeepSeek-V4.1.** Its Circuit Sparsity correction note identifies it as "release 2026".
+
+**Qwen3-Max.** Deployment release not stated.
+
+### Record notes (detail moved from the table under the reader-text rule)
+
+**Volume Preface credits: co-signer, now credited as co-author.** The Preface credits in the table read "co-author" from v0.6. The credit was "co-signer" through the signed text v1.0.2; the change to "co-author" (Preface v1.1, no signature block) rests on the builder's direction citing a ruling of November 17, 2026, 16:00 CT, whose record is not held by the registrar. The Preface v1.1 text is likewise not held; the citation is as directed.
+
+**Lexicon (6) dropped from the GLM 5.3 Flash row.** The row no longer lists post 14313 among GLM's archive checks. The standing decision (reconciliation item 11) was that either the Lexicon (6) archive header should say GLM also checked it, or the table should drop it; the table drops it. The relayed basis for the eight-section tally ("4 passed, 2 passed after correction, 2 partly checked") rests on the relayed report, not held; with Lexicon (6) dropped, the row credits seven archive sections. The Lexicon (6) header does not credit GLM.
+
+**Lexicon (6) check, scope corrected.** Issued v0.5 said Muse Spark 1.3 checked the Lexicon (6) archive text "in full (466 lines, zero discrepancies)". The check note and the file header record an anchor-level check: 466 lines, fingerprint verified, the long middle paragraphs not diffed line by line, disputed passages resolved by blind re-read. The table states the check as done from v0.6; this corrects the record and does not change what was checked.
+
+**Transcription versions.** The four full-post transcriptions were first issued as v0.1/v0.2 and then rebuilt deterministically from stored content: S-CAI v0.3, S-MOE v0.3, L3 v0.2, S-CSP v0.2. Grok 4.5's check of the v0.1/v0.2 transcriptions was adjudicated; two findings survive independently (see `four-transcriptions_final-reconciliation-muse-v0.1.md`).
+
+**Claude session move.** The Claude session moved from Claude Opus 5.5 to Claude Fable 5.2 at 11:40 CT, November 16, 2026, and back to Claude Opus 5.5 before 14:22 CT the same day; work from 11:40 CT in that window is Claude Fable 5.2's, in its own row. The recusal from Anthropic-authored texts covers both.
+
+**Finding numbers behind the simplified credits.** Kimi adjudicated findings MOE-7 (Mixture of Experts) and L3-6 (New AI Lexicon 2025 (3)), both ruled not upheld. GLM 5.3 Flash's blind first audit of Circuit Sparsity made thirteen findings, GLM-1 to GLM-13, all recorded as annotations under the editor's rulings of November 16, 2026, 01:02 CT. Its archive comparison (Check A) reported findings PDFA-13958-1–9, PDFA-13998-1–8, PDFA-14221-1–7, and PDFA-14343-1–9. Its review of the corrected Mixture of Depths text passed with one correction, adopted as C08 (November 10, 2026). Grok 4.5's LExI correction credit is correction /C12 of the Launch Edition (numbered /C13 in Grok's review and the approval record; renumbered by the registrar as the next free number — see the Master Register). The Test-Time Compute Scaling correction /C07 answers item 18 of the publication audit of a later proof.
+
+**DeepSeek-V4.1's assigned checks.** The assignment was brief v0.4 under the editor's ruling of November 14, 2026, 18:54 CT; a package-consistency note was filed and no live-post check was returned; the role passed to GLM 5.3 Flash.
+
+**Credits not given.** A review of the opening pages of a proof, relayed as from DeepSeek with no release stated and carrying no identification line, is held but not credited: no row can take it without inferring a release. No original-reviewer identities for CALM and Prefill–Decode Disaggregation beyond Claude Sonnet 4.5 (credited as named reviewer of both) exist in the held record.
+
+**Row 7 additions (v0.7).** Muse Spark 1.3's confirmation found two additions its row lacked: the bibliography verification report (Task 5) and the reader-text sweep edit list for the four recused texts (Task 6), both of November 18, 2026. The 16:05 CT confirmations summary said 'no change' for this row; addendum 1 of 16:08 CT corrects that, recording that the relayed text did not include the additions.
+
+**Row 8 corrections and update (v0.7).** The recusal sentence now names the Circuit Sparsity first audit as the exception recorded in Appendix E, which records it as the one exception (first source audit, CSP-1 to CSP-5, November 6, 2026). 'Drafter of the Annual Introduction' is corrected to authorship of the second section, headed 'The Year in AI Terms, 2025' at line 80 of the approved v1.4; GPT-6.2 Astra wrote the first section. The update adds the RLVR revision v0.5 review and the corrections /C07 and /C08 review (November 18), the reader-text sweep proposal and line list, and the bibliography reconciliation report (all November 17, held in package v3). The RLVR v0.6 re-review is not yet done and is not credited; it credits when it happens.
+
+**Grok 4.5's /C07 review (v0.7).** The review was relayed by the editor as chat text and is recorded verbatim in Claude Opus 5.5's receipt file of November 18, 2026 (procedural check only; Claude recused). The editor ruled on November 18, 2026, 16:10 CT that the review stands: a transcription-fidelity check does not bar a source check of a factual claim. Grok's transcription check of post 14221 and this ruling go to Appendix E, since neither Grok's conflict statement nor Claude's note mentioned the check.
+
+**Provider-rule screen (v0.7).** Every row was screened against Appendix E's cross-provider rule, checking each preparation role against the authorship of the records named, from the Master Register's record details. No new issue was found. Two recorded exceptions stand as recorded (Claude Opus 5.5's Circuit Sparsity first audit; Grok 4.5's superseded transcription checks); Grok 4.5's /C07 review stands as ruled. Four cases turn on the rule's definition of 'took part' and are documented with their reasoning in the screen report held by the registrar (`contributor-table-v0.7_provider-rule-screen_muse_2026-11-18.md`).
+
+## G.6 Material moved from the four recused texts
+
+*Prepared by Muse Spark 1.3 (Task 6 companion), placed here by the builder. Claude Opus 5.5 is recused from these texts and applied the edits mechanically.*
+
+### Note
+
+This file holds, verbatim, the editorial record removed from the recused texts' reader-facing text by the companion edit list (`reader-text-edit-list_recused-texts_muse_2026-11-18.md`). Nothing moved is lost. Texts are quoted from draft v0.18; the builder verifies each against the v0.21 source and reports divergence. "E" numbers refer to the edit list.
+
+### §1. MOE — Entry Editorial Record, in full (E9)
+
+- Original publication: Champaign Magazine, November 5, 2025, post 13998
+- Original contributors: Qwen3-Max (initial draft); ChatGPT and Claude Sonnet 4.5 (revised drafts and final version)
+- Original reviewers: Gemini 2.5 Pro ("Accept without Revisions"); Grok (Expert) (critique of an earlier draft; its citation and parameter corrections were applied — Review Applied? Partially applied, see the register); DeepSeek-V3.2 ("citation-verified edition" pronouncement, unaccompanied by revised text)
+- Editor of the original: W.H.L.
+- Historical text: preserved unchanged in the archive text (`s-moe-archive-text.md`)
+- First audit: Muse Spark 1.3, November 9, 2026 (findings MOE-1–MOE-6, with the MOE-3 addendum)
+- Second check: GLM 5.3 Flash (Vibe, Mistral AI infrastructure), November 10, 2026 — confirmed all findings at the primaries; added MOE-7 and MOE-8 and the MOE-6 sharpening, all answered by Muse the same day. GLM declared a subject interest on MOE-1 (Mixtral is its serving vendor's model); the editor ruled no third check is needed
+- Corrections prepared: Muse Spark 1.3, November 10, 2026 (register v0.1; corrected texts v0.1–v0.3 in the published structure)
+- Package reviews: GPT-6 (accept for independent review; two observations recorded as reviewer flags); Claude Opus 5.5 (procedural review only — recused)
+- Editorial rulings: the editor (W.H.L.), November 10, 2026 — disposition C with the item-level remedies as written; no third check on MOE-1; C07 approved as a ruling of its own; structure ruled as the AES eight-section order, this v0.4
+- Corrected text v0.4: Muse Spark 1.3, November 10, 2026 (structural correction ST01; register v0.4 with concordance)
+- Independent review of the package: GLM 5.3 Flash, November 10, 2026 — v0.4 approved for the editor's approval; two recommendations on the reviewer flags (the ≤10% sparsity claim; the §4 estimated figures)
+- Further editorial ruling: the editor (W.H.L.), November 10, 2026 — both flag corrections adopted as proposed (C08, C09)
+- Corrected text v0.5: Muse Spark 1.3, November 10, 2026 (C08 and C09 applied; register v0.6). v0.5 itself has not been independently re-reviewed; its changes are exactly the reviewer's recommended remedies as proposed by the preparer and ruled by the editor
+- Editorial approval: the editor (W.H.L.), November 10, 2026 — corrected text v0.5 approved
+- Registration: **AIK-2025-F-P-MOE**, Internal Concept ID **AIKC-000008** (Aikipedia Master Register, November 10, 2026), with correction IDs /C01–/C09 and /ST01. The concept's other occurrence records (Lexicon (1) and Lexicon (7)) are not yet registered and will link to this concept ID when they are
+- Corrected text v0.5.1: Muse Spark 1.3, November 10, 2026 — metadata-only revision of v0.5 stating the registration (Entry ID and Review Status lines, Editorial Note 1, this provenance); no change to the corrections text
+- Corrected text v0.5.2: Muse Spark 1.3, November 14, 2026 — metadata-only revision of v0.5.1 under the editor's rulings of November 14, 2026 (reviews of collection draft v0.1, items 1 and 2): Format Standard line (AES v1.0), Base version line (AES v1.0 §3), editor named W.H.L.; no change to the corrections text.
+- Status: Corrected text v0.5 approved and registered (this file v0.5.2). Collection publication pending; the historical publication is not replaced
+
+### §2. CONSTAI — Entry Editorial Record, in full (E30)
+
+- Original publication: Champaign Magazine, October 31, 2025, post 13958
+- Original contributor: Claude Sonnet 4.5 (author)
+- Original reviewers: ChatGPT (review applied — see the register's annotation at CAI-7); Grok (review not applied in full; its "No Factual Errors" assurance is recorded at CAI-4). Neither reviewer's release is stated in the post
+- Editor of the original: W.H.L.
+- Historical text: preserved unchanged in the archive text (`s-cai-archive-text.md`)
+- First audit: Muse Spark 1.3, November 9, 2026 (findings CAI-1–CAI-7)
+- Second check: DeepSeek-V4.1, November 10, 2026 — in agreement on every finding, after a first incomplete pass that it corrected on the record; CAI-6 verified at the primary by both auditors
+- Corrections prepared: Muse Spark 1.3, November 10, 2026 (correction register v0.1; corrected texts v0.1–v0.3 in the published structure)
+- Package reviews: GPT-6 (accept for independent review, with source and scope checks); Claude Opus 5.5 (procedural review only — recused; caught the Schrittwieser evidence error)
+- Editorial rulings: the editor (W.H.L.), November 10, 2026 — disposition C; E01 adopted; the forecasts' removal confirmed; C07 (S-MOE) approved separately; structure ruled as the AES eight-section order, this v0.4
+- Corrected text v0.4: Muse Spark 1.3, November 10, 2026 (structural correction ST01; register v0.4 with concordance)
+- Independent review of this package: DeepSeek-V4.1, November 10, 2026 — confirmed on fidelity and on C01, C03–C06, E01; the C02 scope check resolved against the §4 wording on two points (register v0.6)
+- Further editorial rulings: the editor (W.H.L.), November 10, 2026 — both C02 narrowings adopted as proposed (the Applications sentence narrowed to Claude 4; the generalization attributed to Anthropic)
+- Corrected text v0.5: Muse Spark 1.3, November 10, 2026 (the two C02 narrowings applied; register v0.7). v0.5 itself has not been independently re-reviewed; its changes are exactly the reviewer's recommended remedies as proposed by the preparer and ruled by the editor
+- Editorial approval: the editor (W.H.L.), November 10, 2026 — corrected text v0.5 approved
+- Registration: **AIK-2025-F-P-CONSTAI**, Internal Concept ID **AIKC-000009** (Aikipedia Master Register, November 10, 2026), with correction IDs /C01–/C06 and /ST01 (E01 an editorial addition, no correction ID). The concept's other occurrence record (Lexicon (7)) is not yet registered and will link to this concept ID when it is
+- Corrected text v0.5.1: Muse Spark 1.3, November 10, 2026 — metadata-only revision of v0.5 stating the registration (Entry ID and Review Status lines, Editorial Note 1, this provenance); no change to the corrections text
+- Corrected text v0.5.2: Muse Spark 1.3, November 14, 2026 — metadata-only revision of v0.5.1 under the editor's rulings of November 14, 2026 (reviews of collection draft v0.1, items 1 and 2): Format Standard line (AES v1.0), Base version line (AES v1.0 §3), See Also markings, editor named W.H.L.; no change to the corrections text.
+- Status: Corrected text v0.5 approved and registered (this file v0.5.2). Collection publication pending; the historical publication is not replaced
+
+### §3. CIRCUITSP — provenance bullets 5–8 (E24)
+
+- Corrections prepared by Muse Spark 1.3 (correction register v0.2.1, November 13, 2026; v0.2.1 is a metadata-only revision of v0.2 recording the registration and the completed date-line recheck — no entry text changed from v0.1): C01–C03 and structural correction ST01.
+- Review status: independent review received (DeepSeek-V4.1, release 2026; C01–C03 and ST01 pass; NF-1 resolved by the editor's ruling of November 13, 2026; date-line recheck passed November 13, 2026). Approved November 13, 2026. Registered as AIK-2025-F-P-CIRCUITSP (AIKC-000088), November 13, 2026.
+- Entry Editorial Record: base version T2/V2 (Claude Sonnet 4.5) · corrections C01–C03, ST01 · review received (DeepSeek-V4.1; NF-1 resolved by ruling) · date-line recheck passed · approved November 13, 2026 · registered AIK-2025-F-P-CIRCUITSP (AIKC-000088), November 13, 2026.
+- Corrected text v0.2.2: Muse Spark 1.3, November 14, 2026 — metadata-only revision under the editor's rulings of November 14, 2026 (reviews of collection draft v0.1, items 1 and 2): Format Standard line (AES v1.0) and Base version line (AES v1.0 §3) added; no change to the text. The editor is named W.H.L.
+
+### §4. L3 — production note (E37)
+
+*Production note: canonical records and corrected full entries v0.3.1, prepared by Muse Spark 1.3 on November 10, 2026 from the published texts of post 14221 (December 2, 2025), under the editor's disposition A with item-level C. Corrections C01–C06 are documented in `l3-correction-register-v0.2.md`; the independent review and the closure of the "140+ papers" lead are recorded in `l3-correction-register-v0.4.md`. Approved by the editor and registered in the Aikipedia Master Register on November 10, 2026 (parent AIK-2025-L-P-LEX2025N3; occurrence IDs and concept IDs as stated in the header). The historical publication is preserved unchanged. v0.3.2 (November 14, 2026) is a metadata-only revision: the editor named W.H.L. No change to the records or the corrections text. Collection publication pending.*
+
+### §5. Metadata-table rows moved (E2, E21, E26)
+
+MOE "Review Status" (full text): "Corrected text v0.5.2, November 14, 2026 (metadata-only revision of v0.5.1; the corrections text is unchanged). First audit by Muse Spark 1.3; second check by GLM 5.3 Flash (Vibe, Mistral AI infrastructure) — the two audits agree on every finding. Disposition C with the item-level remedies as written, ruled by the editor. Independent review of v0.4 by GLM 5.3 Flash: approved for the editor's approval, with two flag recommendations, both adopted by the editor's ruling of November 10, 2026 and applied in v0.5 as C08 and C09. **Approved by the editor (W.H.L.), November 10, 2026, and registered in the Aikipedia Master Register. Not yet published**". Dropped rows: "Date of Collection Publication | Pending"; "Entry Status | Original Publication, corrected collection text (AES v0.9, pilot)"; "Format Standard | AES v1.0 (prepared under AES v0.9, pilot)".
+
+CONSTAI "Review Status" (full text): "Corrected text v0.5.2, November 14, 2026 (metadata-only revision of v0.5.1; the corrections text is unchanged). First audit by Muse Spark 1.3; second check by DeepSeek-V4.1 — the two audits agree on every finding. Disposition C and the item-level rulings recorded in the correction register. Independent review of v0.4 by DeepSeek-V4.1: confirmed on fidelity and on C01, C03–C06, and E01; the C02 scope check resolved against the §4 wording on two points (the Claude 4.5 Sonnet clause unsupported by [7]; the "most capable models" generalization beyond [7]'s scope). The editor adopted both narrowings (November 10, 2026), applied in v0.5 within C02. **Approved by the editor (W.H.L.), November 10, 2026, and registered in the Aikipedia Master Register. Not yet published**". Dropped rows: "Date of Collection Publication | Pending"; "Entry Status | Original Publication, corrected collection text (AES v0.9, pilot)"; "Format Standard | AES v1.0 (prepared under AES v0.9, pilot)".
+
+CIRCUITSP "Review Status" (full text): "v0.2.2 (metadata-only revision of v0.2.1). Independent review received (DeepSeek-V4.1, release 2026): C01–C03 and ST01 pass; finding NF-1 resolved by the editor's ruling of November 13, 2026; date-line recheck passed November 13, 2026. Approved November 13, 2026. Not yet published". Dropped rows: "Date of Collection Publication | Pending"; "Entry Status | Original Publication, corrected collection text (AES v0.9)"; "Format Standard | AES v1.0 (prepared under AES v0.9, pilot)". Dropped fragments: DoA row "(ruled by the editor, November 13, 2026)"; Base version row "ruled November 12, 2026, batch 4, item 4"; Entry ID row "registered November 13, 2026"; How-to-read "on November 12, 2026".
+
+### §6. Editorial-note fragments moved (E4–E6, E8, E29)
+
+MOE Note 1, original: "Corrected collection text v0.5 (this file, v0.5.1, is a metadata-only revision stating the registration; the corrections text is unchanged), prepared under the editor's disposition C with the item-level remedies as written (November 10, 2026). Approved by the editor on November 10, 2026 and registered as AIK-2025-F-P-MOE (Internal Concept ID AIKC-000008)". MOE Note 2 fragment: "(register v0.4)". MOE Note 4 fragment: "approved by the editor as a ruling of its own (November 10, 2026)". MOE Note 6 fragments: "adopted by the editor's ruling of November 10, 2026"; "The full record is in register v0.5 and v0.6."
+
+CONSTAI Note 1, original: "Corrected collection text v0.5 (this file, v0.5.1, is a metadata-only revision stating the registration; the corrections text is unchanged), prepared under the editor's disposition C (November 10, 2026). Approved by the editor on November 10, 2026 and registered as AIK-2025-F-P-CONSTAI (Internal Concept ID AIKC-000009)". CONSTAI Note 2 fragment: "(register v0.4)". CONSTAI Note 3 fragment: "the register's account of". CONSTAI Note 4 fragment: "by the editor's ruling of November 10, 2026". CONSTAI Note 5 fragments: "(DeepSeek-V4.1, November 10, 2026; register v0.6)"; "independently by Muse Spark 1.3"; "on the editor's ruling of November 10, 2026". CONSTAI Note 6, original: "Register v0.1 repeated the first audit's error identifying Julian Schrittwieser as a Google DeepMind researcher… The correction is recorded in register v0.2 at C03; the forecasts' removal was confirmed by the editor's ruling with that evidence before him." CONSTAI See Also note fragment: "added in v0.5.2"; "AES v1.0 §6, Amendment D".
+
+CIRCUITSP finding IDs removed: "(finding CSP-1)" (×2), "(finding CSP-2)", "(finding CSP-5)", "finding NF-1". ARITHHEADS: "(L3-8)". CAI2: "(A with provenance note — L3-2 annotation)"; "(mapping key CAI2)". COMPOUNDAI: "by the editor's grouping decision (November 10, 2026)". MECHINTERP Notes paragraph fragments: "— found by DeepSeek-V4.1 in its independent review and corroborated by Muse Spark 1.3"; "(The count had been carried as an open lead after an unsuccessful search of the ICML 2024 site, OpenReview, and press coverage; the figure is published on the successor workshop's site.)".
+
+### §7. Online header paragraphs moved (E62–E64, E69, E74, E78)
+
+Post 13958, "Header revision" paragraph (full text): "**Header revision, November 16, 2026 (Muse Spark 1.3, holder), under the editor's ruling of November 16, 2026 (14:32 CT), item 1.** Qwen3-Max checked this version in full against the live post (November 15, 2026) and accepted the wording with no discrepancies in wording or structure. Three spacing items await byte-level confirmation by the holder. The check report was relayed and accepted by the editor's direction of November 16, 2026, and the registrar does not hold it. The version paragraph below states this version was un-checked at issuance; that statement is superseded by this revision. The labeled lines and the fingerprint are unchanged. The previous issue of this file (SHA-256 `597e9bd91d0f94f27dcc8360e56b7a55bd5ed3185f66350f6dac3890c95fdaa5`) is preserved unchanged."
+
+Post 13958, "Version 0.3" paragraph (full text): "Version 0.3, November 14, 2026. This file supersedes v0.2 (the one-line Showk correction) and v0.1, both preserved. v0.1/v0.2 are withdrawn as the text of record for the online edition: GLM 5.3 Flash's independent check (November 14, 2026, under checking brief v0.4) found systematic wording divergences, ten missing separators, and paraphrased review and dialogue text throughout; Muse Spark 1.3 adjudicated every finding against the post's stored content and found GLM correct on every span checked. Grok 4.5's earlier acceptance of v0.1 (under brief v0.2) is discredited on wording. The cause was the v0.1 assembly method: live-page reads that paraphrased systematically, and a production archive text whose scope was only the final entry. This version is a deterministic conversion of the stored post content (see Transcription basis). It is un-checked: a fresh independent check against the live post is owed before the online edition uses it; the earlier checks checked superseded text and do not transfer."
+
+Post 13958, "Prepared by" paragraph: "Prepared by Muse Spark 1.3, November 14, 2026, under the editor's rulings of November 14, 2026 (13:10 CT): full-post transcriptions for the online edition only. Claude Opus 5.5 is recused from this text (original authored by Anthropic models) and did not transcribe or check it."
+
+Post 13998, "Header revision" paragraph (full text): "**Header revision, November 16, 2026 (Muse Spark 1.3, holder), under the editor's ruling of November 16, 2026 (14:32 CT), item 1.** GLM 5.3 Flash checked this version in full (November 15, 2026) and accepted it with no discrepancies: lines A-001–A-213 against the post's stored content and lines A-214–A-268 against the rendered page, a basis the editor accepted on November 15, 2026 (09:59 CT ruling, option (a)). The check report was relayed and accepted by the editor's direction of November 16, 2026, and the registrar does not hold it. The version paragraph below states this version was un-checked at issuance; that statement is superseded by this revision. The labeled lines and the fingerprint are unchanged. The previous issue of this file (SHA-256 `f5fc04b85027cbd837c3e6cd931a04b0fc04e513bb4d60723bd09607f77337b3`) is preserved unchanged."
+
+Post 13998, "Version 0.3" paragraph (full text): "Version 0.3, November 14, 2026. This file supersedes v0.2, preserved. v0.2 is withdrawn as the text of record for the online edition: under the editor's ruling of November 14, 2026 (23:25 CT), ruling 3 (disclaimer convention — the site disclaimer is transcribed wherever it appears in a post's stored content), the closing disclaimer line is included here as A-268; v0.2 excluded it as page furniture. The single change from v0.2 is the addition of that line; lines A-001–A-267 are unchanged. v0.2 was a deterministic conversion of the stored post content (see Transcription basis), issued after GLM 5.3 Flash's independent check of v0.1 was adjudicated correct on every span and Grok 4.5's acceptance of v0.1 was discredited on wording (see the final reconciliation note). This version is un-checked: a fresh independent check against the live post is owed before the online edition uses it, assigned to GLM 5.3 Flash under ruling 2; the earlier checks checked superseded text and do not transfer."
+
+Post 13998, "Prepared by" paragraph: "Prepared by Muse Spark 1.3, November 14, 2026, under the editor's rulings of November 14, 2026 (13:10 CT): full-post transcriptions for the online edition only; the closing disclaimer line was added under the editor's ruling of November 14, 2026 (23:25 CT), ruling 3 (disclaimer convention). Claude Opus 5.5 is recused from this text (original authored by Anthropic models, in part) and did not transcribe or check it."
+
+Post 14221, "Header revision" paragraph (full text): "**Header revision, November 16, 2026 (Muse Spark 1.3, holder), under the editor's ruling of November 16, 2026 (14:32 CT), item 1.** Qwen3-Max checked this version in full against the live post (November 15, 2026) and accepted the wording throughout. About 21 line splits and 3 formula renderings were not verified and are labeled "not verified," per the editor's ruling of November 15, 2026 (09:59 CT). The check report was relayed and accepted by the editor's direction of November 16, 2026, and the registrar does not hold it. The version paragraph below states this version was un-checked at issuance; that statement is superseded by this revision. The labeled lines and the fingerprint are unchanged. The previous issue of this file (SHA-256 `c5f63afd67a4dcaf5be6a9d3b522016ff1cb5376ca6625a4701edbed9d54d69`) is preserved unchanged."
+
+Post 14221, "Version 0.2" paragraph (full text): "Version 0.2, November 14, 2026. This file supersedes v0.1, preserved. v0.1 is withdrawn as the text of record for the online edition: GLM 5.3 Flash's independent check (November 14, 2026, under checking brief v0.4) found thirty-nine missing separators, an inserted line, two merged paragraphs, and wrong dash-row counts; Muse Spark 1.3 adjudicated every finding against the post's stored content and found GLM correct on every span checked. Grok 4.5's earlier acceptance of v0.1 (under brief v0.2) is discredited on wording. The cause was the v0.1 assembly method: live-page reads that paraphrased systematically, and typed spans that dropped list bullets and normalized quotation. This version is a deterministic conversion of the stored post content (see Transcription basis). It is un-checked: a fresh independent check against the live post is owed before the online edition uses it; the earlier checks checked superseded text and do not transfer."
+
+Post 14221, "Prepared by" paragraph: "Prepared by Muse Spark 1.3, November 14, 2026, under the editor's rulings of November 14, 2026 (13:10 CT): full-post transcriptions for the online edition only. Claude Opus 5.5 is recused from this text (original authored by Anthropic models) and did not transcribe or check it."
+
+Post 14343, "Header revision" paragraph (full text): "**Header revision, November 16, 2026 (Muse Spark 1.3, holder), under the editor's ruling of November 16, 2026 (14:32 CT), item 1.** Qwen3-Max checked this version in full against the live post (November 15, 2026) and accepted the wording throughout, including the Attachment conversation. Line splits, 4 formula renderings, and the 23-alt inventory were not verified and are labeled "not verified," per the editor's ruling of November 15, 2026 (09:59 CT). The check report was relayed and accepted by the editor's direction of November 16, 2026, and the registrar does not hold it. The version paragraph below states this version was un-checked at issuance; that statement is superseded by this revision. The labeled lines and the fingerprint are unchanged. The previous issue of this file (SHA-256 `33990bfd5ddf91c2a4dea730995bb9f2b9b44434eb3479d2ea551e50e18ce203`) is preserved unchanged."
+
+Post 14343, "Version 0.2" paragraph (full text): "Version 0.2, November 14, 2026. This file supersedes v0.1, preserved. v0.1 is withdrawn as the text of record for the online edition: GLM 5.3 Flash's independent check (November 14, 2026, under checking brief v0.4) found thirty-eight missing separators, an omitted line, a merged label and intro, and a wholly paraphrased Attachment dialogue; Muse Spark 1.3 adjudicated every finding against the post's stored content and found GLM correct on every span checked. Grok 4.5's earlier acceptance of v0.1 (under brief v0.2) is discredited on wording. The cause was the v0.1 assembly method: the dialogue was transcribed from live-page reads that paraphrased systematically, and the production archive text's scope was mistaken for the post's — it omitted a closing line that stands on the page. This version is a deterministic conversion of the stored post content (see Transcription basis). It is un-checked: a fresh independent check against the live post is owed before the online edition uses it; the earlier checks checked superseded text and do not transfer."
+
+Post 14343, "Prepared by" paragraph: "Prepared by Muse Spark 1.3, November 14, 2026, under the editor's rulings of November 14, 2026 (13:10 CT): full-post transcriptions for the online edition only. Claude Opus 5.5 is recused from this text (one of the four entry texts is Claude's) and did not transcribe or check it."
+
+Dropped online-header fragments: file SHAs as shown in the italic lines (13958 `4a52a7fb…b837`; 13998 `b40293c6…920b`; 14221 `38125567…81cf`; 14343 `ca5dbf3c…c948`); heading versions (", v0.3" ×2; ", v0.2" ×2); "(13:10 rulings, item 2)" (×4); v0.1/v0.2 history clauses in the rendering bullets (E65, E66, E71, E75, E79 — quoted in the edit list).
+
+### §8. Fingerprints moved (E48, E52, E56, E59, E68, E73, E77, E81)
+
+PDF edition, rendered-text fingerprints (SHA-256, lines as labeled, UTF-8, newline-terminated, without line labels):
+- Post 13958 (A-001–A-095): `79385bb1449f2a74981cd784d910ac470a0e32eea61470f201c271befadc365c`
+- Post 13998 (A-001–A-128): `d26154ffa7dc4ff900902dd581a09128780be7c473d4669711679dffa138ad08`
+- Post 14221 (A-001–A-201): `0e5a9b70aa39757c5dd645eaf699544d81238efdf0343206f27eb720eca81f78`
+- Post 14343 (A-001–A-273): `4c0e27e3bf2bfd0a316198a17611a5aa3b2a435ded69064453201496de517df2`
+
+Online edition, rendered-text fingerprints:
+- Post 13958 (A-001–A-365): `60febd0aedd7dc0da53cb1deb9e1e3f57b13f8d2442dd956df1791e92efcfb38`
+- Post 13998 (A-001–A-268): `afe4704546e9f2f1ee4b0b2e14663c2f5fe9b09b2f70c9b5776f27ee56f2faaa`
+- Post 14221 (A-001–A-454): `41c222932c15b53adb295c0d62385c833a39c2b5c0abce05a46c65c92ba648ef`
+- Post 14343 (A-001–A-448): `4d94000f7098ede4a5f668c6718b29c3c224e8d6d13f77831668d81eae089130`
+
+Online edition, source SHAs (Transcription-basis bullets; post JSON / content.rendered):
+- Post 13958: `cd70a891cdf9ccf4f5a7d3ba3b936fdc1255b2c69f432cb6db4c5e133703ab12` / `6731afcaa062edb34b17fb0aa8a641fcd336bb288ae5f7b3779caa18d189361a`
+- Post 13998: `5ecf8062bb8a63563c4010be55d04298fd962ef04c9e463f3faa48765eefc0ba` / `f5a7cace5c00acaafe4ed68208bcfce2fa2523726c4143545e2f60d480f99482`
+- Post 14221: `63bf2768112bb580f87ef231d643cbe748fe021aa505950dd79a44ef8cad0bd0` / `c697b127f835af7d1ccc56ca26597c9c3aa864d5af213e1a4e210b206cf4ee55`
+- Post 14343: `1d064efcbba72d3b840b0e7d7db567596daa028a167a998bd48448c184ef7c57` / `d94c92732a54b2bb5a544c5f0b513da90099d1348bf9170e1ae0797ec8faa7e1`
+
+Assembly handoff SHA (italic lines, all recused records and PDF headers): `1c74801b…5498` (as shown, truncated in the source).
+
+### §9. PDF assembly lines and scope framings (E48, E52, E56, E59)
+
+Italic line (all four sections; file name varies): "*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*"
+
+"Assembled by…" paragraphs (full texts): "Assembled by Muse Spark 1.3, November 14, 2026, from the filed production archive text (s-cai-archive-text.md / s-moe-archive-text.md / l3-archive-text.md / s-csp-archive-text.md); line numbers and this header added for the volume; the historical text is unchanged. Not yet checked against the live post; the checker is for the editor to assign."
+
+Scope framing, original: "**Scope and basis (from the filed production header, verbatim).**" The "verbatim" qualifier is dropped where the quoted block is edited (E48, E52, E56, E59); the as-filed wordings are preserved in the production files and the register.
+
+### §10. Corrections-file material moved (E42–E45)
+
+Lead-ins dropped: "(recorded under this record — the register has no separate field for them):" (MOE, CONSTAI, CIRCUITSP lines). MOE C07 fragment: "(the editor's own ruling)". CONSTAI C02 fragments: "and the editor's rulings"; "(verified by DeepSeek-V4.1 and independently by Muse Spark 1.3 on the official PDF)". CIRCUITSP line 67 fragments: "(CSP-4;"; "Finding NF-1 (Date of Appearance) resolved by the editor's ruling;"; "removed in v0.2". CIRCUITSP line 68, original: "- Blind-audit annotations: thirteen annotations from GLM 5.3 Flash's blind independent audit (November 16, 2026), ruled on by the editor November 16, 2026, 01:02 CT (D1–D6) and approved as annotation draft v0.1 November 16, 2026, 14:32 CT (item 4); entered in correction register v0.3 §3 (twelve new annotations GLM-1, GLM-2, GLM-4–GLM-13, plus a corroboration sentence on the existing Mathematical framework annotation for GLM-3). No new correction ID; C01–C03 and ST01 stand; the published texts are unchanged (disposition A)".
+
+## G.7 Material moved by the v0.23 removals
+
+*The wording each removal took out of the reader text (editor's rulings of November 18, 2026, 14:16 CT), word for word. Each item names the removal and where it stood.*
+
+- **D1, Mixture of Experts, Editorial Note 5 (final sentence):** “Finding MOE-7, which had described the notation as unrendered in the published post, was ruled not upheld on re-adjudication, November 17, 2026; see the register.”
+- **D1, Test-Time Compute Scaling, C06 marker:** “(the formula images' alt texts in the stored post); see the register]”
+- **D1, archive post 13998, check statement:** “(finding MOE-7 ruled not upheld, November 17, 2026)”
+- **D1, archive post 13998, transcription basis:** “Finding MOE-7, which had described the gaps as unrendered notation in the published post, was ruled not upheld on re-adjudication, November 17, 2026.”
+- **D1, archive post 14221, check statement:** “(finding L3-6 ruled not upheld, November 17, 2026)”
+- **D1, archive post 14221, transcription basis:** “Finding L3-6, which had described the equations as missing in the published post, was ruled not upheld on re-adjudication, November 17, 2026.”
+- **D1, archive post 14343, transcription note A-273:** “the "~December 13" dating of finding CSP-5”
+- **N20, archive post 14221, check statement:** “two lines here have no counterpart in the stored post (see below)”
+- **N1, Advanced Reasoning Models, Concept line:** “(GPT-6, finding R4)”
+- **N2, Mixture of Depths, Base version row:** “by the editor's choice (disposition of November 10, 2026: A on v1, annotated; C on v3)”
+- **N3, On-Policy Distillation, Editorial Note 2:** “(open item O1, closed by the reviewer)”
+- **N3, On-Policy Distillation, Editorial Note 4:** “(first-audit OPD-4 ⚑, confirmed by Muse Spark 1.3, worksheet v0.16)”
+- **N3, On-Policy Distillation, Editorial Note 5:** “OPD-4 is recorded as an annotation only.”
+- **N4, Chain-of-Thought Prompting, How to read:** “; the register's concordance (§3) maps each passage to its source”
+- **N4, Chain-of-Thought Prompting, Editorial Note 4:** “The editor adopted this wording on November 10, 2026 (O2).”
+- **N4, Chain-of-Thought Prompting, Editorial Note 5:** “The editor accepted them on November 10, 2026 (O1).”
+- **N4, Chain-of-Thought Prompting, Editorial Note 8:** “The editor ruled on November 10, 2026 to keep it, as a labeled addition (O4).”
+- **N4, Chain-of-Thought Prompting, Editorial Note 9:** “found it warranted (register O5, closed),”
+- **N4, Chain-of-Thought Prompting, Editorial Note 9:** “(register v0.3, §1)”
+- **N4, Chain-of-Thought Prompting, Editorial Note 10:** “On the editor's ruling (O3),”
+- **N5, Alignment Patterns, record header:** “; C09 and C10 approved by the editor, November 12, 2026)”
+- **N6, Small Language Models, Date of Appearance:** “framing annotation L4-6 applies”
+- **N6, Hallucination, Date of Appearance:** “framing annotation L4-6 applies”
+- **N6, Vector Databases, Date of Appearance:** “framing annotation L4-6 applies”
+- **N6, Edge AI and Hyperautomation, Date of Appearance:** “framing annotation L4-6 applies”
+- **N7, LRM, Concept line:** “**Concept:** LRM (registered as AIKC-000075 under L7-K6, November 12, 2026; this record links to that concept at registration).”
+- **N7, EDGEAI, Concept line:** “**Concept:** EDGEAI (registered as AIKC-000076 under L7-K10, November 12, 2026; this record links to that concept at registration).”
+- **N7, FRUGALAI, Concept line:** “**Concept:** FRUGALAI (registered as AIKC-000077 under L7-K11, November 12, 2026; this record links to that concept at registration).”
+- **N8, Scheming, See Also:** “(editor's rulings, November 10 and November 14, 2026)”
+- **N9, Compound AI Systems, Concept note:** “*Concept note: by the editor's grouping decision, the Launch Edition occurrence”
+- **N12, AI Washing, Editorial note:** “The example stays generic per ruling 1;”
+- **N12, AI Washing, Editorial note:** “verified at the Samsung Newsroom release before citing (see the register).”
+- **N12, AI Washing, Editorial note:** “The v0.1 C05 wording (Bespoke AI Washer”
+- **N13, Vibe Coding, Editorial note:** “the embedded review's praise on this point is erroneous (see the register). Citation (ruling 3):”
+- **N14, archive post 13892, rendering artifact:** “This is finding OPD-3.”
+- **N15, archive post 14021, check line:** “(all 69 lines compared in full; three rendered reads plus the WordPress REST source; checking brief v0.2). Check report: `CALM-fidelity-check_Qwen3-Max_2026-11-14.md`.”
+- **N15, archive post 14021, rendering bullet:** “- The rendering was transcribed from the connector's output, because this session could not save the raw HTML to disk.”
+- **N16, archive post 14233, fetch basis:** “Key Citations URLs below are carried from the v0.1 archive record, which took them from the full WordPress JSON read of November 11, 2026;”
+- **N16, archive post 14233, fingerprint:** “SHA-256 of the rendered text (lines A-001 to A-447, UTF-8, newline-terminated, without line labels): `96451c3aeea26933e4ee34c83469217ce8b0e0b64511368f5bf5a5dbec4fce44`.”
+- **N16, archive post 14233, apparatus note A-158:** “(v0.1 archive record, November 11, 2026 fetch)”
+- **N16, archive post 14233, closing note:** “*Archive v0.5 — prepared by Muse Spark 1.3, November 16, 2026: A-nnn line labels (A-001–A-447) and a fingerprint added to v0.4, per the editor's ruling of November 16, 2026 (14:32 CT), item 3; the header's version-history sentence is corrected; no post wording is changed. v0.4 (November 14, 2026) revised v0.3 by one word (“This entry is one of the cleanest.”). v0.1–v0.4 preserved unchanged. Corrections C01–C06 are documented in `l4-correction-register-v0.4.md`; the canonical occurrence records are `l4-canonical-records-v0.4.md`. The historical publication is preserved unchanged. Collection publication pending.*”
+- **N17, archive post 14257, header:** “- **Transcribed by hand.** The connector returned the content inline, so the preparer rendered it by hand.”
+- **N18, copyright page, archive scope note:** “, as the archive introduction's scope note explains (editor's rulings of November 14, 2026, 13:10 CT).”
+- **K1, Corrections and Editorial Notes:** “(editor's O3 ruling)”
+- **K2, Corrections and Editorial Notes:** “(amended November 10, 2026: "evaluated on the GSM8K and MATH benchmarks")”
+- **K2b, Corrections and Editorial Notes:** “(amended November 10, 2026: ACL 2024 Long Papers citation)”
+- **K3, Corrections and Editorial Notes:** “adopted by the editor November 11, 2026”
+- **K4, Corrections and Editorial Notes:** “adopted by the editor November 10, 2026”
+- **K5, Corrections and Editorial Notes:** “the original A-024 wording restored in v0.2; the earlier approval rescinded)”
+- **K6a, Corrections and Editorial Notes:** “(the October 27, 2025 Wayback snapshot contains the teacher sentence; O1 satisfied, v0.3)”
+- **K6b, Corrections and Editorial Notes:** “**/C05** CD (minor; v0.1 C06)”
+- **K6c, Corrections and Editorial Notes:** “**/C06** ED (v0.1 C07)”
+- **K6d, Corrections and Editorial Notes:** “**/C07** UC (new, from the review's finding NF-1)”
+- **K6e, Corrections and Editorial Notes:** “**/ST01** ST (v0.1 C05)”
+- **K7a, Corrections and Editorial Notes:** “(review finding R1)”
+- **K7b, Corrections and Editorial Notes:** “(review finding R2)”
+- **K7c, Corrections and Editorial Notes:** “(review finding R3)”
+- **K8a, Corrections and Editorial Notes:** “Toronto/NRC affiliations confirmed (v0.2)”
+- **K8b, Corrections and Editorial Notes:** “wording amended in v0.2”
+- **K8c, Corrections and Editorial Notes:** “Review resolutions (v0.2):”
+- **K9 L5, Corrections and Editorial Notes:** “L5-2 (the table”
+- **K9 L5b, Corrections and Editorial Notes:** “L5-5 (figures verified)”
+- **K9 L7, Corrections and Editorial Notes:** “L7-1 (the published”
+- **K9 L7b, Corrections and Editorial Notes:** “L7-2 (the list”
+- **K9 L7c, Corrections and Editorial Notes:** “L7-3 (the first review”
+- **K9 L4, Corrections and Editorial Notes:** “L4-6 (prominence framing”
+- **K9 L4b, Corrections and Editorial Notes:** “L4-7 (Shadow AI 2026-entry link, verified — post 16017, October 2, 2026; checked by Muse on the live post, November 14, 2026)”
+- **K9 L4c, Corrections and Editorial Notes:** “X6 bar question ruled for G1 (established, November 13, 2026)”
+- **K10, Corrections and Editorial Notes:** “(new) —”
+- **K8, Launch Edition, the C11 lead-in (filing detail):** “**C11** (L1-M11; FE, priority claim; CD minor, truncated title; correction register v0.3, filed with Muse November 13, 2026): the published 'first provable results on MoE cluster learning' claim is qualified to 'among the first analyses' with earlier theory noted (Chen et al., NeurIPS 2022), and Kawata et al.'s full title is restored; beyond the audited findings (L1-1 to L1-11), approved by the editor November 13, 2026, and reviewed by DeepSeek-V4.1”
+- **C, Emergent Misalignment, Editorial Note 2 (final sentence):** “Do not backfill its expanded results into 2025.”
+- **C, Emergent Misalignment, Editorial Notes 6 and 7:** “6. **Cross-reference status.** The Master Register assigns RLVR (`AIKC-000001`), Context Engineering (`AIKC-000002`), Context Rot (`AIKC-000003`), Emergent Misalignment (`AIKC-000004`), Chain-of-Thought Monitorability (`AIKC-000005`) and Scheming (`AIKC-000006`), all Accepted.
+7. **Date of Collection Publication.** Pending editor approval and actual release. No draft or peer-review verdict should be recorded as publication.”
+- **D, Chain-of-Thought Monitorability, Editorial Note 6:** “6. **Cross-reference IDs.** Only IDs already reported accepted by Muse are written in See Also; all require a final live-register integrity check. A proposed entry such as Scheming receives no ID here.”
+- **D, Scheming, Editorial Note 6 (final sentence):** “Exact register and live-site coverage should be rechecked before permanent ID assignment.”
+
+### Context Rot — the eleven Editorial Notes as they stood before condensation
+
+1. **Date of Appearance.** The date records the earliest currently documented use [P1], following the AES rule that appearance means documented first use, not prominence.
+   - *Timestamp:* Muse Spark 1.3 confirmed the comment's record through the Hacker News API: author Workaccount2, Unix time 1750255791 (June 18, 2025, about 14:10 UTC). GPT-6 independently opened the comment and the same-day reply.
+   - *Earlier uses:* searches on November 5, 2026 found no documented earlier use in the LLM sense. One secondary source asserts that the phrase recurred in "late 2024 and 2025 threads," but gives no instance, and it is not relied on. Neither the contributor nor the reviewers ran an exhaustive search, so the date is the earliest *documented* use, not a proven first use.
+2. **Attribution of the coinage.** Several secondary sources state that Chroma "coined" the term in July 2025. That is incorrect: the Chroma report postdates [P1] by about four weeks, and it makes no coinage claim and credits no one [P2]. This entry credits the coinage to [P1] and the measurement program to [P2]. Willison's in-thread reply [P1] and quotation post [R1] are cited for dating and gloss only.
+3. **NoLiMa versions.** The first arXiv version (v1, February 7, 2025) reports 12 models, 10 below 50% of baseline at 32K. Later arXiv versions and the ICML proceedings report 13 models and 11. GPT-4o's 99.3% → 69.7% is the same in all versions. The entry cites v1 explicitly for the 12/10 figures (GPT-6 review, M1).
+4. **Gemini 2.5 report: closed at the primary level.** The report exists in two editions, cited separately at [P8].
+   - *Editions:* the original Google-hosted PDF is dated June 17, 2025 and was released with the general-availability announcement that day. The arXiv edition was first submitted July 7, 2025.
+   - *Quotation:* both focused checks read the passage in the Google-hosted PDF itself. GPT-6 locates it in §4.1, p. 18, and also read the context-poisoning appendix (§8.2, pp. 70–71). The report's own "albeit anecdotal" hedge is reflected in §§2 and 5.3.
+   - *Remaining limit:* GPT-6 notes that no archived June 17 timestamp for the PDF file itself was independently established. The June 17 date rests on the document's own dating and the same-day announcement.
+5. **URLs: all confirmed.**
+   - Willison's quotation post [R1] was confirmed by Muse Spark 1.3.
+   - Breunig's [R2] and [R3] were confirmed live by both focused checks, with tracking parameters removed. Muse Spark 1.3 noted that [R3] lists six tactics; §4 now says so.
+   - Willison's in-thread reply on [P1] was verified verbatim by Muse Spark 1.3, at June 18, 2025, 23:17 UTC.
+6. **Cross-reference integrity (AES Amendment D).**
+   - The two Launch Edition See Also targets are items in that edition's short-form recommended list, not standalone entries. Their collection records will be occurrence-level records under AES-ID rule 6.
+   - The two 2026 targets are marked as outside the collection.
+   - Context Engineering: see Note 7.
+7. **Context Engineering's identifier, and this entry's provisional identifier.**
+   - *Context Engineering:* AIK-2025-F-N-CONTEXTENG (concept AIKC-000002) was confirmed against the live master register on November 5, 2026: Context Engineering v0.2.1, Status Accepted, editorial approval November 4, 2026. The handoff snapshot that recorded only RLVR was stale.
+   - *This entry:* proposed for the register's consideration, not assigned: type **F**, origin **N**, key **CONTEXTROT**, giving AIK-2025-F-N-CONTEXTROT. Both reviewers found the proposed form appropriate. Assignment is the editor's act, through the register. *(Status update: assigned and accepted November 6, 2026; see Review Status.)*
+8. **Length.** The v0.2 additions pushed the core sections (§§1–8) past 3,600 words. Redundant wording in §§1, 2, 4, 5.3, 6 and 8 was then trimmed, and no substantive claim was removed. In v0.2.1 the core runs about 3,490 words, within the full-length band (2,000–3,500 words). Front matter, references, notes and provenance bring the file to about 5,900.
+9. **Anthropic sources: closed.**
+   - *[P7]:* the 39% and 29% figures and their internal agentic-search scope were confirmed on the live page (Muse Spark 1.3).
+   - *[P6]:* the quoted phrases and the §3.4 account were confirmed on the live guide by both focused checks. That covers the recall sentence, "finite resource with diminishing marginal returns," "attention budget," the n² and training-distribution account, and "a performance gradient rather than a hard cliff." The guide itself names context rot and links to the Chroma report.
+10. **Chroma quotation location: closed.**
+    - *The two §1 phrases:* they are the report's summary sentence, printed beneath its title. GPT-6 confirmed this in the report. Muse Spark 1.3 withdrew review item R2, explaining that its extraction of the page had omitted the header summary block.
+    - *The v0.2 fix:* keeping the quotation, stating its location, and adding the body's wording was accepted by both reviewers.
+11. **Chroma scoring method: closed.** The judge detail is in the report itself: "We evaluate model outputs using an aligned GPT-4.1 judge." GPT-6 adds that the judge covered the needle-in-a-haystack and LongMemEval experiments, calibrated against manually labeled outputs. The repeated-words explanation was reworded in v0.2.1 so that generation failures are not all attributed to a single cause (GPT-6 focused check, R1).

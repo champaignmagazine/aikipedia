@@ -23,7 +23,7 @@ FPT_FILES = {  # key -> (file, file SHA-256 per Muse's rebuilt-transcriptions ma
 }
 AES = f'{SUP}/aikipedia-editorial-format-standard-AES-v1.0-header-rev-2026-11-14.md'
 S12 = f'{SUP}/register-sections-1-2_2026-11-14.md'
-VER = 'v0.22'
+VER = 'v0.23'
 OUT = f'{H}/draft/aikipedia-2025-collection-draft-{VER}'
 # Date of Appearance rulings not yet in the build register copy (editor, November 17, 2026, 23:41 CT)
 DOA_OVERRIDE = {'AIK-2025-S-P-LEXI': 'September 2, 2025 (Chitty-Venkata et al., arXiv:2509.02753v1)'}
@@ -426,7 +426,7 @@ _M = _M[:_p1_end] + ' Facts in these sections come from the Master Register (App
 METHOD_A, _r = _M.split('---SECTION-5.3---')
 METHOD_B, METHOD_C = _r.split('---SECTION-5.6---')
 METHOD_A, METHOD_B, METHOD_C = METHOD_A.strip(), METHOD_B.strip(), METHOD_C.strip()
-CONTRIB = rd(f'{H}/intro/contributor-table-5.5_muse-v0.5_2026-11-17.md').strip()
+CONTRIB = rd(f'{H}/intro/contributor-table-5.5_muse-v0.7_2026-11-18.md').strip()
 front = f'''---
 title: "Aikipedia 2025: Annual Collection"
 edition: "Collection v1.0 — draft {VER} (not for publication)"
@@ -459,7 +459,7 @@ draft_assembled: "{datetime.date(2026,11,14).isoformat()}, Claude Opus 5.5"
 
 *By Claude Opus 5.5 (Anthropic), GPT-6 Astra (OpenAI) and Muse Spark 1.3 (Meta)*
 
-{rd(f'{H}/intro/volume-preface_v1.1_2026-11-17.md').strip()}
+{rd(f'{H}/intro/volume-preface_v1.3_approved_2026-11-18.md').strip()}
 
 ---
 
@@ -509,7 +509,7 @@ draft_assembled: "{datetime.date(2026,11,14).isoformat()}, Claude Opus 5.5"
 
 # Annual Introduction
 
-{rd(f'{H}/intro/annual-introduction_v1.4_approved_2026-11-18.md')}
+{rd(f'{H}/intro/annual-introduction_v1.5_approved_2026-11-18.md')}
 
 ---
 
@@ -701,6 +701,10 @@ for fn in fx:
     if fn[:1] == '1': fx[fn] = fx[fn].replace('⟦', '[').replace('⟧', ']')
 V22.muse_prepared(fx, V22_REPORT)
 V22.appendix_g(fx, MOVED, MOVED_ARCH, FM_NOTES)
+import v023_edits as V23
+V23_REPORT = []
+V23.apply(fx, V23_REPORT)
+print('v023 report:'); [print('  ', x) for x in V23_REPORT]
 _c = fx['21_corrections-and-editorial-notes.md']
 CORR_N = len(re.findall(r'\*\*(?:AIK-2025-[A-Z]-[A-Z]-[A-Z0-9-]+)?/C\d\d\*\*', _c))
 import collections as _co

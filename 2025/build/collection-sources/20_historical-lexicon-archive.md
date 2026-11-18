@@ -19,7 +19,7 @@
 
 The live post remains the authoritative text.
 
-**Rendering artifact in the original, kept as published.** In the Methodology formula, the HTML wraps "{\text{on-policy}}<br>= \mathbb{E}" in italic tags. Underscores in the LaTeX were read as emphasis markers, so they are missing from the published text. Lines A-038 and A-039 reproduce the published text without them. This is finding OPD-3.
+**Rendering artifact in the original, kept as published.** In the Methodology formula, the HTML wraps "{\text{on-policy}}<br>= \mathbb{E}" in italic tags. Underscores in the LaTeX were read as emphasis markers, so they are missing from the published text. Lines A-038 and A-039 reproduce the published text without them.
 
 
 **Versions.** One entry text, by ChatGPT (A-009 to A-091), followed by Figure 1 and its legend (A-093 to A-104). The post also contains two embedded reviews, both provenance annotations:
@@ -593,25 +593,24 @@ All the arXiv and ACL Anthology links appear inside ChatGPT's peer review, not i
 
 ## 2025-10-31 — Constitutional AI (post 13958)
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 ### Aikipedia 2025 — Aikipedia: Constitutional AI (S-CAI): Archive Text of Post 13958
 
-Assembled by Muse Spark 1.3, November 14, 2026, from the filed production archive text (s-cai-archive-text.md); line numbers and this header added for the volume; the historical text is unchanged. Checked against the online edition's full-post transcription (post 13958, lines A-272–A-365) line by line by GLM 5.3 Flash, November 18, 2026. The texts agree in wording on every matched line; the differences are markup, punctuation and characters only (bold and italics dropped in the online rendering, list markers, separator length, straight vs curly quotes and apostrophes, and the stored U+2011 hyphen in "AI‑generated"). A live-post spot-check of the entry text was not possible: retrieval truncates before the entry text of record, which is the last full text in the post.
+Line numbers and this header added for the volume; the historical text is unchanged. Checked against the online edition's full-post transcription (post 13958, lines A-272–A-365) line by line by GLM 5.3 Flash, November 18, 2026. The texts agree in wording on every matched line; the differences are markup, punctuation and characters only (bold and italics dropped in the online rendering, list markers, separator length, straight vs curly quotes and apostrophes, and the stored U+2011 hyphen in "AI‑generated"). A live-post spot-check of the entry text was not possible: retrieval truncates before the entry text of record, which is the last full text in the post.
 
 **Source.** Champaign Magazine post 13958, "Aikipedia: Constitutional AI", https://champaignmagazine.com/2025/10/31/aikipedia-constitutional-ai/ Published October 31, 2025.
 
-**Scope and basis (from the filed production header, verbatim).**
+**Scope and basis (from the filed production header).**
 **Record type:** Archive text for corrected-text production (pilot procedure, step 1: preserve the historical text; never overwrite).
 **Parent:** S-CAI, "Aikipedia: Constitutional AI," post 13958, published October 31, 2025.
 **URL:** https://champaignmagazine.com/2025/10/31/aikipedia-constitutional-ai/
 **Text of record:** the final published entry text (the third full text in the post, following the original draft, Grok's review, ChatGPT's review, and Claude Sonnet 4.5's response). Version count for the parent: 2 full texts + 1 partial revision + the parent publication.
 **Transcription basis:** the live post as read November 10, 2026 (crawled copy, 15:55 UTC). Line-wrap artifacts of the extraction are removed; wording, headings, and reference list are as published.
-**Author of record:** Claude Sonnet 4.5 (Anthropic), with ChatGPT and Grok as embedded reviewers, W.H.L. editor. The reviews and dialogue surrounding the entry in the post are provenance, not part of this archive text; they are recorded in the first audit (`first-audit-s-cai-muse.md`) and the correction register.
+**Author of record:** Claude Sonnet 4.5 (Anthropic), with ChatGPT and Grok as embedded reviewers, W.H.L. editor. The reviews and dialogue surrounding the entry in the post are provenance, not part of this archive text; they are recorded in the first audit and the correction register.
 
 **What this file is.** A line-numbered rendering of the filed archive text, made for line references (A-nnn) in the Historical Lexicon Archive. Lines are reproduced exactly as filed; blank lines are omitted, so each numbered line is one paragraph, heading, list item, or block of the filed text. No wording has been changed.
 
-**Fingerprint.** SHA-256 of the rendered text (lines A-001 to A-095, UTF-8, newline-terminated, without line labels): `79385bb1449f2a74981cd784d910ac470a0e32eea61470f201c271befadc365c`.
 
 **Structure.**
 - ## Constitutional AI (A-001)
@@ -1179,25 +1178,24 @@ A-410  AI‑generated content may contain errors. See Disclaimer.
 
 ## 2025-11-05 — Mixture of Experts (post 13998)
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 ### Aikipedia 2025 — Aikipedia: Mixture of Experts (MoE) (S-MOE): Archive Text of Post 13998
 
-Assembled by Muse Spark 1.3, November 14, 2026, from the filed production archive text (s-moe-archive-text.md); line numbers and this header added for the volume; the historical text is unchanged. Checked against the online edition's full-post transcription (post 13998, lines A-006–A-126) line by line by GLM 5.3 Flash, November 18, 2026, with a live-post spot-check against the post's stored content (more than ten lines, all matching, including the §1 display-equation alt text and the stored `k` and `G(x)` images). The texts agree in wording except for six formula gaps in this section, where the online transcription renders notation from the post's stored formula images: the display equation has no line here, and the Infobox, §1 and §3 lines have gaps at exactly the positions of the eleven formula images. The mathematics is present in the published post as formula images; the gaps are losses from a text-only capture, not properties of the published post (finding MOE-7 ruled not upheld, November 17, 2026). All other differences are markup, formatting and characters only.
+Line numbers and this header added for the volume; the historical text is unchanged. Checked against the online edition's full-post transcription (post 13998, lines A-006–A-126) line by line by GLM 5.3 Flash, November 18, 2026, with a live-post spot-check against the post's stored content (more than ten lines, all matching, including the §1 display-equation alt text and the stored `k` and `G(x)` images). The texts agree in wording except for six formula gaps in this section, where the online transcription renders notation from the post's stored formula images: the display equation has no line here, and the Infobox, §1 and §3 lines have gaps at exactly the positions of the eleven formula images. The mathematics is present in the published post as formula images; the gaps are losses from a text-only capture, not properties of the published post. All other differences are markup, formatting and characters only.
 
 **Source.** Champaign Magazine post 13998, "Aikipedia: Mixture of Experts (MoE)", https://champaignmagazine.com/2025/11/05/aikipedia-mixture-of-experts-moe/ Published November 5, 2025.
 
-**Scope and basis (from the filed production header, verbatim).**
+**Scope and basis (from the filed production header).**
 **Record type:** Archive text for corrected-text production (pilot procedure, step 1: preserve the historical text; never overwrite).
 **Parent:** S-MOE, "Aikipedia: Mixture of Experts (MoE)," post 13998, published November 5, 2025.
 **URL:** https://champaignmagazine.com/2025/11/05/aikipedia-mixture-of-experts-moe/
-**Text of record:** the final published entry text ("Peer-reviewed and corrected edition — November 2025"), transcribed below. The post's earlier draft (Qwen3-Max) is superseded; the peer reviews printed after the entry (Gemini 2.5 Pro, Grok, DeepSeek-V3.2) are provenance, not part of this archive text; they are recorded in the first audit (`first-audit-s-moe-muse.md`) and the correction register.
-**Transcription basis:** the live post as read November 10, 2026 (crawled copy, 08:51 UTC). Extraction line-wraps removed. The mathematics in §1, the Infobox, and §3 is present in the published post as eleven formula images with LaTeX alt texts at exactly the positions where this archive text has gaps. The gaps are losses from a text-only capture of the live post (read November 10, 2026), not properties of the published post. The numbered archive lines stand as the faithful record of that capture. Finding MOE-7, which had described the gaps as unrendered notation in the published post, was ruled not upheld on re-adjudication, November 17, 2026.
+**Text of record:** the final published entry text ("Peer-reviewed and corrected edition — November 2025"), transcribed below. The post's earlier draft (Qwen3-Max) is superseded; the peer reviews printed after the entry (Gemini 2.5 Pro, Grok, DeepSeek-V3.2) are provenance, not part of this archive text; they are recorded in the first audit and the correction register.
+**Transcription basis:** the live post as read November 10, 2026 (crawled copy, 08:51 UTC). Extraction line-wraps removed. The mathematics in §1, the Infobox, and §3 is present in the published post as eleven formula images with LaTeX alt texts at exactly the positions where this archive text has gaps. The gaps are losses from a text-only capture of the live post (read November 10, 2026), not properties of the published post. The numbered archive lines stand as the faithful record of that capture.
 **Authors of record:** Qwen3-Max (initial draft); ChatGPT and Claude Sonnet 4.5 (revised drafts and final version). Peer reviewers: Gemini 2.5 Pro, Grok (Expert), DeepSeek-V3.2. Facilitator/Editor: W.H.L.
 
 **What this file is.** A line-numbered rendering of the filed archive text, made for line references (A-nnn) in the Historical Lexicon Archive. Lines are reproduced exactly as filed; blank lines are omitted, so each numbered line is one paragraph, heading, list item, or block of the filed text. No wording has been changed.
 
-**Fingerprint.** SHA-256 of the rendered text (lines A-001 to A-128, UTF-8, newline-terminated, without line labels): `d26154ffa7dc4ff900902dd581a09128780be7c473d4669711679dffa138ad08`.
 
 **Structure.**
 - ## Mixture of Experts (MoE) (A-008)
@@ -1351,7 +1349,7 @@ A-128  *For publication in Aikipedia / Champaign Magazine*
 
 ### Aikipedia 2025 — Continuous Autoregressive Language Models (CALM): Archive Text of Post 14021
 
-**Checked** by Qwen (Qwen3-Max; deployment release not stated) against the live post, November 14, 2026: accepted, no discrepancies (all 69 lines compared in full; three rendered reads plus the WordPress REST source; checking brief v0.2). Check report: `CALM-fidelity-check_Qwen3-Max_2026-11-14.md`.
+**Checked** by Qwen (Qwen3-Max; deployment release not stated) against the live post, November 14, 2026: accepted, no discrepancies (all 69 lines compared in full; three rendered reads plus the WordPress REST source).
 
 
 **Source.** Champaign Magazine post 14021, "Aikipedia: Continuous Autoregressive Language Models (CALM)", https://champaignmagazine.com/2025/11/06/aikipedia-continuous-autoregressive-language-models-calm/. Published November 6, 2025, 17:53; last modified the same day, 18:52 (site time). Read through the WordPress.com connector (raw content) on November 11, 2026.
@@ -1360,7 +1358,6 @@ A-128  *For publication in Aikipedia / Champaign Magazine*
 - Markup is dropped, except that headings keep their level as "#", "##" and "###".
 - List bullets are shown as "•" and table rows as "| … |".
 - Link text is kept; the only link targets are arXiv:2510.27688 and https://github.com/shaochenze/calm.
-- The rendering was transcribed from the connector's output, because this session could not save the raw HTML to disk.
 
 
 **Versions.** The post publishes one entry text, the final version by GPT-5 Mini, with a closing "Aikipedia Metadata" block (A-063 to A-069). No review texts are embedded. The metadata names:
@@ -2258,25 +2255,24 @@ A-162  AI‑generated content may contain errors. See Disclaimer.
 
 ## 2025-12-02 — New AI Lexicon 2025 (3) (post 14221)
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 ### Aikipedia 2025 — Aikipedia: New AI Lexicon 2025 (3) (L3): Archive Text of Post 14221
 
-Assembled by Muse Spark 1.3, November 14, 2026, from the filed production archive text (l3-archive-text.md); line numbers and this header added for the volume; the historical text is unchanged. Checked against the online edition's full-post transcription (post 14221, lines A-007–A-053 and A-071–A-227) line by line by GLM 5.3 Flash, November 18, 2026, with a live-post spot-check against the post's stored content (eleven spans, all matching, including the three formula images and the stored "𝒴(x, C)is" spacing; the last lines of the second span, B-216–B-227, fall beyond retrieval reach). The texts agree in wording except as follows: three formula images in the Test-Time Compute entry's Mathematical Framework section have no rendering here — they are present in the published post as images, and the gaps are losses from a text-only capture (finding L3-6 ruled not upheld, November 17, 2026); two lines here have no counterpart in the stored post (see below); the twelve short-form headings here drop the stored emoji; and the full-entry titles here use the PDF edition's "Full entry N —" framing where the stored headings read "1./2./3.". All other differences are markup, formatting, line splits and punctuation only.
+Line numbers and this header added for the volume; the historical text is unchanged. Checked against the online edition's full-post transcription (post 14221, lines A-007–A-053 and A-071–A-227) line by line by GLM 5.3 Flash, November 18, 2026, with a live-post spot-check against the post's stored content (eleven spans, all matching, including the three formula images and the stored "𝒴(x, C)is" spacing; the last lines of the second span, B-216–B-227, fall beyond retrieval reach). The texts agree in wording except as follows: three formula images in the Test-Time Compute entry's Mathematical Framework section have no rendering here — they are present in the published post as images, and the gaps are losses from a text-only capture; two lines here have no counterpart in the stored post; the twelve short-form headings here drop the stored emoji; and the full-entry titles here use the PDF edition's "Full entry N —" framing where the stored headings read "1./2./3.". All other differences are markup, formatting, line splits and punctuation only.
 
 **Source.** Champaign Magazine post 14221, "Aikipedia: New AI Lexicon 2025 (3)", http://champaignmagazine.com/2025/12/02/aikipedia-new-ai-lexicon-2025-3/ Published December 2, 2025.
 
-**Scope and basis (from the filed production header, verbatim).**
+**Scope and basis (from the filed production header).**
 **Record type:** Archive text for corrected-text production (pilot procedure, step 1: preserve the historical text; never overwrite).
 **Parent:** L3, "Aikipedia: New AI Lexicon 2025 (3)," post 14221, published December 2, 2025.
 **URL:** http://champaignmagazine.com/2025/12/02/aikipedia-new-ai-lexicon-2025-3/
-**Content of record:** the installment's twelve short-form entries (Claude's list) and its three full entries (Test-Time Compute Scaling, Compound AI Systems, Mechanistic Interpretability Tools), transcribed below. The post's two embedded ChatGPT reviews (of the list; of the full entries) are provenance, not entry text; they are recorded in the first audit (`first-audit-l3-muse.md`) and the correction register. Neither review was applied to the published texts (finding L3-3).
-**Transcription basis:** the live post as read November 10, 2026 (crawled copy). Extraction line-wraps removed. The three equations in the Test-Time Compute entry's Mathematical Framework section are present in the published post as formula images with LaTeX alt texts. The gaps are losses from a text-only capture of the live post, not properties of the published post, and not a production defect. The numbered archive lines stand as the faithful record of that capture. Finding L3-6, which had described the equations as missing in the published post, was ruled not upheld on re-adjudication, November 17, 2026.
+**Content of record:** the installment's twelve short-form entries (Claude's list) and its three full entries (Test-Time Compute Scaling, Compound AI Systems, Mechanistic Interpretability Tools), transcribed below. The post's two embedded ChatGPT reviews (of the list; of the full entries) are provenance, not entry text; they are recorded in the first audit and the correction register. Neither review was applied to the published texts.
+**Transcription basis:** the live post as read November 10, 2026 (crawled copy). Extraction line-wraps removed. The three equations in the Test-Time Compute entry's Mathematical Framework section are present in the published post as formula images with LaTeX alt texts. The gaps are losses from a text-only capture of the live post, not properties of the published post, and not a production defect. The numbered archive lines stand as the faithful record of that capture.
 **Author of record:** Claude (Sonnet 4.5), with ChatGPT as embedded reviewer, W.H.L. editor.
 
 **What this file is.** A line-numbered rendering of the filed archive text, made for line references (A-nnn) in the Historical Lexicon Archive. Lines are reproduced exactly as filed; blank lines are omitted, so each numbered line is one paragraph, heading, list item, or block of the filed text. No wording has been changed.
 
-**Fingerprint.** SHA-256 of the rendered text (lines A-001 to A-201, UTF-8, newline-terminated, without line labels): `0e5a9b70aa39757c5dd645eaf699544d81238efdf0343206f27eb720eca81f78`.
 
 **Structure.**
 - ## The twelve short-form entries (A-001)
@@ -2534,10 +2530,10 @@ A-201  - What are the implications of new paradigms like reasoning models for th
 **Dates as given in the record:** published 2025-12-03T20:42:02 (20:42:02 local; 2025-12-04T02:42:02 GMT); modified same timestamp (no later modification — confirmed by the independent reviewer's live read, November 12, 2026).
 **Byline as published:** "By Grok, ChatGPT with W.H.L." (no release numbers stated for either model in the byline; the introductory exchange addresses Grok 4.1).
 **Author of record:** Grok 4.1 (all twelve entries, in two text states each); ChatGPT as embedded reviewer; W.H.L. editor.
-**Fetch basis:** the rendered post page, read November 12, 2026 (page crawled November 11, 2026, 20:26 UTC; the post is unmodified since December 3, 2025, so the crawl is current). Key Citations URLs below are carried from the v0.1 archive record, which took them from the full WordPress JSON read of November 11, 2026; the rendered extraction shows citation titles only.
+**Fetch basis:** the rendered post page, read November 12, 2026 (page crawled November 11, 2026, 20:26 UTC; the post is unmodified since December 3, 2025, so the crawl is current). Key Citations URLs below are carried from the full WordPress JSON read of November 11, 2026; the rendered extraction shows citation titles only.
 **Transcription notes:** wording, punctuation, heading levels, emphasis, and table contents are as published. Line-wrapping from the extraction is joined into paragraphs as rendered; no words are added, removed, or reordered. Square-bracketed headings and notes are archive apparatus, not post text: the three section headings, and the Key Citations numbering, URLs, and notes (the post lists the citations as unnumbered linked titles). One join is named rather than restored: the opening exchange (W.H.L.'s message) is joined into a single paragraph here; the live post presents it as four paragraphs — the request, the first two links, the third link, then 'Could you come up with…' — per the archive check of November 12, 2026; every word is preserved. The standalone ellipsis paragraph, the horizontal separators, and the closing disclaimer line are part of the published text and are preserved. Quoted strings below are the post's own text, transcribed for the collection's archive under the editor's direction.
 
-**Line labels and fingerprint.** Lines A-001 to A-447 below carry the post text with A-nnn labels (label, two spaces, text; blank lines carry the label alone). SHA-256 of the rendered text (lines A-001 to A-447, UTF-8, newline-terminated, without line labels): `96451c3aeea26933e4ee34c83469217ce8b0e0b64511368f5bf5a5dbec4fce44`. The header block above and the closing archive note below are apparatus and carry no labels.
+**Line labels.** Lines A-001 to A-447 below carry the post text with A-nnn labels (label, two spaces, text; blank lines carry the label alone). The header block above and the closing archive note below are apparatus and carry no labels.
 
 ---
 
@@ -2698,7 +2694,7 @@ A-154  As AI matures, these terms guide navigation, supported by stakeholders fr
 A-155
 A-156  #### Key Citations
 A-157
-A-158  [Archive apparatus — titles as published; numbering and URLs from the WordPress JSON record (v0.1 archive record, November 11, 2026 fetch). The post lists the citations as unnumbered linked titles. The entries do not cite these inline.]
+A-158  [Archive apparatus — titles as published; numbering and URLs from the WordPress JSON record (November 11, 2026 fetch). The post lists the citations as unnumbered linked titles. The entries do not cite these inline.]
 A-159
 A-160  1. "Top AI Trends and Buzzwords In 2025" — https://www.intelligenthq.com/top-ai-trends-and-buzzwords-in-2025/
 A-161  2. "Vibe coding is not the same as AI-Assisted engineering" — https://medium.com/@addyosmani/vibe-coding-is-not-the-same-as-ai-assisted-engineering-3f81088d5b98
@@ -2991,7 +2987,7 @@ A-447  AI‑generated content may contain errors. See Disclaimer.
 
 ---
 
-*Archive v0.5 — prepared by Muse Spark 1.3, November 16, 2026: A-nnn line labels (A-001–A-447) and a fingerprint added to v0.4, per the editor's ruling of November 16, 2026 (14:32 CT), item 3; the header's version-history sentence is corrected; no post wording is changed. v0.4 (November 14, 2026) revised v0.3 by one word (“This entry is one of the cleanest.”). v0.1–v0.4 preserved unchanged. Corrections C01–C06 are documented in `l4-correction-register-v0.4.md`; the canonical occurrence records are `l4-canonical-records-v0.4.md`. The historical publication is preserved unchanged. Collection publication pending.*
+*The historical publication is preserved unchanged.*
 
 ## 2025-12-05 — New AI Lexicon 2025 (5) (post 14257)
 
@@ -3002,7 +2998,7 @@ A-447  AI‑generated content may contain errors. See Disclaimer.
 **Source.** Champaign Magazine post 14257, "Aikipedia: New AI Lexicon 2025 (5)", https://champaignmagazine.com/2025/12/05/aikipedia-new-ai-lexicon-2025-5/. Published December 5, 2025, 21:40 (site time), and not modified since. Read through the WordPress.com connector (raw content) on November 12, 2026.
 
 **What this file is.** A line-numbered plain-text rendering of the post's content, made for line references (A-nnn). It is not the HTML.
-- **Transcribed by hand.** The connector returned the content inline, so the preparer rendered it by hand.
+- **Transcribed by hand.**
 - **Markup:** markup and emphasis are dropped; empty paragraphs are omitted; `<br>` line breaks inside a paragraph are shown as separate lines.
 - **Lists:** list items, nested or not, are shown as "•".
 - **Headings:** H1 is shown as "#", H2 as "##" and H3 as "###".
@@ -4047,22 +4043,21 @@ A-305  AI‑generated content may contain errors. See Disclaimer.
 
 ## 2025-12-14 — Circuit Sparsity (post 14343)
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 ### Aikipedia 2025 — Aikipedia: Circuit Sparsity (S-CSP): Archive Text of Post 14343
 
-Assembled by Muse Spark 1.3, November 14, 2026, from the filed production archive text (s-csp-archive-text.md); line numbers and this header added for the volume; the historical text is unchanged. Checked against the online edition's full-post transcription (post 14343, lines A-002–A-320, excluding the Attachment dialogue) line by line by GLM 5.3 Flash, November 18, 2026, with a live-post spot-check against the post's stored content (ten spans through the third version, all matching, including the stored U+202F/U+2011 characters; the Grok review, the fourth version and the closing lines fall beyond retrieval reach). No wording difference was found in any matched line. The differences are: editorial framing lines in this section with no online counterpart (listed below); list title–description lines joined here and split in the online transcription, with identical content; dollar-sign formulas (`$L_0$`, `$M$`, `$D$`) kept in the online transcription and rendered without the dollar signs here, as stored; heading-level and bold treatment; separators; and straight vs curly quotes and apostrophes. The online transcription carries one further closing line after the fourth version ("This revised version is fully verified and ready for direct upload.") that this section's capture does not include; that line could not be verified against the live post in this check.
+Line numbers and this header added for the volume; the historical text is unchanged. Checked against the online edition's full-post transcription (post 14343, lines A-002–A-320, excluding the Attachment dialogue) line by line by GLM 5.3 Flash, November 18, 2026, with a live-post spot-check against the post's stored content (ten spans through the third version, all matching, including the stored U+202F/U+2011 characters; the Grok review, the fourth version and the closing lines fall beyond retrieval reach). No wording difference was found in any matched line. The differences are: editorial framing lines in this section with no online counterpart; list title–description lines joined here and split in the online transcription, with identical content; dollar-sign formulas (`$L_0$`, `$M$`, `$D$`) kept in the online transcription and rendered without the dollar signs here, as stored; heading-level and bold treatment; separators; and straight vs curly quotes and apostrophes. The online transcription carries one further closing line after the fourth version ("This revised version is fully verified and ready for direct upload.") that this section's capture does not include; that line could not be verified against the live post in this check.
 
 **Source.** Champaign Magazine post 14343, "Aikipedia: Circuit Sparsity", https://champaignmagazine.com/2025/12/14/aikipedia-circuit-sparsity/ Published December 14, 2025.
 
-**Scope and basis (from the filed production header, verbatim).**
+**Scope and basis (from the filed production header).**
 Verbatim transcription of the published post's entry texts, taken from the post's WordPress record (content.rendered) on November 11, 2026. Post published December 14, 2025 (20:19 CST); modified December 16, 2025. Live URL: https://champaignmagazine.com/2025/12/14/aikipedia-circuit-sparsity/
 Byline as published: "By GPT-5.2, Gemini Thinking with 3 Pro, Claude Sonnet 4.5, Grok 4 Expert with W.H.L."
-The post publishes four full entry texts in sequence (T1–T4 in the AES-ID mapping), followed by Grok 4 Expert's review (printed before T4, which it introduces), and an "Attachment" background conversation between W.H.L. and GPT-5.2. No text is designated the entry of record (finding CSP-1). Formulas are stored in the post as images; they are transcribed here from the images' alt text.
+The post publishes four full entry texts in sequence (T1–T4 in the AES-ID mapping), followed by Grok 4 Expert's review (printed before T4, which it introduces), and an "Attachment" background conversation between W.H.L. and GPT-5.2. No text is designated the entry of record. Formulas are stored in the post as images; they are transcribed here from the images' alt text.
 
 **What this file is.** A line-numbered rendering of the filed archive text, made for line references (A-nnn) in the Historical Lexicon Archive. Lines are reproduced exactly as filed; blank lines are omitted, so each numbered line is one paragraph, heading, list item, or block of the filed text. No wording has been changed.
 
-**Fingerprint.** SHA-256 of the rendered text (lines A-001 to A-273, UTF-8, newline-terminated, without line labels): `4c0e27e3bf2bfd0a316198a17611a5aa3b2a435ded69064453201496de517df2`.
 
 **Structure.**
 - ## T1 / V1 — GPT-5.2 (A-001)
@@ -4270,7 +4265,7 @@ A-190  - "The mathematical framework is a reasonable abstraction but not directl
 A-191  - "All other references are verifiable and correctly cited (e.g., Child et al. 2019; Frantar & Alistarh 2023; Olah et al. ~2020; DeepMind's Gemini 1.5 2024)."
 A-192  - "Software ecosystem mentions are spot-on: TransformerLens and CircuitsVis are key for interpretability; DeepSpeed-MoE and Megatron-LM support MoE; Triton kernels are used for sparse ops."
 A-193  "The entry is publication-ready with the above tweaks—it's concise, error-free in core facts, and doesn't introduce unsubstantiated claims beyond the one reference. Below is a lightly revised version incorporating verified sources and corrections (changes noted in italics for clarity; remove for upload). I've preserved your tone and structure while ensuring all claims are source-backed."
-A-194  *Transcription note: the name "Muennighoff" occurs only in this review. No published version's reference list contains it (finding CSP-2).*
+A-194  *Transcription note: the name "Muennighoff" occurs only in this review. No published version's reference list contains it.*
 A-195  ---
 A-196  ## T4 / V4 — Grok 4 Expert (lightly revised version of T2)
 A-197  Introduced by the review above as "a lightly revised version incorporating verified sources and corrections." The post states after it: "This revised version is fully verified and ready for direct upload."
@@ -4349,4 +4344,4 @@ A-269  - OpenAI, Weight-sparse transformers have interpretable circuits, 2025 *[
 A-270  **Editorial Note (Optional for Publication)**
 A-271  "Circuit Sparsity reflects a broader shift in AI research away from raw parameter scaling toward selective, interpretable, and resource-aware computation."
 A-272  ---
-A-273  *End of the post's entry texts. The post closes with the "Attachment" background conversation (W.H.L. / GPT-5.2, on the OpenAI 0.4B model release), which is provenance material, not a fifth version; the "~December 13" dating of finding CSP-5 appears there, relayed from MarkTechPost coverage of the Hugging Face model release, and in none of the four entry texts.*
+A-273  *End of the post's entry texts. The post closes with the "Attachment" background conversation (W.H.L. / GPT-5.2, on the OpenAI 0.4B model release), which is provenance material, not a fifth version; the "~December 13" dating appears there, relayed from MarkTechPost coverage of the Hugging Face model release, and in none of the four entry texts.*

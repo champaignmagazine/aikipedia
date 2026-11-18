@@ -16,7 +16,7 @@
 
 **Date of Appearance:** Not established.  
 **Public Entry ID:** `AIK-2025-S-P-ADVREASON` · **Internal Concept ID:** AIKC-000030  
-**Concept:** ADVREASON, **provisional** concept identity (distinctness unverified). Not merged with Large Reasoning Models, and not treated as the same as neuro-symbolic architectures (GPT-6, finding R4); related to LRM
+**Concept:** ADVREASON, **provisional** concept identity (distinctness unverified). Not merged with Large Reasoning Models, and not treated as the same as neuro-symbolic architectures (GPT-6); related to LRM
 
 *As published:* • Concept: Systems that integrate the statistical power of neural networks (e.g., LLMs) with symbolic reasoning engines (e.g., logical solvers) to tackle problems requiring logic, critical thinking, and contextual understanding beyond simple pattern recognition. • Why 2025: Marked the shift from improving reasoning through prompting (like Chain-of-Thought) to architecting for it. **Reference (table, A-060):** Chen, X., et al. Co-Pilot: A Hybrid Neuro-Symbolic Architecture for Critical Thinking in LLMs. **Type & Source:** Conference (ICML 2025)
 
@@ -237,7 +237,7 @@ Gated Attention demonstrates that even mature, foundational components like the 
 
 #### L4-G5 — Large Reasoning Models (LRMs) (type S)
 
-**Public entry ID:** `AIK-2025-S-P-LRM` — **Concept:** LRM (registered as AIKC-000075 under L7-K6, November 12, 2026; this record links to that concept at registration).
+**Public entry ID:** `AIK-2025-S-P-LRM` — **Concept:** LRM (concept AIKC-000075).
 **Date of Appearance:** Not established. No findings.
 **Contributor:** Grok 4.1. Two published short text states.
 
@@ -394,7 +394,7 @@ Agentic AI • Explainable AI (XAI) • AI Alignment • Synthetic Benchmarks �
 | **Original Reviewers** | ChatGPT (review of v1); DeepSeek-V3.2 (acceptance of v2); Claude Sonnet 4.5 (review of v2; post-publication note on v3) |
 | **Corrections Prepared by** | Claude Opus 5.5 (Anthropic) |
 | **Independent review** | GLM 5.3 Flash |
-| **Base version** | Version 3, the post's third text, by the editor's choice (disposition of November 10, 2026: A on v1, annotated; C on v3) |
+| **Base version** | Version 3, the post's third text, by the editor's choice |
 | **Entry ID** | AIK-2025-F-P-MOD (concept AIKC-000038) |
 
 *Markers: `[Cnn]` marks a corrected or added passage, `[E01]` an editorial addition adopted by the editor, and `[ST01]` the rearrangement into AES sections, documented in the entry's correction register. Unmarked text is the original's own wording (v3, archive lines A-290 to A-359).*
@@ -530,7 +530,7 @@ Accepted by the editor, W.H.L. The dated record of this entry (versions, audits,
 |---|---|---|---|
 | F / P | standalone | 1991 | 2025-11-05 |
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 Aikipedia · Full-Length Entry · Corrected Original Publication
 
@@ -542,19 +542,16 @@ Neural Network Architecture · Key Innovation: Sparse Activation of Expert Subne
 |---|---|
 | **Date of Appearance** | 1991 (Jacobs et al., *Adaptive Mixtures of Local Experts*) |
 | **Date of Original Publication** | November 5, 2025 (Champaign Magazine, post 13998) |
-| **Date of Collection Publication** | Pending |
 | **Collection** | Aikipedia 2025 |
-| **Entry Status** | Original Publication, corrected collection text (AES v0.9, pilot) |
 | **Historical Coverage** | Through November 5, 2025, the date of original publication. Corrections rely only on sources available by that date |
 | **Original Contributor** | Qwen3-Max (initial draft); ChatGPT and Claude Sonnet 4.5 (revised drafts and final version) |
 | **Original Reviewers** | Gemini 2.5 Pro; Grok (Expert); DeepSeek-V3.2 (releases as stated in the post) |
 | **Corrections Prepared by** | Muse Spark 1.3 |
-| **Review Status** | Corrected text v0.5.2, November 14, 2026 (metadata-only revision of v0.5.1; the corrections text is unchanged). First audit by Muse Spark 1.3; second check by GLM 5.3 Flash (Vibe, Mistral AI infrastructure) — the two audits agree on every finding. Disposition C with the item-level remedies as written, ruled by the editor. Independent review of v0.4 by GLM 5.3 Flash: approved for the editor's approval, with two flag recommendations, both adopted by the editor's ruling of November 10, 2026 and applied in v0.5 as C08 and C09. **Approved by the editor (W.H.L.), November 10, 2026, and registered in the Aikipedia Master Register. Not yet published** |
-| **Format Standard** | AES v1.0 (prepared under AES v0.9, pilot) |
+| **Independent review** | GLM 5.3 Flash |
 | **Base version** | Final published version, styled 'Peer-reviewed and corrected edition — November 2025' (basis: the post's own declaration) |
 | **Entry ID** | AIK-2025-F-P-MOE (Internal Concept ID AIKC-000008) |
 
-*How to read this text.* This is the corrected collection text of an original 2025 publication. The original publication is preserved unchanged in the archive text (`s-moe-archive-text.md`). A mark such as [C01] shows a passage changed from the original; [ST01] marks the structural rearrangement. The correction register gives the original wording, the revision, and the evidence for each change, and its concordance maps every passage of the original to its place here. Unmarked text is the original's wording, rearranged into AES sections without rewording.
+*How to read this text.* This is the corrected collection text of an original 2025 publication. The original publication is preserved unchanged in the archive text. A mark such as [C01] shows a passage changed from the original; [ST01] marks the structural rearrangement. The correction register gives the original wording, the revision, and the evidence for each change, and its concordance maps every passage of the original to its place here. Unmarked text is the original's wording, rearranged into AES sections without rewording.
 
 ##### 1. Definition
 
@@ -698,36 +695,18 @@ MoE models operate like a committee of specialists: each expert focuses on certa
 
 ##### Editorial Notes
 
-1. **Status of this text.** Corrected collection text v0.5 (this file, v0.5.1, is a metadata-only revision stating the registration; the corrections text is unchanged), prepared under the editor's disposition C with the item-level remedies as written (November 10, 2026). Approved by the editor on November 10, 2026 and registered as AIK-2025-F-P-MOE (Internal Concept ID AIKC-000008); the correction markers are permanent correction IDs in the form `AIK-2025-F-P-MOE/C01`. The historical publication is not replaced.
-2. **Base version and structure.** This text is based on the final published version ("Peer-reviewed and corrected edition — November 2025"). Its section order is replaced by the AES order under structural correction ST01 (register v0.4); no wording is changed by the rearrangement. The original's §6.5 benchmarks stand in §5 (Evidence and Evaluation), and §6 is assembled from the original's Advantages and Conceptual Intuition, as AES §6 permits assembly from the original's own wording.
+1. **Status of this text.** This is the corrected collection text of the original publication. The correction markers are permanent correction IDs in the form `AIK-2025-F-P-MOE/C01`. The historical publication is not replaced.
+2. **Base version and structure.** This text is based on the final published version ("Peer-reviewed and corrected edition — November 2025"). Its section order is replaced by the AES order under structural correction ST01; no wording is changed by the rearrangement. The original's §6.5 benchmarks stand in §5 (Evidence and Evaluation), and §6 is assembled from the original's Advantages and Conceptual Intuition, as AES §6 permits assembly from the original's own wording.
 3. **Source-date rule.** Every source used to correct the historical body was available by November 5, 2025, the original publication date.
-4. **Editorial Status block.** The original's closing "Editorial Status" block is not carried into this text, under correction C07, approved by the editor as a ruling of its own (November 10, 2026): its claims were among the audit findings. The entry's status is recorded in the metadata table above as separate facts.
-5. **Restoration.** The mathematical notation at §1 and §3 [C06] is the published notation, restored from the formula images' alt texts in the post's stored content. The notation is present in the published post as eleven formula images; the gaps in the PDF archive text are losses from a text-only capture of November 10, 2026, not properties of the published post. Finding MOE-7, which had described the notation as unrendered in the published post, was ruled not upheld on re-adjudication, November 17, 2026; see the register.
-6. **Corrections adopted from the independent review.** Two observations from GPT-6's package review, carried as reviewer flags, were taken up by the independent reviewer (GLM 5.3 Flash) with recommendations to correct, and adopted by the editor's ruling of November 10, 2026: the generalized "≤ 10% of parameters active" claim is replaced at §3 and §6 by the range the entry's own §4 figures support (under 1% to ~28%) [C08], and the estimated per-token figures for Sparsely-Gated MoE and GShard are removed at §4, their notes now stating that the papers do not give them [C09] — the † estimate's premise ("~10 experts/layer") is contradicted by Shazeer et al., whose layers ran to hundreds or thousands of experts. The full record is in register v0.5 and v0.6.
+4. **Editorial Status block.** The original's closing "Editorial Status" block is not carried into this text, under correction C07: its claims were among the audit findings. The entry's status is recorded in the metadata table above as separate facts.
+5. **Restoration.** The mathematical notation at §1 and §3 [C06] is the published notation, restored from the formula images' alt texts in the post's stored content. The notation is present in the published post as eleven formula images; the gaps in the PDF archive text are losses from a text-only capture of November 10, 2026, not properties of the published post.
+6. **Corrections adopted from the independent review.** Two observations from GPT-6's package review, carried as reviewer flags, were taken up by the independent reviewer (GLM 5.3 Flash) with recommendations to correct, and adopted: the generalized "≤ 10% of parameters active" claim is replaced at §3 and §6 by the range the entry's own §4 figures support (under 1% to ~28%) [C08], and the estimated per-token figures for Sparsely-Gated MoE and GShard are removed at §4, their notes now stating that the papers do not give them [C09] — the † estimate's premise ("~10 experts/layer") is contradicted by Shazeer et al., whose layers ran to hundreds or thousands of experts.
 
 ##### Entry Provenance
 
-**Entry Editorial Record**
+**Credits.** Written by Qwen3-Max, ChatGPT, and Claude Sonnet 4.5; reviewed by Gemini 2.5 Pro, Grok, and DeepSeek-V3.2; corrected by Muse Spark 1.3; independently reviewed by GLM 5.3 Flash.
 
-- Original publication: Champaign Magazine, November 5, 2025, post 13998
-- Original contributors: Qwen3-Max (initial draft); ChatGPT and Claude Sonnet 4.5 (revised drafts and final version)
-- Original reviewers: Gemini 2.5 Pro ("Accept without Revisions"); Grok (Expert) (critique of an earlier draft; its citation and parameter corrections were applied — Review Applied? Partially applied, see the register); DeepSeek-V3.2 ("citation-verified edition" pronouncement, unaccompanied by revised text)
-- Editor of the original: W.H.L.
-- Historical text: preserved unchanged in the archive text (`s-moe-archive-text.md`)
-- First audit: Muse Spark 1.3, November 9, 2026 (findings MOE-1–MOE-6, with the MOE-3 addendum)
-- Second check: GLM 5.3 Flash (Vibe, Mistral AI infrastructure), November 10, 2026 — confirmed all findings at the primaries; added MOE-7 and MOE-8 and the MOE-6 sharpening, all answered by Muse the same day. GLM declared a subject interest on MOE-1 (Mixtral is its serving vendor's model); the editor ruled no third check is needed
-- Corrections prepared: Muse Spark 1.3, November 10, 2026 (register v0.1; corrected texts v0.1–v0.3 in the published structure)
-- Package reviews: GPT-6 (accept for independent review; two observations recorded as reviewer flags); Claude Opus 5.5 (procedural review only — recused)
-- Editorial rulings: the editor (W.H.L.), November 10, 2026 — disposition C with the item-level remedies as written; no third check on MOE-1; C07 approved as a ruling of its own; structure ruled as the AES eight-section order, this v0.4
-- Corrected text v0.4: Muse Spark 1.3, November 10, 2026 (structural correction ST01; register v0.4 with concordance)
-- Independent review of the package: GLM 5.3 Flash, November 10, 2026 — v0.4 approved for the editor's approval; two recommendations on the reviewer flags (the ≤10% sparsity claim; the §4 estimated figures)
-- Further editorial ruling: the editor (W.H.L.), November 10, 2026 — both flag corrections adopted as proposed (C08, C09)
-- Corrected text v0.5: Muse Spark 1.3, November 10, 2026 (C08 and C09 applied; register v0.6). v0.5 itself has not been independently re-reviewed; its changes are exactly the reviewer's recommended remedies as proposed by the preparer and ruled by the editor
-- Editorial approval: the editor (W.H.L.), November 10, 2026 — corrected text v0.5 approved
-- Registration: **AIK-2025-F-P-MOE**, Internal Concept ID **AIKC-000008** (Aikipedia Master Register, November 10, 2026), with correction IDs /C01–/C09 and /ST01. The concept's other occurrence records (Lexicon (1) and Lexicon (7)) are not yet registered and will link to this concept ID when they are
-- Corrected text v0.5.1: Muse Spark 1.3, November 10, 2026 — metadata-only revision of v0.5 stating the registration (Entry ID and Review Status lines, Editorial Note 1, this provenance); no change to the corrections text
-- Corrected text v0.5.2: Muse Spark 1.3, November 14, 2026 — metadata-only revision of v0.5.1 under the editor's rulings of November 14, 2026 (reviews of collection draft v0.1, items 1 and 2): Format Standard line (AES v1.0), Base version line (AES v1.0 §3), editor named W.H.L.; no change to the corrections text.
-- Status: Corrected text v0.5 approved and registered (this file v0.5.2). Collection publication pending; the historical publication is not replaced
+*The independent reviewer declared a subject interest: Mixtral, the subject of one corrected passage, is its serving vendor's model.*
 
 <a id="aik-2025-s-p-moe"></a>
 
@@ -797,7 +776,7 @@ MoE models operate like a committee of specialists: each expert focuses on certa
 |---|---|---|---|
 | S / P | L3-3 | as published (2025) | 2025-12-02 |
 
-*Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.*
+*Claude Opus 5.5 is recused from this text and did not place or check it.*
 
 #### L3-S3 — Multimodal Native Architecture (type S)
 
@@ -842,7 +821,7 @@ MoE models operate like a committee of specialists: each expert focuses on certa
 #### L4-G9 — Small Language Models (SLMs) (type S)
 
 **Public entry ID:** `AIK-2025-S-P-SLM` — **Concept:** SLM.
-**Date of Appearance:** Not established. No factual finding; framing annotation L4-6 applies.
+**Date of Appearance:** Not established. No factual finding; framing annotation applies.
 **Contributor:** Grok 4.1. Two published short text states.
 
 *Text 1 (as published):* **Small Language Models (SLMs)**: Compact models for specific tasks; gained 2025 momentum with regulatory compliance for on-device privacy, like NVIDIA’s research on agentic suitability. Offers efficiency over LLMs.

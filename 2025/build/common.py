@@ -58,7 +58,21 @@ def pandoc(md):
                         '-t', 'html5', '--wrap=none', '--mathml'],
                        input=preprocess(md), capture_output=True, text=True, check=True).stdout
     # an automatic heading id must not collide with a record anchor (e.g. a heading that is itself a record ID)
-    return re.sub(r'(<h[1-6] id=")(aik-2025-[^"]+")', r'\1cr-\2', h)
+    h = re.sub(r'(<h[1-6] id=")(aik-2025-[^"]+")', r'\1cr-\2', h)
+    return subscripts(h)
+
+# The two restored C06 formulas (Mixture of Experts; Test-Time Compute Scaling) are carried as plain text with TeX-style
+# subscript markup. Set the subscripts as subscripts: the characters are unchanged, only their presentation (GPT audit 17).
+SUBS = [('Σ_{i ∈ TopK(G(x))} G_i(x) · E_i(x)', 'Σ<sub>i ∈ TopK(G(x))</sub> G<sub>i</sub>(x) · E<sub>i</sub>(x)'),
+        ('argmax_{y ∈ 𝒴(x, C)} R(y)', 'argmax<sub>y ∈ 𝒴(x, C)</sub> R(y)'),
+        ('where E_i(x) is the output of expert i, and G_i(x) is the gating weight', 'where E<sub>i</sub>(x) is the output of expert i, and G<sub>i</sub>(x) is the gating weight')]
+
+def subscripts(h):
+    # outside <pre> and <code> only: the archive transcriptions are shown as captured
+    parts = re.split(r'(<pre[\s>].*?</pre>|<code[\s>].*?</code>)', h, flags=re.S)
+    for i in range(0, len(parts), 2):
+        for a, b in SUBS: parts[i] = parts[i].replace(a, b)
+    return ''.join(parts)
 
 def _cells(row, tag):
     return re.findall(rf'<{tag}[^>]*>(.*?)</{tag}>', row, re.S)

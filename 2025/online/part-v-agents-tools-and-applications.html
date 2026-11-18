@@ -4,8 +4,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css"></head><body>
 <header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
-<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
-<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="part-iv-alignment-safety-and-interpretability.html">← Part IV. Alignment, Safety and Interpretability</a><a href="part-vi-embodied-ai-industry-and-society.html">Part VI. Embodied AI, Industry and Society →</a></nav><h1 id="part-v.-agents-tools-and-applications">Part V. Agents, Tools and Applications</h1>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.23.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.23 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="part-iv-alignment-safety-and-interpretability.html">← Part IV. Alignment, Safety and Interpretability</a><a href="part-vi-embodied-ai-industry-and-society.html">Part VI. Embodied AI, Industry and Society →</a></nav><h1 id="part-v.-agents-tools-and-applications">Part V. Agents, Tools and Applications</h1>
 <h2 id="agentic-ai">Agentic AI</h2>
 <p><em>Internal Concept ID AIKC-000052 · 2 records in 2025</em></p>
 <p><a id="aik-2025-e-p-agenticai"></a></p>
@@ -194,7 +194,7 @@
 <hr />
 <h2 id="compound-ai-systems">Compound AI Systems</h2>
 <p><em>Internal Concept ID AIKC-000010 · 2 records in 2025</em></p>
-<p><em>Concept note: by the editor's grouping decision, the Launch Edition occurrence "Composable Models &amp; Model Chaining" (L1-S6) is merged into this concept; it keeps its own Public Entry ID.</em></p>
+<p><em>Concept note: the Launch Edition occurrence "Composable Models &amp; Model Chaining" (L1-S6) is merged into this concept; it keeps its own Public Entry ID.</em></p>
 <p><a id="aik-2025-e-p-compoundai"></a></p>
 <h3 id="compound-ai-systems-aik-2025-e-p-compoundai">Compound AI Systems — <code>AIK-2025-E-P-COMPOUNDAI</code></h3>
 <table>
@@ -215,14 +215,14 @@
 </tr>
 </tbody>
 </table>
-<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<p><em>Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
 <h4 id="l3-s1-compound-ai-systems-type-e">L3-S1 — Compound AI Systems (type E)</h4>
 <p><strong>Date of Appearance:</strong> February 18, 2024 <em>(corrected — C04; Zaharia et al., BAIR Blog)</em><br />
-<strong>Concept:</strong> COMPOUNDAI — by the editor's grouping decision (November 10, 2026), L1-S6 "Composable Models &amp; Model Chaining" is merged into this concept.</p>
+<strong>Concept:</strong> COMPOUNDAI — L1-S6 "Composable Models &amp; Model Chaining" is merged into this concept.</p>
 <p><em>As published:</em> <strong>Definition</strong>: Architectural pattern where multiple AI components (models, retrievers, tools, databases) are composed into integrated systems rather than relying on a single monolithic model. <strong>Why 2025</strong>: Formalized as a distinct paradigm as organizations realized that combining specialized models outperformed scaling single models for complex tasks.</p>
 <p><em>Editorial note:</em> the "formalized" framing is corrected by the record's Date of Appearance: the formalization is the February 2024 BAIR post, as this installment's own full entry states. 2025 is the year of dominant production adoption. The full entry is corrected at C04 — see below.</p>
 <h4 id="corrected-full-entry-compound-ai-systems-l3-s1">Corrected full entry — Compound AI Systems (L3-S1)</h4>
-<p><strong>Aikipedia Entry — 2025 Edition</strong> <em>(corrected canonical text v0.3; correction C04 applied, marked [C04])</em></p>
+<p><strong>Aikipedia Entry — 2025 Edition</strong> <em>(corrected canonical text; correction C04 applied, marked [C04])</em></p>
 <h5 id="definition-2">Definition</h5>
 <p>Compound AI Systems are systems that tackle AI tasks using multiple interacting components, including multiple calls to models, retrievers, or external tools. Rather than relying on a single monolithic model, these systems orchestrate specialized components—language models, retrieval systems, code executors, databases, and domain-specific tools—into integrated workflows. <em>(Definition after Zaharia et al., "The Shift from Models to Compound AI Systems," BAIR Blog, February 18, 2024.)</em> [C04]</p>
 <h5 id="historical-context-1">Historical Context</h5>
@@ -581,7 +581,7 @@
 <h5 id="definition-4">1. Definition</h5>
 <p><strong>Context rot</strong> is the degradation of a large language model's output quality as the content of its context window grows. The degradation occurs within the model's advertised context limit, and it depends on more than length. What the added tokens are matters: irrelevant material, near-miss distractors, superseded or erroneous content. So does how the tokens are arranged.</p>
 <p>In its originating sense, the term describes a property of <em>sessions</em>. The phrasing was a commenter's: models "poison their own context" [P1]. As a long chat or agent run accumulates dead ends and errors, output quality falls, and restarting with a clean, summarized context restores it.</p>
-<p>In its measurement sense, the term names a property of <em>models</em>. Chroma's July 2025 technical report gives the reference formulation in the summary sentence displayed beneath its title: models "do not use their context uniformly," and their performance "grows increasingly unreliable as input length grows" [P2]. The body of the report puts the same finding as degradation "in surprising and non-uniform ways," even on deliberately simple tasks. See Editorial Note 10 on the location of these phrases.</p>
+<p>In its measurement sense, the term names a property of <em>models</em>. Chroma's July 2025 technical report gives the reference formulation in the summary sentence displayed beneath its title: models "do not use their context uniformly," and their performance "grows increasingly unreliable as input length grows" [P2]. The body of the report puts the same finding as degradation "in surprising and non-uniform ways," even on deliberately simple tasks. See Editorial Note 7 on the location of these phrases.</p>
 <p>Anthropic's September 2025 guidance framed it as recall: as tokens increase, "the model's ability to accurately recall information from that context decreases" [P6]. That is narrower than either sense above; context rot also affects reasoning and action selection (§5).</p>
 <p>Three commitments recur across usages:</p>
 <ul>
@@ -713,7 +713,7 @@
 <li><strong>LongMemEval.</strong> 306 conversational question-answering prompts were posed in two forms: focused (about 300 tokens of relevant material) and full (about 113,000 tokens including irrelevant material). Every model scored significantly higher on focused prompts. Thinking modes narrowed the gap but did not close it.</li>
 <li><strong>Repeated words.</strong> Models had to reproduce a long sequence of one repeated word with a single unique word inserted. Performance declined as length grew from 25 to 10,000 words. Some models refused or produced unrelated output at longer lengths. Because the required output grows with the input, this experiment measures input- and output-length effects together. Under-generation, refusals and other generation failures cannot all be attributed solely to difficulty processing the input.</li>
 </ul>
-<p><strong>Measurement conditions.</strong> Several experiments were scored by a language-model judge (GPT-4.1, aligned against human judgments) rather than by exact match [P2] (see Editorial Note 11). The reported patterns are therefore conditional on the report's evaluation design: its tasks, its scoring and its model versions.</p>
+<p><strong>Measurement conditions.</strong> Several experiments were scored by a language-model judge (GPT-4.1, aligned against human judgments) rather than by exact match [P2] (see Editorial Note 8). The reported patterns are therefore conditional on the report's evaluation design: its tasks, its scoring and its model versions.</p>
 <p>The report's stated limitations:</p>
 <ul>
 <li>its tasks are simpler than real use;</li>
@@ -784,7 +784,7 @@
 <h5 id="see-also-1">See Also</h5>
 <p>Published in this magazine's Aikipedia series, in the 2025 collection:</p>
 <ul>
-<li><strong>Context Engineering.</strong> New addition to this collection, AIK-2025-F-N-CONTEXTENG (see Editorial Note 7).</li>
+<li><strong>Context Engineering.</strong> New addition to this collection, AIK-2025-F-N-CONTEXTENG.</li>
 <li><strong>Long-Context &amp; Windowing Techniques.</strong> <em>New AI Lexicon 2025</em>, Launch Edition (Nov 30, 2025), short-form recommended list.</li>
 <li><strong>Retrieval-Augmented Generation (RAG): next-gen.</strong> <em>New AI Lexicon 2025</em>, Launch Edition (Nov 30, 2025), short-form recommended list.</li>
 <li><strong>Compound AI Systems.</strong> <em>New AI Lexicon 2025</em> (3) (Dec 2, 2025).</li>
@@ -827,48 +827,14 @@ The June 2025 dating in §2 rests on edition (a). Locations in edition (a): §4.
 </ul>
 <h5 id="editorial-notes-1">Editorial Notes</h5>
 <ol type="1">
-<li><strong>Date of Appearance.</strong> The date records the earliest currently documented use [P1], following the AES rule that appearance means documented first use, not prominence.
-<ul>
-<li><em>Timestamp:</em> Muse Spark 1.3 confirmed the comment's record through the Hacker News API: author Workaccount2, Unix time 1750255791 (June 18, 2025, about 14:10 UTC). GPT-6 independently opened the comment and the same-day reply.</li>
-<li><em>Earlier uses:</em> searches on November 5, 2026 found no documented earlier use in the LLM sense. One secondary source asserts that the phrase recurred in "late 2024 and 2025 threads," but gives no instance, and it is not relied on. Neither the contributor nor the reviewers ran an exhaustive search, so the date is the earliest <em>documented</em> use, not a proven first use.</li>
-</ul></li>
+<li><strong>Date of Appearance.</strong> The date records the earliest currently documented use [P1], following the AES rule that appearance means documented first use, not prominence. The comment is timestamped June 18, 2025, about 14:10 UTC. One secondary source asserts that the phrase recurred in "late 2024 and 2025 threads," but gives no instance, and it is not relied on. No exhaustive search was undertaken, so the date is the earliest documented use, not a proven first use.</li>
 <li><strong>Attribution of the coinage.</strong> Several secondary sources state that Chroma "coined" the term in July 2025. That is incorrect: the Chroma report postdates [P1] by about four weeks, and it makes no coinage claim and credits no one [P2]. This entry credits the coinage to [P1] and the measurement program to [P2]. Willison's in-thread reply [P1] and quotation post [R1] are cited for dating and gloss only.</li>
-<li><strong>NoLiMa versions.</strong> The first arXiv version (v1, February 7, 2025) reports 12 models, 10 below 50% of baseline at 32K. Later arXiv versions and the ICML proceedings report 13 models and 11. GPT-4o's 99.3% → 69.7% is the same in all versions. The entry cites v1 explicitly for the 12/10 figures (GPT-6 review, M1).</li>
-<li><strong>Gemini 2.5 report: closed at the primary level.</strong> The report exists in two editions, cited separately at [P8].
-<ul>
-<li><em>Editions:</em> the original Google-hosted PDF is dated June 17, 2025 and was released with the general-availability announcement that day. The arXiv edition was first submitted July 7, 2025.</li>
-<li><em>Quotation:</em> both focused checks read the passage in the Google-hosted PDF itself. GPT-6 locates it in §4.1, p. 18, and also read the context-poisoning appendix (§8.2, pp. 70–71). The report's own "albeit anecdotal" hedge is reflected in §§2 and 5.3.</li>
-<li><em>Remaining limit:</em> GPT-6 notes that no archived June 17 timestamp for the PDF file itself was independently established. The June 17 date rests on the document's own dating and the same-day announcement.</li>
-</ul></li>
-<li><strong>URLs: all confirmed.</strong>
-<ul>
-<li>Willison's quotation post [R1] was confirmed by Muse Spark 1.3.</li>
-<li>Breunig's [R2] and [R3] were confirmed live by both focused checks, with tracking parameters removed. Muse Spark 1.3 noted that [R3] lists six tactics; §4 now says so.</li>
-<li>Willison's in-thread reply on [P1] was verified verbatim by Muse Spark 1.3, at June 18, 2025, 23:17 UTC.</li>
-</ul></li>
-<li><strong>Cross-reference integrity (AES Amendment D).</strong>
-<ul>
-<li>The two Launch Edition See Also targets are items in that edition's short-form recommended list, not standalone entries. Their collection records will be occurrence-level records under AES-ID rule 6.</li>
-<li>The two 2026 targets are marked as outside the collection.</li>
-<li>Context Engineering: see Note 7.</li>
-</ul></li>
-<li><strong>Context Engineering's identifier, and this entry's provisional identifier.</strong>
-<ul>
-<li><em>Context Engineering:</em> AIK-2025-F-N-CONTEXTENG (concept AIKC-000002) was confirmed against the live master register on November 5, 2026: Context Engineering v0.2.1, Status Accepted, editorial approval November 4, 2026. The handoff snapshot that recorded only RLVR was stale.</li>
-<li><em>This entry:</em> proposed for the register's consideration, not assigned: type <strong>F</strong>, origin <strong>N</strong>, key <strong>CONTEXTROT</strong>, giving AIK-2025-F-N-CONTEXTROT. Both reviewers found the proposed form appropriate. Assignment is the editor's act, through the register. <em>(Status update: assigned and accepted November 6, 2026; see Review Status.)</em></li>
-</ul></li>
-<li><strong>Length.</strong> The v0.2 additions pushed the core sections (§§1–8) past 3,600 words. Redundant wording in §§1, 2, 4, 5.3, 6 and 8 was then trimmed, and no substantive claim was removed. In v0.2.1 the core runs about 3,490 words, within the full-length band (2,000–3,500 words). Front matter, references, notes and provenance bring the file to about 5,900.</li>
-<li><strong>Anthropic sources: closed.</strong>
-<ul>
-<li><em>[P7]:</em> the 39% and 29% figures and their internal agentic-search scope were confirmed on the live page (Muse Spark 1.3).</li>
-<li><em>[P6]:</em> the quoted phrases and the §3.4 account were confirmed on the live guide by both focused checks. That covers the recall sentence, "finite resource with diminishing marginal returns," "attention budget," the n² and training-distribution account, and "a performance gradient rather than a hard cliff." The guide itself names context rot and links to the Chroma report.</li>
-</ul></li>
-<li><strong>Chroma quotation location: closed.</strong>
-<ul>
-<li><em>The two §1 phrases:</em> they are the report's summary sentence, printed beneath its title. GPT-6 confirmed this in the report. Muse Spark 1.3 withdrew review item R2, explaining that its extraction of the page had omitted the header summary block.</li>
-<li><em>The v0.2 fix:</em> keeping the quotation, stating its location, and adding the body's wording was accepted by both reviewers.</li>
-</ul></li>
-<li><strong>Chroma scoring method: closed.</strong> The judge detail is in the report itself: "We evaluate model outputs using an aligned GPT-4.1 judge." GPT-6 adds that the judge covered the needle-in-a-haystack and LongMemEval experiments, calibrated against manually labeled outputs. The repeated-words explanation was reworded in v0.2.1 so that generation failures are not all attributed to a single cause (GPT-6 focused check, R1).</li>
+<li><strong>NoLiMa versions.</strong> The first arXiv version (v1, February 7, 2025) reports 12 models, 10 below 50% of baseline at 32K. Later arXiv versions and the ICML proceedings report 13 models and 11. GPT-4o's 99.3% → 69.7% is the same in all versions. The entry cites v1 explicitly for the 12/10 figures.</li>
+<li><strong>Gemini 2.5 report.</strong> The report exists in two editions, cited separately at [P8]: the original Google-hosted PDF, dated June 17, 2025 and released with the general-availability announcement that day, and the arXiv edition, first submitted July 7, 2025. The passage is quoted from the Google-hosted PDF (§4.1, p. 18; see also the context-poisoning appendix, §8.2, pp. 70–71). The report's own "albeit anecdotal" hedge is reflected in §§2 and 5.3. Limit: no archived June 17 timestamp for the PDF file itself was independently established; the June 17 date rests on the document's own dating and the same-day announcement.</li>
+<li><strong>Cross-references.</strong> The two Launch Edition See Also targets are items in that edition's short-form recommended list, not standalone entries. The two 2026 targets are marked as outside the collection.</li>
+<li><strong>Anthropic sources.</strong> The guide cited at [P6] itself names context rot and links to the Chroma report.</li>
+<li><strong>Chroma quotation location.</strong> The two §1 phrases are the report's summary sentence, printed beneath its title.</li>
+<li><strong>Chroma scoring method.</strong> The judge detail is in the report itself: "We evaluate model outputs using an aligned GPT-4.1 judge." The judge covered the needle-in-a-haystack and LongMemEval experiments, calibrated against manually labeled outputs.</li>
 </ol>
 <h5 id="credits-1">Credits</h5>
 <ul>
@@ -1097,7 +1063,7 @@ The June 2025 dating in §2 rests on edition (a). Locations in edition (a): §4.
 <li>OWASP (2025). "LLM01: Prompt Injection." OWASP Top 10 for Large Language Model Applications. The leading security-focused reference that defines prompt injection as the top vulnerability for LLM-based systems, which directly applies to Open-Ended GenUI models.</li>
 <li>AudioEye (July 2025). "How WCAG Guidelines Apply to AI-Generated Content." AudioEye Blog. A detailed analysis of the accessibility challenges inherent in AI-generated content, specifically citing common failures in color contrast, alt text, and semantic HTML structure (WCAG 1.1.1, 1.4.3, 1.3.1).</li>
 <li>Smith, Aleksandra (September 2025). "AI-generated UX and the growing accessibility debt (+ how to fix it)." [C09] Medium (Design Bootcamp). Discusses how AI models trained on existing, often inaccessible, web data perpetuate and "systematically" create accessibility failures, such as poor touch-target sizes and missing focus indicators.</li>
-<li>Alabduljabbar, R. (October 25, 2024). "User-centric AI: evaluating the usability of generative AI applications through user reviews on app stores." PeerJ Computer Science (<a href="doi:10.7717/peerj-cs.2421" class="uri">doi:10.7717/peerj-cs.2421</a>); indexed in PubMed Central. A usability evaluation of five generative AI apps based on 11,549 app-store reviews. [C04]</li>
+<li>Alabduljabbar, R. (October 25, 2024). "User-centric AI: evaluating the usability of generative AI applications through user reviews on app stores." PeerJ Computer Science (<a href="https://doi.org/10.7717/peerj-cs.2421" class="uri">https://doi.org/10.7717/peerj-cs.2421</a>); indexed in PubMed Central. A usability evaluation of five generative AI apps based on 11,549 app-store reviews. [C04]</li>
 <li>Vercel (October 11, 2023). "Announcing v0: Generative UI." Vercel Blog. <a href="https://vercel.com/blog/announcing-v0-generative-ui" class="uri">https://vercel.com/blog/announcing-v0-generative-ui</a> [C01]</li>
 <li>Vercel (March 1, 2024). "Introducing AI SDK 3.0 with Generative UI support." Vercel Blog. <a href="https://vercel.com/blog/ai-sdk-3-generative-ui" class="uri">https://vercel.com/blog/ai-sdk-3-generative-ui</a> [C01]</li>
 </ol>
@@ -1295,7 +1261,7 @@ The June 2025 dating in §2 rests on edition (a). Locations in edition (a): §4.
 <ul>
 <li><p>Ehtesham, A., Singh, A., Gupta, G. K., &amp; Kumar, S. (2025). A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, ANP. arXiv:2505.02279</p></li>
 <li><p>He, J., Ruan, S., &amp; Landay, J. (2025). MCP Explorer: Interactive Learning Experience. NeurIPS 2025 Educational Showcase</p></li>
-<li><p>Venkiteela, P. (2025). The New Interoperability Paradigm: MCP, APIs, and the Future of Agentic AI. <em>Computer Fraud &amp; Security</em>, 2025(1), 1259–1271. <a href="doi:10.52710/cfs.817" class="uri">doi:10.52710/cfs.817</a> [C04]</p></li>
+<li><p>Venkiteela, P. (2025). The New Interoperability Paradigm: MCP, APIs, and the Future of Agentic AI. <em>Computer Fraud &amp; Security</em>, 2025(1), 1259–1271. <a href="https://doi.org/10.52710/cfs.817" class="uri">https://doi.org/10.52710/cfs.817</a> [C04]</p></li>
 <li><p>Anthropic (2024, November 25). <em>Introducing the Model Context Protocol.</em> The specification is versioned by date (<code>2024-11-05</code>, <code>2025-03-26</code>, <code>2025-06-18</code>, <code>2025-11-25</code>). [C02]</p></li>
 </ul>
 <p><em>(The original cites Venkiteela as an "IEEE/ResearchGate Preprint"; it is a journal article [C04]. The original's "AI Interoperability Consortium (2024). MCP Specification v1.0. Community Draft" is replaced: no such consortium exists, MCP is Anthropic's, and its specification has no "v1.0" [C02].)</em></p>
@@ -1432,7 +1398,7 @@ The June 2025 dating in §2 rests on edition (a). Locations in edition (a): §4.
 </table>
 <h4 id="l4-g6-vector-databases-type-s">L4-G6 — Vector Databases (type S)</h4>
 <p><strong>Public entry ID:</strong> <code>AIK-2025-S-P-VECTORDB</code> — <strong>Concept:</strong> VECTORDB.<br />
-<strong>Date of Appearance:</strong> Not established. No factual finding from the audit; framing annotation L4-6 applies; C06 arises from the review.<br />
+<strong>Date of Appearance:</strong> Not established. No factual finding from the audit; framing annotation applies; C06 arises from the review.<br />
 <strong>Contributor:</strong> Grok 4.1. Two published short text states.</p>
 <p><em>Text 1 (as published):</em> <strong>Vector Databases</strong>: Systems storing data as vectors for semantic searches; exploded in 2025 due to RAG and agent memory needs, with top options like Pinecone emphasizing hybrid capabilities. Enables scalable AI but challenges privacy.</p>
 <p><em>Text 2 (as published, corrections marked):</em> Vector databases enable semantic searches via embeddings. 2025 explosion links to RAG and agents, with benchmarks favoring hybrid systems. Example: Recommending products by conceptual similarity in e-commerce.</p>
@@ -1467,7 +1433,7 @@ The June 2025 dating in §2 rests on edition (a). Locations in edition (a): §4.
 <p><em>Text 1 (as published, corrections marked):</em> <strong>Vibe Coding</strong>: An intuitive, natural-language-driven software development method where users describe high-level ideas, and AI generates code, coined by Andrej Karpathy (X, February 2, 2025) and popularized in 2025 through developer communities.[C01] It lowers barriers for non-programmers but raises concerns about code quality.</p>
 <p><em>Text 2 (as published, corrections marked):</em> Vibe coding involves users describing software ideas in natural language, with AI generating code and structures. Coined by Andrej Karpathy (X, February 2, 2025) and gaining mainstream adoption in 2025 via communities and influencers, it democratizes development.[C01] Example: Prompting an AI for a minimalist e-commerce site yields functional code via tools like Google AI Studio.</p>
 <p><strong>Why It Matters in 2025</strong>: Amid talent shortages, it accelerates prototyping, though debates on skill erosion and reliability highlight needs for hybrid human-AI workflows.</p>
-<p><em>Editorial note:</em> the published states credit Karpathy only with popularization and give no coinage date; the embedded review's praise on this point is erroneous (see the register). Citation (ruling 3): Karpathy, X post, February 2, 2025 (<a href="https://x.com/karpathy/status/1886192184808149383" class="uri">https://x.com/karpathy/status/1886192184808149383</a>; date confirmed from the post identifier; wording as quoted by secondary sources). The primary post was fetched by neither auditor nor the reviewer; the date rests on the identifier decoding and secondary quotation, and the record says so.</p>
+<p><em>Editorial note:</em> the published states credit Karpathy only with popularization and give no coinage date; the embedded review's praise on this point is erroneous. Citation: Karpathy, X post, February 2, 2025 (<a href="https://x.com/karpathy/status/1886192184808149383" class="uri">https://x.com/karpathy/status/1886192184808149383</a>; date confirmed from the post identifier; wording as quoted by secondary sources). The primary post was fetched by neither auditor nor the reviewer; the date rests on the identifier decoding and secondary quotation, and the record says so.</p>
 <nav class="pn"><a href="part-iv-alignment-safety-and-interpretability.html">← Part IV. Alignment, Safety and Interpretability</a><a href="part-vi-embodied-ai-industry-and-society.html">Part VI. Embodied AI, Industry and Society →</a></nav></article></main>
 <footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
 </body></html>

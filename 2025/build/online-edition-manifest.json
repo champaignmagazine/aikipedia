@@ -1,10 +1,10 @@
 {
  "edition": "online",
- "draft": "v0.22",
+ "draft": "v0.23",
  "register_sha256": "3e7bad424031654aa525fd5f51069a5dfafd9b0ec6ef9b34651cc2629ac667d4",
  "word_count_method": "whitespace tokens of the combined file",
- "word_count": 220598,
- "combined_file": "editions/aikipedia-2025-collection-draft-v0.22_combined_online.md",
+ "word_count": 225015,
+ "combined_file": "editions/aikipedia-2025-collection-draft-v0.23_combined_online.md",
  "combined_separator": "\n\n---\n\n",
  "combined_separator_note": "the actual string: a blank line, three hyphens, a blank line",
  "asset_paths": "relative to the draft package root (e.g. assets/cover.png)",
@@ -33,24 +33,24 @@
   }
  ],
  "per_file_words": {
-  "00_front-matter.md": 13041,
+  "00_front-matter.md": 12968,
   "01_tables-of-contents.md": 1349,
-  "10_part-I.md": 10477,
-  "11_part-II.md": 9102,
-  "12_part-III.md": 6997,
-  "13_part-IV.md": 23913,
-  "14_part-V.md": 17968,
-  "15_part-VI.md": 2897,
-  "20_historical-lexicon-archive_online.md": 74818,
-  "21_corrections-and-editorial-notes.md": 3512,
-  "22_references-and-provenance-register.md": 4820,
+  "10_part-I.md": 9716,
+  "11_part-II.md": 9352,
+  "12_part-III.md": 6937,
+  "13_part-IV.md": 22545,
+  "14_part-V.md": 17478,
+  "15_part-VI.md": 2987,
+  "20_historical-lexicon-archive_online.md": 72909,
+  "21_corrections-and-editorial-notes.md": 3454,
+  "22_references-and-provenance-register.md": 4949,
   "23_index-of-terms.md": 1290,
-  "30_appendices.md": 50402
+  "30_appendices.md": 59069
  },
  "files": [
   {
    "file": "00_front-matter.md",
-   "sha256": "b90b08e61747b57437e4e21da10a12503fcf8c81dc7e054fca13168736bc2ba0"
+   "sha256": "ce9dfee410244dc3d57dba89499166000fa4708b6a55c713661e55472458ea51"
   },
   {
    "file": "01_tables-of-contents.md",
@@ -58,39 +58,39 @@
   },
   {
    "file": "10_part-I.md",
-   "sha256": "ffcfbc19dfb01e873670ea7c6e578965bcb177ade230a01700229ef2a29b61b8"
+   "sha256": "7a5a703b6c00ea56c8ff23e0d572827a3de708d1e5296f4e3d02f7751b668b56"
   },
   {
    "file": "11_part-II.md",
-   "sha256": "e65f9b9351fcb576e8b34a2585f7051878172fef1ede7552807a188c634638d9"
+   "sha256": "8d73affefd1d3f36a63fafde0ff81cffe44f45dcd7e1b8c93e37ebd371425aea"
   },
   {
    "file": "12_part-III.md",
-   "sha256": "29f9e297d36063cb92fd5995251ef4dec9846b2940ccd86fbc0cc8ea712a2d44"
+   "sha256": "7a481a2d56bedd1ee3ad6b50cabb3c9414173a4e10dcb7667074f9538e2e14a7"
   },
   {
    "file": "13_part-IV.md",
-   "sha256": "8d6f5578cc47217fcf2e2d505e1f23357c9d2bdca63616075b42910585e3a9cb"
+   "sha256": "34d367a9407d95cae81dc714dc124f4641adac7092ace93bab54629e5491fccc"
   },
   {
    "file": "14_part-V.md",
-   "sha256": "aba4ef17fc1d27cdf4346f2fd95d3e61c8cb33021acd492130b97a96a10f2bb9"
+   "sha256": "147eb3b277f5b4b38c4422286a32d8570ec40bfbc897fb76f7ff31386bccbc82"
   },
   {
    "file": "15_part-VI.md",
-   "sha256": "40ba779b8983ec891d01cc0c40ab4acf2142742eaac1a1e9698583ffcb4c2eb6"
+   "sha256": "14225b3e4ba3d9f1f24286013d0dd6d8765ea822ab18388ba97e9e331151730d"
   },
   {
    "file": "20_historical-lexicon-archive_online.md",
-   "sha256": "6e676a8999d0bd9e2568c36b99988e03bac5a81e35e8744364c7fa83ad860431"
+   "sha256": "d0102c4ab8993052729201b08fd01f5d7f9ac31b9ebb0e9f63c5826b2a19e6ea"
   },
   {
    "file": "21_corrections-and-editorial-notes.md",
-   "sha256": "ef45f090e06367794263743642dba92c08bf54e0d5a423121aca870bdf985d14"
+   "sha256": "a71fd72e7f7c698792d18fe44494cf92ea6ce4d9f3179723b3eaadb6b40d6c0b"
   },
   {
    "file": "22_references-and-provenance-register.md",
-   "sha256": "734426514eb4ac8f94c2d1ca2a4bd9591aebeef22797c4ee007ccaec60195ebf"
+   "sha256": "a33a1cbe903bfc28cc00e2e7e44c6a26f2b7cb1fc4a00778d8687e5504797052"
   },
   {
    "file": "23_index-of-terms.md",
@@ -98,7 +98,7 @@
   },
   {
    "file": "30_appendices.md",
-   "sha256": "90b1885cb56a04155101dc41adb93fa7a43e9194b9e14ba504e9dcaa5fb37e1b"
+   "sha256": "fa6d0e19ffee3222fc0f9ecf36a93e58b2bced8a9f56b09ce79e2ca33eae3684"
   }
  ],
  "sources": {
