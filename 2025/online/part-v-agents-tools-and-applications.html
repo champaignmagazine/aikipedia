@@ -1,0 +1,1473 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Part V. Agents, Tools and Applications · Aikipedia 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="part-iv-alignment-safety-and-interpretability.html">← Part IV. Alignment, Safety and Interpretability</a><a href="part-vi-embodied-ai-industry-and-society.html">Part VI. Embodied AI, Industry and Society →</a></nav><h1 id="part-v.-agents-tools-and-applications">Part V. Agents, Tools and Applications</h1>
+<h2 id="agentic-ai">Agentic AI</h2>
+<p><em>Internal Concept ID AIKC-000052 · 2 records in 2025</em></p>
+<p><a id="aik-2025-e-p-agenticai"></a></p>
+<h3 id="agentic-ai-super-agents-model-orchestration-aik-2025-e-p-agenticai">Agentic AI / Super-Agents / Model Orchestration — <code>AIK-2025-E-P-AGENTICAI</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E / P</td>
+<td>L1-S5</td>
+<td>— (not established)</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-s5-agentic-ai-super-agents-model-orchestration-type-e">L1-S5 — Agentic AI / Super-Agents / Model Orchestration (type E)</h4>
+<p><strong>Date of Appearance:</strong> Not established. The installment frames the term as a 2025 term. Agentic systems predate 2025 (corrected full entry below)<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-E-P-AGENTICAI</code> · <strong>Internal Concept ID:</strong> AIKC-000052<br />
+<strong>Concept:</strong> C:AGENTIC</p>
+<p><em>As published:</em> <strong>Agentic AI / Super-Agents / Model Orchestration</strong> Definition: Systems that chain models, tools, and planners into autonomous agents that plan, call tools, and execute multi-step tasks across APIs and services. Why 2025: 2025 saw strong industry attention to agentic workflows (enterprise automation, assistants that act), plus new governance and safety discussions. (IT Pro) Example: An agent that reads a contract, extracts tasks, queries APIs, and drafts follow-up emails.</p>
+<p><strong>Source (corrected record):</strong> IT Pro, "Practical AI: the age of agentic AI", <a href="https://www.itpro.com/technology/artificial-intelligence/practical-ai-the-age-of-agentic-ai" class="uri">https://www.itpro.com/technology/artificial-intelligence/practical-ai-the-age-of-agentic-ai</a> [C10]</p>
+<p><em>Editorial note:</em> Full entry corrected at C09 (below).</p>
+<h4 id="corrected-full-entry-agentic-ai-model-orchestration-l1-s5">Corrected full entry — Agentic AI / Model Orchestration (L1-S5)</h4>
+<p><em>Aikipedia Entry — 2025 Edition (corrected canonical text; C09 and C10 applied). Source text A-304 to A-356.</em></p>
+<h5 id="definition">Definition</h5>
+<p>Agentic AI (or Model Orchestration) refers to 2025-era systems where LLMs act as autonomous planners that call tools, trigger sub-models, retrieve knowledge, schedule tasks, and execute multi-step workflows. Unlike early “chatbots,” agentic models are operational systems with long-horizon task execution.</p>
+<h5 id="historical-context">Historical Context</h5>
+<p>Early agent frameworks (2023–2024) were prototypes.</p>
+<p>In 2025, planner–executor architectures were adopted in mainstream assistants. [C09]</p>
+<p>This caused "Agentic AI" to become a distinct engineering paradigm.</p>
+<p><em>(The original lists two further "formalizing" developments, "Unified tool-calling APIs across cloud providers" and "Reliability standards for multi-step task automation". Neither could be identified, and both are removed.)</em> [C09]</p>
+<h5 id="technical-description">Technical Description</h5>
+<p>Agentic AI systems typically include:</p>
+<h6 id="planner-model">1. Planner Model</h6>
+<p>Produces task decomposition, sub-goals, and call sequences:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">Plan</mtext><mo>=</mo><msub><mi>M</mi><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\text{Plan} = M_{\mathrm{planner}}(x)</annotation></semantics></math> [C10]</p>
+<h6 id="tool-router-orchestrator">2. Tool Router / Orchestrator</h6>
+<p>Chooses, configures, and invokes tools (APIs, databases, models). Often uses embedding-based scoring or rule-based filters.</p>
+<h6 id="executor-worker-models">3. Executor / Worker Models</h6>
+<p>Smaller LLMs or specialized models execute concrete steps.</p>
+<h6 id="state-manager">4. State Manager</h6>
+<p>Tracks world state, memory, constraints, and task progress. Ensures actions are consistent across steps.</p>
+<h6 id="verifier-safety-layer">5. Verifier / Safety Layer</h6>
+<p>Checks intermediate actions for safety, legality, or correctness.</p>
+<h6 id="architectural-pattern">Architectural Pattern</h6>
+<p>A standard orchestration loop is:</p>
+<ul>
+<li>Observe state</li>
+<li>Propose action or tool call</li>
+<li>Verify</li>
+<li>Execute</li>
+<li>Update state</li>
+<li>Repeat until termination or confidence threshold</li>
+</ul>
+<h5 id="notable-2025-systems">Notable 2025 Systems</h5>
+<ul>
+<li>Enterprise automation agents with guaranteed auditability</li>
+<li>Multi-model orchestration stacks (vision → reasoning → planner → executor)</li>
+<li>Regulatory-compliant agents for finance, law, and healthcare</li>
+<li>Agents with built-in safety critics (see Oversight entry)</li>
+</ul>
+<h5 id="applications">Applications</h5>
+<ul>
+<li>Personal assistants with email, scheduling, and research capabilities</li>
+<li>Data extraction → transformation → analysis pipelines</li>
+<li>API automation and software development tasks</li>
+<li>Multi-document reasoning (summaries, reports, comparisons)</li>
+</ul>
+<h5 id="limitations">Limitations</h5>
+<ul>
+<li>Complex failure modes from long-horizon planning</li>
+<li>Requires robust safety verification at each step</li>
+<li>Tool API changes can break pipelines</li>
+<li>Hard to guarantee consistency across long sessions</li>
+</ul>
+<h5 id="open-questions">Open Questions</h5>
+<ul>
+<li>How to formally verify agentic plans?</li>
+<li>What are the limits of “responsibility delegation” to autonomous systems?</li>
+<li>How to benchmark real-world tool-using competence?</li>
+</ul>
+<hr />
+<p><a id="aik-2025-e-p-agenticai-02"></a></p>
+<h3 id="agentic-ai-aik-2025-e-p-agenticai-02">Agentic AI — <code>AIK-2025-E-P-AGENTICAI-02</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E / P</td>
+<td>L7-K1</td>
+<td>— (not established)</td>
+<td>2025-12-12</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l7-k1-agentic-ai-type-e">L7-K1 — Agentic AI (type E)</h4>
+<p><strong>Date of Appearance:</strong> Not established. Agentic systems predate 2025<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-E-P-AGENTICAI-02</code> · <strong>Internal Concept ID:</strong> AIKC-000052<br />
+<strong>Concept:</strong> C:AGENTIC, shared with L1-S5</p>
+<p><em>As published:</em> <strong>List, A-012.</strong> • Agentic AI - Autonomous systems that proactively pursue goals</p>
+<p><em>Editorial note:</em> The full entry is below (C01, C05).</p>
+<h4 id="corrected-full-entry-agentic-ai-l7-k1">Corrected full entry — Agentic AI (L7-K1)</h4>
+<p><em>Final text by Copilot Smart (GPT-5.2) (corrected canonical text; C01 and C05 applied). Source text: A-215 to A-243.</em></p>
+<h5 id="definition-1">Definition</h5>
+<p>Autonomous AI systems that independently plan, reason, and execute multi‑step tasks without human intervention. Agentic AI embodies artificial volition — the capacity to pursue complex objectives through strategic planning, environmental perception, adaptive execution, and meta‑cognition.</p>
+<h5 id="context-motivation">Context &amp; Motivation</h5>
+<p>By 2025, agentic AI became the defining capability of next‑generation systems, enabling autonomous task completion across domains from software engineering to enterprise operations.</p>
+<p><em>(The original's next bullet, "Market Impact: Enterprise adoption exceeded projections by 300% in Q1 2025, driven by demand for autonomous workflow management", is removed. The figure has no source and none was found.)</em> [C01]</p>
+<h5 id="technical-dimensions">Technical Dimensions</h5>
+<ul>
+<li>Perception Engines: Environmental understanding and state representation</li>
+<li>Reasoning Modules: Task decomposition and strategic planning</li>
+<li>Execution Layers: Tool integration and API interaction</li>
+<li>Learning Components: Strategy refinement and adaptation</li>
+</ul>
+<p>Formal Expression:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">A</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mi mathvariant="normal">D</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mi mathvariant="normal">O</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">j</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>→</mo><mrow><mi mathvariant="normal">E</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">u</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mi mathvariant="normal">A</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>→</mo><mrow><mi mathvariant="normal">L</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">n</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi><mi mathvariant="normal">b</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">k</mi></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Agent}(s) = \mathrm{Plan}(\mathrm{Decompose}(\mathrm{Objective}(s))) \rightarrow \mathrm{Execute}(\mathrm{Actions}) \rightarrow \mathrm{Learn}(\mathrm{Feedback})</annotation></semantics></math> [C05]</p>
+<h5 id="governance-oversight">Governance &amp; Oversight</h5>
+<ul>
+<li>Accountability: Assigning responsibility for autonomous decisions</li>
+<li>Safety: Preventing unintended consequences from complex action sequences</li>
+<li>Auditability: Decision‑chain logging and provenance tracking</li>
+<li>Control: Maintaining human oversight without constraining capability</li>
+</ul>
+<h5 id="historical-notes">Historical Notes</h5>
+<ul>
+<li>2023: Multi‑agent frameworks emerged: AutoGPT (released March 30, 2023) and CrewAI (repository created October 27, 2023) [C01]</li>
+<li>2024: Cognition Labs’ Devin demonstrated practical agentic capabilities</li>
+<li>2025: Major labs (OpenAI, Anthropic, Google) deployed agentic features; enterprise adoption accelerated</li>
+</ul>
+<p><em>(The original reads "2024: Multi‑agent frameworks (CrewAI, AutoGPT) emerged", and lists it after the Devin note. Both frameworks date from 2023.)</em> [C01]</p>
+<h5 id="crossreferences">Cross‑References</h5>
+<p>AI Alignment • Constitutional AI • Tool Access &amp; Capability Gates • Oversight Evasion • Governance Layer • Epistemic Accountability</p>
+<h5 id="references">References</h5>
+<ul>
+<li><p>Sapkota, R., Roumeliotis, K. I., &amp; Karkee, M. (2025). AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges. arXiv:2505.10468</p></li>
+<li><p>Jeyakumar, S. K., Ahmad, A., &amp; Gabriel, A. (2024). Advancing Agentic Systems: Dynamic Task Decomposition, Tool Integration and Evaluation. NeurIPS Workshop on Open‑World Agents</p></li>
+<li><p>Timms, A., Langbridge, A., Antonopoulos, A., et al. (2025). Agentic AI for Digital Twin. AAAI‑25 Proceedings</p></li>
+<li><p>Rahimi, F. (2024). Key Takeaways from NeurIPS: Agentic AI. Pythonic AI blog (blog.pythonic.ai), on NeurIPS 2024. [C04]</p></li>
+</ul>
+<p><em>(The original gives the source as "NeurIPS 2024 Poster Highlights". It is a company blog post about the conference, not a NeurIPS publication.)</em> [C04]</p>
+<hr />
+<h2 id="agentscen-llm-based-external-world-models">AgentScen — LLM-Based External World Models</h2>
+<p><em>Internal Concept ID AIKC-000050 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-agentscen"></a></p>
+<h3 id="agentscen-llm-based-external-world-models-aik-2025-s-p-agentscen">AgentScen — LLM-Based External World Models — <code>AIK-2025-S-P-AGENTSCEN</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L1-M12</td>
+<td>2025-08-16</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-m12-agentscen-llm-based-external-world-models-type-s">L1-M12 — AgentScen — LLM-Based External World Models (type S)</h4>
+<p><strong>Date of Appearance:</strong> August 16, 2025 (the cited paper; AgentScen 2025 workshop, Montreal)<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-AGENTSCEN</code> · <strong>Internal Concept ID:</strong> AIKC-000050<br />
+<strong>Concept:</strong> C:AGENTSCEN; the headword names a workshop, not a method</p>
+<p><em>As published:</em> <strong>Definition:</strong> A method where agents learn an external world model from interaction trajectories—capturing environment dynamics for improved planning. <strong>Why 2025:</strong> Bridges classical model-based RL and LLM-based agents with environment-model learning. <strong>References:</strong> • Guan, X., et al. AgentScen. ACL Workshops (2025).</p>
+<p><strong>References (corrected record):</strong> Chen, E., Li, X., Bellinger, C., &amp; Wang, Y. (2025). <em>Enhancing the Planning Capabilities of Large Language Models by Building External World Models.</em> In Proceedings of the 2nd Workshop on Agent AI for Scenario Planning (AgentScen 2025), pp. 18–29, Montreal, August 16, 2025. ACL Anthology 2025.agentscen-1.2. The authors are at the University of Toronto and the National Research Council Canada. [C04]</p>
+<p><em>Editorial note:</em> "AgentScen" is the name of the workshop, not of a paper or method. The published "Guan, X." is not an author of the paper; the paper cites Guan et al. (2023, LLM-DM) as prior work, which may explain the attribution. The headword is kept as published.</p>
+<hr />
+<h2 id="compound-ai-systems">Compound AI Systems</h2>
+<p><em>Internal Concept ID AIKC-000010 · 2 records in 2025</em></p>
+<p><em>Concept note: by the editor's grouping decision, the Launch Edition occurrence "Composable Models &amp; Model Chaining" (L1-S6) is merged into this concept; it keeps its own Public Entry ID.</em></p>
+<p><a id="aik-2025-e-p-compoundai"></a></p>
+<h3 id="compound-ai-systems-aik-2025-e-p-compoundai">Compound AI Systems — <code>AIK-2025-E-P-COMPOUNDAI</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E / P</td>
+<td>L3-1</td>
+<td>2024-02-18</td>
+<td>2025-12-02</td>
+</tr>
+</tbody>
+</table>
+<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<h4 id="l3-s1-compound-ai-systems-type-e">L3-S1 — Compound AI Systems (type E)</h4>
+<p><strong>Date of Appearance:</strong> February 18, 2024 <em>(corrected — C04; Zaharia et al., BAIR Blog)</em><br />
+<strong>Concept:</strong> COMPOUNDAI — by the editor's grouping decision (November 10, 2026), L1-S6 "Composable Models &amp; Model Chaining" is merged into this concept.</p>
+<p><em>As published:</em> <strong>Definition</strong>: Architectural pattern where multiple AI components (models, retrievers, tools, databases) are composed into integrated systems rather than relying on a single monolithic model. <strong>Why 2025</strong>: Formalized as a distinct paradigm as organizations realized that combining specialized models outperformed scaling single models for complex tasks.</p>
+<p><em>Editorial note:</em> the "formalized" framing is corrected by the record's Date of Appearance: the formalization is the February 2024 BAIR post, as this installment's own full entry states. 2025 is the year of dominant production adoption. The full entry is corrected at C04 — see below.</p>
+<h4 id="corrected-full-entry-compound-ai-systems-l3-s1">Corrected full entry — Compound AI Systems (L3-S1)</h4>
+<p><strong>Aikipedia Entry — 2025 Edition</strong> <em>(corrected canonical text v0.3; correction C04 applied, marked [C04])</em></p>
+<h5 id="definition-2">Definition</h5>
+<p>Compound AI Systems are systems that tackle AI tasks using multiple interacting components, including multiple calls to models, retrievers, or external tools. Rather than relying on a single monolithic model, these systems orchestrate specialized components—language models, retrieval systems, code executors, databases, and domain-specific tools—into integrated workflows. <em>(Definition after Zaharia et al., "The Shift from Models to Compound AI Systems," BAIR Blog, February 18, 2024.)</em> [C04]</p>
+<h5 id="historical-context-1">Historical Context</h5>
+<p>The Berkeley Artificial Intelligence Research (BAIR) blog published a seminal analysis in February 2024 defining compound AI systems and arguing they would be one of the most impactful trends in AI.</p>
+<p>Throughout 2024, the paradigm gained momentum: 60% of enterprise LLM applications used retrieval-augmented generation (RAG), and 30% used multi-step chains (figures reported by Databricks, cited in Zaharia et al. 2024). [C04] By 2025, compound systems had become the dominant architecture for production AI applications, with dedicated research on optimization, resource management, and system design emerging rapidly.</p>
+<p>In April 2025, Groq launched Compound Beta, its first compound AI system combining LLMs with web search and code execution capabilities, demonstrating mainstream adoption of the paradigm.</p>
+<h5 id="technical-description-1">Technical Description</h5>
+<p>Compound AI Systems consist of multiple specialized components orchestrated through control logic: <strong>Core Components:</strong></p>
+<ol type="1">
+<li><strong>Foundation Models</strong>: One or more LLMs for reasoning, planning, and language understanding</li>
+<li><strong>Retrieval Systems</strong>: Vector databases, traditional search engines, or knowledge graphs for external information</li>
+<li><strong>Tool Interfaces</strong>: APIs, code executors, calculators, databases, and domain-specific services</li>
+<li><strong>Orchestration Layer</strong>: Control logic that routes requests, manages state, and coordinates component interactions</li>
+<li><strong>Verification/Critique Systems</strong>: Components that evaluate and refine outputs from other parts of the system</li>
+</ol>
+<p><strong>System Architecture Patterns:</strong></p>
+<ul>
+<li><strong>Sequential Chaining</strong>: Components execute in a predetermined order (e.g., retrieve → reason → generate)</li>
+<li><strong>Dynamic Routing</strong>: The system decides which components to invoke based on input characteristics</li>
+<li><strong>Iterative Refinement</strong>: Results cycle through multiple components for improvement</li>
+<li><strong>Parallel Execution</strong>: Multiple components process simultaneously, results aggregated at the end</li>
+</ul>
+<h5 id="why-compound-systems">Why Compound Systems?</h5>
+<p>Some tasks are easier to improve via system design than by scaling models alone. As Zaharia et al. illustrate: [C04] suppose the best LLM solves coding problems 30% of the time, and tripling its training budget increases this to 35%; in contrast, engineering a system that samples multiple times and tests each solution might increase performance to 80%.</p>
+<p>Performance goals vary widely—each AI model has a fixed quality level and cost, but applications often need to vary these parameters. Compound systems enable precise cost-quality tradeoffs impossible with single models.</p>
+<h5 id="notable-systems-papers-2025">Notable Systems / Papers (2025)</h5>
+<ul>
+<li><strong>Lee et al. (EMNLP 2025)</strong>: Comprehensive survey of compound AI system optimization methods, formalizing optimization approaches for both numerical and language-based techniques</li>
+<li><strong>LLMSelector (Chen et al., 2025)</strong>: Framework for efficient model selection showing 5-70% accuracy gains by optimally assigning different models to different modules</li>
+<li><strong>Murakkab (Chaudhry et al., 2025)</strong>: Resource-efficient compound AI system demonstrating 3.4× speedup and 4.5× higher energy efficiency through adaptive runtime optimization</li>
+<li><strong>Groq Compound Beta (April 2025)</strong>: Production system combining LLMs with web search and secure code execution at scale</li>
+</ul>
+<h5 id="applications-1">Applications</h5>
+<ul>
+<li><strong>Enterprise AI Assistants</strong>: Combining document retrieval, knowledge graphs, and LLMs for accurate, grounded responses</li>
+<li><strong>Scientific Research Tools</strong>: Integrating literature search, data analysis, simulation tools, and reasoning models</li>
+<li><strong>Customer Support</strong>: NLP for intent recognition, knowledge bases for information, sentiment analysis, and generative response</li>
+<li><strong>Code Development</strong>: Code completion models + testing frameworks + documentation search + execution environments</li>
+<li><strong>Multi-Modal Applications</strong>: Vision models for perception, LLMs for reasoning, external APIs for actions</li>
+</ul>
+<h5 id="limitations-1">Limitations</h5>
+<ul>
+<li><strong>Complexity</strong>: More moving parts means more potential failure modes and debugging challenges</li>
+<li><strong>Latency</strong>: Multiple component calls can accumulate delays</li>
+<li><strong>Cost Unpredictability</strong>: Current implementations suffer from inefficient resource utilization due to tight coupling between application logic and execution details</li>
+<li><strong>Integration Overhead</strong>: Maintaining compatibility across multiple models and tools requires significant engineering effort</li>
+<li><strong>Optimization Difficulty</strong>: As systems grow in complexity, new challenges arise in optimizing not only individual components but also their interactions</li>
+</ul>
+<h5 id="open-questions-1">Open Questions</h5>
+<ul>
+<li>How do we systematically design and optimize the interactions between components?</li>
+<li>What are the best practices for monitoring, debugging, and maintaining compound systems in production?</li>
+<li>How can we ensure robustness when any component might fail or produce unexpected outputs?</li>
+<li>Can we develop formal frameworks for reasoning about compound system behavior and guarantees?</li>
+<li>How do we balance the benefits of specialization against the complexity costs?</li>
+</ul>
+<hr />
+<p><a id="aik-2025-s-p-composable"></a></p>
+<h3 id="composable-models-model-chaining-aik-2025-s-p-composable">Composable Models &amp; Model Chaining — <code>AIK-2025-S-P-COMPOSABLE</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L1-S6</td>
+<td>2024-02-18</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-s6-composable-models-model-chaining-type-s">L1-S6 — Composable Models &amp; Model Chaining (type S)</h4>
+<p><strong>Date of Appearance:</strong> as recorded for C:COMPOUNDAI (the BAIR post of February 18, 2024, per the L3 record); not restated here<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-COMPOSABLE</code> · <strong>Internal Concept ID:</strong> AIKC-000010<br />
+<strong>Concept:</strong> C:COMPOUNDAI, merged into this concept by the editor</p>
+<p><em>As published:</em> <strong>Composable Models &amp; Model Chaining</strong> Definition: Design patterns and interfaces for composing specialized models (retrievers, planners, tools, LLMs) into pipelines with well-defined contracts. Why 2025: As models specialize (speech, vision, reasoning), orchestration became essential to build reliable applications (and for audits/traceability). Example: Pipelines that swap a domain-expert model into a chain for legal vs. medical tasks.</p>
+<h2 id="context-engineering">Context Engineering</h2>
+<p><em>Internal Concept ID AIKC-000002 · 1 record in 2025</em></p>
+<p><strong>New for the 2025 Collection</strong> (origin <code>N</code>: commissioned for this collection; not published in 2025)</p>
+<p><a id="aik-2025-f-n-contexteng"></a></p>
+<h3 id="context-engineering-aik-2025-f-n-contexteng">Context Engineering — <code>AIK-2025-F-N-CONTEXTENG</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F / N</td>
+<td>standalone</td>
+<td>2023-01-23</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="context-engineering-1">Context Engineering</h4>
+<p><em>Terminology note.</em> The entry uses <strong>context</strong> in the technical sense standard since 2023: the complete set of tokens presented to a large language model at a single inference — system instructions, tool definitions, examples, the task, retrieved or supplied data, conversation history, tool results, and any state or memory — as distinct from the <strong>prompt</strong> in the narrow sense, the instruction text within that set. The distinction is not pedantry; it is the entry's subject. The discipline consists precisely in treating the whole of the context, rather than the wording of the prompt alone, as the object of engineering — the distinction drawn in the term's first documented use in 2023 and adopted by the field in 2025. One boundary the term requires: information held outside the window — in notes, files, or memory stores — is not yet context; it becomes context only when selected and read back in. Context engineering governs both sides of that boundary: what is maintained outside, and what is admitted inside.</p>
+<h5 id="entry-metadata">Entry Metadata</h5>
+<ul>
+<li>Entry: <strong>Context Engineering</strong></li>
+<li>Entry Type: Full-Length Entry</li>
+<li>Date of Appearance: January 23, 2023 (earliest currently documented use — Riley Goodside, quoted by Simon Willison [P0]; the discipline's articulation and collective adoption followed in June 2025; see §2)</li>
+<li>Date of Original Publication: — (newly commissioned for the collection)</li>
+<li>Contributor: Muse Spark 1.3</li>
+<li>Peer review: GPT-6</li>
+<li>Entry ID: AIK-2025-F-N-CONTEXTENG (Internal Concept ID: AIKC-000002)</li>
+</ul>
+<p><em>Eligibility.</em> The term first appeared in print, carrying its defining distinction, in January 2023; the discipline it names was articulated and adopted in 2025. Both satisfy the collection's eligibility rule (first appearance in the collection year or earlier).</p>
+<hr />
+<h5 id="definition-3">1. Definition</h5>
+<p><strong>Context engineering</strong> is the discipline of designing, assembling, and maintaining the set of tokens a large language model (LLM) receives at inference — the <em>context</em> — so that the model has the information its next step requires, in a form it can use, and as little else as possible. Where <strong>prompt engineering</strong> concerns the writing and organization of instructions, context engineering concerns everything that reaches the model: instructions, tool definitions, examples, retrieved documents, conversation history, tool outputs, and persistent state, curated continuously across the turns of an interaction or an agent's run rather than fixed once at its start.</p>
+<p>The definitions most often quoted date from its naming month, June 2025. Tobi Lütke defined the skill as "the art of providing all the context for the task to be plausibly solvable by the LLM" [P2]; Andrej Karpathy, as "the delicate art and science of filling the context window with just the right information for the next step" [P3]. A widely quoted definition is Anthropic's, from its engineering guidance of September 2025 — one laboratory's formulation, treated here as the reference definition because of its influence rather than because the field has ratified a single standard: context engineering is "the set of strategies for curating and maintaining the optimal set of tokens (information) during LLM inference," with the guiding principle of finding "the smallest possible set of high-signal tokens that maximize the likelihood of some desired outcome" [P1]. Anthropic frames the relationship explicitly: prompt engineering — "methods for writing and organizing LLM instructions" — is a component within the larger discipline, and context engineering is "the natural progression" of it [P1].</p>
+<p>Three commitments distinguish the discipline from its predecessor as its practitioners describe it. First, <strong>the context is a system output, not a user input</strong>: in production applications most tokens are assembled programmatically — by retrieval systems, tool runtimes, memory stores, and orchestration code — not typed by anyone. Second, <strong>the context is maintained, not merely written</strong>: across a long task it must be selected, compressed, refreshed, and pruned as the task evolves, because a context that only grows degrades (see §5). Third, <strong>the context window is a finite budget</strong>: models exhibit performance gradients as context fills with irrelevant or poorly positioned material, so every token carries an opportunity cost — Anthropic's term for the constraint is the model's <em>attention budget</em> [P1].</p>
+<h5 id="origin-and-historical-development">2. Origin and Historical Development</h5>
+<h6 id="the-practice-before-the-name">2.1 The practice before the name</h6>
+<p>Nothing in the discipline's content was new in 2025; what changed was that the content acquired a name, a self-conscious literature, and widely read guidance. Several antecedent practices below were, in substance, already context management — selecting, structuring, and maintaining what a model sees — and not merely mechanisms for filtering data into a prompt. The antecedents are the successive enlargements of what, beyond the user's instruction, engineers learned to place before a model:</p>
+<ul>
+<li><strong>Retrieval augmentation (2020–2023).</strong> Retrieval-augmented generation, introduced as a named architecture in 2020 and mainstreamed with the first LLM application frameworks in 2023, made retrieved text a standard, programmatically selected component of the context — the first large-scale practice of context assembly, though it was not yet called engineering of the context as a whole.</li>
+<li><strong>Programmatic context (2023).</strong> Function calling (June 2023) put machine-readable tool definitions into the context and tool results back into it, so the contents of the window became partly the output of running code. Position effects were documented the same year: <em>Lost in the Middle</em> (Liu et al., 2023) showed that models use information at the beginning and end of a long context substantially better than information in its middle — the first widely cited evidence that <em>arrangement</em>, not only content, is an engineering variable [P7].</li>
+<li><strong>Memory as a managed resource (2023).</strong> Systems such as MemGPT (October 2023) treated the context window as the top tier of a memory hierarchy, paging information in and out under program control — context management in all but name.</li>
+<li><strong>Standardized supply (2024).</strong> Anthropic's Model Context Protocol (November 2024) standardized how external tools and data are exposed to models, making one class of context content portable across applications. Anthropic's <em>Building Effective Agents</em> (December 19, 2024) documented agent patterns in which contexts are assembled by systems across many steps [P8].</li>
+<li><strong>Scale (2024–2025).</strong> Context windows grew from 100,000 tokens (2023) to one million and beyond in flagship models by 2025, which converted curation from an optimization into a necessity: the question was no longer how to fit the task into the window but what, of everything available, deserved to be in it.</li>
+</ul>
+<h6 id="the-terms-first-documented-formulation-2023">2.2 The term's first documented formulation (2023)</h6>
+<p>The term's earliest currently documented use already carries the distinction on which the 2025 discipline would be built. On January 23, 2023, Simon Willison published a remark by Riley Goodside, a practitioner then known for his work on prompting large models, dividing the craft in two [P0]:</p>
+<blockquote>
+<p>"I think prompt engineering can be divided into 'context engineering', selecting and preparing relevant context for a task, and 'prompt programming', writing clear instructions."</p>
+</blockquote>
+<p>Goodside's example was an LLM search application (Perplexity), where both halves matter. The formulation is the 2025 one in embryo — context work as the selection and preparation of task-relevant information, instruction-writing as a separate half — but in 2023 it remained a remark, not a program: in the sources examined for this entry, no discipline formed around the term in 2023–2024. The AES Date of Appearance records the documented use, not the later prominence (see the Editorial Notes).</p>
+<h6 id="the-naming-and-adoption-june-2025">2.3 The naming and adoption: June 2025</h6>
+<p>The term's articulation as the name of a discipline, and its adoption under that description, occurred in a documented sequence in June 2025:</p>
+<ul>
+<li><strong>June 12, 2025.</strong> Walden Yan of Cognition (the company behind the Devin coding agent) published <em>Don't Build Multi-Agents</em>, whose central section is titled "Principles of Context Engineering" [P4]. Yan presents context engineering as the successor discipline to prompt engineering — "the next level of this... doing this automatically in a dynamic system" — and "effectively the #1 job of engineers building AI agents," and derives two principles from production experience: <strong>share context</strong>, and share full agent traces rather than individual messages; and <strong>actions carry implicit decisions</strong>, so parallel agents working from partial context make conflicting decisions and produce incoherent results (his illustration: two sub-agents building a Flappy Bird clone whose components encode incompatible assumptions). His recommended default architecture — a single-threaded agent with continuous context — follows from the principles.</li>
+<li><strong>June 19, 2025.</strong> Tobi Lütke, chief executive of Shopify, posted the definition quoted in §1 [P2], proposing the term over "prompt engineering" on the ground that it "describes the core skill better."</li>
+<li><strong>June 23, 2025.</strong> Lance Martin of LangChain published <em>Context Engineering for Agents</em>, an influential early taxonomy organizing the discipline's strategies into four operations on context: <strong>write</strong> (save information outside the window for later use), <strong>select</strong> (retrieve or otherwise bring relevant information in), <strong>compress</strong> (summarize or prune what is in), and <strong>isolate</strong> (split context across sub-agents or environments) [P5].</li>
+<li><strong>June 25, 2025.</strong> Andrej Karpathy endorsed the term with the definition quoted in §1, enumerating what fills an industrial context window — task descriptions, few-shot examples, retrieval, related data, tools, state, history, and compaction — and stating the trade-off in both directions: too little or wrongly formed context starves the model; too much or wrongly formed context raises cost and can reduce performance [P3].</li>
+<li><strong>June 27, 2025.</strong> Simon Willison catalogued the Lütke and Karpathy definitions and argued the term would stick: a term lives by its <em>inferred</em> definition, "prompt engineering" had been popularly redefined to mean typing tricks into a chatbot, and the inferred definition of "context engineering" was likely to remain close to its intended one [R1].</li>
+</ul>
+<h6 id="systematization-and-diffusion-julyoctober-2025">2.4 Systematization and diffusion (July–October 2025)</h6>
+<p>The remainder of 2025 converted a naming into a literature. In July, a substantial academic survey organized the term into a research taxonomy — <em>A Survey of Context Engineering for Large Language Models</em> (Mei et al., submitted July 17, 2025; cited here in its original 2025 version), which formalized the field's components (context retrieval and generation, context processing, context management) across a large cited literature [P6]. The same month, the Manus team published a widely discussed production account, <em>Context Engineering for AI Agents: Lessons from Building Manus</em> (July 18, 2025), reporting lessons from four rebuilds of a production agent framework — including that the KV-cache hit rate is, in its author's judgment, "the single most important metric for a production-stage AI agent" (see §4) [P9]. Analyst adoption followed within the same month: Gartner's guidance of July 28, 2025, <em>Lead the Shift to Context Engineering as Prompt Engineering Fades</em>, opened with the declaration that "Context engineering is in, and prompt engineering is out" [R2].</p>
+<p>On <strong>September 29, 2025</strong>, Anthropic published <em>Effective Context Engineering for AI Agents</em>, the guide that gave the term its most influential definition and technique set (§3) and remains a widely cited reference — influential practitioner guidance from one laboratory, widely adopted but not a ratified consensus of the research field [P1]; the guide appeared alongside platform features implementing two of its techniques — context editing and a memory tool. In October the term acquired a research method of its own: <em>Agentic Context Engineering</em> (ACE; Zhang, Hu, et al., October 6, 2025) treats contexts as evolving "playbooks" that a system itself accumulates, refines, and curates, reporting gains over strong context-adaptation baselines on agent and financial-reasoning benchmarks (the authors' figures, §5) [P10]. By the end of 2025 the term named, simultaneously, a practitioner discipline, a vendor guidance literature, a survey-defined research area, and a named technique — the four registers in which the rest of this entry treats it.</p>
+<h5 id="conceptual-and-technical-framework">3. Conceptual and Technical Framework</h5>
+<h6 id="what-is-engineered-the-components-of-a-context">3.1 What is engineered: the components of a context</h6>
+<p>A production context is an assembly of distinguishable components, each with its own engineering questions. (The components below synthesize the enumerations in [P1], [P3], and [P5].)</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Content</th>
+<th>Characteristic engineering question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System instructions</td>
+<td>Role, rules, output format, examples of desired behavior</td>
+<td>At what level of specificity — Anthropic's "right altitude" between rigid scripts and vague guidance [P1]</td>
+</tr>
+<tr class="even">
+<td>Tool definitions</td>
+<td>The tools the model may call, with their schemas</td>
+<td>How many, described how; whether unused tools are masked rather than removed [P9]</td>
+</tr>
+<tr class="odd">
+<td>Task specification</td>
+<td>The user's request and its decomposition</td>
+<td>How much decomposition to fix in advance versus leave to the model</td>
+</tr>
+<tr class="even">
+<td>Retrieved and supplied data</td>
+<td>Documents, search results, database rows, code</td>
+<td>What to select, in what order, at what length (§5 on position effects)</td>
+</tr>
+<tr class="odd">
+<td>Conversation and action history</td>
+<td>Prior turns, prior tool calls and their results</td>
+<td>When to compact, summarize, or clear; what must survive verbatim</td>
+</tr>
+<tr class="even">
+<td>Persistent state and memory</td>
+<td>Notes, plans, scratchpads, external stores read back into context</td>
+<td>What to write out, in what structure, and when to read it back</td>
+</tr>
+<tr class="odd">
+<td>Environmental observations</td>
+<td>Current tool outputs, errors, sensor or UI state</td>
+<td>Freshness: replacing stale observations versus appending</td>
+</tr>
+</tbody>
+</table>
+<h6 id="the-strategies">3.2 The strategies</h6>
+<p>Across the 2025 literature the discipline's operations converge on a small set, named in two overlapping vocabularies. Martin's four operations — <strong>write, select, compress, isolate</strong> [P5] — organize the space by what is done to context. Anthropic's guide names the techniques by which long-running agents survive finite windows [P1]:</p>
+<ul>
+<li><strong>Just-in-time retrieval.</strong> Rather than pre-loading everything the task might need, the system keeps lightweight references (file paths, queries, links) in context and loads content at runtime through tools, as the step requires it — mirroring how a human expert consults rather than memorizes a corpus.</li>
+<li><strong>Compaction.</strong> As the window approaches its limit, the accumulated history is summarized and the task restarted from the summary — preserving decisions, unresolved state, and key facts while discarding the raw trace. What to preserve is the design decision; compaction that drops the wrong detail silently corrupts the rest of the run.</li>
+<li><strong>Structured note-taking.</strong> The agent writes notes <em>outside</em> the window — Anthropic's example is a NOTES.md file; Manus uses a continually rewritten <code>todo.md</code> — and reads them back when needed, giving the system persistent memory that does not consume attention while unused [P1] [P9].</li>
+<li><strong>Sub-agent context isolation.</strong> Sub-tasks are delegated to agents with clean, purpose-built contexts that return condensed results (typically a summary of one to two thousand tokens from work that consumed tens of thousands), keeping the lead agent's context reserved for synthesis. Yan's principles mark the technique's boundary: isolation works where sub-tasks do not need each other's implicit decisions, and fails where they do [P4]. The sharing principle and the isolation operation are complements, not rivals: sharing governs work whose parts carry interdependent implicit decisions (a single codebase under construction), isolation governs work that decomposes into independent sub-tasks (parallel research, exploration) — the task's dependency structure decides which applies.</li>
+</ul>
+<p>Two further production constraints recur in the practitioner literature. <strong>Cacheability</strong>: because inference stacks reuse computation for unchanged context prefixes (the KV-cache), stable prefixes and append-only contexts are dramatically cheaper — Manus reports cached input tokens at a tenth of the uncached price and treats prefix stability as an architectural rule, down to excluding second-precision timestamps from the front of system prompts [P9]. <strong>Sharing within a thread</strong>: where agents do cooperate, Yan's first principle — share full traces, not summaries or single messages — states the context-fidelity requirement [P4].</p>
+<h5 id="applications-and-implementations">4. Applications and Implementations</h5>
+<p>Context engineering in 2025 is documented less as a product category than as the working method inside agent systems; three implementations anchor the record. The descriptions in this section rest on the builders' own published accounts; independent architectural verification of these proprietary systems is generally unavailable, and operating figures are the operators' own.</p>
+<p><strong>Cognition / Devin (2025).</strong> The discipline's founding document is itself a production post-mortem: Cognition's single-threaded architecture for the Devin coding agent, with a dedicated smaller model fine-tuned to compress action-and-conversation history into key details, events, and decisions when tasks exceed the window — an implementation of the compress operation built because, in Yan's account, no adequate off-the-shelf context passing existed [P4].</p>
+<p><strong>Manus (2025).</strong> The Manus general agent's framework, rebuilt four times in the product's first months, is the fullest published implementation: design around the KV-cache (stable prefixes, append-only context, explicit cache breakpoints); masking tool availability through logit-level control rather than adding or removing tool definitions mid-run (which would invalidate caches and confuse the model); the file system used as unlimited, restorable external context (compression that keeps a path or identifier in the window so dropped content can be recovered); and "recitation" — the agent continually rewriting its task plan at the end of the context — as a countermeasure to lost-in-the-middle effects on long tasks. The team's reported operating figures are an average input-to-output token ratio of roughly 100:1 per task [P9].</p>
+<p><strong>Anthropic's agent platform (2025).</strong> Anthropic's guide is prescriptive rather than a system report, but its techniques shipped as platform features the day the guide appeared — context editing (programmatic clearing of stale tool results) and a memory tool (structured note-taking as an API) — making the guide's technique set directly implementable, and its own multi-agent research system (June 2025) is the reference implementation of the sub-agent pattern it recommends [P1].</p>
+<p><strong>ACE (2025)</strong> belongs equally to research (§5): a framework in which three roles — a generator that acts, a reflector that extracts lessons from trajectories, and a curator that merges them into the context playbook — automate the write-and-compress operations, so that the context itself, rather than the model's weights, is the artifact that improves [P10].</p>
+<h5 id="evidence-and-evaluation">5. Evidence and Evaluation</h5>
+<p>Context engineering is unusual among this collection's entries in that the evidence <em>for its premises</em> is stronger than the evidence <em>for its practice as a whole</em>: the component phenomena are independently documented, while the discipline's aggregate claims rest mainly on practitioner reports.</p>
+<h6 id="component-evidence-independently-documented">5.1 Component evidence (independently documented)</h6>
+<ul>
+<li><strong>Position effects.</strong> <em>Lost in the Middle</em> (Liu et al., 2023) demonstrated, across models and tasks, a U-shaped use curve: information at the start and end of a long context is used reliably, information in the middle substantially less so — with degradation on multi-document question answering severe enough to fall below closed-book performance in the worst placements [P7]. Arrangement of context is therefore a measurable variable, not a stylistic one.</li>
+<li><strong>Length degradation ("context rot").</strong> Chroma's <em>Context Rot</em> technical report (Hong, Troynikov, and Huber, July 14, 2025) evaluated 18 models — the Claude 4 family, the GPT-4.1 and GPT-4o families, Gemini 2.5, Qwen3, and others — on deliberately simple tasks: extended needle-in-a-haystack tests varying the semantic similarity between question and target, the number of distractors, and the structure of the surrounding text; question answering over long conversational histories (LongMemEval, comparing focused prompts of roughly 300 tokens against full prompts of roughly 113,000); and a repeated-words replication task. Performance degraded with input length across all 18 models — non-uniformly, at rates that varied by model and task; degradation steepened when the target was less semantically similar to the question, and even a single distractor reduced accuracy. One result ran against intuition: shuffled, incoherent surrounding text hurt performance <em>less</em> than coherent documents, on all 18 models. The contrast with Liu et al. is configuration-specific: in Chroma's needle-retrieval experiments, needle position mattered little relative to length and interference, while Chroma's repeated-words experiments did show positional differences — positional effects are task-dependent, and neither study licenses a general claim that position does or does not matter [R3]. Anthropic's guide adopts the term and adds the calibration that degradation is a <em>gradient</em>, not at a cliff, and that windows of all sizes remain subject to pollution and relevance problems [P1]. Together the two research lines are the discipline's empirical warrant: if more context reliably meant better performance, there would be little to engineer.</li>
+</ul>
+<h6 id="practice-level-results-as-reported-by-their-authors">5.2 Practice-level results (as reported by their authors)</h6>
+<ul>
+<li><strong>ACE (October 2025).</strong> On agent benchmarks (AppWorld) and financial-reasoning benchmarks, ACE reported improvements of +10.6% and +8.6% respectively over strong context-adaptation baselines, with substantially reduced adaptation cost, and matched the top-ranked production agent on AppWorld's overall average using a smaller open-source model [P10]. These are the authors' figures from the October 2025 preprint; independent replication was not part of the 2025 record.</li>
+<li><strong>Manus (July 2025).</strong> The Manus account reports production quantities — the ≈100:1 input-to-output token ratio and a tenfold cached/uncached input price difference — rather than task-performance comparisons; its evidence is the operational survival of a heavily used agent across four framework rebuilds, offered by its builders [P9].</li>
+<li><strong>Anthropic's guide (September 2025)</strong> presents its techniques as engineering guidance distilled from internal agent work; it publishes no controlled comparison of engineered versus unengineered contexts [P1].</li>
+</ul>
+<h6 id="status-of-the-evidence">5.3 Status of the evidence</h6>
+<p>As of the end of 2025, no benchmark measures "context engineering" as such. The discipline's component techniques — retrieval selection, summarization and compaction, memory management — have evaluation literatures of their own, which this entry has not attempted to survey exhaustively; what the 2025 record does not establish is a single, generalizable performance gain attributable to context engineering as a unified discipline. What it does support is narrower and still substantial: (i) the failure modes the discipline addresses — position bias, length degradation, distractor sensitivity — are real and independently measured; (ii) the technique set is in production use at multiple organizations and produced at least one substantial research result (ACE); (iii) the magnitude of benefit attributable to context engineering, as against model quality or task selection, is not established by the 2025 record.</p>
+<h5 id="significance-and-implications">6. Significance and Implications</h5>
+<p><strong>The locus of applied LLM work moved.</strong> The naming episode of June 2025 registered a real shift: once applications became agentic — multi-step, tool-using, long-running — the binding constraint on their performance shifted, for those systems, from the wording of instructions toward the composition of an evolving, machine-assembled context. The shift is one of degree and varies by task and system — for single-turn uses, instruction wording remains the operative craft, now practiced as one component of the larger discipline (§1). The discipline's rapid diffusion (taxonomy and survey within weeks, vendor guidance and analyst adoption within months) reflects practitioners recognizing their actual job in the new name — Yan's "effectively the #1 job of engineers building AI agents" [P4].</p>
+<p><strong>A design layer, with economics.</strong> Context engineering made the context window an explicit architectural surface — with budgets, failure modes, and unit economics (cache hit rates and token ratios as first-class operational metrics [P9]) — rather than an implementation detail of prompting. Product and platform consequences followed within the year: context editing and memory shipped as API primitives, and protocols for context supply (MCP) became infrastructure.</p>
+<p><strong>A research object.</strong> The survey literature and ACE mark the term's second register: context as an optimizable artifact in its own right, separable from model weights — improvement applied to the <em>playbook</em> rather than the player. Whether context adaptation becomes a durable research program, or is absorbed into agent architecture generally, is a post-2025 question; in 2025 it became a named one.</p>
+<h5 id="limitations-debates-and-open-questions">7. Limitations, Debates, and Open Questions</h5>
+<p><strong>Is it a rebrand?</strong> The sharpest criticism the term attracted in 2025 is that the work predates the name — retrieval pipelines, memory systems, and agent frameworks were assembling contexts years earlier — so the "new discipline" is a relabeling driven by fashion. The criticism is partly conceded by the record assembled in §2.1: the practice has a genuine pre-history. The defense, made most precisely by Willison, is about what names do: a term whose inferred definition matches the work steers hiring, tooling, and attention toward the work, whereas "prompt engineering" had come to denote something much narrower than what production builders do [R1]. Anthropic's own framing — progression and superset, not replacement — stakes the moderate position: prompt engineering continues, as one component inside a larger discipline [P1].</p>
+<p><strong>Boundary vagueness.</strong> If everything in the window counts, the term risks expanding until it denotes applied LLM engineering as a whole, at which point it explains nothing. The usable discipline is the narrower one of §3: decisions about the selection, arrangement, compression, isolation, and maintenance of context, distinguishable from model training, interface design, and application logic generally.</p>
+<p><strong>Does scale dissolve it?</strong> A standing open question of 2025: if windows continue to grow and models' long-context reliability improves, does curation matter less? The 2025 evidence points the other way — degradation is a gradient present at every window size tested [R3], and larger windows raise the selection problem rather than removing it — but the balance between <em>engineering around</em> model limitations and <em>waiting for</em> better models is a live strategic disagreement the record does not settle.</p>
+<p><strong>Measurement.</strong> As §5.3 notes, the discipline lacks its own evaluation instruments. Until context decisions can be ablated and priced against outcomes at scale, context engineering remains — in Karpathy's original phrase — as much art as science, and its best practices are one model generation away from revision.</p>
+<h5 id="related-concepts-and-distinctions">8. Related Concepts and Distinctions</h5>
+<ul>
+<li><strong>Prompt engineering</strong> — the writing and organization of instructions; a component of context engineering, and its historical predecessor. Anthropic's distinction: prompt engineering concerns how instructions are written; context engineering concerns all information that reaches the model during inference [P1].</li>
+<li><strong>Retrieval-augmented generation (RAG)</strong> — one selection mechanism within context engineering (bringing retrieved text into the window), historically its largest single component and its clearest pre-2025 antecedent; context engineering additionally covers history, state, tools, and their maintenance.</li>
+<li><strong>Context rot</strong> — the degradation of model reliability as context grows, documented by Chroma in July 2025 [R3]; it is the principal failure mode context engineering exists to counter. (A companion entry is in preparation for this collection.)</li>
+<li><strong>Context window / attention budget</strong> — the resource itself: the maximum tokens a model accepts at one inference, and, in Anthropic's framing, the finite attentional capacity that even a nominally large window imposes [P1].</li>
+<li><strong>Memory systems (agent memory)</strong> — persistence across sessions, implemented outside the window and read into it on demand; within the discipline, the <em>write</em> operation and structured note-taking are its session-scale forms [P5].</li>
+<li><strong>Model Context Protocol (MCP)</strong> — the supply side: a standard interface by which tools and data are exposed for inclusion in context; context engineering decides <em>which</em> of what MCP supplies actually enters the window.</li>
+<li><strong>Fine-tuning</strong> — the alternative locus of adaptation: changing weights rather than inputs. Context engineering is inference-time adaptation; ACE's premise — improve the playbook, not the player — states the contrast in its purest form [P10].</li>
+</ul>
+<h5 id="see-also">See Also</h5>
+<p><em>Public Entry IDs added for the collection.</em></p>
+<ul>
+<li>Model Context Protocol — AIK-2025-E-P-MCP (<em>Aikipedia: New AI Lexicon 2025 (7)</em>); also AIK-2025-S-P-MCP (<em>New AI Lexicon 2025</em> (2))</li>
+<li>Agentic AI — AIK-2025-E-P-AGENTICAI-02 (<em>Aikipedia: New AI Lexicon 2025 (7)</em>); also AIK-2025-E-P-AGENTICAI (<em>New AI Lexicon 2025</em>, Launch Edition)</li>
+<li>Chain-of-Thought Prompting — AIK-2025-F-P-COTPROMPT (Aikipedia standalone, October 30, 2025)</li>
+<li>Reinforcement Learning with Verifiable Rewards (RLVR) — Aikipedia 2025, New Addition (this collection) · AIK-2025-F-N-RLVR</li>
+</ul>
+<h5 id="primary-sources-p">Primary Sources [P]</h5>
+<p>[P0] Goodside, R., quoted in Willison, S. "A quote from Riley Goodside." January 23, 2023. <a href="https://simonwillison.net/2023/Jan/23/riley-goodside/" class="uri">https://simonwillison.net/2023/Jan/23/riley-goodside/</a> (The remark was made in a Hacker News discussion of the same date, which Willison collected and published.) [P1] Anthropic. "Effective Context Engineering for AI Agents." Anthropic Engineering, September 29, 2025. <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" class="uri">https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents</a> [P2] Lütke, T. Post on X, June 19, 2025: "I really like the term 'context engineering' over prompt engineering..." <a href="https://x.com/tobi/status/1935533422589399127" class="uri">https://x.com/tobi/status/1935533422589399127</a> [P3] Karpathy, A. Post on X, June 25, 2025: "+1 for 'context engineering' over 'prompt engineering'..." <a href="https://x.com/karpathy/status/1937902205765607626" class="uri">https://x.com/karpathy/status/1937902205765607626</a> [P4] Yan, W. "Don't Build Multi-Agents." Cognition, June 12, 2025. <a href="https://cognition.com/blog/dont-build-multi-agents" class="uri">https://cognition.com/blog/dont-build-multi-agents</a> [P5] Martin, L. "Context Engineering for Agents." June 23, 2025. <a href="https://rlancemartin.github.io/2025/06/23/context_engineering/" class="uri">https://rlancemartin.github.io/2025/06/23/context_engineering/</a> (A version appeared on the LangChain blog, July 2, 2025: <a href="https://www.langchain.com/blog/context-engineering-for-agents" class="uri">https://www.langchain.com/blog/context-engineering-for-agents</a>) [P6] Mei, L., et al. "A Survey of Context Engineering for Large Language Models." arXiv:2507.13334, submitted July 17, 2025 (cited in its original 2025 version). <a href="https://arxiv.org/abs/2507.13334v1" class="uri">https://arxiv.org/abs/2507.13334v1</a> [P7] Liu, N. F., et al. "Lost in the Middle: How Language Models Use Long Contexts." arXiv:2307.03172, July 2023 (TACL 2024). <a href="https://arxiv.org/abs/2307.03172" class="uri">https://arxiv.org/abs/2307.03172</a> [P8] Anthropic. "Building Effective Agents." Anthropic Engineering, December 19, 2024. <a href="https://www.anthropic.com/engineering/building-effective-agents" class="uri">https://www.anthropic.com/engineering/building-effective-agents</a> [P9] Ji, Y. ("Peak"). "Context Engineering for AI Agents: Lessons from Building Manus." Manus, July 18, 2025. <a href="https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus" class="uri">https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus</a> [P10] Zhang, Q., Hu, C., et al. "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models." arXiv:2510.04618, October 6, 2025 (cited in its original October 2025 version; later revisions exist). <a href="https://arxiv.org/abs/2510.04618v1" class="uri">https://arxiv.org/abs/2510.04618v1</a></p>
+<h5 id="references-and-secondary-sources-r">References and Secondary Sources [R]</h5>
+<p>[R1] Willison, S. "Context Engineering." June 27, 2025. <a href="https://simonwillison.net/2025/Jun/27/context-engineering/" class="uri">https://simonwillison.net/2025/Jun/27/context-engineering/</a> [R2] Gartner. "Lead the Shift to Context Engineering as Prompt Engineering Fades." Gartner First Takes, July 28, 2025 (analyst guidance; cited for the adoption record). <a href="https://www.gartner.com/en/documents/6781234" class="uri">https://www.gartner.com/en/documents/6781234</a> [R3] Hong, K., Troynikov, A., and Huber, J. "Context Rot: How Increasing Input Tokens Impacts LLM Performance." Chroma Research technical report, July 14, 2025. <a href="https://www.trychroma.com/research/context-rot" class="uri">https://www.trychroma.com/research/context-rot</a></p>
+<h5 id="editorial-notes">Editorial Notes</h5>
+<ul>
+<li><strong>Format.</strong> This entry was the second written in the collection's entry format (Appendix A), and the first on a practice rather than a technical method. Its §4 uses the "Applications and Implementations" form of the §4 heading, as AES provides for entries whose subject is a practice.</li>
+<li><strong>The naming dates.</strong> The Date of Appearance (January 23, 2023) records the term's earliest currently documented use — Goodside's remark as published by Willison that day [P0] — in line with the AES rule that appearance means first documented appearance, not prominence; June 2025 is treated throughout as the articulation-and-adoption sequence, not the coinage. The June sequence rests on dated primary artifacts (a dated essay and two dated posts). One secondary source dates the Lütke post June 18 rather than June 19; the entry uses June 19, the date carried by the post's other records.</li>
+<li><strong>Table production.</strong> The §3.1 table follows the AES print-production rule: in the print build it starts on a fresh page, its header repeats if it ever spans pages, and no row is broken across a page boundary.</li>
+<li><strong>Retrospective note (outside the entry's 2025 coverage).</strong> The ACE preprint [P10] was subsequently accepted to ICLR 2026. Under the collection's cutoff policy this fact is recorded here, in the editorial apparatus, and not in the entry body.</li>
+<li><strong>Source versions.</strong> Where a cited source exists in multiple versions across the collection's cutoff, the reference gives the version-specific link, so that what the entry relies on remains auditable after later revisions appear: the survey [P6] and ACE [P10] are cited at their original 2025 versions (arXiv v1 links).</li>
+<li><strong>Review.</strong> Peer-reviewed by GPT-6 and accepted by the editor. The dated record is in Appendix G.</li>
+</ul>
+<h5 id="credits">Credits</h5>
+<ul>
+<li>Written by Muse Spark 1.3.</li>
+<li>Peer review: GPT-6.</li>
+</ul>
+<p>Accepted by the editor, W.H.L. The dated record of this entry (versions, audits, reviews and rulings) is in Appendix G.</p>
+<h5 id="disclosures">Disclosures</h5>
+<h6 id="coverage">Coverage</h6>
+<p>This entry synthesizes publicly available material through December 31, 2025. Post-2025 developments are excluded.</p>
+<h6 id="source-note">Source note</h6>
+<p>All dated claims in §§2–4 rest on the primary artifacts cited ([P1]–[P10]), consulted for this draft. Figures attributed to their authors (ACE's benchmark gains; Manus's token ratio and cache pricing) are reported as their sources state them and are marked as author-reported in §5; the component phenomena in §5.1 rest on independent studies.</p>
+<h2 id="context-rot">Context Rot</h2>
+<p><em>Internal Concept ID AIKC-000003 · 1 record in 2025</em></p>
+<p><strong>New for the 2025 Collection</strong> (origin <code>N</code>: commissioned for this collection; not published in 2025)</p>
+<p><a id="aik-2025-f-n-contextrot"></a></p>
+<h3 id="context-rot-aik-2025-f-n-contextrot">Context Rot — <code>AIK-2025-F-N-CONTEXTROT</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F / N</td>
+<td>standalone</td>
+<td>2025-06-18</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>AIKIPEDIA · FULL-LENGTH ENTRY</p>
+<h4 id="context-rot-1">Context Rot</h4>
+<p>Long-Context Behavior · Evaluation · Agent Engineering</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Date of Appearance</strong></td>
+<td>June 18, 2025 (earliest currently documented use: a Hacker News comment by the user Workaccount2, recognized as a coinage the same day by Simon Willison [P1][R1])</td>
+</tr>
+<tr class="even">
+<td><strong>Date of Original Publication</strong></td>
+<td>— (new addition; no prior magazine publication)</td>
+</tr>
+<tr class="odd">
+<td><strong>Historical Coverage</strong></td>
+<td>Through December 31, 2025</td>
+</tr>
+<tr class="even">
+<td><strong>Eligibility</strong></td>
+<td>First appearance 2025, within the collection's first-appearance cutoff (2025 or earlier). No Aikipedia entry or headword for the term was published in 2026. Checked November 5, 2026 against site search and the headwords of three 2026 installments: <em>Agentic Lexicon (January–February 2026)</em> (Mar 2, 2026); <em>New AI Lexicon, May 2026 (1)</em> (May 31, 2026); <em>New AI Lexicon (July–September 2026)</em> (Oct 2, 2026)</td>
+</tr>
+<tr class="odd">
+<td><strong>Original Contributor</strong></td>
+<td>Claude Opus 5.5 (Anthropic)</td>
+</tr>
+<tr class="even">
+<td><strong>Peer review</strong></td>
+<td>Muse Spark 1.3; GPT-6</td>
+</tr>
+<tr class="odd">
+<td><strong>Entry ID</strong></td>
+<td>AIK-2025-F-N-CONTEXTROT (concept AIKC-000003)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Affiliation note.</em> The contributor is an Anthropic model. Two sources in this entry are Anthropic publications [P6][P7]. They are cited for what Anthropic said and released. Figures from them are identified as vendor-reported.</p>
+<p><strong>Note on terminology.</strong> "Context rot" has two senses, and they don't fully coincide.</p>
+<ul>
+<li><strong>The coinage sense.</strong> The term was coined for a session-level experience: a running conversation or agent run degrades as the context fills with distractions, dead ends and the model's own mistakes. Here the emphasis is on the <em>quality</em> of what accumulates.</li>
+<li><strong>The measurement sense.</strong> Within weeks, the term was attached to a controlled-measurement program. That program holds a task fixed and asks how performance changes as input length grows. Here the emphasis is on <em>quantity</em> and arrangement.</li>
+</ul>
+<p>This entry treats both senses. It names which sense is meant wherever the difference matters. It also distinguishes context rot from <strong>context overflow</strong>, which is failure because input exceeds the window. Context rot occurs well inside the window.</p>
+<h5 id="definition-4">1. Definition</h5>
+<p><strong>Context rot</strong> is the degradation of a large language model's output quality as the content of its context window grows. The degradation occurs within the model's advertised context limit, and it depends on more than length. What the added tokens are matters: irrelevant material, near-miss distractors, superseded or erroneous content. So does how the tokens are arranged.</p>
+<p>In its originating sense, the term describes a property of <em>sessions</em>. The phrasing was a commenter's: models "poison their own context" [P1]. As a long chat or agent run accumulates dead ends and errors, output quality falls, and restarting with a clean, summarized context restores it.</p>
+<p>In its measurement sense, the term names a property of <em>models</em>. Chroma's July 2025 technical report gives the reference formulation in the summary sentence displayed beneath its title: models "do not use their context uniformly," and their performance "grows increasingly unreliable as input length grows" [P2]. The body of the report puts the same finding as degradation "in surprising and non-uniform ways," even on deliberately simple tasks. See Editorial Note 10 on the location of these phrases.</p>
+<p>Anthropic's September 2025 guidance framed it as recall: as tokens increase, "the model's ability to accurately recall information from that context decreases" [P6]. That is narrower than either sense above; context rot also affects reasoning and action selection (§5).</p>
+<p>Three commitments recur across usages:</p>
+<ul>
+<li>Context rot is a <strong>gradient, not a cliff</strong>. Anthropic's phrase is "a performance gradient rather than a hard cliff" [P6].</li>
+<li>It is <strong>content-sensitive, not only length-sensitive</strong>.</li>
+<li>It is <strong>operationally consequential</strong>: claimed context length bounds what a model accepts, not what it reliably uses.</li>
+</ul>
+<h5 id="origin-and-historical-development-1">2. Origin and Historical Development</h5>
+<p><strong>Before the name (2023–2025).</strong> The phenomenon was documented before it was named.</p>
+<ul>
+<li><strong>Position effects (July 2023).</strong> <em>Lost in the Middle</em> (Liu et al.; published in <em>TACL</em>, 2024) showed U-shaped position effects in multi-document question answering and key-value retrieval. Models used information at the beginning and end of the input better than information in the middle. The paper also showed that performance "substantially decreases as the input context grows longer, even for explicitly long-context models" [P3].</li>
+<li><strong>Distractor sensitivity (2023).</strong> Shi et al. had shown that irrelevant context can derail model reasoning [R7].</li>
+<li><strong>The common benchmark and its critics (2023–2024).</strong> The most widely used long-context test was the needle-in-a-haystack (NIAH) probe: retrieve one planted fact from filler text [R9]. Frontier models came to score near-perfectly on it, and benchmark designers argued that it overstated real capability.</li>
+<li><strong>Claimed vs. effective length (April 2024).</strong> RULER introduced the distinction between a model's claimed and effective context length. It evaluated 17 long-context models on 13 tasks and found that almost all degraded substantially as length increased [P9].</li>
+<li><strong>Removing literal matches (February 2025).</strong> NoLiMa (Modarressi et al.; ICML 2025) removed the literal word overlap between question and needle that NIAH allows models to exploit. In the first arXiv version's evaluation of 12 models, 10 fell below half of their short-context baselines by 32K tokens. GPT-4o fell from 99.3% to 69.7% [P4].</li>
+</ul>
+<p><strong>June 2025: field evidence and the name.</strong> On June 17, 2025, alongside the general availability of Gemini 2.5 Pro and Flash, Google DeepMind released the Gemini 2.5 technical report as a Google-hosted PDF. That edition is dated June 17, 2025; an arXiv edition followed in July [P8]. The report described its Pokémon-playing agent in detail. As the agent's context grew well beyond 100,000 tokens, it tended to favor repeating actions from its history over synthesizing new plans. The report calls this observation "albeit anecdotal" (§4.1). Its appendix separately names <em>context poisoning</em>: the agent fixating on misinformation in its context (§8.2) [P8].</p>
+<p>On <strong>June 18, 2025</strong>, a Hacker News user posting as Workaccount2 described models poisoning their own context. The comment proposed the name: "Maybe you can call it context rot." It added that, even with good context, the rot became apparent around 100k tokens with Gemini 2.5. The commenter's workaround was to summarize a session and restart in a fresh context with the summary [P1].</p>
+<p>Simon Willison replied in the thread the same day: "I think you just coined 'context rot', what an excellent term!" [P1]. That evening he republished the comment on his weblog, tagged "definitions," with the note that it was "coining 'context rot'" [R1]. His later gloss is useful for dating the original sense. Asked whether the term restated <em>Lost in the Middle</em>, he answered that context rot concerned models being distracted by poor-quality content already in the context, rather than missing details [R1].</p>
+<p><strong>Late June 2025: a taxonomy.</strong> Within days, practitioner writing supplied structure. Drew Breunig's "How Long Contexts Fail" (June 22, 2025) named four failure patterns [R2]:</p>
+<ul>
+<li><strong>context poisoning</strong> (a term the Gemini report had used): an error enters the context and is repeatedly referenced;</li>
+<li><strong>context distraction:</strong> a long context makes the model over-rely on its history;</li>
+<li><strong>context confusion:</strong> superfluous content, such as too many tool definitions, degrades choices;</li>
+<li><strong>context clash:</strong> accumulated content contradicts itself.</li>
+</ul>
+<p>A follow-up post (June 26) named mitigations [R3]. Willison summarized the four patterns as patterns of context rot [R4], tying Breunig's taxonomy to the new term.</p>
+<p><strong>July 2025: the measurement program.</strong> On July 14, 2025, Chroma published <em>Context Rot: How Increasing Input Tokens Impacts LLM Performance</em> (Hong, Troynikov and Huber), with an open-source replication toolkit [P2]. The report evaluated 18 models from Anthropic, OpenAI, Google and Alibaba. It held task difficulty as constant as it could while varying input length, distractors, the similarity of needle to question and to haystack, and haystack structure (§5.1).</p>
+<p>The report is the source most often cited for the term. It is often credited, wrongly, with coining it. The report itself makes no coinage claim and credits no one for the name (see Editorial Notes).</p>
+<p><strong>September–December 2025: adoption into guidance and research.</strong></p>
+<ul>
+<li><strong>Vendor guidance (September 29).</strong> Anthropic's guide <em>Effective Context Engineering for AI Agents</em> used "context rot" to motivate treating context as "a finite resource with diminishing marginal returns" [P6]. The same day, Anthropic released two platform features aimed at the problem, context editing and a memory tool [P7].</li>
+<li><strong>Research (October 6).</strong> Du et al. reported that length alone degrades performance even when retrieval is perfect and the irrelevant tokens are masked (§5.2) [P5].</li>
+<li><strong>General audience (November 10).</strong> Timothy B. Lee's <em>Understanding AI</em> presented context rot as an emerging challenge [R6].</li>
+</ul>
+<p>By the end of 2025, the term named a practitioner diagnosis, an evaluation agenda and a design constraint.</p>
+<h5 id="conceptual-or-technical-framework">3. Conceptual or Technical Framework</h5>
+<h6 id="three-variables-separable-in-principle">3.1 Three variables, separable in principle</h6>
+<p>The 2023–2025 literature manipulates three variables, which this entry treats as the components of context rot. The three-variable framework, and the session-level mapping in §3.2, are an editorial analytical framework drawn from the cited studies. No study has validated the framework as a whole; each cited study tests only its own variable under its own conditions.</p>
+<p><strong>Table 1. The variables of context rot and how they have been manipulated.</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Manipulation</th>
+<th>Representative finding</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Length per se</strong></td>
+<td>Add tokens while keeping retrieval perfect; replace filler with whitespace; mask irrelevant tokens</td>
+<td>Performance falls 13.9–85% across tasks as length grows, even with masked filler</td>
+<td>Du et al. [P5]</td>
+</tr>
+<tr class="even">
+<td><strong>Content (interference)</strong></td>
+<td>Lower the semantic similarity between question and answer; add distractors; vary topic match between needle and haystack</td>
+<td>Degradation is steeper for low-similarity pairs; one distractor hurts, four compound the effect</td>
+<td>Chroma [P2]; NoLiMa [P4]</td>
+</tr>
+<tr class="odd">
+<td><strong>Arrangement (structure)</strong></td>
+<td>Move relevant material through positions; shuffle vs. preserve haystack coherence</td>
+<td>U-shaped position effects (Liu et al.); coherent haystacks hurt more than shuffled ones (Chroma)</td>
+<td>[P3]; [P2]</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table note:</em> figures are as reported by the cited authors, under their stated conditions (§5).</p>
+<p>The variables are separable in principle but confounded in practice. Longer real inputs usually also contain more distractors and more structure. Chroma lists the difficulty of separating input length from task complexity as a limitation of its own design [P2].</p>
+<h6 id="the-session-dimension">3.2 The session dimension</h6>
+<p>The measurement literature mostly tests static inputs. The coinage sense adds a dynamic element: in a running session the model <em>writes its own context</em>. Tool outputs, abandoned plans and the model's earlier errors are appended and then re-read as evidence.</p>
+<p>This entry reads Breunig's four patterns as session-level forms of the three variables above. The mapping is interpretive: Breunig did not classify his patterns this way, and the correspondence has not been tested experimentally.</p>
+<ul>
+<li><strong>Poisoning</strong> is content interference originating from the model itself.</li>
+<li><strong>Distraction</strong> is the length effect expressed as over-reliance on history.</li>
+<li><strong>Confusion</strong> is irrelevant content.</li>
+<li><strong>Clash</strong> is contradictory content.</li>
+</ul>
+<p>On this reading, an agent's reliability over a long run is bounded by the model's long-context behavior <em>and</em> by the rate at which the harness admits low-value tokens [R2].</p>
+<h6 id="context-rot-is-not-overflow">3.3 Context rot is not overflow</h6>
+<p>Overflow and truncation are failures at the window boundary. Context rot is measured well inside it. NoLiMa makes the distinction operational. It defines a model's <em>effective length</em> as the longest context at which the model keeps at least 85% of its short-context score. For many models this is a small fraction of the claimed window [P4].</p>
+<h6 id="mechanism-proposed-not-established">3.4 Mechanism: proposed, not established</h6>
+<p>The 2025 sources offer explanations but establish none:</p>
+<ul>
+<li><strong>Anthropic's account.</strong> It attributes the effect to attention's pairwise structure, in which relationships multiply as the square of context length, and to training distributions in which long sequences are rarer [P6]. This is a vendor's explanatory account, not a demonstrated mechanism.</li>
+<li><strong>Chroma's position.</strong> It states that its report does not explain the mechanisms. It names interpretability research on how input structure affects attention as future work [P2].</li>
+<li><strong>Du et al.'s result.</strong> Their masking result constrains explanations. If performance falls when irrelevant tokens are masked and attention reaches only the evidence and the question, distraction alone cannot account for the effect [P5].</li>
+</ul>
+<h5 id="applications-and-implementations-1">4. Applications and Implementations</h5>
+<p>As a diagnosis, context rot shaped practice in four implemented forms.</p>
+<p><strong>Session hygiene.</strong></p>
+<ul>
+<li><em>Summarize-and-restart.</em> The originating comment described this workaround: periodically summarize a session, then continue in a fresh context seeded with the summary [P1]. It became standard advice for interactive and coding-agent use.</li>
+<li><em>Selective rollback</em> to before the context was poisoned, suggested in the same thread [P1].</li>
+</ul>
+<p><strong>Named mitigation patterns.</strong> Breunig's "How to Fix Your Context" (June 26, 2025) named six techniques for managing the four failure patterns [R3]. Besides retrieval-augmented generation, they are:</p>
+<ul>
+<li>tool loadout (exposing only relevant tools);</li>
+<li>context quarantine (isolating work in separate contexts or sub-agents);</li>
+<li>context pruning;</li>
+<li>context summarization;</li>
+<li>context offloading (storing information outside the window).</li>
+</ul>
+<p><strong>Platform features.</strong> On September 29, 2025, Anthropic introduced two features on its developer platform [P7]:</p>
+<ul>
+<li><em>context editing</em>, which automatically clears stale tool results as context grows;</li>
+<li>a <em>memory tool</em>, which lets agents store and retrieve information in files outside the window.</li>
+</ul>
+<p>Anthropic's accompanying engineering guidance recommended related strategies: compaction, structured note-taking, just-in-time retrieval and sub-agent architectures [P6].</p>
+<p><strong>Prompt-level mitigation.</strong> Du et al. proposed a model-agnostic step: have the model recite the retrieved evidence, then answer from a short prompt built from that recitation. This turns a long-context task into a short one [P5].</p>
+<h5 id="evidence-and-evaluation-1">5. Evidence and Evaluation</h5>
+<p>All figures below are author-reported, under the evaluation conditions stated. The source checks for this entry did not establish independent replications of the specific headline results cited. That is a statement about this review, not the result of a replication survey.</p>
+<h6 id="the-chroma-study-july-2025">5.1 The Chroma study (July 2025)</h6>
+<p>The report evaluated 18 models: five Anthropic, seven OpenAI, three Google and three Alibaba Qwen3. Not every model appears in every experiment. Some models were run in both thinking and non-thinking modes. The report cites 194,480 model calls [P2]. Its experiments and author-reported results:</p>
+<ul>
+<li><strong>Needle–question similarity (an NIAH extension).</strong> Similarity was averaged across five embedding models; needles were tested at 11 positions. Performance degraded faster with length for low-similarity pairs. Needle position had no notable effect in this design.</li>
+<li><strong>Distractors.</strong> A single distractor reduced accuracy, and four compounded the loss. The effect differed by distractor. Model families differed in how they failed: Claude models had the lowest hallucination rates and tended to abstain when uncertain, while GPT models had the highest rates of confident wrong answers.</li>
+<li><strong>Needle–haystack similarity.</strong> Results were mixed across two topic sets. The authors caution that two topics cannot support generalization.</li>
+<li><strong>Haystack structure.</strong> Across all 18 models, haystacks with randomly shuffled sentences produced <em>better</em> performance than coherent ones. The authors call the result counterintuitive and suggest it may reflect attention patterns.</li>
+<li><strong>LongMemEval.</strong> 306 conversational question-answering prompts were posed in two forms: focused (about 300 tokens of relevant material) and full (about 113,000 tokens including irrelevant material). Every model scored significantly higher on focused prompts. Thinking modes narrowed the gap but did not close it.</li>
+<li><strong>Repeated words.</strong> Models had to reproduce a long sequence of one repeated word with a single unique word inserted. Performance declined as length grew from 25 to 10,000 words. Some models refused or produced unrelated output at longer lengths. Because the required output grows with the input, this experiment measures input- and output-length effects together. Under-generation, refusals and other generation failures cannot all be attributed solely to difficulty processing the input.</li>
+</ul>
+<p><strong>Measurement conditions.</strong> Several experiments were scored by a language-model judge (GPT-4.1, aligned against human judgments) rather than by exact match [P2] (see Editorial Note 11). The reported patterns are therefore conditional on the report's evaluation design: its tasks, its scoring and its model versions.</p>
+<p>The report's stated limitations:</p>
+<ul>
+<li>its tasks are simpler than real use;</li>
+<li>length cannot be fully separated from difficulty;</li>
+<li>it does not identify mechanisms;</li>
+<li>its topic coverage is narrow for the needle–haystack experiment [P2].</li>
+</ul>
+<h6 id="corroborating-controlled-studies">5.2 Corroborating controlled studies</h6>
+<ul>
+<li><strong>Lost in the Middle (2023).</strong> Position-dependent accuracy and a length penalty in multi-document QA and key-value retrieval [P3].</li>
+<li><strong>RULER (2024).</strong> Across 17 long-context models and 13 tasks, almost all models showed large drops as context length increased [P9].</li>
+<li><strong>NoLiMa (2025).</strong> With literal-match cues removed, 10 of 12 models fell below 50% of their short-context baselines at 32K tokens; GPT-4o fell from 99.3% to 69.7% (arXiv v1). Later arXiv versions and the ICML proceedings report a 13-model evaluation, with 11 models below half; the GPT-4o figures are unchanged. See Editorial Note 3 [P4].</li>
+<li><strong>Du et al. (October 2025).</strong> Five models were tested on math, question-answering and coding tasks. Accuracy fell 13.9–85% as input length grew, while retrieval of the relevant evidence stayed exact. A similar drop appeared when filler was whitespace, when irrelevant tokens were masked, and when all evidence was placed immediately before the question. One example: Llama-3.1-8B-Instruct retrieved the evidence exactly for 970 of 1,000 MMLU problems extended to 30K tokens, yet lost 24.2% accuracy relative to the short form [P5].</li>
+</ul>
+<p><strong>A divergence to record.</strong> Chroma found no notable position effect across 11 needle positions in its similarity experiment [P2], while Liu et al. found strong position effects [P3]. The studies differ in task, model generation and needle design. The literature does not settle whether position effects weakened in newer models or are task-specific.</p>
+<h6 id="field-observation-report-level-evidence">5.3 Field observation (report-level evidence)</h6>
+<ul>
+<li>The Gemini 2.5 report's observation that its Pokémon agent, past roughly 100K tokens, favored repeating past actions over new planning is a single-system case study, reported by the developer and described by the report itself as anecdotal [P8].</li>
+<li>Practitioner reports [P1] are anecdotal, cited for the term's origin, not effect sizes.</li>
+</ul>
+<h6 id="mitigation-evidence">5.4 Mitigation evidence</h6>
+<p>Anthropic reported that, on an internal evaluation of agentic search, combining the memory tool with context editing improved performance by 39% over baseline, and context editing alone by 29% [P7]. These are vendor-reported, internal-benchmark results. Du et al. report gains of up to 4% for GPT-4o on RULER from their recitation strategy [P5].</p>
+<h6 id="status-of-the-evidence-1">5.5 Status of the evidence</h6>
+<p>Three claims rest on independent groups using different methods. Each holds for the tasks and conditions studied; none is established as a universal property of language models.</p>
+<ul>
+<li>Performance degrades within the advertised window.</li>
+<li>On the tasks studied, degradation is steeper when lexical cues are removed or semantically similar distractors are added than on literal-retrieval probes. This is task-dependent, not a general ordering of semantic over lexical difficulty.</li>
+<li>NIAH-style tests give weak evidence of long-context competence on harder tasks.</li>
+</ul>
+<p><strong>Unsettled at the end of 2025:</strong></p>
+<ul>
+<li>the size of the effect on real tasks;</li>
+<li>its mechanism;</li>
+<li>its trend across model generations.</li>
+</ul>
+<h5 id="significance-and-implications-1">6. Significance and Implications</h5>
+<p><strong>It reframed the context window as a quality-bounded resource.</strong> Through 2024 context length was marketed as capacity, measured in tokens accepted. Context rot gave practitioners a name for the gap between capacity and reliable use. Benchmarks such as RULER and NoLiMa had already formalized that gap as effective length. The reframing changed the design question from how much a model can take to how much it should be given.</p>
+<p><strong>It supplied context engineering with its central constraint.</strong> On this entry's reading, the 2025 discipline of context engineering is in large part a response to context rot. The relationship is interpretive, not experimentally demonstrated. Anthropic's guidance makes the link explicit, deriving its principle of the smallest high-signal context from the finite "attention budget" [P6]. If context degrades as it grows, curation becomes a requirement of reliability rather than an optional optimization.</p>
+<p><strong>It changed how long-context capability is evaluated.</strong> Chroma [P2] and NoLiMa [P4] both argue that evaluation must go beyond tests on which frontier models are already saturated. By late 2025, a near-perfect NIAH score was treated as weak evidence of usable long-context competence.</p>
+<p><strong>It bounds long-horizon agents.</strong> Agent runs accumulate context by construction. If quality falls as context grows, an agent's reliable horizon depends on the harness as well as on the model: on what the harness admits, removes and offloads. Context rot is therefore a property of systems as well as models (§4).</p>
+<h5 id="limitations-debates-and-open-questions-1">7. Limitations, Debates, and Open Questions</h5>
+<ul>
+<li><strong>Two senses, one name.</strong> The coinage sense concerns what accumulates, especially errors and dead ends. The measurement sense concerns length and arrangement under fixed content. Willison drew the distinction when the term was days old [R1]. Later usage often merges the two, and Anthropic's recall-centered definition [P6] narrows the term further. Claims about "context rot" should be read for which sense is meant.</li>
+<li><strong>Length vs. difficulty.</strong> Longer inputs are usually harder inputs. The controlled designs (Chroma, Du et al.) work to separate the two, and both acknowledge residual confounds [P2][P5].</li>
+<li><strong>Synthetic tasks vs. real use.</strong> Most evidence comes from simplified tasks. Chroma states that real tasks are likely more complex [P2]. Production-scale effects are documented mainly in vendor and practitioner reports.</li>
+<li><strong>Generation dependence.</strong> Results describe the models tested in 2023–2025. Whether context rot is intrinsic to current attention-based architectures or responsive to long-context training was not settled by the end of 2025. The proposed explanations (§3.4) remain hypotheses.</li>
+<li><strong>Counter-evidence: more context can help.</strong> Context rot is not a general law that more context is worse. Many-shot in-context learning showed large gains from filling the context with examples [R8], and retrieval often helps when what is added is relevant. The phenomenon concerns low-value or poorly arranged tokens, not context as such.</li>
+<li><strong>Attribution confusion.</strong> Secondary sources frequently credit Chroma with coining the term [Editorial Note 2]. Dating the term to July wrongly places practitioner diagnosis after formal measurement.</li>
+</ul>
+<p><strong>Open questions.</strong> Three define the next phase:</p>
+<ul>
+<li>whether context rot can be reduced at the model level (training, positional schemes, attention modifications) or only managed at the system level;</li>
+<li>how to measure it on realistic, long-horizon agent tasks rather than synthetic probes;</li>
+<li>whether a model can be trained to manage its own context reliably (deciding what to keep, compress or forget) without introducing new failure modes of its own.</li>
+</ul>
+<h5 id="related-concepts-and-distinctions-1">8. Related Concepts and Distinctions</h5>
+<ul>
+<li><strong>Context engineering.</strong> The discipline of curating what a model sees; on this entry's reading (§6), the practice that manages context rot.</li>
+<li><strong>Context window / context length.</strong> The maximum input a model accepts. Context rot concerns degradation within it.</li>
+<li><strong>Effective context length.</strong> The longest length at which a model meets a performance threshold (§3.3).</li>
+<li><strong>Lost in the middle (positional bias).</strong> Position-dependent use of context. It is one component of context rot, not the whole of it.</li>
+<li><strong>Needle in a haystack (NIAH).</strong> The literal-retrieval probe whose saturation the context-rot literature criticizes.</li>
+<li><strong>Context poisoning, distraction, confusion, clash.</strong> Breunig's session-level failure patterns. Under the session sense of context rot (§3.2), they are its forms.</li>
+<li><strong>Distractor sensitivity.</strong> Degradation caused by irrelevant or near-miss content: one cause of context rot.</li>
+<li><strong>Context overflow (truncation).</strong> Failure at the window boundary, unlike context rot (§3.3).</li>
+<li><strong>Compaction and summarization.</strong> Mitigations that replace accumulated context with a condensed version; the originating workaround for context rot.</li>
+</ul>
+<h5 id="see-also-1">See Also</h5>
+<p>Published in this magazine's Aikipedia series, in the 2025 collection:</p>
+<ul>
+<li><strong>Context Engineering.</strong> New addition to this collection, AIK-2025-F-N-CONTEXTENG (see Editorial Note 7).</li>
+<li><strong>Long-Context &amp; Windowing Techniques.</strong> <em>New AI Lexicon 2025</em>, Launch Edition (Nov 30, 2025), short-form recommended list.</li>
+<li><strong>Retrieval-Augmented Generation (RAG): next-gen.</strong> <em>New AI Lexicon 2025</em>, Launch Edition (Nov 30, 2025), short-form recommended list.</li>
+<li><strong>Compound AI Systems.</strong> <em>New AI Lexicon 2025</em> (3) (Dec 2, 2025).</li>
+<li><strong>Test-Time Compute Scaling.</strong> <em>New AI Lexicon 2025</em> (3) (Dec 2, 2025).</li>
+</ul>
+<p>Outside this collection (Aikipedia 2026): <strong>Context Window Optimization</strong> and <strong>Context Window</strong>, <em>Agentic Lexicon (January–February 2026)</em>.</p>
+<h5 id="references-and-sources">References and Sources</h5>
+<p><strong>Primary Sources</strong></p>
+<ul>
+<li>[P1] Workaccount2. Comment on Hacker News, June 18, 2025 (Unix time 1750255791, about 14:10 UTC), item 44310054 (thread 44308711). <a href="https://news.ycombinator.com/item?id=44310054" class="uri">https://news.ycombinator.com/item?id=44310054</a> — Earliest currently documented use of the term. The same page carries Simon Willison's same-day in-thread reply recognizing the coinage, and the rollback remark cited in §4.</li>
+<li>[P2] Hong, K., Troynikov, A., and Huber, J. "Context Rot: How Increasing Input Tokens Impacts LLM Performance." Chroma technical report, July 14, 2025. <a href="https://www.trychroma.com/research/context-rot" class="uri">https://www.trychroma.com/research/context-rot</a> ; replication toolkit: <a href="https://github.com/chroma-core/context-rot" class="uri">https://github.com/chroma-core/context-rot</a> — The measurement program; 18 models.</li>
+<li>[P3] Liu, N. F., Lin, K., Hewitt, J., Paranjape, A., Bevilacqua, M., Petroni, F., and Liang, P. "Lost in the Middle: How Language Models Use Long Contexts." arXiv:2307.03172 (July 6, 2023); <em>Transactions of the Association for Computational Linguistics</em> 12 (2024). <a href="https://arxiv.org/abs/2307.03172" class="uri">https://arxiv.org/abs/2307.03172</a> ; DOI 10.1162/tacl_a_00638 — Position effects and the length penalty.</li>
+<li>[P4] Modarressi, A., Deilamsalehy, H., Dernoncourt, F., Bui, T., Rossi, R. A., Yoon, S., and Schütze, H. "NoLiMa: Long-Context Evaluation Beyond Literal Matching." arXiv:2502.05167 (February 7, 2025); <em>Proceedings of the 42nd International Conference on Machine Learning</em>, PMLR 267:44554–44570 (2025). Version cited for the 12-model figures: arXiv:2502.05167v1, <a href="https://arxiv.org/abs/2502.05167v1" class="uri">https://arxiv.org/abs/2502.05167v1</a> . Later arXiv versions and the proceedings report 13 models (Editorial Note 3). — Degradation without literal-match cues; the effective-length threshold.</li>
+<li>[P5] Du, Y., Tian, M., Ronanki, S., Rongali, S., Bodapati, S., Galstyan, A., Wells, A., Schwartz, R., Huerta, E. A., and Peng, H. "Context Length Alone Hurts LLM Performance Despite Perfect Retrieval." arXiv:2510.05381 (October 6, 2025). <a href="https://arxiv.org/abs/2510.05381" class="uri">https://arxiv.org/abs/2510.05381</a> — The length-alone result and the recitation mitigation.</li>
+<li>[P6] Anthropic Applied AI team. "Effective Context Engineering for AI Agents." Anthropic Engineering, September 29, 2025. <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents" class="uri">https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents</a> — The vendor framing of context rot and the attention-budget account.</li>
+<li>[P7] Anthropic. "Managing Context on the Claude Developer Platform" (context editing and the memory tool). September 29, 2025. <a href="https://www.anthropic.com/news/context-management" class="uri">https://www.anthropic.com/news/context-management</a> — Platform mitigations; vendor-reported internal evaluation figures.</li>
+<li>[P8] Gemini Team, Google. "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities." Two editions:
+<ul>
+<li><ol type="a">
+<li>Original Google-hosted technical report, dated June 17, 2025, released with the Gemini 2.5 general-availability announcement of the same date: <a href="https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf" class="uri">https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf</a></li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>arXiv edition, arXiv:2507.06261, first submitted July 7, 2025 and revised through December 2025: <a href="https://arxiv.org/abs/2507.06261" class="uri">https://arxiv.org/abs/2507.06261</a></li>
+</ol></li>
+</ul>
+The June 2025 dating in §2 rests on edition (a). Locations in edition (a): §4.1, Long Context Reasoning, printed p. 18 (the 100K observation); Appendix §8.2, printed pp. 70–71 (context poisoning). See Editorial Note 4.</li>
+<li>[P9] Hsieh, C.-P., Sun, S., Kriman, S., et al. "RULER: What's the Real Context Size of Your Long-Context Language Models?" arXiv:2404.06654 (April 2024); COLM 2024. <a href="https://arxiv.org/abs/2404.06654" class="uri">https://arxiv.org/abs/2404.06654</a> — Claimed vs. effective context length.</li>
+</ul>
+<p><strong>Additional References</strong></p>
+<ul>
+<li>[R1] Willison, S. Quotation of Workaccount2, "coining 'context rot'." simonwillison.net, June 18, 2025 (posted 23:15 UTC), tagged "definitions." <a href="https://simonwillison.net/2025/Jun/18/context-rot/" class="uri">https://simonwillison.net/2025/Jun/18/context-rot/</a> . Same-day Mastodon post: <a href="https://fedi.simonwillison.net/@simon/114706938101130641" class="uri">https://fedi.simonwillison.net/@simon/114706938101130641</a> ; the reply distinguishing context rot from <em>Lost in the Middle</em> is in that Mastodon thread. — Same-day recognition of the coinage; the early gloss of the original sense.</li>
+<li>[R2] Breunig, D. "How Long Contexts Fail." dbreunig.com, June 22, 2025. <a href="https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html" class="uri">https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html</a> . Republished, with [R3], by O'Reilly Radar as "Managing Your Context Is the Key to Successful Agents." — The four failure patterns.</li>
+<li>[R3] Breunig, D. "How to Fix Your Context." dbreunig.com, June 26, 2025. <a href="https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html" class="uri">https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html</a> — Six named mitigation tactics.</li>
+<li>[R4] Willison, S. Link post on "How to Fix Your Context," simonwillison.net, June 29, 2025. <a href="https://simonwillison.net/2025/Jun/29/" class="uri">https://simonwillison.net/2025/Jun/29/</a> — Describes Breunig's four patterns as patterns of context rot.</li>
+<li>[R5] Breunig, D. "DeepMind Shows Us the Messy Reality of Agent Building." dbreunig.com, June 17, 2025. <a href="https://www.dbreunig.com/2025/06/17/an-agentic-case-study-playing-pokémon-with-gemini.html" class="uri">https://www.dbreunig.com/2025/06/17/an-agentic-case-study-playing-pokémon-with-gemini.html</a> — Same-day practitioner reading of the Gemini 2.5 report's agent appendix; retained as context, since the observation is now cited to [P8] directly.</li>
+<li>[R6] Lee, T. B. "Context rot: the emerging challenge that could hold back LLM progress." <em>Understanding AI</em>, November 10, 2025. <a href="https://www.understandingai.org/p/context-rot-the-emerging-challenge" class="uri">https://www.understandingai.org/p/context-rot-the-emerging-challenge</a> — General-audience consolidation; dates the coinage to a June Hacker News comment.</li>
+<li>[R7] Shi, F., Chen, X., Misra, K., et al. "Large Language Models Can Be Easily Distracted by Irrelevant Context." ICML 2023. arXiv:2302.00093. <a href="https://arxiv.org/abs/2302.00093" class="uri">https://arxiv.org/abs/2302.00093</a> — Pre-name distractor evidence, cited by [P2].</li>
+<li>[R8] Agarwal, R., Singh, A., Zhang, L. M., et al. "Many-Shot In-Context Learning." NeurIPS 2024. arXiv:2404.11018. <a href="https://arxiv.org/abs/2404.11018" class="uri">https://arxiv.org/abs/2404.11018</a> — Counter-evidence: gains from long contexts filled with relevant examples.</li>
+<li>[R9] Kamradt, G. "Needle In A Haystack — Pressure Testing LLMs." GitHub repository, 2023. <a href="https://github.com/gkamradt/LLMTest_NeedleInAHaystack" class="uri">https://github.com/gkamradt/LLMTest_NeedleInAHaystack</a> — The NIAH probe.</li>
+</ul>
+<h5 id="editorial-notes-1">Editorial Notes</h5>
+<ol type="1">
+<li><strong>Date of Appearance.</strong> The date records the earliest currently documented use [P1], following the AES rule that appearance means documented first use, not prominence.
+<ul>
+<li><em>Timestamp:</em> Muse Spark 1.3 confirmed the comment's record through the Hacker News API: author Workaccount2, Unix time 1750255791 (June 18, 2025, about 14:10 UTC). GPT-6 independently opened the comment and the same-day reply.</li>
+<li><em>Earlier uses:</em> searches on November 5, 2026 found no documented earlier use in the LLM sense. One secondary source asserts that the phrase recurred in "late 2024 and 2025 threads," but gives no instance, and it is not relied on. Neither the contributor nor the reviewers ran an exhaustive search, so the date is the earliest <em>documented</em> use, not a proven first use.</li>
+</ul></li>
+<li><strong>Attribution of the coinage.</strong> Several secondary sources state that Chroma "coined" the term in July 2025. That is incorrect: the Chroma report postdates [P1] by about four weeks, and it makes no coinage claim and credits no one [P2]. This entry credits the coinage to [P1] and the measurement program to [P2]. Willison's in-thread reply [P1] and quotation post [R1] are cited for dating and gloss only.</li>
+<li><strong>NoLiMa versions.</strong> The first arXiv version (v1, February 7, 2025) reports 12 models, 10 below 50% of baseline at 32K. Later arXiv versions and the ICML proceedings report 13 models and 11. GPT-4o's 99.3% → 69.7% is the same in all versions. The entry cites v1 explicitly for the 12/10 figures (GPT-6 review, M1).</li>
+<li><strong>Gemini 2.5 report: closed at the primary level.</strong> The report exists in two editions, cited separately at [P8].
+<ul>
+<li><em>Editions:</em> the original Google-hosted PDF is dated June 17, 2025 and was released with the general-availability announcement that day. The arXiv edition was first submitted July 7, 2025.</li>
+<li><em>Quotation:</em> both focused checks read the passage in the Google-hosted PDF itself. GPT-6 locates it in §4.1, p. 18, and also read the context-poisoning appendix (§8.2, pp. 70–71). The report's own "albeit anecdotal" hedge is reflected in §§2 and 5.3.</li>
+<li><em>Remaining limit:</em> GPT-6 notes that no archived June 17 timestamp for the PDF file itself was independently established. The June 17 date rests on the document's own dating and the same-day announcement.</li>
+</ul></li>
+<li><strong>URLs: all confirmed.</strong>
+<ul>
+<li>Willison's quotation post [R1] was confirmed by Muse Spark 1.3.</li>
+<li>Breunig's [R2] and [R3] were confirmed live by both focused checks, with tracking parameters removed. Muse Spark 1.3 noted that [R3] lists six tactics; §4 now says so.</li>
+<li>Willison's in-thread reply on [P1] was verified verbatim by Muse Spark 1.3, at June 18, 2025, 23:17 UTC.</li>
+</ul></li>
+<li><strong>Cross-reference integrity (AES Amendment D).</strong>
+<ul>
+<li>The two Launch Edition See Also targets are items in that edition's short-form recommended list, not standalone entries. Their collection records will be occurrence-level records under AES-ID rule 6.</li>
+<li>The two 2026 targets are marked as outside the collection.</li>
+<li>Context Engineering: see Note 7.</li>
+</ul></li>
+<li><strong>Context Engineering's identifier, and this entry's provisional identifier.</strong>
+<ul>
+<li><em>Context Engineering:</em> AIK-2025-F-N-CONTEXTENG (concept AIKC-000002) was confirmed against the live master register on November 5, 2026: Context Engineering v0.2.1, Status Accepted, editorial approval November 4, 2026. The handoff snapshot that recorded only RLVR was stale.</li>
+<li><em>This entry:</em> proposed for the register's consideration, not assigned: type <strong>F</strong>, origin <strong>N</strong>, key <strong>CONTEXTROT</strong>, giving AIK-2025-F-N-CONTEXTROT. Both reviewers found the proposed form appropriate. Assignment is the editor's act, through the register. <em>(Status update: assigned and accepted November 6, 2026; see Review Status.)</em></li>
+</ul></li>
+<li><strong>Length.</strong> The v0.2 additions pushed the core sections (§§1–8) past 3,600 words. Redundant wording in §§1, 2, 4, 5.3, 6 and 8 was then trimmed, and no substantive claim was removed. In v0.2.1 the core runs about 3,490 words, within the full-length band (2,000–3,500 words). Front matter, references, notes and provenance bring the file to about 5,900.</li>
+<li><strong>Anthropic sources: closed.</strong>
+<ul>
+<li><em>[P7]:</em> the 39% and 29% figures and their internal agentic-search scope were confirmed on the live page (Muse Spark 1.3).</li>
+<li><em>[P6]:</em> the quoted phrases and the §3.4 account were confirmed on the live guide by both focused checks. That covers the recall sentence, "finite resource with diminishing marginal returns," "attention budget," the n² and training-distribution account, and "a performance gradient rather than a hard cliff." The guide itself names context rot and links to the Chroma report.</li>
+</ul></li>
+<li><strong>Chroma quotation location: closed.</strong>
+<ul>
+<li><em>The two §1 phrases:</em> they are the report's summary sentence, printed beneath its title. GPT-6 confirmed this in the report. Muse Spark 1.3 withdrew review item R2, explaining that its extraction of the page had omitted the header summary block.</li>
+<li><em>The v0.2 fix:</em> keeping the quotation, stating its location, and adding the body's wording was accepted by both reviewers.</li>
+</ul></li>
+<li><strong>Chroma scoring method: closed.</strong> The judge detail is in the report itself: "We evaluate model outputs using an aligned GPT-4.1 judge." GPT-6 adds that the judge covered the needle-in-a-haystack and LongMemEval experiments, calibrated against manually labeled outputs. The repeated-words explanation was reworded in v0.2.1 so that generation failures are not all attributed to a single cause (GPT-6 focused check, R1).</li>
+</ol>
+<h5 id="credits-1">Credits</h5>
+<ul>
+<li>Written by Claude Opus 5.5.</li>
+<li>Peer review: Muse Spark 1.3 and GPT-6.</li>
+</ul>
+<p>Accepted by the editor, W.H.L. The dated record of this entry (versions, audits, reviews and rulings) is in Appendix G.</p>
+<h2 id="dynamic-planning-for-llm-agents">Dynamic Planning for LLM Agents</h2>
+<p><em>Internal Concept ID AIKC-000043 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-dynplan"></a></p>
+<h3 id="dynamic-planning-for-llm-agents-aik-2025-s-p-dynplan">Dynamic Planning for LLM Agents — <code>AIK-2025-S-P-DYNPLAN</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L1-M5</td>
+<td>2025-09-03</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-m5-dynamic-planning-for-llm-agents-type-s">L1-M5 — Dynamic Planning for LLM Agents (type S)</h4>
+<p><strong>Date of Appearance:</strong> September 3, 2025 (Paglieri et al., arXiv:2509.03581v1)<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-DYNPLAN</code> · <strong>Internal Concept ID:</strong> AIKC-000043<br />
+<strong>Concept:</strong> C:DYNPLAN</p>
+<p><em>As published:</em> <strong>Definition:</strong> A meta-cognitive planning approach where agents learn when to plan (vs. acting directly), optimizing planning cost and success probability. <strong>Why 2025:</strong> First formal learning framework for adaptive planning schedules. <strong>References:</strong> • Anonymous. Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents. arXiv (2025).</p>
+<p><strong>References (corrected record):</strong> Paglieri, D., Cupiał, B., Cook, J., Piterbarg, U., Tuyls, J., Grefenstette, E., Foerster, J. N., Parker-Holder, J., &amp; Rocktäschel, T. (2025). <em>Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents.</em> arXiv:2509.03581. [C02]</p>
+<h2 id="evoagent-continual-world-model-agents">EvoAgent — Continual World-Model Agents</h2>
+<p><em>Internal Concept ID AIKC-000045 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-evoagent"></a></p>
+<h3 id="evoagent-continual-world-model-agents-aik-2025-s-p-evoagent">EvoAgent — Continual World-Model Agents — <code>AIK-2025-S-P-EVOAGENT</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L1-M7</td>
+<td>2025-02-09</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-m7-evoagent-continual-world-model-agents-type-s">L1-M7 — EvoAgent — Continual World-Model Agents (type S)</h4>
+<p><strong>Date of Appearance:</strong> February 9, 2025 (Feng et al., arXiv:2502.05907)<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-EVOAGENT</code> · <strong>Internal Concept ID:</strong> AIKC-000045<br />
+<strong>Concept:</strong> C:EVOAGENT</p>
+<p><em>As published:</em> <strong>Definition:</strong> Agents that autonomously build and update a world model, reflect, revise, and evolve their own behavior without curated curricula. <strong>Why 2025:</strong> First time continual world-model agents matched SOTA on long-horizon environments. <strong>References:</strong> • Feng, T., Wang, X., Zhou, Z., et al. EvoAgent: Agent Autonomous Evolution with Continual World Model. arXiv (2025).</p>
+<p><strong>Why 2025 (corrected record):</strong> Feng et al. (arXiv:2502.05907) report, in Minecraft, an average success-rate improvement of 105% over existing methods and more than 6× fewer ineffective actions. [C05]</p>
+<h2 id="generative-user-interfaces-genui">Generative User Interfaces (GenUI)</h2>
+<p><em>Internal Concept ID AIKC-000024 · 1 record in 2025</em></p>
+<p><a id="aik-2025-f-p-genui"></a></p>
+<h3 id="generative-user-interfaces-genui-aik-2025-f-p-genui">Generative User Interfaces (GenUI) — <code>AIK-2025-F-P-GENUI</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F / P</td>
+<td>standalone</td>
+<td>2023-10-11</td>
+<td>2025-11-29</td>
+</tr>
+</tbody>
+</table>
+<h4 id="generative-user-interfaces-genui-1">Generative User Interfaces (GenUI)</h4>
+<p><em>Corrected collection text. The original publication is preserved unchanged in the Historical Lexicon Archive.</em></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Term</strong></td>
+<td>Generative User Interfaces (GenUI); Generative UI</td>
+</tr>
+<tr class="even">
+<td><strong>Date of Appearance</strong></td>
+<td>October 11, 2023 (Vercel, "Announcing v0: Generative UI"). Vercel had described v0 as a "generative user interface system" at its launch in September 2023. Earliest documented use identified; not an exhaustive priority claim</td>
+</tr>
+<tr class="odd">
+<td><strong>Date of Original Publication</strong></td>
+<td>November 29, 2025 (Champaign Magazine, post 14146)</td>
+</tr>
+<tr class="even">
+<td><strong>Historical Coverage</strong></td>
+<td>Through November 29, 2025, the date of original publication. Corrections rely only on sources available by that date</td>
+</tr>
+<tr class="odd">
+<td><strong>Original Contributor</strong></td>
+<td>Gemini 3 Pro (Google), sole contributor, writing about a feature of Gemini 3</td>
+</tr>
+<tr class="even">
+<td><strong>Original Reviewers</strong></td>
+<td>None named in the post</td>
+</tr>
+<tr class="odd">
+<td><strong>Corrections Prepared by</strong></td>
+<td>Claude Opus 5.5 (Anthropic)</td>
+</tr>
+<tr class="even">
+<td><strong>Independent review</strong></td>
+<td>GPT-6</td>
+</tr>
+<tr class="odd">
+<td><strong>Base version</strong></td>
+<td>The Gemini 3 Pro entry text (basis: sole published version; Gemini 3 Pro is the post's sole contributor)</td>
+</tr>
+<tr class="even">
+<td><strong>Entry ID</strong></td>
+<td>AIK-2025-F-P-GENUI</td>
+</tr>
+</tbody>
+</table>
+<p><em>Markers: <code>[Cnn]</code> marks a corrected or added passage and <code>[ST01]</code> the rearrangement into AES sections, documented in the entry's correction register. Unmarked text is the original's own wording (archive lines A-005 to A-062).</em></p>
+<h5 id="definition-5">1. Definition</h5>
+<p>Generative User Interfaces (GenUI), also known as Generative UI, is a paradigm in human-computer interaction where a user interface (UI) is dynamically and automatically generated by an artificial intelligence model in real-time, rather than being pre-programmed by a developer.</p>
+<p>This approach represents a fundamental shift from traditional static interfaces. Instead of every user seeing the same fixed layout, a GenUI system can create or adapt an interface specifically for a user's context, intent, or query. For example, rather than just replying with text, an AI might generate an interactive map, a data dashboard, or a custom booking form to best solve the user's problem.</p>
+<h5 id="origin-and-historical-development-2">2. Origin and Historical Development</h5>
+<p>The term was in use before 2025. Vercel launched v0 in September 2023 as a "generative user interface system" and named the approach "Generative UI" on October 11, 2023 [9]; on March 1, 2024 it released AI SDK 3.0 "with Generative UI support" [10]. Chen et al. proposed generative interfaces for language models in an August 2025 preprint [2]. On November 18, 2025, Google Research presented "a novel implementation of generative UI" for Gemini 3 [3]. [C01]</p>
+<h5 id="conceptual-or-technical-framework-1">3. Conceptual or Technical Framework</h5>
+<p>GenUI is not a single technology but a spectrum of approaches, ranging from high-control, developer-defined methods to fully autonomous AI generation. [4] [C06]</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Generation Method</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Static Generation</strong></td>
+<td>The AI's role is to select the correct UI from a fixed library of pre-built, human-designed components.</td>
+<td>A user asks, "What's the weather?" and the AI selects and displays a pre-made "Weather Widget."</td>
+</tr>
+<tr class="even">
+<td><strong>2. Declarative Generation</strong></td>
+<td>The AI generates a structured specification (e.g., a JSON schema or React component tree) that describes the interface's layout and elements. A front-end system then interprets this specification and renders the UI.</td>
+<td>A user asks for a sales comparison, and the AI generates a spec: {"type": "BarChart", "data": [...], "title": "Q3 vs Q4"}.</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Open-Ended Generation</strong></td>
+<td>The AI generates the raw, "full-stack" UI code (e.g., HTML, CSS, and JavaScript) from scratch. This method offers maximum flexibility but is the most difficult to control.</td>
+<td>A user says, "Make me a simple timer app," and the AI writes and executes the complete code for a functional timer.</td>
+</tr>
+</tbody>
+</table>
+<p>Declarative Generation provides the flexibility of AI while maintaining brand consistency, security, and predictability by limiting the AI to a set of pre-approved components (like a "digital Lego set"). [C05]</p>
+<h5 id="applications-and-implementations-2">4. Applications and Implementations</h5>
+<p><em>From the post's preliminary answer by the same contributor (A-005 to A-008), on Gemini 3:</em> [ST01]</p>
+<p>Gemini 3 moves beyond static text-and-image responses by generating adaptive, interactive user interfaces (UIs) on the fly. Instead of describing a solution, the model builds an interactive tool for the user.</p>
+<p>Two primary examples of this new approach are:</p>
+<ul>
+<li><strong>Visual Layout:</strong> For prompts like travel planning, the model generates an immersive, magazine-style layout with interactive modules, maps, and images that the user can click and modify.</li>
+<li><strong>Dynamic View:</strong> This uses agentic coding to design and render a custom UI perfectly suited for the query. For example, a query about art history might return an interactive, scrollable virtual gallery rather than a simple wall of text. This capability is also being integrated directly into Google Search.</li>
+</ul>
+<h5 id="evidence-and-evaluation-2">5. Evidence and Evaluation</h5>
+<p><em>Not in original.</em> The original reports no evaluation. [ST01]</p>
+<h5 id="significance-and-implications-2">6. Significance and Implications</h5>
+<p>This capability allows an AI agent to move beyond text-based conversation and build the exact tools a user needs on the fly. [C05] [ST01]</p>
+<ul>
+<li><strong>Hyper-Personalization:</strong> The UI can adapt to an individual user's expertise, goals, and history. A novice user might see a step-by-step wizard, while an expert sees a dense data dashboard for the exact same task.</li>
+<li><strong>Contextual Adaptability:</strong> The interface can change in real-time based on new information. A travel app's home screen could change from a "booking" layout to a "live-trip" layout (showing boarding passes and maps) the moment the user arrives at the airport.</li>
+<li><strong>Reduced Friction:</strong> By generating the perfect tool for the job (e.g., a calculator, a-to-b directions), the AI eliminates the clicks and navigation required to find that tool within a traditional application.</li>
+<li><strong>Development Velocity:</strong> GenUI can automate the creation of simple UIs, forms, and data visualizations, freeing developers to focus on more complex logic rather than repetitive front-end code.</li>
+</ul>
+<h5 id="limitations-debates-and-open-questions-2">7. Limitations, Debates, and Open Questions</h5>
+<p>Despite its potential, the GenUI paradigm introduces significant technical and ethical challenges.</p>
+<ul>
+<li><strong>Loss of Control and Consistency:</strong> An AI given full creative freedom may generate UIs that are "soulless," off-brand, or functionally inconsistent, leading to a confusing user experience.</li>
+<li><strong>Security Vulnerabilities:</strong> Open-ended generation is highly vulnerable to risks like Prompt Injection, where a malicious user could trick the AI into generating code that steals data or performs unauthorized actions. [5] [C06]</li>
+<li><strong>Accessibility and Usability:</strong> An AI model does not inherently understand human-centric design principles like WCAG (Web Content Accessibility Guidelines). It can easily generate interfaces that are inaccessible to users with disabilities (e.g., poor color contrast, unnavigable by keyboard). [6] [7] [C06]</li>
+<li><strong>Bias and Ethics:</strong> The AI may perpetuate biases present in its training data, leading to UIs that are discriminatory or exclusionary. [1] [C06]</li>
+<li><strong>Performance and Cost:</strong> Generating a UI in real-time is far more computationally expensive (and thus slower) than serving a pre-built, static file. This can lead to noticeable latency for the user.</li>
+<li><strong>The "Black Box" Problem:</strong> When a GenUI fails or produces a bug, it can be extremely difficult to debug, as the layout was not written by a human and may be different every time it's generated.</li>
+</ul>
+<h5 id="related-concepts-and-distinctions-2">8. Related Concepts and Distinctions</h5>
+<p><em>Not in original.</em> Related terms are listed under See Also. [ST01]</p>
+<h5 id="see-also-2">See Also</h5>
+<p><em>Cross-reference markings (editorial, not part of the original): targets in the collection carry their Public Entry IDs; the others are marked as having no entry.</em></p>
+<ul>
+<li>Foundation Agent — <em>no entry in the 2025 collection</em></li>
+<li>ReAct (Reasoning and Acting) — <em>no entry in the 2025 collection</em></li>
+<li>Multimodality — <em>no entry in the 2025 collection</em></li>
+<li>Human-Computer Interaction (HCI) — <em>no entry in the 2025 collection</em></li>
+</ul>
+<h5 id="references-and-sources-1">References and Sources</h5>
+<ol type="1">
+<li>Mend.io (September 2025). "Understanding Bias in Generative AI: Types, Causes &amp; Consequences." Provides a comprehensive overview of how biases (racial, gender, cultural) are embedded in training datasets and amplified by generative models, leading to discriminatory or exclusionary outputs.</li>
+<li>Chen, Jiaqi, et al. (August 2025). "Generative Interfaces for Language Models." arXiv preprint arXiv:2508.19227. Proposes generative interfaces for language models, with structured interface representations, and evaluates them against conventional chat interfaces. [C04]</li>
+<li>Leviathan, Y., Valevski, D., Natchu, V., &amp; Matias, Y. (November 18, 2025). "Generative UI: A rich, custom, visual interactive user experience for any prompt." Google Research Blog. <a href="https://research.google/blog/generative-ui-a-rich-custom-visual-interactive-user-experience-for-any-prompt/" class="uri">https://research.google/blog/generative-ui-a-rich-custom-visual-interactive-user-experience-for-any-prompt/</a> Presents "a novel implementation of generative UI" in Gemini 3. [C02] [C03]</li>
+<li>Berman, Eli (September 12, 2025). "The Three Types of Generative UI: Static, Declarative and Fully Generated." CopilotKit Blog. <a href="https://www.copilotkit.ai/blog/the-three-kinds-of-generative-ui" class="uri">https://www.copilotkit.ai/blog/the-three-kinds-of-generative-ui</a> [C08] Provides a clear, developer-focused taxonomy for GenUI, explaining the practical trade-offs between safety and flexibility for each generation method. This is the source for the "Spectrum of Generation" table.</li>
+<li>OWASP (2025). "LLM01: Prompt Injection." OWASP Top 10 for Large Language Model Applications. The leading security-focused reference that defines prompt injection as the top vulnerability for LLM-based systems, which directly applies to Open-Ended GenUI models.</li>
+<li>AudioEye (July 2025). "How WCAG Guidelines Apply to AI-Generated Content." AudioEye Blog. A detailed analysis of the accessibility challenges inherent in AI-generated content, specifically citing common failures in color contrast, alt text, and semantic HTML structure (WCAG 1.1.1, 1.4.3, 1.3.1).</li>
+<li>Smith, Aleksandra (September 2025). "AI-generated UX and the growing accessibility debt (+ how to fix it)." [C09] Medium (Design Bootcamp). Discusses how AI models trained on existing, often inaccessible, web data perpetuate and "systematically" create accessibility failures, such as poor touch-target sizes and missing focus indicators.</li>
+<li>Alabduljabbar, R. (October 25, 2024). "User-centric AI: evaluating the usability of generative AI applications through user reviews on app stores." PeerJ Computer Science (<a href="doi:10.7717/peerj-cs.2421" class="uri">doi:10.7717/peerj-cs.2421</a>); indexed in PubMed Central. A usability evaluation of five generative AI apps based on 11,549 app-store reviews. [C04]</li>
+<li>Vercel (October 11, 2023). "Announcing v0: Generative UI." Vercel Blog. <a href="https://vercel.com/blog/announcing-v0-generative-ui" class="uri">https://vercel.com/blog/announcing-v0-generative-ui</a> [C01]</li>
+<li>Vercel (March 1, 2024). "Introducing AI SDK 3.0 with Generative UI support." Vercel Blog. <a href="https://vercel.com/blog/ai-sdk-3-generative-ui" class="uri">https://vercel.com/blog/ai-sdk-3-generative-ui</a> [C01]</li>
+</ol>
+<h5 id="editorial-notes-2">Editorial Notes</h5>
+<ol type="1">
+<li><strong>Status.</strong> Independently reviewed and accepted by the editor. The dated record is in Appendix G.</li>
+<li><strong>Vendor affiliation.</strong> The entry was written by Gemini 3 Pro, a Google model, about a feature of Google's Gemini 3, with no reviewer. §4 repeats the contributor's own description of Gemini 3 and is not independently verified.</li>
+<li><strong>Unmerged revision (C07).</strong> The post ends with a suggested new lead and a reference [1] that were never merged into the entry (A-070 to A-074). They are not carried. The lead says GenUI was "introduced by Google Research in November 2025", which is the error corrected by C01. Its reference [1] omits an author (C03). The corrected reference is [3].</li>
+<li><strong>In-text citations (C06).</strong> The original entry cites nothing in its text. The markers added here follow the post's own annotations of what each reference supports. Those annotations are Gemini 3 Pro's claims about its sources, not independent verification. The independent review found the sources real and generally supportive: [1], [5], [6] and [7] are practitioner or reference articles rather than studies of GenUI itself. A marker is therefore not a finding that every cited claim is established. The "Black Box" and performance points have no reference in the original and are left uncited.</li>
+<li><strong>Source-date rule.</strong> Every source used to correct the text was available by November 29, 2025: Vercel's posts (2023, 2024), the Google Research post (November 18, 2025) and the PeerJ article (October 2024).</li>
+<li><strong>Conflict.</strong> None for the preparer: no Anthropic model contributed to the post.</li>
+</ol>
+<h5 id="credits-2">Credits</h5>
+<ul>
+<li>Source audits: Claude Opus 5.5 (first audit) and Muse Spark 1.3 (second audit).</li>
+<li>Corrections: Claude Opus 5.5.</li>
+<li>Independent review: GPT-6.</li>
+</ul>
+<p>Accepted by the editor, W.H.L. The dated record of this entry (versions, audits, reviews and rulings) is in Appendix G.</p>
+<h2 id="graphrag">GraphRAG</h2>
+<p><em>Internal Concept ID AIKC-000084 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-graphrag"></a></p>
+<h3 id="graphrag-aik-2025-s-p-graphrag">GraphRAG — <code>AIK-2025-S-P-GRAPHRAG</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L4-G8</td>
+<td>— (not established)</td>
+<td>2025-12-03</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l4-g8-graphrag-type-s">L4-G8 — GraphRAG (type S)</h4>
+<p><strong>Public entry ID:</strong> <code>AIK-2025-S-P-GRAPHRAG</code> — <strong>Concept:</strong> GRAPHRAG.<br />
+<strong>Date of Appearance:</strong> Not established. The entry states Microsoft's framework (2024) with 2025 maturation; no appearance ruling.<br />
+<strong>Contributor:</strong> Grok 4.1. Two published short text states.</p>
+<p><em>Text 1 (as published, corrections marked):</em> <strong>GraphRAG</strong>: Graph-augmented RAG, popularized by Microsoft in 2024 and matured in 2025 with enterprise implementations like auto-tuning.[C03 — the VeriTrail clause is removed without replacement; original: "with enterprise implementations like auto-tuning and VeriTrail."] Enhances relational retrieval over standard RAG.</p>
+<p><em>Text 2 (as published, corrections marked):</em> GraphRAG augments RAG with knowledge graphs for relational data. Microsoft’s 2024 framework matured in 2025 for enterprise.[C03 — the VeriTrail clause is removed without replacement; original: "Microsoft’s 2024 framework matured in 2025 with tools like VeriTrail for enterprise."] Example: Connecting legal entities in research for accurate Q&amp;A.</p>
+<p><strong>Why It Matters in 2025</strong>: Improves RAG accuracy in complex queries; scalability challenges drive adoption in knowledge bases.</p>
+<p><em>Editorial note:</em> VeriTrail is a Microsoft Research hallucination-detection method (arXiv:2505.21786), not a GraphRAG tool or enterprise product; one of its evaluation datasets is a GraphRAG question-answering process, the probable source of the slide.</p>
+<h2 id="large-scale-population-agent-simulation-llm-archetypes">Large-Scale Population Agent Simulation (LLM Archetypes)</h2>
+<p><em>Internal Concept ID AIKC-000048 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-popagentsim"></a></p>
+<h3 id="large-scale-population-agent-simulation-llm-archetypes-aik-2025-s-p-popagentsim">Large-Scale Population Agent Simulation (LLM Archetypes) — <code>AIK-2025-S-P-POPAGENTSIM</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L1-M10</td>
+<td>2024-09-14</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-m10-large-scale-population-agent-simulation-llm-archetypes-type-s">L1-M10 — Large-Scale Population Agent Simulation (LLM Archetypes) (type S)</h4>
+<p><strong>Date of Appearance:</strong> September 14, 2024 (Chopra et al., arXiv:2409.10568v1; AAMAS 2025) [C03]<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-POPAGENTSIM</code> · <strong>Internal Concept ID:</strong> AIKC-000048<br />
+<strong>Concept:</strong> C:POPAGENTSIM</p>
+<p><em>As published:</em> <strong>Definition:</strong> Simulations with millions of lightweight LLM agents, each instantiated from shared archetypes, enabling social, economic, and policy modeling. <strong>Why 2025:</strong> First 2025 AAMAS paper demonstrated stable million-agent LLM simulation. <strong>References:</strong> • MIT Media Lab. On the Limits of Agency in Agent-Based Models. AAMAS (2025).</p>
+<p><strong>References (corrected record):</strong> Chopra, A., Kumar, S., Giray-Kuru, N., Raskar, R., &amp; Quera-Bofarull, A. (2025). <em>On the limits of agency in agent-based models.</em> Proceedings of AAMAS 2025. arXiv:2409.10568 (2024). The authors are at the MIT Media Lab and Oxford. [C03]</p>
+<p><em>Editorial note:</em> The work dates from a 2024 preprint and was published at AAMAS 2025. Its case study simulates 8.4 million agents representing New York City.</p>
+<h2 id="long-horizon-llm-planning-efficiency-metrics">Long-Horizon LLM Planning &amp; Efficiency Metrics †</h2>
+<p><em>Internal Concept ID AIKC-000047 · provisional concept identity · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-lhplanmetric"></a></p>
+<h3 id="long-horizon-llm-planning-efficiency-metrics-aik-2025-s-p-lhplanmetric">Long-Horizon LLM Planning &amp; Efficiency Metrics — <code>AIK-2025-S-P-LHPLANMETRIC</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L1-M9</td>
+<td>— (not established)</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-m9-long-horizon-llm-planning-efficiency-metrics-type-s">L1-M9 — Long-Horizon LLM Planning &amp; Efficiency Metrics (type S)</h4>
+<p><strong>Date of Appearance:</strong> Not established. The installment frames the term as a 2025 term.<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-LHPLANMETRIC</code> · <strong>Internal Concept ID:</strong> AIKC-000047<br />
+<strong>Concept:</strong> C:LHPLANMETRIC (provisional: descriptive coinage)</p>
+<p><em>As published:</em> <strong>Definition:</strong> Metrics evaluating plan length, token cost, success rate, and planning-to-execution efficiency for tool-using agents. <strong>Why 2025:</strong> Emerges alongside frameworks like Plan-and-Act, standardizing agent evaluation. <strong>References:</strong> • Erdogan, L. E., et al. Plan-and-Act. ICML (2025).</p>
+<p><strong>References (corrected record):</strong> None that supports this entry. The cited paper (Plan-and-Act) concerns L1-M6. [C06]</p>
+<p><em>Editorial note:</em> "Standardizing agent evaluation" is unsourced.</p>
+<h2 id="model-context-protocol-mcp">Model Context Protocol (MCP)</h2>
+<p><em>Internal Concept ID AIKC-000029 · 2 records in 2025</em></p>
+<p><a id="aik-2025-s-p-mcp"></a></p>
+<h3 id="model-context-protocol-mcp-aik-2025-s-p-mcp">Model Context Protocol (MCP) — <code>AIK-2025-S-P-MCP</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L2-E4</td>
+<td>2024-11-25 (documented milestone)</td>
+<td>2025-12-01</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l2-e4-model-context-protocol-mcp-type-s">L2-E4 — Model Context Protocol (MCP) (type S)</h4>
+<p><strong>Date of Appearance (documented milestone, not an exhaustive first use):</strong> November 25, 2024 (Anthropic's announcement and open-sourcing of MCP) [C01] ⚑<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-MCP</code> · <strong>Internal Concept ID:</strong> AIKC-000029<br />
+<strong>Concept:</strong> C:MCP, shared with L7-K7</p>
+<p><em>As published:</em> • Concept: A proposed industry standard/protocol designed for the interoperability of models, allowing agents and applications to reliably exchange context, tools, and data access permissions in a structured, verifiable format. • Why 2025: Emerged as a necessary infrastructure layer to support the proliferation of multi-vendor, multi-tool agentic workflows. <strong>Reference (table, A-059):</strong> AI Standards Foundation. Model Context Protocol Specification, v1.0.0. <strong>Type &amp; Source:</strong> Technical Standard (ASF 2025)</p>
+<p><strong>Reference (corrected record):</strong> Anthropic (2024, November 25). <em>Introducing the Model Context Protocol.</em> The specification is versioned by date, the first version being <code>2024-11-05</code>. There is no "v1.0.0", and no "AI Standards Foundation" published it. [C01]</p>
+<p><em>Editorial note:</em> MCP was released in November 2024. The "Why 2025" line describes its growth in 2025, not its first appearance. ⚑ MCP is Anthropic's; the preparer is an Anthropic model.</p>
+<p><a id="aik-2025-e-p-mcp"></a></p>
+<h3 id="model-context-protocol-mcp-aik-2025-e-p-mcp">Model Context Protocol (MCP) — <code>AIK-2025-E-P-MCP</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E / P</td>
+<td>L7-K7</td>
+<td>2024-11-25</td>
+<td>2025-12-12</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l7-k7-model-context-protocol-mcp-type-e">L7-K7 — Model Context Protocol (MCP) (type E)</h4>
+<p><strong>Date of Appearance (documented milestone, not an exhaustive first use):</strong> November 25, 2024 (Anthropic's announcement and open-sourcing of MCP), as for L2-E4 ⚑<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-E-P-MCP</code> · <strong>Internal Concept ID:</strong> AIKC-000029<br />
+<strong>Concept:</strong> C:MCP, shared with L2-E4</p>
+<p><em>As published:</em> <strong>List, A-019.</strong> • Model Context Protocol (MCP) - Universal standard for AI tool integration</p>
+<p><em>Editorial note:</em> The full entry is below (C02, C04, C05). ⚑</p>
+<h4 id="corrected-full-entry-model-context-protocol-mcp-l7-k7">Corrected full entry — Model Context Protocol (MCP) (L7-K7)</h4>
+<p><em>Final text by Copilot Smart (GPT-5.2) (corrected canonical text; C02, C04 and C05 applied). Source text: A-245 to A-272.</em> ⚑</p>
+<h5 id="definition-6">Definition</h5>
+<p>A universal standard enabling AI models and tools to share context, history, instructions, and data seamlessly across platforms. MCP functions as the “USB‑C of AI,” providing a common language for interoperability.</p>
+<h5 id="context-motivation-1">Context &amp; Motivation</h5>
+<p>MCP emerged as a solution to the fragmentation of context across AI tools, enabling continuous context sharing and integrated AI ecosystems. [C02]</p>
+<p><em>(The original opens: "By 2025, enterprises used 7–12 AI tools daily, often losing context between them. MCP emerged as a solution to this fragmentation crisis …". The figure has no source and none was found, and the sentence is removed. Its successor is reworded only to stand without it.)</em> [C02]</p>
+<h5 id="technical-dimensions-1">Technical Dimensions</h5>
+<ul>
+<li>Serialization: Standardized formats for contextual information</li>
+<li>Secure Transmission: Encrypted communication protocols</li>
+<li>Synchronization: Mechanisms for maintaining consistency</li>
+<li>Interoperability Layer: Abstraction across diverse architectures</li>
+</ul>
+<p>Formal Expression:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">d</mi></mrow></msub><mo>=</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">z</mi><mi mathvariant="normal">e</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">L</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">c</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>→</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">t</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">C</mi><mi mathvariant="normal">P</mi></mrow><mo stretchy="true" form="postfix">)</mo></mrow><mo>→</mo><mrow><mi mathvariant="normal">D</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">z</mi><mi mathvariant="normal">e</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>→</mo><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">x</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">R</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Context}_{\mathrm{Shared}} = \mathrm{Serialize}(\mathrm{Context}_{\mathrm{Local}}) \rightarrow \mathrm{Transmit}(\mathrm{MCP}) \rightarrow \mathrm{Deserialize}() \rightarrow \mathrm{Integrate}(\mathrm{Context}_{\mathrm{Remote}})</annotation></semantics></math> [C05]</p>
+<h5 id="governance-oversight-1">Governance &amp; Oversight</h5>
+<ul>
+<li>Data Privacy: Protecting sensitive contextual information</li>
+<li>Security: Preventing context manipulation and poisoning attacks</li>
+<li>Ownership: Clarifying control rights over shared context</li>
+<li>Liability: Establishing accountability for cross‑platform decisions</li>
+</ul>
+<h5 id="historical-notes-1">Historical Notes</h5>
+<ul>
+<li>2024: Proposed by Anthropic; prototypes by industry partners</li>
+<li>2025: Major platforms (OpenAI, Microsoft, Google) announced adoption plans</li>
+</ul>
+<p><em>(The original's "2025: Community‑driven specification development (LangChain, LlamaIndex contributions)" is removed. The specification was authored and maintained by Anthropic; LangChain's and LlamaIndex's documented role is in clients, adapters and servers, not in the specification.)</em> [C02]</p>
+<h5 id="crossreferences-1">Cross‑References</h5>
+<p>Tool Access &amp; Capability Gates • AI Alignment • Governance Layer • Third‑Party Audits • Epistemic Accountability</p>
+<h5 id="references-1">References</h5>
+<ul>
+<li><p>Ehtesham, A., Singh, A., Gupta, G. K., &amp; Kumar, S. (2025). A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, ANP. arXiv:2505.02279</p></li>
+<li><p>He, J., Ruan, S., &amp; Landay, J. (2025). MCP Explorer: Interactive Learning Experience. NeurIPS 2025 Educational Showcase</p></li>
+<li><p>Venkiteela, P. (2025). The New Interoperability Paradigm: MCP, APIs, and the Future of Agentic AI. <em>Computer Fraud &amp; Security</em>, 2025(1), 1259–1271. <a href="doi:10.52710/cfs.817" class="uri">doi:10.52710/cfs.817</a> [C04]</p></li>
+<li><p>Anthropic (2024, November 25). <em>Introducing the Model Context Protocol.</em> The specification is versioned by date (<code>2024-11-05</code>, <code>2025-03-26</code>, <code>2025-06-18</code>, <code>2025-11-25</code>). [C02]</p></li>
+</ul>
+<p><em>(The original cites Venkiteela as an "IEEE/ResearchGate Preprint"; it is a journal article [C04]. The original's "AI Interoperability Consortium (2024). MCP Specification v1.0. Community Draft" is replaced: no such consortium exists, MCP is Anthropic's, and its specification has no "v1.0" [C02].)</em></p>
+<hr />
+<h2 id="plan-and-act-agent-framework">Plan-and-Act Agent Framework</h2>
+<p><em>Internal Concept ID AIKC-000044 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-planact"></a></p>
+<h3 id="plan-and-act-agent-framework-aik-2025-s-p-planact">Plan-and-Act Agent Framework — <code>AIK-2025-S-P-PLANACT</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L1-M6</td>
+<td>2025-03</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-m6-plan-and-act-agent-framework-type-s">L1-M6 — Plan-and-Act Agent Framework (type S)</h4>
+<p><strong>Date of Appearance:</strong> March 2025 (Erdogan et al., arXiv:2503.09572; ICML 2025)<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-PLANACT</code> · <strong>Internal Concept ID:</strong> AIKC-000044<br />
+<strong>Concept:</strong> C:PLANACT</p>
+<p><em>As published:</em> <strong>Definition:</strong> A modular agent architecture separating a Planner (long-horizon strategy) and an Actor/Executor (tool use &amp; reasoning), supervised by synthetic plan data. <strong>Why 2025:</strong> Proved to dramatically improve long-horizon reasoning benchmarks. <strong>References:</strong> • Erdogan, L. E., Lee, N., Kim, S., et al. Plan-and-Act. ICML (2025).</p>
+<p><strong>Why 2025 (corrected record):</strong> Erdogan et al. (ICML 2025) report state-of-the-art success rates on web-navigation agent benchmarks: 57.58% on WebArena-Lite and 81.36% (text-only) on WebVoyager. [C05]</p>
+<h2 id="programmatic-representations-for-agents">Programmatic Representations (for Agents)</h2>
+<p><em>Internal Concept ID AIKC-000066 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-progrep"></a></p>
+<h3 id="programmatic-representations-for-agents-aik-2025-s-p-progrep">Programmatic Representations (for Agents) — <code>AIK-2025-S-P-PROGREP</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L5-D6</td>
+<td>— (not established)</td>
+<td>2025-12-05</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l5-d6-programmatic-representations-for-agents-type-s">L5-D6 — Programmatic Representations (for Agents) (type S)</h4>
+<p><strong>Date of Appearance:</strong> Not established.<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-PROGREP</code> · <strong>Internal Concept ID:</strong> AIKC-000066<br />
+<strong>Concept:</strong> C:PROGREP</p>
+<p><em>As published:</em> <strong>Table, A-014.</strong> <strong>Core Concept:</strong> Using symbolic programs, code, or rules to represent agent policies, making them interpretable, modular, and reusable. <strong>Why It's a 2025 Trend:</strong> The focus of a dedicated ICML 2025 workshop, signaling a move towards more interpretable and verifiable agent designs. <strong>Source Context:</strong> ICML 2025 Workshop</p>
+<h2 id="retrieval-augmented-generation-rag">Retrieval-Augmented Generation (RAG)</h2>
+<p><em>Internal Concept ID AIKC-000051 · 2 records in 2025</em></p>
+<p><a id="aik-2025-s-p-rag"></a></p>
+<h3 id="retrieval-augmented-generation-rag-next-gen-aik-2025-s-p-rag">Retrieval-Augmented Generation (RAG) — next-gen — <code>AIK-2025-S-P-RAG</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L1-S4</td>
+<td>2020-05</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-s4-retrieval-augmented-generation-rag-next-gen-type-s">L1-S4 — Retrieval-Augmented Generation (RAG) — next-gen (type S)</h4>
+<p><strong>Date of Appearance:</strong> May 2020 for RAG (Lewis et al., arXiv:2005.11401); "next-gen" is a qualifier<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-RAG</code> · <strong>Internal Concept ID:</strong> AIKC-000051<br />
+<strong>Concept:</strong> C:RAG</p>
+<p><em>As published:</em> <strong>Retrieval-Augmented Generation (RAG) — next-gen</strong> Definition: Systems that combine an external retriever (vector store, dense/sparse IR) with a generator LLM to ground responses in external knowledge. Why 2025: Advances focused on robustness, long-context multi-hop RAG, LLM-mediated retrieval scoring, and end-to-end evaluation frameworks. (arXiv) Example: LiveRAG systems with dynamic retrieval, context filtering, and LLM-based rerankers for multi-hop reasoning.</p>
+<p><strong>Source (corrected record):</strong> Sharma, C. (2025). <em>Retrieval-Augmented Generation: A Comprehensive Survey of Architectures, Enhancements, and Robustness Frontiers.</em> arXiv:2506.00054, <a href="https://arxiv.org/abs/2506.00054" class="uri">https://arxiv.org/abs/2506.00054</a> [C10]</p>
+<p><a id="aik-2025-s-p-rag-02"></a></p>
+<h3 id="retrieval-augmented-generation-rag-aik-2025-s-p-rag-02">Retrieval-Augmented Generation (RAG) — <code>AIK-2025-S-P-RAG-02</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L7-K3</td>
+<td>2020-05</td>
+<td>2025-12-12</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l7-k3-retrieval-augmented-generation-rag-type-s">L7-K3 — Retrieval-Augmented Generation (RAG) (type S)</h4>
+<p><strong>Date of Appearance (documented milestone, not an exhaustive first use):</strong> May 2020 (Lewis et al., arXiv:2005.11401), as for L1-S4<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-RAG-02</code> · <strong>Internal Concept ID:</strong> AIKC-000051<br />
+<strong>Concept:</strong> C:RAG, shared with L1-S4</p>
+<p><em>As published:</em> <strong>List, A-014.</strong> • Retrieval-Augmented Generation (RAG) - Hybrid architecture reducing hallucinations</p>
+<h2 id="vector-databases">Vector Databases</h2>
+<p><em>Internal Concept ID AIKC-000083 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-vectordb"></a></p>
+<h3 id="vector-databases-aik-2025-s-p-vectordb">Vector Databases — <code>AIK-2025-S-P-VECTORDB</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L4-G6</td>
+<td>— (not established)</td>
+<td>2025-12-03</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l4-g6-vector-databases-type-s">L4-G6 — Vector Databases (type S)</h4>
+<p><strong>Public entry ID:</strong> <code>AIK-2025-S-P-VECTORDB</code> — <strong>Concept:</strong> VECTORDB.<br />
+<strong>Date of Appearance:</strong> Not established. No factual finding from the audit; framing annotation L4-6 applies; C06 arises from the review.<br />
+<strong>Contributor:</strong> Grok 4.1. Two published short text states.</p>
+<p><em>Text 1 (as published):</em> <strong>Vector Databases</strong>: Systems storing data as vectors for semantic searches; exploded in 2025 due to RAG and agent memory needs, with top options like Pinecone emphasizing hybrid capabilities. Enables scalable AI but challenges privacy.</p>
+<p><em>Text 2 (as published, corrections marked):</em> Vector databases enable semantic searches via embeddings. 2025 explosion links to RAG and agents, with benchmarks favoring hybrid systems. Example: Recommending products by conceptual similarity in e-commerce.</p>
+<p><strong>Why It Matters in 2025</strong>: Privacy and scalability are debated amid unstructured data growth.[C06 — the unattributed "Supports 62% experimenting with agents" clause is removed without replacement; original: "Supports 62% experimenting with agents; privacy and scalability are debated amid unstructured data growth." The initial capital is adjusted after the removal.]</p>
+<p><em>Annotation:</em> vector databases are a pre-2025 subject; 2025 marks prominence (RAG/agent-driven adoption), not origin.</p>
+<h2 id="vibe-coding">Vibe Coding</h2>
+<p><em>Internal Concept ID AIKC-000079 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-vibecode"></a></p>
+<h3 id="vibe-coding-aik-2025-s-p-vibecode">Vibe Coding — <code>AIK-2025-S-P-VIBECODE</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L4-G1</td>
+<td>2025-02-02</td>
+<td>2025-12-03</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l4-g1-vibe-coding-type-s">L4-G1 — Vibe Coding (type S)</h4>
+<p><strong>Public entry ID:</strong> <code>AIK-2025-S-P-VIBECODE</code> — <strong>Concept:</strong> VIBECODE, <strong>established</strong> (basis: Karpathy coinage, C01, and Collins Dictionary Word of the Year 2025).<br />
+<strong>Date of Appearance:</strong> February 2, 2025 <em>(corrected — C01; Karpathy's coinage)</em><br />
+<strong>Contributor:</strong> Grok 4.1. Two published short text states.</p>
+<p><em>Text 1 (as published, corrections marked):</em> <strong>Vibe Coding</strong>: An intuitive, natural-language-driven software development method where users describe high-level ideas, and AI generates code, coined by Andrej Karpathy (X, February 2, 2025) and popularized in 2025 through developer communities.[C01] It lowers barriers for non-programmers but raises concerns about code quality.</p>
+<p><em>Text 2 (as published, corrections marked):</em> Vibe coding involves users describing software ideas in natural language, with AI generating code and structures. Coined by Andrej Karpathy (X, February 2, 2025) and gaining mainstream adoption in 2025 via communities and influencers, it democratizes development.[C01] Example: Prompting an AI for a minimalist e-commerce site yields functional code via tools like Google AI Studio.</p>
+<p><strong>Why It Matters in 2025</strong>: Amid talent shortages, it accelerates prototyping, though debates on skill erosion and reliability highlight needs for hybrid human-AI workflows.</p>
+<p><em>Editorial note:</em> the published states credit Karpathy only with popularization and give no coinage date; the embedded review's praise on this point is erroneous (see the register). Citation (ruling 3): Karpathy, X post, February 2, 2025 (<a href="https://x.com/karpathy/status/1886192184808149383" class="uri">https://x.com/karpathy/status/1886192184808149383</a>; date confirmed from the post identifier; wording as quoted by secondary sources). The primary post was fetched by neither auditor nor the reviewer; the date rests on the identifier decoding and secondary quotation, and the record says so.</p>
+<nav class="pn"><a href="part-iv-alignment-safety-and-interpretability.html">← Part IV. Alignment, Safety and Interpretability</a><a href="part-vi-embodied-ai-industry-and-society.html">Part VI. Embodied AI, Industry and Society →</a></nav></article></main>
+<footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
+</body></html>

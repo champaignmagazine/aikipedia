@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025-11-06 — Continuous Autoregressive Language Models (post 14021) · Aikipedia 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="archive-13998.html">← 2025-11-05 — Mixture of Experts (post 13998)</a><a href="archive-14033.html">2025-11-09 — Prefill–Decode Disaggregation (post 14033) →</a></nav><h2 id="continuous-autoregressive-language-models-post-14021">2025-11-06 — Continuous Autoregressive Language Models (post 14021)</h2>
+<h3 id="aikipedia-2025-continuous-autoregressive-language-models-calm-archive-text-of-post-14021">Aikipedia 2025 — Continuous Autoregressive Language Models (CALM): Archive Text of Post 14021</h3>
+<p><strong>Checked</strong> by Qwen (Qwen3-Max; deployment release not stated) against the live post, November 14, 2026: accepted, no discrepancies (all 69 lines compared in full; three rendered reads plus the WordPress REST source; checking brief v0.2). Check report: <code>CALM-fidelity-check_Qwen3-Max_2026-11-14.md</code>.</p>
+<p><strong>Source.</strong> Champaign Magazine post 14021, "Aikipedia: Continuous Autoregressive Language Models (CALM)", <a href="https://champaignmagazine.com/2025/11/06/aikipedia-continuous-autoregressive-language-models-calm/" class="uri">https://champaignmagazine.com/2025/11/06/aikipedia-continuous-autoregressive-language-models-calm/</a>. Published November 6, 2025, 17:53; last modified the same day, 18:52 (site time). Read through the WordPress.com connector (raw content) on November 11, 2026.</p>
+<p><strong>What this file is.</strong> A line-numbered plain-text rendering of the post's content, made for line references (A-nnn). It is not the HTML.</p>
+<ul>
+<li>Markup is dropped, except that headings keep their level as "#", "##" and "###".</li>
+<li>List bullets are shown as "•" and table rows as "| … |".</li>
+<li>Link text is kept; the only link targets are arXiv:2510.27688 and <a href="https://github.com/shaochenze/calm" class="uri">https://github.com/shaochenze/calm</a>.</li>
+<li>The rendering was transcribed from the connector's output, because this session could not save the raw HTML to disk.</li>
+</ul>
+<p><strong>Versions.</strong> The post publishes one entry text, the final version by GPT-5 Mini, with a closing "Aikipedia Metadata" block (A-063 to A-069). No review texts are embedded. The metadata names:</p>
+<ul>
+<li>DeepSeek-V3.2 (initial draft);</li>
+<li>Gemini 2.5 Pro, Grok-Expert and Claude Sonnet 4.5 (peer review).</li>
+</ul>
+<p>The byline (A-001) omits Grok.</p>
+<hr />
+<pre><code>A-001  By DeepSeek-V3.2, ChatGPT, Gemini 2.5 Pro, Claude Sonnet 4.5, with W.H.L.
+A-002  # Continuous Autoregressive Language Models (CALM)
+A-003  ### Sidebar Abstract
+A-004  Continuous Autoregressive Language Models (CALM) are a 2025 framework introduced by researchers at WeChat AI (Tencent) and Tsinghua University that replaces discrete next-token prediction with continuous next-vector generation. By compressing multiple tokens into high-fidelity latent representations, CALM increases semantic bandwidth and reduces computational cost during training and inference. The preprint (arXiv:2510.27688, October 2025) reports over 40% lower FLOPs compared to standard transformers and introduces a likelihood-free evaluation metric, BrierLM, that correlates strongly with cross-entropy.
+A-005  ## 1. Overview
+A-006  Continuous Autoregressive Language Models (CALM) propose an alternative to traditional next-token prediction by shifting from discrete symbol-level generation to continuous vector-level generation. Developed by Chenze Shao, Darren Li, Fandong Meng, and Jie Zhou from WeChat AI (Tencent) and Tsinghua University, CALM was released as a preprint on October 31, 2025 (arXiv:2510.27688).
+A-007  The method uses a high-fidelity autoencoder to compress sequences of K consecutive tokens into a single latent vector z, which serves as the new prediction target for the language model. Instead of generating one token per step, CALM autoregressively generates the next latent vector in continuous space, which can later be decoded back into multiple tokens. This approach reduces the number of autoregressive steps by a factor of K, significantly lowering computational cost while maintaining strong semantic fidelity.
+A-008  ## 2. Architecture and Methodology
+A-009  | Component | Description |
+A-010  | Autoencoder | Maps sequences of K tokens to latent vectors z ∈ ℝ^l (l=128, d=512). Achieves &gt;99.9% reconstruction. |
+A-011  | Latent Training | Autoencoder trained separately (~75M parameters) on 15B-token subset of Pile dataset. Uses KL regularization β=0.001, KL clipping λ_KL=0.5, dropout p=0.15. |
+A-012  | Autoregressive Model | Predicts next latent vector in continuous space. Decoder reconstructs multiple tokens per step. |
+A-013  ## 3. Training Framework
+A-014  CALM is trained using a likelihood-free objective based on the Energy Score (α = 1), estimated via Monte Carlo sampling (N=8 samples, M=100 targets). The BrierLM metric measures predictive calibration in continuous space, strongly correlating with cross-entropy (Pearson ρ ≈ -0.966), providing an unbiased evaluation for vectorized autoregression.
+A-015  ## 4. Experimental Results
+A-016  ### Model Scales
+A-017  | Scale | Layers | Hidden Dim | Parameters |
+A-018  | S | 12 | 768 | 281M |
+A-019  | M | 16 | 1024 | 371M |
+A-020  | L | 16 | 1536 | – |
+A-021  | XL | 16 | 2560 | – |
+A-022  ### Performance Comparison
+A-023  | Model / K | Training FLOPs Savings | Inference FLOPs Savings | Performance (BrierLM) |
+A-024  | Baseline (K=1) | 0% | 0% | Reference |
+A-025  | CALM-S (K=4) | 44% | 34% | Comparable |
+A-026  | CALM-M (K=4) | 44% | 34% | Comparable |
+A-027  | CALM-XL (K=4) | Similar | Similar | Superior trade-off |
+A-028  Note: K=1 underperforms discrete transformers; optimal performance observed at K=4.
+A-029  ## 5. Implementation and Open Source
+A-030  Official repository: https://github.com/shaochenze/calm
+A-031  Includes training scripts, pretrained autoencoders, and BrierLM evaluation code.
+A-032  ## 6. Comparative Analysis
+A-033  | Feature | Traditional LLMs | CALM |
+A-034  | Prediction Unit | Discrete Token | Continuous Vector (represents K tokens) |
+A-035  | Information per Step | ~15 bits | High (latent vector) |
+A-036  | Autoregressive Steps | N | N/K |
+A-037  | Modeling | Softmax over vocabulary | Likelihood-free, Energy Transformer |
+A-038  | Potential Drawbacks | High compute for long sequences | Requires robust autoencoder; continuous-space drift possible |
+A-039  ## 7. Limitations and Challenges
+A-040  • Latent-space instability can cause semantic drift in long sequences.
+A-041  • Continuous prediction lacks token-level probabilities, complicating RLHF and calibration.
+A-042  • Underperformance at K=1 highlights reliance on multi-token compression.
+A-043  • Text-only experiments; multimodal extension remains future work.
+A-044  ## 8. Community and Academic Reception
+A-045  CALM’s preprint (October 31, 2025) received attention in Emergent Mind, Medium, and Reddit (r/LocalLLaMA). Academic discussions highlight its efficiency and likelihood-free design. Early replication studies explore multilingual and long-context performance. While speedups on GPUs are notable, latent-space robustness varies across datasets. Note: CALM is a preprint and not yet peer-reviewed.
+A-046  ## 9. Implications and Future Directions
+A-047  • Introduces semantic bandwidth as a new efficiency axis.
+A-048  • Potential integration with Mixture-of-Experts, hybrid discrete-continuous decoding, multimodal tasks, and probabilistic calibration.
+A-049  • May influence on-device LLMs and streaming generation efficiency.
+A-050  ## 10. See Also
+A-051  • Non-Autoregressive Language Models
+A-052  • Speculative Decoding
+A-053  • Variational Autoencoders (VAEs)
+A-054  • Mixture-of-Experts (MoE) Models
+A-055  • Likelihood-Free Training in Machine Learning
+A-056  ## References
+A-057  • Shao, C., Li, D., Meng, F., &amp; Zhou, J. (2025). Continuous Autoregressive Language Models (CALM). arXiv:2510.27688 [cs.CL].
+A-058  • GitHub Repository
+A-059  • Gu, J., et al. (2018). Non-Autoregressive Neural Machine Translation. ICLR.
+A-060  • Kingma, D. P., &amp; Welling, M. (2014). Auto-Encoding Variational Bayes. ICLR.
+A-061  • Bowman, S. R., et al. (2016). Generating Sentences from a Continuous Space. SIGNLL.
+A-062  • Leviathan, Y., et al. (2023). Speculative Decoding for Transformers. ICML.
+A-063  ## Aikipedia Metadata (Final Verified Edition – November 2025)
+A-064  • Version: 1.0
+A-065  • Last Verified: November 6, 2025
+A-066  • Contributors: DeepSeek-V3.2 (initial draft), GPT-5 Mini (revised and final draft), Gemini 2.5 Pro (peer review), Grok-Expert (peer review), Claude Sonnet 4.5 (peer review) W.H.L. (editor)
+A-067  • Peer Review Sources: arXiv:2510.27688, Emergent Mind, Medium, Reddit r/LocalLLaMA, X/Twitter commentary, Tsinghua AI Lab Notes Vol. 7
+A-068  • Verification Summary: All claims cross-checked; date corrected to October 31, 2025; K=1 limitations, dataset, and autoencoder training added; GitHub link formatted.
+A-069  • License &amp; Attribution: Based on the CALM preprint and open-source repository; authors Chenze Shao, Darren Li, Fandong Meng, Jie Zhou (WeChat AI / Tsinghua University).</code></pre>
+<nav class="pn"><a href="archive-13998.html">← 2025-11-05 — Mixture of Experts (post 13998)</a><a href="archive-14033.html">2025-11-09 — Prefill–Decode Disaggregation (post 14033) →</a></nav></article></main>
+<footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
+</body></html>

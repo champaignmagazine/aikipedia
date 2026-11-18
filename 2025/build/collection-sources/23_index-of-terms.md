@@ -1,0 +1,131 @@
+# Alphabetical Index of Terms
+
+*One line per concept, with every record of it in the collection. "See" points from a variant name, abbreviation or merged occurrence to the concept's headword; "compare" and other stated relations mark terms that are related but not synonyms. † marks a provisional concept identity; ◆ a concept new for the 2025 Collection. In the PDF edition the numbers after each concept are page references; online, each record ID links to its entry.*
+
+*"See also" after a concept lists the concepts its entries name in their own See Also sections, as written (one direction only; harvested by Muse Spark 1.3). Aliases checked by Muse Spark 1.3, November 14, 2026: pass.*
+
+> **[PLACEHOLDER — index page numbers]** Print page numbers are added at typesetting.
+
+- **Advanced Reasoning Models (Cognitive Hybrid Architectures) †** — [`AIK-2025-S-P-ADVREASON`](#aik-2025-s-p-advreason)
+- **Agentic AI** — [`AIK-2025-E-P-AGENTICAI`](#aik-2025-e-p-agenticai), [`AIK-2025-E-P-AGENTICAI-02`](#aik-2025-e-p-agenticai-02)
+- Agentic AI / Super-Agents / Model Orchestration → *see* **Agentic AI**
+- **AgentScen — LLM-Based External World Models** — [`AIK-2025-S-P-AGENTSCEN`](#aik-2025-s-p-agentscen)
+- **AI Alignment** — [`AIK-2025-S-P-ALIGNMENT`](#aik-2025-s-p-alignment)
+- **AI Hallucination** — [`AIK-2025-S-P-HALLUC`](#aik-2025-s-p-halluc)
+- **AI Washing** — [`AIK-2025-S-P-AIWASHING`](#aik-2025-s-p-aiwashing)
+- **Alignment Faking (Deceptive Alignment)** — [`AIK-2025-E-P-ALIGNFAKE`](#aik-2025-e-p-alignfake)
+- **Alignment Patterns: Constitutional, Preference-Modeling, & Red-Teaming** — [`AIK-2025-S-P-ALIGNPATTERN`](#aik-2025-s-p-alignpattern)
+- **Arithmetic and Reasoning Heads †** — [`AIK-2025-S-P-ARITHHEADS`](#aik-2025-s-p-arithheads)
+- **Artificial Hivemind** — [`AIK-2025-E-P-HIVEMIND`](#aik-2025-e-p-hivemind)
+- **Bidirectional Human-AI Alignment** — [`AIK-2025-S-P-BIDIRALIGN`](#aik-2025-s-p-bidiralign)
+- CALM → *see* **Continuous Autoregressive Language Models (CALM)**
+- **Chain-of-Thought Monitorability** ◆ — [`AIK-2025-F-N-COTMONITOR`](#aik-2025-f-n-cotmonitor) · *See also:* [Chain-of-Thought Prompting](#aik-2025-f-p-cotprompt); [Context Engineering](#aik-2025-f-n-contexteng); [Context Rot](#aik-2025-f-n-contextrot); [Emergent Misalignment](#aik-2025-f-n-emergentmis); [Scheming (AI)](#aik-2025-f-n-scheming)
+- **Chain-of-Thought Prompting** — [`AIK-2025-F-P-COTPROMPT`](#aik-2025-f-p-cotprompt) · *See also:* [Chain-of-Thought Monitorability](#aik-2025-f-n-cotmonitor); [Chain-of-Verification (CoVe)](#aik-2025-s-p-cove); [Test-Time Compute Scaling](#aik-2025-e-p-ttcscale)
+- **Chain-of-Verification (CoVe)** — [`AIK-2025-S-P-COVE`](#aik-2025-s-p-cove)
+- **Circuit Sparsity** — [`AIK-2025-F-P-CIRCUITSP`](#aik-2025-f-p-circuitsp) · *See also:* [Mechanistic Interpretability Tools](#aik-2025-e-p-mechinterp); [Mixture of Experts (MoE)](#aik-2025-f-p-moe)
+- Composable Models & Model Chaining → *see* **Compound AI Systems**
+- **Compound AI Systems** — [`AIK-2025-E-P-COMPOUNDAI`](#aik-2025-e-p-compoundai), [`AIK-2025-S-P-COMPOSABLE`](#aik-2025-s-p-composable)
+- Confident Adaptive Language Modeling (Schuster et al., 2022) — a different method with the same acronym (Editorial Addition E01); compare **Continuous Autoregressive Language Models (CALM)**
+- **Constitutional AI** — [`AIK-2025-F-P-CONSTAI`](#aik-2025-f-p-constai), [`AIK-2025-S-P-CONSTAI`](#aik-2025-s-p-constai) · *See also:* [AI Alignment](#aik-2025-s-p-alignment); [RLAIF — Reinforcement Learning from AI Feedback](#aik-2025-s-p-rlaif)
+- **Constitutional AI 2.0 †** — [`AIK-2025-S-P-CAI2`](#aik-2025-s-p-cai2)
+- **Context Engineering** ◆ — [`AIK-2025-F-N-CONTEXTENG`](#aik-2025-f-n-contexteng) · *See also:* [Agentic AI](#aik-2025-e-p-agenticai); [Chain-of-Thought Prompting](#aik-2025-f-p-cotprompt); [Model Context Protocol (MCP)](#aik-2025-s-p-mcp); [RLVR (Reinforcement Learning with Verifiable Rewards)](#aik-2025-f-n-rlvr)
+- **Context Rot** ◆ — [`AIK-2025-F-N-CONTEXTROT`](#aik-2025-f-n-contextrot) · *See also:* [Compound AI Systems](#aik-2025-e-p-compoundai); [Context Engineering](#aik-2025-f-n-contexteng); [Long-Context & Windowing Techniques](#aik-2025-s-p-longcontext); [Retrieval-Augmented Generation (RAG)](#aik-2025-s-p-rag); [Test-Time Compute Scaling](#aik-2025-e-p-ttcscale)
+- Continual World-Model Agents → *see* **EvoAgent — Continual World-Model Agents**
+- **Continuous Autoregressive Language Models (CALM)** — [`AIK-2025-F-P-CALM`](#aik-2025-f-p-calm) · *See also:* [Mixture of Experts (MoE)](#aik-2025-f-p-moe); [Speculative Decoding](#aik-2025-s-p-specdecode)
+- **Controllable Generation Frameworks** — [`AIK-2025-S-P-CTRLGEN`](#aik-2025-s-p-ctrlgen)
+- CoT monitorability → *see* **Chain-of-Thought Monitorability**
+- CoT prompting → *see* **Chain-of-Thought Prompting**
+- CoV (historical abbreviation; corrected to CoVe) → *see* **Chain-of-Verification (CoVe)**
+- CoVe → *see* **Chain-of-Verification (CoVe)**
+- Deceptive Alignment — broader concept, discussed under **Alignment Faking (Deceptive Alignment)**
+- **Delta Learning Hypothesis** — [`AIK-2025-S-P-DELTALEARN`](#aik-2025-s-p-deltalearn)
+- Dexterous Manipulation → *see* **Soft Robotics / Dexterous Manipulation**
+- **Distillation at Scale / Student-Teacher Cascades** — [`AIK-2025-S-P-DISTILSCALE`](#aik-2025-s-p-distilscale)
+- **Drop-Upcycling (Sparse MoE Training)** — [`AIK-2025-S-P-DROPUPCYCLE`](#aik-2025-s-p-dropupcycle)
+- **Dynamic Planning for LLM Agents** — [`AIK-2025-S-P-DYNPLAN`](#aik-2025-s-p-dynplan)
+- **Dynamical Regularization (in Diffusion)** — [`AIK-2025-S-P-DYNREG`](#aik-2025-s-p-dynreg)
+- **E-Processes / Game-Theoretic Statistics** — [`AIK-2025-E-P-EPROCESS`](#aik-2025-e-p-eprocess)
+- **Edge AI** — [`AIK-2025-S-P-EDGEAI`](#aik-2025-s-p-edgeai), [`AIK-2025-S-P-EDGEAI-02`](#aik-2025-s-p-edgeai-02)
+- **Embodied AI (as a Paradigm)** — [`AIK-2025-S-P-EMBODIEDAI`](#aik-2025-s-p-embodiedai)
+- **Embodied Foundation Models** — [`AIK-2025-S-P-EMBODIEDFM`](#aik-2025-s-p-embodiedfm)
+- **Emergent Misalignment** ◆ — [`AIK-2025-F-N-EMERGENTMIS`](#aik-2025-f-n-emergentmis) · *See also:* [Chain-of-Thought Monitorability](#aik-2025-f-n-cotmonitor); [Constitutional AI](#aik-2025-f-p-constai); [Context Engineering](#aik-2025-f-n-contexteng); [Context Rot](#aik-2025-f-n-contextrot); [RLVR (Reinforcement Learning with Verifiable Rewards)](#aik-2025-f-n-rlvr); [Scheming (AI)](#aik-2025-f-n-scheming)
+- **EvoAgent — Continual World-Model Agents** — [`AIK-2025-S-P-EVOAGENT`](#aik-2025-s-p-evoagent)
+- **Explainable AI (XAI)** — [`AIK-2025-S-P-XAI`](#aik-2025-s-p-xai)
+- **Federated & On-Device Model Training** — [`AIK-2025-S-P-FEDONDEVICE`](#aik-2025-s-p-fedondevice)
+- **Frugal AI** — [`AIK-2025-S-P-FRUGALAI`](#aik-2025-s-p-frugalai), [`AIK-2025-S-P-FRUGALAI-02`](#aik-2025-s-p-frugalai-02)
+- Game-Theoretic Statistics → *see* **E-Processes / Game-Theoretic Statistics**
+- **Gated Attention** — [`AIK-2025-E-P-GATEDATTN`](#aik-2025-e-p-gatedattn)
+- **Generative Engine Optimisation (GEO)** — [`AIK-2025-S-P-GEO`](#aik-2025-s-p-geo)
+- **Generative Feedback Loop (Self-Adaptation)** — [`AIK-2025-S-P-GENFEEDBACK`](#aik-2025-s-p-genfeedback)
+- **Generative User Interfaces (GenUI)** — [`AIK-2025-F-P-GENUI`](#aik-2025-f-p-genui)
+- GenUI → *see* **Generative User Interfaces (GenUI)**
+- GEO → *see* **Generative Engine Optimisation (GEO)**
+- GKD → *see* **On-Policy Distillation**
+- **GraphRAG** — [`AIK-2025-S-P-GRAPHRAG`](#aik-2025-s-p-graphrag)
+- **High-Dimensional Learning Dynamics** — [`AIK-2025-S-P-HDLD`](#aik-2025-s-p-hdld)
+- **Hyperautomation** — [`AIK-2025-S-P-HYPERAUTO`](#aik-2025-s-p-hyperauto)
+- **KV-Cache Sharing (On-Device Inference)** — [`AIK-2025-E-P-KVSHARE`](#aik-2025-e-p-kvshare)
+- **Large Reasoning Models (LRMs)** — [`AIK-2025-S-P-LRM`](#aik-2025-s-p-lrm), [`AIK-2025-E-P-LRM`](#aik-2025-e-p-lrm)
+- **Large-Scale Population Agent Simulation (LLM Archetypes)** — [`AIK-2025-S-P-POPAGENTSIM`](#aik-2025-s-p-popagentsim)
+- Layer-Adaptive Expert Inference → *see* **LExI — Layer-Adaptive Expert Inference**
+- **LExI — Layer-Adaptive Expert Inference** — [`AIK-2025-S-P-LEXI`](#aik-2025-s-p-lexi)
+- LLM-Based External World Models → *see* **AgentScen — LLM-Based External World Models** (the record of a 2025 workshop; for world models as a method, see also World Model (LLM-Integrated))
+- **Long-Context & Windowing Techniques** — [`AIK-2025-S-P-LONGCONTEXT`](#aik-2025-s-p-longcontext)
+- **Long-Horizon LLM Planning & Efficiency Metrics †** — [`AIK-2025-S-P-LHPLANMETRIC`](#aik-2025-s-p-lhplanmetric)
+- LRMs → *see* **Large Reasoning Models (LRMs)**
+- MCP → *see* **Model Context Protocol (MCP)**
+- **Mechanistic Interpretability Tools** — [`AIK-2025-E-P-MECHINTERP`](#aik-2025-e-p-mechinterp)
+- **Memorization Sinks** — [`AIK-2025-S-P-MEMSINK`](#aik-2025-s-p-memsink)
+- **Mixture of Depths** — [`AIK-2025-F-P-MOD`](#aik-2025-f-p-mod) · *See also:* [Mixture of Experts (MoE)](#aik-2025-f-p-moe)
+- **Mixture of Experts (MoE)** — [`AIK-2025-F-P-MOE`](#aik-2025-f-p-moe), [`AIK-2025-S-P-MOE`](#aik-2025-s-p-moe), [`AIK-2025-S-P-MOE-02`](#aik-2025-s-p-moe-02)
+- **Mixture of Latent Experts (MoLE / MoLAE)** — [`AIK-2025-S-P-MOLE`](#aik-2025-s-p-mole)
+- Mixture-of-Experts (MoE) — sparse expert routing → *see* **Mixture of Experts (MoE)**
+- **Model Context Protocol (MCP)** — [`AIK-2025-S-P-MCP`](#aik-2025-s-p-mcp), [`AIK-2025-E-P-MCP`](#aik-2025-e-p-mcp)
+- Model Orchestration — named in the Launch Edition headword with Agentic AI (not a synonym); discussed under **Agentic AI**
+- **Model Safety Evaluation Suites & LLM-Based Evaluators** — [`AIK-2025-S-P-SAFETYEVAL`](#aik-2025-s-p-safetyeval)
+- MoE → *see* **Mixture of Experts (MoE)**
+- MoLAE → *see* **Mixture of Latent Experts (MoLE / MoLAE)**
+- MoLE → *see* **Mixture of Latent Experts (MoLE / MoLAE)**
+- **Multi-Agent Debate Systems** — [`AIK-2025-S-P-MADEBATE`](#aik-2025-s-p-madebate)
+- **Multimodal Native Architecture** — [`AIK-2025-S-P-MMNATIVE`](#aik-2025-s-p-mmnative)
+- **Nested Learning (Continual AI)** — [`AIK-2025-S-P-NESTEDLEARN`](#aik-2025-s-p-nestedlearn)
+- **On-Policy Distillation** — [`AIK-2025-F-P-ONPOLDISTIL`](#aik-2025-f-p-onpoldistil) · *See also:* [Chain-of-Thought Prompting](#aik-2025-f-p-cotprompt); [RLVR (Reinforcement Learning with Verifiable Rewards)](#aik-2025-f-n-rlvr)
+- **Parameter-Efficient Fine-Tuning (PEFT) evolution** — [`AIK-2025-S-P-PEFT`](#aik-2025-s-p-peft)
+- PEFT → *see* **Parameter-Efficient Fine-Tuning (PEFT) evolution**
+- **Plan-and-Act Agent Framework** — [`AIK-2025-S-P-PLANACT`](#aik-2025-s-p-planact)
+- **Prefill–Decode Disaggregation** — [`AIK-2025-F-P-PDDISAGG`](#aik-2025-f-p-pddisagg) · *See also:* [KV-Cache Sharing (On-Device Inference)](#aik-2025-e-p-kvshare); [Mixture of Experts (MoE)](#aik-2025-f-p-moe); [Speculative Decoding](#aik-2025-s-p-specdecode)
+- **Programmatic Representations (for Agents)** — [`AIK-2025-S-P-PROGREP`](#aik-2025-s-p-progrep)
+- **Prompt Injection Defense Layers** — [`AIK-2025-S-P-PIDEFENSE`](#aik-2025-s-p-pidefense)
+- **Quantization & Ultra-Low-Precision Inference** — [`AIK-2025-S-P-QUANTINFER`](#aik-2025-s-p-quantinfer)
+- RAG → *see* **Retrieval-Augmented Generation (RAG)**
+- Reinforcement Learning from AI Feedback → *see* **RLAIF — Reinforcement Learning from AI Feedback**
+- Reinforcement Learning with Verifiable Rewards → *see* **RLVR (Reinforcement Learning with Verifiable Rewards)**
+- **Retrieval-Augmented Generation (RAG)** — [`AIK-2025-S-P-RAG`](#aik-2025-s-p-rag), [`AIK-2025-S-P-RAG-02`](#aik-2025-s-p-rag-02)
+- Retrieval-Augmented Generation (RAG) — next-gen → *see* **Retrieval-Augmented Generation (RAG)**
+- **RLAIF — Reinforcement Learning from AI Feedback** — [`AIK-2025-S-P-RLAIF`](#aik-2025-s-p-rlaif), [`AIK-2025-S-P-RLAIF-02`](#aik-2025-s-p-rlaif-02)
+- **RLVR (Reinforcement Learning with Verifiable Rewards)** ◆ — [`AIK-2025-F-N-RLVR`](#aik-2025-f-n-rlvr) · *See also:* [Large Reasoning Models (LRMs)](#aik-2025-s-p-lrm); [On-Policy Distillation](#aik-2025-f-p-onpoldistil); [RLAIF — Reinforcement Learning from AI Feedback](#aik-2025-s-p-rlaif); [Test-Time Compute Scaling](#aik-2025-e-p-ttcscale)
+- **Scalable Oversight & Synthetic Critiques** — [`AIK-2025-E-P-SCALEOVER`](#aik-2025-e-p-scaleover), [`AIK-2025-S-P-SCALEOVER`](#aik-2025-s-p-scaleover)
+- Scalable Oversight via Synthetic Critiques → *see* **Scalable Oversight & Synthetic Critiques**
+- **Scaling Laws for Sparse Models & Efficiency Metrics** — [`AIK-2025-S-P-SPARSESCALE`](#aik-2025-s-p-sparsescale)
+- **Scheming (AI)** ◆ — [`AIK-2025-F-N-SCHEMING`](#aik-2025-f-n-scheming) · *See also:* [Alignment Faking (Deceptive Alignment)](#aik-2025-e-p-alignfake); [Chain-of-Thought Monitorability](#aik-2025-f-n-cotmonitor); [Constitutional AI](#aik-2025-f-p-constai); [Emergent Misalignment](#aik-2025-f-n-emergentmis)
+- **Self-Supervised RL** — [`AIK-2025-S-P-SSRL`](#aik-2025-s-p-ssrl)
+- **Shadow AI** — [`AIK-2025-S-P-SHADOWAI`](#aik-2025-s-p-shadowai)
+- **Shared Autonomy (Robotics)** — [`AIK-2025-S-P-SHAREDAUTO`](#aik-2025-s-p-sharedauto)
+- SLMs → *see* **Small Language Models (SLMs)**
+- **Small Language Models (SLMs)** — [`AIK-2025-S-P-SLM`](#aik-2025-s-p-slm)
+- **Social Choice Fairness** — [`AIK-2025-S-P-SOCCHOICE`](#aik-2025-s-p-socchoice)
+- **Soft Robotics / Dexterous Manipulation** — [`AIK-2025-S-P-SOFTROBOT`](#aik-2025-s-p-softrobot)
+- **Speculative Decoding** — [`AIK-2025-S-P-SPECDECODE`](#aik-2025-s-p-specdecode)
+- Student-Teacher Cascades → *see* **Distillation at Scale / Student-Teacher Cascades**
+- Super-Agents — named in the Launch Edition headword with Agentic AI (not a synonym); discussed under **Agentic AI**
+- **Synthetic Data** — [`AIK-2025-S-P-SYNDATA`](#aik-2025-s-p-syndata)
+- **Synthetic Data Quality Filtering** — [`AIK-2025-S-P-SYNDATAFILT`](#aik-2025-s-p-syndatafilt)
+- **Test-Time Compute Scaling** — [`AIK-2025-E-P-TTCSCALE`](#aik-2025-e-p-ttcscale)
+- **Theoretical Learning Dynamics of MoE †** — [`AIK-2025-S-P-MOETHEORY`](#aik-2025-s-p-moetheory)
+- **Tokenization-Centric Design** — [`AIK-2025-S-P-TOKDESIGN`](#aik-2025-s-p-tokdesign)
+- **Vector Databases** — [`AIK-2025-S-P-VECTORDB`](#aik-2025-s-p-vectordb)
+- **Vertical AI Integration** — [`AIK-2025-S-P-VERTICALAI`](#aik-2025-s-p-verticalai)
+- **Vibe Coding** — [`AIK-2025-S-P-VIBECODE`](#aik-2025-s-p-vibecode)
+- **World Model (LLM-Integrated)** — [`AIK-2025-E-P-WORLDMODEL`](#aik-2025-e-p-worldmodel), [`AIK-2025-S-P-WORLDMODEL`](#aik-2025-s-p-worldmodel)
+- World Models → *see* **World Model (LLM-Integrated)**
+- XAI → *see* **Explainable AI (XAI)**

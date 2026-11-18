@@ -1,0 +1,767 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Part III. Reasoning and Inference · Aikipedia 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="part-ii-training-learning-and-data.html">← Part II. Training, Learning and Data</a><a href="part-iv-alignment-safety-and-interpretability.html">Part IV. Alignment, Safety and Interpretability →</a></nav><h1 id="part-iii.-reasoning-and-inference">Part III. Reasoning and Inference</h1>
+<h2 id="chain-of-thought-prompting">Chain-of-Thought Prompting</h2>
+<p><em>Internal Concept ID AIKC-000007 · 1 record in 2025</em></p>
+<p><a id="aik-2025-f-p-cotprompt"></a></p>
+<h3 id="chain-of-thought-prompting-aik-2025-f-p-cotprompt">Chain-of-Thought Prompting — <code>AIK-2025-F-P-COTPROMPT</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F / P</td>
+<td>standalone</td>
+<td>2022-01-28</td>
+<td>2025-10-30</td>
+</tr>
+</tbody>
+</table>
+<p>AIKIPEDIA · FULL-LENGTH ENTRY · CORRECTED ORIGINAL PUBLICATION</p>
+<h4 id="chain-of-thought-prompting-1">Chain-of-Thought Prompting</h4>
+<p>Prompting Methods · Reasoning · Evaluation</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Date of Appearance</strong></td>
+<td>January 28, 2022 (Wei et al., arXiv:2201.11903v1; the earliest documented use of the term identified)</td>
+</tr>
+<tr class="even">
+<td><strong>Date of Original Publication</strong></td>
+<td>October 30, 2025 (Champaign Magazine, post 13946)</td>
+</tr>
+<tr class="odd">
+<td><strong>Historical Coverage</strong></td>
+<td>Through October 30, 2025, the date of original publication. Corrections rely only on sources available by that date</td>
+</tr>
+<tr class="even">
+<td><strong>Original Contributor</strong></td>
+<td>Gemini 2.5 Pro (writer). Much of the final version's wording comes from ChatGPT's review (see Entry Provenance)</td>
+</tr>
+<tr class="odd">
+<td><strong>Original Reviewers</strong></td>
+<td>Grok (release not stated in the post); ChatGPT (release not stated in the post)</td>
+</tr>
+<tr class="even">
+<td><strong>Corrections Prepared by</strong></td>
+<td>Claude Opus 5.5 (Anthropic)</td>
+</tr>
+<tr class="odd">
+<td><strong>Independent review</strong></td>
+<td>Muse Spark 1.3; DeepSeek-V4.1</td>
+</tr>
+<tr class="even">
+<td><strong>Base version</strong></td>
+<td>Version 3, which the post declares final (one passage of Version 2 restored at C17)</td>
+</tr>
+<tr class="odd">
+<td><strong>Entry ID</strong></td>
+<td>AIK-2025-F-P-COTPROMPT (Internal Concept ID AIKC-000007)</td>
+</tr>
+</tbody>
+</table>
+<p><em>How to read this text.</em> This is the corrected collection text of an original 2025 publication. The original, in all three of its published versions, is preserved unchanged in the Historical Lexicon Archive. A bracketed number such as <code>[C07]</code> marks a passage changed from the original; the correction register gives the original wording, the revision and the evidence for each. <code>[E01]</code> marks an editorial addition. Unmarked text is the original's wording, rearranged into AES sections; the register's concordance (§3) maps each passage to its source.</p>
+<h5 id="definition">1. Definition</h5>
+<p>Chain-of-Thought (CoT) prompting is a prompt-engineering technique for large language models that elicits intermediate reasoning steps (a "chain of thought") before producing a final answer.</p>
+<h5 id="origin-and-historical-development">2. Origin and Historical Development</h5>
+<p>CoT was introduced and empirically validated in 2022 (Wei et al., 2022) [P1] and quickly became a standard tool for improving multi-step reasoning on benchmarks such as GSM8K, MATH, and multi-hop commonsense problems.</p>
+<p><em>The variants described in §3.2, in order of introduction [C14]:</em> Few-Shot CoT (Wei et al., 2022) [P1] · Zero-Shot CoT (Kojima et al., 2022) [P2] · Tree-of-Thoughts (ToT, 2023) [P4] · Graph-of-Thoughts (GoT, 2023) [P5] [C01] · Trace-of-Thought prompting (2024) [P7] [C04] · Chain-of-Draft (CoD, 2025 preprint) [P6] [C02].</p>
+<h5 id="conceptual-or-technical-framework">3. Conceptual or Technical Framework</h5>
+<h6 id="core-concept-and-mechanism">3.1 Core concept and mechanism</h6>
+<p>Standard prompting typically involves providing a model with a question (and sometimes a few examples) and expecting an immediate, direct answer.</p>
+<p><em>Standard prompt example:</em></p>
+<blockquote>
+<p>Q: A juggler has 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls. How many balls does he have in total? A: 11</p>
+</blockquote>
+<p>In contrast, Chain-of-Thought prompting demonstrates or elicits the process of reasoning.</p>
+<p><em>Chain-of-Thought prompt example (few-shot):</em></p>
+<blockquote>
+<p>Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now? A: Roger started with 5 balls. 2 cans of 3 balls each is 2 * 3 = 6 balls. So, 5 + 6 = 11 balls. The answer is 11.</p>
+<p>Q: A juggler has 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls. How many balls does he have in total? A: The juggler starts with 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls, so 2 * 4 = 8 blue balls. The total number of balls is 3 + 8 = 11 balls. The answer is 11.</p>
+</blockquote>
+<p>By providing the intermediate steps, the model learns to "think" through the problem. This approach is believed to work because it aligns the generative process of the model with a structured, logical sequence, similar to how a human would work through a problem. CoT aligns model generation with stepwise logical structure and is especially helpful for problems that require sequential decomposition.</p>
+<h6 id="key-variants">3.2 Key variants</h6>
+<p><strong>Foundational variants</strong></p>
+<ul>
+<li><strong>Few-Shot CoT</strong> (Wei et al., 2022) [P1]: Demonstrates that providing a few worked examples with detailed intermediate steps significantly improves performance on complex reasoning tasks.</li>
+<li><strong>Zero-Shot CoT / "Let's think step by step"</strong> (Kojima et al., 2022) [P2]: Shows that appending an instruction like "Let's think step by step" can trigger reasoning behavior without exemplar demonstrations (zero-shot).</li>
+</ul>
+<p><strong>Evolved and complex variants (2023 onward) [C01]</strong></p>
+<ul>
+<li><strong>Tree-of-Thoughts</strong> (ToT, 2023) [P4]: Generalizes CoT by treating intermediate "thoughts" as nodes in a search tree, allowing exploration, backtracking, and look-ahead. ToT showed large gains on tasks requiring planning and search (§5).</li>
+<li><strong>Graph-of-Thoughts</strong> (GoT, 2023) [P5]: Extends ToT by modeling reasoning as a graph (non-linear dependencies between thought nodes), providing richer combinational structures.</li>
+<li><strong>Chain-of-Draft</strong> (CoD, 2025 preprint) [P6] [C02]: Proposes generating concise intermediate "draft" steps (much shorter than full CoT) to preserve reasoning benefits while lowering token cost and latency.</li>
+<li><strong>Trace-of-Thought prompting (2024) and related distillation methods</strong> [P7] [C04]: Trace-of-Thought is a prompt-based form of knowledge distillation. A larger "teacher" model decomposes a problem into steps, and a smaller "student" model (up to 8 billion parameters) then follows them, without fine-tuning; it was evaluated on the GSM8K and MATH benchmarks. Related work distills reasoning from large models into smaller ones through training. These are active, rapidly evolving research directions.</li>
+</ul>
+<h5 id="applications-and-implementations">4. Applications and Implementations</h5>
+<p>Chain-of-Thought prompting and its derivatives are used in [C18]:</p>
+<ul>
+<li>complex question-answering systems;</li>
+<li>mathematical and scientific problem-solving;</li>
+<li>code generation and debugging;</li>
+<li>automated analysis of legal or financial documents;</li>
+<li>multimodal reasoning (e.g., generating step-by-step explanations for visual tasks);</li>
+<li>planning and decision-making for autonomous agents.</li>
+</ul>
+<p><strong>When to use CoT (practical)</strong></p>
+<ul>
+<li>Use CoT for multi-step symbolic problems, formal math, planning, or debugging code.</li>
+<li>Try zero-shot "Let's think step by step" first on modern models (fast, and it needs no worked examples) [C09]. If not sufficient, test few-shot CoT.</li>
+<li>For production systems, measure latency and cost: consider Chain-of-Draft or distilled trace methods to reduce token use.</li>
+<li>Use self-consistency / voting to improve robustness when sampling multiple chains [P3].</li>
+</ul>
+<h5 id="evidence-and-evaluation">5. Evidence and Evaluation</h5>
+<p><strong>Improved performance [C07].</strong> CoT dramatically improves LLM performance on tasks that were previously difficult, especially arithmetic word problems (e.g., GSM8K, MATH) [P1] [R2]. Its original evaluation also reported gains on commonsense and symbolic reasoning tasks (e.g., CSQA) [P1]. A later analysis across 14 models found the gains concentrated in math and symbolic reasoning. On commonsense and broad-knowledge benchmarks such as MMLU the gains were much smaller, and on MMLU they came mainly from questions that involve calculation [R2].</p>
+<p><strong>Scalability.</strong> The benefits of CoT prompting have been shown to scale with model size; larger models tend to produce more coherent and accurate reasoning chains [P1].</p>
+<p><strong>Diminishing returns (nuanced) [C06].</strong> Several empirical studies and technical reports since 2023–2025 indicate that the marginal benefit of explicit CoT prompting decreases for some high-capability, recent LLMs and for certain tasks.</p>
+<ul>
+<li>For advanced models applied to software-engineering tasks, prompt-engineering techniques developed for earlier models gave diminished benefits or even hindered performance [R3] [C06].</li>
+<li>For models with built-in reasoning, explicit CoT prompting gave marginal gains, if any, on a graduate-level question benchmark [R4] [C06].</li>
+<li>Advanced models often acquire stronger native reasoning and zero-shot abilities, reducing the incremental lift from CoT prompts for those tasks.</li>
+</ul>
+<p>That said, this effect is task- and model-dependent. CoT remains most useful on mathematical and symbolic tasks [R2], and its variants remain valuable for long-horizon planning and complex combinatorial search [P4] [C06]. For non-reasoning models that do not reason step by step by default, explicit CoT prompting can still give small average gains [R4] [C06]. Practitioners should evaluate CoT cost/benefit per task and model.</p>
+<p><strong>Table 1. Selected author-reported results from the entry's primary sources [E01].</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Setting</th>
+<th>Reported result</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Zero-shot CoT</td>
+<td>InstructGPT (text-davinci-002), "Let's think step by step" vs. plain zero-shot</td>
+<td>MultiArith 17.7% → 78.7%; GSM8K 10.4% → 40.7%</td>
+<td>[P2]</td>
+</tr>
+<tr class="even">
+<td>Tree-of-Thoughts</td>
+<td>GPT-4, Game of 24</td>
+<td>CoT prompting solved 4% of tasks; ToT 74%</td>
+<td>[P4]</td>
+</tr>
+<tr class="odd">
+<td>Chain-of-Draft</td>
+<td>Several reasoning benchmarks</td>
+<td>Matched or surpassed CoT accuracy using as little as 7.6% of CoT's tokens</td>
+<td>[P6]</td>
+</tr>
+<tr class="even">
+<td>CoT on MMLU</td>
+<td>14 models (meta-analysis and own evaluations)</td>
+<td>Up to 95% of CoT's MMLU gain comes from questions containing "="</td>
+<td>[R2]</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table note:</em> all figures are author-reported, under the authors' stated models, prompts and scoring. They are not independent replications [E01].</p>
+<h5 id="significance-and-implications">6. Significance and Implications</h5>
+<p>CoT quickly became a standard tool for improving multi-step reasoning (§2) [C14].</p>
+<p><strong>Reasoning elicited by prompting alone.</strong> Zero-shot CoT showed that a single instruction, with no examples, could improve reasoning across diverse tasks. Kojima et al. presented this as a hint that large models hold untapped zero-shot reasoning capabilities that simple prompting can extract [P2] [C17].</p>
+<p><strong>Interpretability.</strong> The generated chain of thought provides a readable trace of intermediate steps. This can help operators identify where a logical error occurred and audit the output. The trace is not guaranteed to reflect how the model actually reached its answer: CoT explanations can be plausible yet unfaithful [R1] (§7) [C08].</p>
+<h5 id="limitations-debates-and-open-questions">7. Limitations, Debates, and Open Questions</h5>
+<p><strong>Limitations</strong></p>
+<ul>
+<li><strong>Computational cost.</strong> Generating a detailed chain of thought requires more tokens and processing time (inference cost) compared to a direct answer.</li>
+<li><strong>Factual correctness.</strong> The reasoning chain itself is a generative text sequence, not a formal logical proof. It may contain "hallucinations" or flawed logic, even if the final answer is coincidentally correct (or vice-versa).</li>
+<li><strong>Task dependency.</strong> CoT is not a universal enhancement. For tasks that are simple or do not require multi-step reasoning, it adds unnecessary computational overhead (§5, diminishing returns).</li>
+</ul>
+<p><strong>Safety and interpretability.</strong> Although CoT provides a readable "reasoning trace," these sequences are model generations, not human-grade proofs. Chains may contain hallucinated or unsafe steps, and revealing internal chains can sometimes expose model-learned heuristics or biases. For high-stakes uses, combine CoT with external verification (symbolic checks, unit tests, or formal verification) and treat chains as hypotheses to be validated rather than ground truth.</p>
+<h5 id="related-concepts-and-distinctions">8. Related Concepts and Distinctions</h5>
+<ul>
+<li><strong>Self-Consistency.</strong> A technique (Wang et al., 2022) [P3] often used with CoT, where the model generates multiple reasoning chains and the final answer is chosen by a majority vote, improving robustness.</li>
+<li><strong>Tree-of-Thoughts (ToT).</strong> See §3.2. Code repository listed with [P4] [C11].</li>
+<li><strong>Graph-of-Thoughts (GoT).</strong> See §3.2. Code repository listed with [P5] [C11].</li>
+<li><strong>Active Prompting.</strong> An extension that selects which questions to annotate with worked chains of thought [P8] [C12].</li>
+</ul>
+<h5 id="see-also">See Also</h5>
+<p>General concepts with no entry in the 2025 collection [C16]: Prompt Engineering · In-Context Learning · Large Language Model (LLM) · Self-Consistency (AI) · Tree-of-Thoughts · Graph-of-Thoughts · Active Prompting.</p>
+<p>Related records in the Aikipedia 2025 collection (editorial cross-references, not part of the original) [C16]:</p>
+<ul>
+<li><strong>Chain-of-Thought Monitorability.</strong> New addition, AIK-2025-F-N-COTMONITOR.</li>
+<li><strong>Chain-of-Verification (CoVe).</strong> <em>New AI Lexicon 2025</em> (3) (Dec 2, 2025); AIK-2025-S-P-COVE.</li>
+<li><strong>Test-Time Compute Scaling.</strong> <em>New AI Lexicon 2025</em> (3) (Dec 2, 2025); AIK-2025-E-P-TTCSCALE.</li>
+</ul>
+<h5 id="references-and-sources">References and Sources</h5>
+<p><strong>Primary Sources</strong> [C10]</p>
+<ul>
+<li>[P1] Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q., &amp; Zhou, D. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. <em>Advances in Neural Information Processing Systems 35</em> (NeurIPS 2022), 24824–24837. arXiv:2201.11903 (v1 January 28, 2022). <a href="https://arxiv.org/abs/2201.11903" class="uri">https://arxiv.org/abs/2201.11903</a></li>
+<li>[P2] Kojima, T., Gu, S. S., Reid, M., Matsuo, Y., &amp; Iwasawa, Y. (2022). Large Language Models are Zero-Shot Reasoners. NeurIPS 2022. arXiv:2205.11916 (v1 May 24, 2022). <a href="https://arxiv.org/abs/2205.11916" class="uri">https://arxiv.org/abs/2205.11916</a></li>
+<li>[P3] Wang, X., Wei, J., Schuurmans, D., Le, Q., Chi, E., Narang, S., Chowdhery, A., &amp; Zhou, D. (2022). Self-Consistency Improves Chain of Thought Reasoning in Language Models. ICLR 2023. arXiv:2203.11171 (v1 March 21, 2022). <a href="https://arxiv.org/abs/2203.11171" class="uri">https://arxiv.org/abs/2203.11171</a> [C10]</li>
+<li>[P4] Yao, S., Yu, D., Zhao, J., Shafran, I., Griffiths, T. L., Cao, Y., &amp; Narasimhan, K. (2023). Tree of Thoughts: Deliberate Problem Solving with Large Language Models. NeurIPS 2023. arXiv:2305.10601 (v1 May 17, 2023). <a href="https://arxiv.org/abs/2305.10601" class="uri">https://arxiv.org/abs/2305.10601</a> ; code: <a href="https://github.com/princeton-nlp/tree-of-thought-llm" class="uri">https://github.com/princeton-nlp/tree-of-thought-llm</a> [C11]</li>
+<li>[P5] Besta, M., Blach, N., Kubicek, A., Gerstenberger, R., Podstawski, M., Gianinazzi, L., Gajda, J., Lehmann, T., Niewiadomski, H., Nyczyk, P., &amp; Hoefler, T. (2024). Graph of Thoughts: Solving Elaborate Problems with Large Language Models. <em>Proceedings of the AAAI Conference on Artificial Intelligence</em> 38(16), 17682–17690. arXiv:2308.09687 (v1 August 18, 2023). <a href="https://arxiv.org/abs/2308.09687" class="uri">https://arxiv.org/abs/2308.09687</a> ; code: <a href="https://github.com/spcl/graph-of-thoughts" class="uri">https://github.com/spcl/graph-of-thoughts</a> [C11]</li>
+<li>[P6] Xu, S., Xie, W., Zhao, L., &amp; He, P. (2025). Chain of Draft: Thinking Faster by Writing Less. arXiv:2502.18600 (v1 February 25, 2025). Preprint. <a href="https://arxiv.org/abs/2502.18600" class="uri">https://arxiv.org/abs/2502.18600</a> [C02]</li>
+<li>[P7] McDonald, T., &amp; Emami, A. (2024). Trace-of-Thought Prompting: Investigating Prompt-Based Knowledge Distillation Through Question Decomposition. <em>Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)</em>, 293–306. <a href="https://doi.org/10.18653/v1/2024.acl-srw.35" class="uri">https://doi.org/10.18653/v1/2024.acl-srw.35</a> ; also arXiv:2504.20946 (2025) [C03]</li>
+<li>[P8] Diao, S., Wang, P., Lin, Y., Pan, R., Liu, X., &amp; Zhang, T. (2024). Active Prompting with Chain-of-Thought for Large Language Models. <em>Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</em>, 1330–1350. <a href="https://doi.org/10.18653/v1/2024.acl-long.73" class="uri">https://doi.org/10.18653/v1/2024.acl-long.73</a> ; also arXiv:2302.12246 (v1 February 23, 2023). <a href="https://arxiv.org/abs/2302.12246" class="uri">https://arxiv.org/abs/2302.12246</a> [C12]</li>
+</ul>
+<p><strong>Additional References</strong></p>
+<ul>
+<li>[R1] Turpin, M., Michael, J., Perez, E., &amp; Bowman, S. R. (2023). Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting. NeurIPS 2023. arXiv:2305.04388 (v1 May 7, 2023). <a href="https://arxiv.org/abs/2305.04388" class="uri">https://arxiv.org/abs/2305.04388</a> [C08]</li>
+<li>[R2] Sprague, Z., Yin, F., Rodriguez, J. D., Jiang, D., Wadhwa, M., Singhal, P., Zhao, X., Ye, X., Mahowald, K., &amp; Durrett, G. (2024). To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning. ICLR 2025. arXiv:2409.12183 (v1 September 18, 2024). <a href="https://arxiv.org/abs/2409.12183" class="uri">https://arxiv.org/abs/2409.12183</a> [C05, C07]</li>
+<li>[R3] Wang, G., Sun, Z., Gong, Z., Ye, S., Chen, Y., Zhao, Y., Liang, Q., &amp; Hao, D. (2024). Do Advanced Language Models Eliminate the Need for Prompt Engineering in Software Engineering? arXiv:2411.02093 (November 4, 2024). <a href="https://arxiv.org/abs/2411.02093" class="uri">https://arxiv.org/abs/2411.02093</a> [C05]</li>
+<li>[R4] Meincke, L., Mollick, E., Mollick, L., &amp; Shapiro, D. (2025). Prompting Science Report 2: The Decreasing Value of Chain of Thought in Prompting. Wharton School Research Paper. arXiv:2506.07142 (June 8, 2025); SSRN 5285532. <a href="https://arxiv.org/abs/2506.07142" class="uri">https://arxiv.org/abs/2506.07142</a> [C05]</li>
+</ul>
+<h5 id="editorial-notes">Editorial Notes</h5>
+<ol type="1">
+<li><strong>Status of this text.</strong> Independently reviewed and accepted by the editor. The historical publication is not replaced; it stays in the Historical Lexicon Archive. The dated record is in Appendix G.</li>
+<li><strong>Base version.</strong> The original post publishes three versions. This text is based on the third, which the post declares final. One passage of the second version is restored in §6 [C17], with its wording aligned to the source's hedge.</li>
+<li><strong>Source-date rule.</strong> Every source used to correct the historical body was available by October 30, 2025, the original publication date; the latest is [R4], June 8, 2025. No later development has been added.</li>
+<li><strong>Qualified claim.</strong> The original said CoT "remains valuable … when working with smaller or mid-sized models." It gave no source. Its own primary source found no gain, or harm, below about 100 billion parameters for the 2022 models it tested [P1]. A 2025 study [R4] found small average gains for non-reasoning models that do not reason step by step by default. That study grouped models by reasoning behavior, not size. The claim is therefore restated in the form the sources support, and the size wording is not retained [C06]. The editor adopted this wording on November 10, 2026 (O2).</li>
+<li><strong>Proposed substitutions.</strong> [R2] and [R4] stand in for the original's unspecified "related technical reports" [C05]. They are the preparer's choice, not the original's. The editor accepted them on November 10, 2026 (O1).</li>
+<li><strong>Worked example.</strong> The tennis-ball exemplar in §3.1 follows the exemplar in Wei et al.'s Figure 1 with light rewording. The juggler problem is the original contributor's own.</li>
+<li><strong>Precursors.</strong> Later literature cites Nye et al. (2021, "scratchpads") alongside Wei et al. as an origin of the technique; see, for example, [R1]. That precursor is noted here but not added to the historical body.</li>
+<li><strong>Editorial addition.</strong> Table 1 [E01] is not in the original. It quotes author-reported figures from the entry's own sources so that §5 states evaluation conditions, as AES §5 requires. The editor ruled on November 10, 2026 to keep it, as a labeled addition (O4).</li>
+<li><strong>Affiliation note.</strong> Two authors of [R1] list Anthropic affiliations, and the corrections were prepared by an Anthropic model. That correction [C08] was therefore checked independently: Muse Spark 1.3 found it warranted (register O5, closed), and DeepSeek-V4.1 confirmed it at the primary record. DeepSeek's check of the affiliations themselves was at register level only (register v0.3, §1).</li>
+<li><strong>Application list.</strong> The original called CoT "a standard technique in" the six areas listed in §4 but gave no source for any of them. On the editor's ruling (O3), the list is kept and the phrase is changed to "used in" [C18]. The text therefore no longer asserts, without a source, that the practice is standard.</li>
+</ol>
+<h5 id="credits">Credits</h5>
+<ul>
+<li>Source audit and corrections: Claude Opus 5.5.</li>
+<li>Independent verification: Muse Spark 1.3. Further independent review, with a primary-source check: DeepSeek-V4.1.</li>
+</ul>
+<p>Accepted by the editor, W.H.L. The dated record of this entry (versions, audits, reviews and rulings) is in Appendix G.</p>
+<h2 id="chain-of-verification-cove">Chain-of-Verification (CoVe)</h2>
+<p><em>Internal Concept ID AIKC-000021 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-cove"></a></p>
+<h3 id="chain-of-verification-cove-aik-2025-s-p-cove">Chain-of-Verification (CoVe) — <code>AIK-2025-S-P-COVE</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L3-12</td>
+<td>2023-09</td>
+<td>2025-12-02</td>
+</tr>
+</tbody>
+</table>
+<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<h4 id="l3-s12-chain-of-verification-cove-type-s">L3-S12 — Chain-of-Verification (CoVe) (type S)</h4>
+<p><strong>Date of Appearance:</strong> 2023 <em>(corrected — C02; Dhuliawala et al., arXiv:2309.11495, September 2023)</em><br />
+<strong>Headword note:</strong> published as "Chain-of-Verification (CoV)"; the paper's abbreviation is <strong>CoVe</strong>, used here.</p>
+<p><em>As published:</em> <strong>Definition</strong>: Method where models generate initial responses, then systematically verify claims through self-questioning and evidence gathering to reduce hallucinations. <strong>Why 2025</strong>: Became a standard technique for improving factual accuracy in high-stakes applications like medical and legal domains.</p>
+<p><em>Editorial note:</em> first appearance is 2023 (ACL 2024 Findings); the correction concerns the stated date and abbreviation, not the term's inclusion.</p>
+<hr />
+<h2 id="controllable-generation-frameworks">Controllable Generation Frameworks</h2>
+<p><em>Internal Concept ID AIKC-000017 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-ctrlgen"></a></p>
+<h3 id="controllable-generation-frameworks-aik-2025-s-p-ctrlgen">Controllable Generation Frameworks — <code>AIK-2025-S-P-CTRLGEN</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L3-8</td>
+<td>as published (2025)</td>
+<td>2025-12-02</td>
+</tr>
+</tbody>
+</table>
+<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<h4 id="l3-s8-controllable-generation-frameworks-type-s">L3-S8 — Controllable Generation Frameworks (type S)</h4>
+<p><strong>Date of Appearance:</strong> as published. No findings.</p>
+<p><em>As published:</em> <strong>Definition</strong>: Structured approaches for fine-grained control over generative model outputs through semantic steering, attribute manipulation, and constraint satisfaction. <strong>Why 2025</strong>: Moved beyond simple prompting to enable precise creative control in image, video, and text generation.</p>
+<h2 id="kv-cache-sharing-on-device-inference">KV-Cache Sharing (On-Device Inference)</h2>
+<p><em>Internal Concept ID AIKC-000027 · 1 record in 2025</em></p>
+<p><a id="aik-2025-e-p-kvshare"></a></p>
+<h3 id="kv-cache-sharing-on-device-inference-aik-2025-e-p-kvshare">KV-Cache Sharing (On-Device Inference) — <code>AIK-2025-E-P-KVSHARE</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E / P</td>
+<td>L2-E2</td>
+<td>— (not established)</td>
+<td>2025-12-01</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l2-e2-kv-cache-sharing-on-device-inference-type-e">L2-E2 — KV-Cache Sharing (On-Device Inference) (type E)</h4>
+<p><strong>Date of Appearance:</strong> Not established.<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-E-P-KVSHARE</code> · <strong>Internal Concept ID:</strong> AIKC-000027<br />
+<strong>Concept:</strong> C:KVSHARE</p>
+<p><em>As published:</em> • Concept: A critical optimization technique that allows multiple models or tasks on a device (like a smartphone) to access the same Key-Value (KV) cache in memory, significantly reducing the memory and latency overhead for simultaneous LLM operations. • Why 2025: Became a core architectural innovation for enabling powerful, multi-functional on-device foundation models (like those detailed in the 2025 Apple Intelligence report). <strong>Reference (table, A-057):</strong> Ma, B., et al. SafeKV: Selective KV-Cache Sharing to Mitigate Timing Side-Channels in LLM Inference. <strong>Type &amp; Source:</strong> Preprint (arXiv 2025)</p>
+<p><strong>Why 2025 (corrected record):</strong> The 2025 Apple Intelligence report describes KV-cache sharing in Apple's ~3B-parameter on-device model, where the second of two blocks reuses the KV cache of the first, cutting KV-cache memory and time-to-first-token by about 37.5% (Apple, <em>Apple Intelligence Foundation Language Models: Tech Report 2025</em>, arXiv:2507.13575, July 2025). That is sharing within one model, not across tasks or models. [C06]</p>
+<p><strong>Reference (corrected record):</strong> Chu, K., et al. (2025). <em>SafeKV: Selective KV-Cache Sharing to Mitigate Timing Side-Channels in LLM Inference.</em> arXiv:2508.08438. [C07]</p>
+<p><em>Editorial note:</em> The full entry is corrected below (C06, C07, C08, C12).</p>
+<h4 id="corrected-full-entry-kv-cache-sharing-on-device-inference-l2-e2">Corrected full entry — KV-Cache Sharing (On-Device Inference) (L2-E2)</h4>
+<p><em>Aikipedia Entry — 2025 Edition (corrected canonical text; C06, C07, C08 and C12 applied). Source text: A-134 to A-160.</em></p>
+<h5 id="definition-1">Definition</h5>
+<p>KV-Cache Sharing is a resource optimization technique used primarily in the deployment of Large Language Models (LLMs) on multi-tenant or memory-constrained edge hardware (like personal devices). It allows the intermediate attention computation outputs, specifically the Key (K) and Value (V) vectors (the KV-Cache), to be shared or reused across multiple concurrent inference sessions, tasks, or users, drastically reducing memory bandwidth and latency.</p>
+<p>The term is also used for reuse of the KV cache across layers or blocks within a single model, as in Apple's 2025 on-device model (see Historical Context). [C06]</p>
+<h5 id="historical-context">Historical Context</h5>
+<p>The KV-Cache, essential for efficient auto-regressive generation, is the largest memory consumer during inference. Its size limited the context length and the number of users a server could support. Early sharing methods (pre-2025) focused on sharing common prefixes (like the system prompt) on large server farms.</p>
+<p>In 2025, Apple's ~3B-parameter on-device foundation model used a within-model form of KV-cache sharing: the model is divided into two blocks, and the second block reuses the KV cache generated by the first. Apple reports this cuts KV-cache memory use and time-to-first-token by about 37.5% (Apple, <em>Tech Report 2025</em>, arXiv:2507.13575). [C06]</p>
+<p><em>(The original's "The 2025 breakthrough applied this to on-device (local) inference, particularly for devices running multiple, small LLM-powered services simultaneously …" is replaced. The cited Apple report describes sharing within one model, not across services, and no Qualcomm report was identified.)</em> [C06]</p>
+<h5 id="technical-description">Technical Description</h5>
+<p>The KV-Cache stores the K and V vectors for all previously generated tokens. In a shared system, the cache memory is managed by a centralized scheduler (often integrated into the GPU's memory manager):</p>
+<ul>
+<li>Chunking/Paging: The cache is divided into fixed-size chunks or "pages" (e.g., 16 tokens).</li>
+<li>Shared/Private Mapping: A router determines if a request's tokens should be mapped to an existing, shared cache chunk (if the chunk is read-only and non-sensitive) or allocated a new, private chunk.</li>
+<li>Inference Acceleration: When a user's prompt or a sub-task uses a sequence already in the shared cache, the LLM skips the expensive attention computation for those tokens, immediately retrieving the required K and V vectors.</li>
+</ul>
+<p><em>(The original's memory-reduction formula, "Memory Reduction ≈ Σ_{i∈Shared} S_i·N_i·2·D / B", and the sentence defining its variables are removed. The formula has no source, and its terms do not yield a memory quantity: it omits the number of layers and the bytes per element, it counts sharers rather than the copies avoided, and its division by batch size is unexplained.)</em> [C12]</p>
+<h5 id="notable-systems-papers-2025">Notable Systems / Papers (2025)</h5>
+<ul>
+<li>Chu, K., et al. (2025). <em>SafeKV: Selective KV-Cache Sharing to Mitigate Timing Side-Channels in LLM Inference.</em> arXiv:2508.08438. [C07]</li>
+<li>Apple (2025). <em>Apple Intelligence Foundation Language Models: Tech Report 2025.</em> arXiv:2507.13575. [C06]</li>
+</ul>
+<p><em>(The original's "Apple Intelligence / Qualcomm Technical Reports on On-Device LLM Optimization. (2025)" is replaced by the Apple report above. The Qualcomm half could not be identified.)</em> [C06]</p>
+<h5 id="applications">Applications</h5>
+<ul>
+<li>Real-time Multitasking: Enables a single device to run a background agent (reading email) and a foreground chat assistant concurrently without latency spikes.</li>
+<li>Cost-Efficient Cloud Serving: Drastically reduces the GPU memory footprint for large, multi-tenant cloud-based LLM APIs, lowering the cost-per-token for providers.</li>
+<li>Personalization: Allows a base model's knowledge to be shared while specialized, personalized adapters and their unique KV-Cache entries are managed privately.</li>
+</ul>
+<h5 id="limitations">Limitations</h5>
+<ul>
+<li>Privacy Leakage (Side Channels): Sharing can introduce side-channel vulnerabilities (e.g., PromptPeek), where a malicious process can observe timing differences in cache hits/misses to infer the prompt content of another concurrent user.</li>
+<li>Cache Invalidation: Managing when and how to clear a shared cache (e.g., due to model updates or security concerns) is complex.</li>
+</ul>
+<h5 id="open-questions">Open Questions</h5>
+<ul>
+<li>What is the optimal chunking size to balance efficiency gains against side-channel risk?</li>
+<li>How can Homomorphic Encryption or other cryptographic methods be applied to the KV-Cache to enable sharing without exposing plaintext data?</li>
+<li>Can a learning-based privacy classifier reliably and efficiently partition the cache into safe-to-share and private sections?</li>
+</ul>
+<hr />
+<h2 id="multi-agent-debate-systems">Multi-Agent Debate Systems</h2>
+<p><em>Internal Concept ID AIKC-000015 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-madebate"></a></p>
+<h3 id="multi-agent-debate-systems-aik-2025-s-p-madebate">Multi-Agent Debate Systems — <code>AIK-2025-S-P-MADEBATE</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L3-6</td>
+<td>2023-05</td>
+<td>2025-12-02</td>
+</tr>
+</tbody>
+</table>
+<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<h4 id="l3-s6-multi-agent-debate-systems-type-s">L3-S6 — Multi-Agent Debate Systems (type S)</h4>
+<p><strong>Date of Appearance:</strong> May 2023 <em>(corrected — C03; Du et al., arXiv:2305.14325)</em></p>
+<p><em>As published:</em> <strong>Definition</strong>: Frameworks where multiple AI agents argue different positions or perspectives before reaching a conclusion, improving reasoning quality and reducing bias. <strong>Why 2025</strong>: Emerged as a practical technique for complex decision-making and fact-checking applications.</p>
+<p><em>Editorial note:</em> first appearance is 2023; 2025 marks wider adoption and formalization.</p>
+<h2 id="prefilldecode-disaggregation">Prefill–Decode Disaggregation</h2>
+<p><em>Internal Concept ID AIKC-000023 · 1 record in 2025</em></p>
+<p><a id="aik-2025-f-p-pddisagg"></a></p>
+<h3 id="prefilldecode-disaggregation-aik-2025-f-p-pddisagg">Prefill–Decode Disaggregation — <code>AIK-2025-F-P-PDDISAGG</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F / P</td>
+<td>standalone</td>
+<td>2024-01-18</td>
+<td>2025-11-09</td>
+</tr>
+</tbody>
+</table>
+<h4 id="prefilldecode-disaggregation-1">Prefill–Decode Disaggregation</h4>
+<p><em>Corrected collection text. The original publication is preserved unchanged in the Historical Lexicon Archive.</em></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Term</strong></td>
+<td>Prefill–Decode Disaggregation</td>
+</tr>
+<tr class="even">
+<td><strong>Date of Appearance</strong></td>
+<td>January 18, 2024 (Zhong et al., DistServe, arXiv:2401.09670v1, "Disaggregating Prefill and Decoding"). The technique appeared earlier as "phase splitting": Patel et al., Splitwise, arXiv:2311.18677v1, November 30, 2023. Earliest documented use identified; not an exhaustive priority claim</td>
+</tr>
+<tr class="odd">
+<td><strong>Date of Original Publication</strong></td>
+<td>November 9, 2025 (Champaign Magazine, post 14033)</td>
+</tr>
+<tr class="even">
+<td><strong>Historical Coverage</strong></td>
+<td>Through November 9, 2025, the date of original publication. Corrections rely only on sources available by that date</td>
+</tr>
+<tr class="odd">
+<td><strong>Original Contributor</strong></td>
+<td>Kimi K2 Thinking (initial draft, linked from the post, not reproduced in it); ChatGPT (revised and final versions)</td>
+</tr>
+<tr class="even">
+<td><strong>Original Reviewers</strong></td>
+<td>Grok Expert; Claude 4.5 Sonnet; Gemini 2.5 Pro (named in the post; no review texts are published)</td>
+</tr>
+<tr class="odd">
+<td><strong>Corrections Prepared by</strong></td>
+<td>Claude Opus 5.5 (Anthropic)</td>
+</tr>
+<tr class="even">
+<td><strong>Independent review</strong></td>
+<td>GLM 5.3 Flash</td>
+</tr>
+<tr class="odd">
+<td><strong>Base version</strong></td>
+<td>Sole published version on the post (post 14033). The off-post Kimi text linked from the post is a provenance annotation, not a version (rulings X9/X15)</td>
+</tr>
+<tr class="even">
+<td><strong>Entry ID</strong></td>
+<td>AIK-2025-F-P-PDDISAGG (concept AIKC-000023)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Markers: <code>[Cnn]</code> marks a corrected or added passage and <code>[ST01]</code> the rearrangement into AES sections, documented in the entry's correction register. Unmarked text is the original's own wording (archive lines A-007 to A-083).</em></p>
+<h5 id="definition-2">1. Definition</h5>
+<p>Prefill–decode disaggregation optimizes large language model (LLM) inference by separating the prefill phase (parallel prompt processing) from the decode phase (sequential token generation), enabling tailored hardware allocation and independent scaling for each phase. [ST01]</p>
+<h5 id="origin-and-historical-development-1">2. Origin and Historical Development</h5>
+<p>First proposed in Splitwise (2023), which splits prompt computation and token generation onto separate machines [8], and formalized as goodput-optimized disaggregated serving in DistServe (2024) [1], this approach has evolved rapidly with systems like Mooncake, FlowKV, and NVIDIA Dynamo addressing KV cache transfers, scheduling, and production-scale deployment. [C01] [ST01]</p>
+<h6 id="history-development-timeline-c01-c06">History / Development Timeline [C01] [C06]</h6>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Late 2023</strong></td>
+<td>Splitwise (Microsoft; arXiv:2311.18677, ISCA 2024) splits prompt and token-generation phases onto separate machines.</td>
+</tr>
+<tr class="even">
+<td><strong>2024 (OSDI)</strong></td>
+<td>DistServe formalizes disaggregation; first goodput gains observed.</td>
+</tr>
+<tr class="odd">
+<td><strong>Late 2024</strong></td>
+<td>vLLM/Ray prototypes emerge.</td>
+</tr>
+<tr class="even">
+<td><strong>Early 2025 (FAST ’25)</strong></td>
+<td>Mooncake published; KV-centric orchestration demonstrated.</td>
+</tr>
+<tr class="odd">
+<td><strong>March 2025 (GTC)</strong></td>
+<td>NVIDIA Dynamo launched; vendor-grade distributed inference framework.</td>
+</tr>
+<tr class="even">
+<td><strong>April 2025</strong></td>
+<td>FlowKV arXiv release; low-latency KV transfer and scheduling.</td>
+</tr>
+<tr class="odd">
+<td><strong>Mid-2025</strong></td>
+<td>Dynamo v0.4 introduces Blackwell optimizations.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="conceptual-or-technical-framework-1">3. Conceptual or Technical Framework</h5>
+<h6 id="overview">3.1 Overview</h6>
+<p>LLM inference involves:</p>
+<ul>
+<li><strong>Prefill:</strong> Parallel, compute-intensive matrix operations for prompt embeddings.</li>
+<li><strong>Decode:</strong> Sequential token generation using KV cache accesses, memory-bound and lower arithmetic intensity.</li>
+</ul>
+<p>Disaggregation assigns these phases to separate clusters:</p>
+<ul>
+<li><strong>Compute-optimized clusters</strong> for prefill.</li>
+<li><strong>Memory-optimized clusters</strong> for decode.</li>
+</ul>
+<p>Clusters communicate via high-speed interconnects (e.g., NVLink, InfiniBand) to transfer KV cache states efficiently. Utilization differences are typical: prefill &gt;90%, decode 20–40% GPU utilization, as reported in technical analyses of disaggregated serving [9]. [C02]</p>
+<p>Monolithic serving mixes prefill and decode, causing idle hardware. [ST01]</p>
+<h6 id="kv-cache-transfer">3.2 KV-Cache Transfer</h6>
+<p>Efficient KV cache transfer is critical:</p>
+<ul>
+<li><strong>FlowKV:</strong> ~96% reduction in KV-cache transmission latency (from 0.944 s to 0.053 s), achieved by optimizing the transfer itself (layer-wise pipelined transfer and contiguous memory allocation) rather than by compressing the cache [2]. [C03]</li>
+<li><strong>Mooncake:</strong> pools the GPU cluster's underused CPU, DRAM, SSD and NIC resources into a disaggregated, KVCache-centric store, with a global scheduler that pairs prefill and decode instances [3]. [C09]</li>
+</ul>
+<h6 id="scheduling-and-load-balancing">3.3 Scheduling and Load Balancing</h6>
+<p>Dynamic routing and admission control (e.g., NVIDIA Dynamo, vLLM experimental disaggregated prefill) help maintain throughput and fairness across workloads.</p>
+<h6 id="figure-1-original">3.4 Figure 1 (original)</h6>
+<p><em>The image (post attachment 14035, file <code>copilot_20251109_162736.png</code>) is kept in the archive; its file name indicates it was generated with Microsoft Copilot. The post gives it no credit line.</em> [C08] Architecture diagram:</p>
+<ol type="1">
+<li><strong>Prefill Clusters:</strong> Input prompt processed via parallel compute.</li>
+<li><strong>KV Cache Stream:</strong> Optimized KV transfer (compressed tensors) moves data between prefill and decode.</li>
+<li><strong>Decode Clusters:</strong> Sequential token generation using KV cache.</li>
+<li><strong>Measurements:</strong> TTFT and ITL monitored at each phase.</li>
+</ol>
+<h5 id="applications-and-implementations-1">4. Applications and Implementations</h5>
+<ul>
+<li>Powers deployments like Kimi (Mooncake) and DeepSeek-V3.</li>
+</ul>
+<h5 id="evidence-and-evaluation-1">5. Evidence and Evaluation</h5>
+<p>Evaluations show workload-dependent gains—reduced latency, higher goodput—but benefits require high-bandwidth networks and careful orchestration. [ST01]</p>
+<p>Phase-specific batching improves Time to First Token (TTFT) and Inter-Token Latency (ITL): [C04]</p>
+<ul>
+<li><strong>DistServe:</strong> up to 7.4× more requests or 12.6× tighter SLOs.</li>
+<li><strong>Mooncake:</strong> 59–498% capacity gains.</li>
+<li><strong>FlowKV:</strong> 15.2–48.9% speedups on LongBench v1/v2 benchmarks.</li>
+</ul>
+<p>Cost efficiency varies: Splitwise reports 1.4× higher throughput at 20% lower cost, or 2.35× more throughput under the same cost and power budgets [8]; secondary technical analyses cite 15–40% reductions in infrastructure cost [9]. [C05]</p>
+<p>Metrics include TTFT, ITL, throughput, P99 latency, tested on H100/A800 clusters using LongBench v1/v2 for long-context evaluation.</p>
+<h5 id="significance-and-implications-1">6. Significance and Implications</h5>
+<p>Disaggregation enables independent scaling, maximizing compute utilization for prefill and memory throughput for decode. Bursty workloads benefit most. [ST01]</p>
+<h5 id="limitations-debates-and-open-questions-1">7. Limitations, Debates, and Open Questions</h5>
+<p>Disaggregation relies on high-bandwidth fabrics. Slow networks can erode gains, particularly in heterogeneous setups. Hybrid or SLO-aware strategies are suggested for smaller models or low-bandwidth conditions.</p>
+<p>Disaggregation is less effective for:</p>
+<ul>
+<li><p>Small models or short-context inference.</p></li>
+<li><p>Poor network bandwidth.</p></li>
+<li><p>Uniform workloads (hybrid aggregation-disaggregation may be better).</p></li>
+<li><p><strong>Future directions:</strong> SLO-aware autoscaling, heterogeneous hardware support, intra-GPU disaggregation. [ST01]</p></li>
+</ul>
+<h5 id="related-concepts-and-distinctions-1">8. Related Concepts and Distinctions</h5>
+<ul>
+<li>Complements paged attention, speculative decoding, MoE, KV cache offloading, and chunked prefill.</li>
+</ul>
+<h5 id="see-also-1">See Also</h5>
+<p><em>Cross-reference markings (editorial, not part of the original): targets in the collection carry their Public Entry IDs; the others are marked as having no entry.</em></p>
+<ul>
+<li>Model parallelism (tensor/pipeline) — <em>no entry in the 2025 collection</em></li>
+<li>Mixture of Experts (MoE) — AIK-2025-F-P-MOE (standalone), with occurrences AIK-2025-S-P-MOE and AIK-2025-S-P-MOE-02</li>
+<li>Paged attention (vLLM) — <em>no entry in the 2025 collection</em></li>
+<li>Speculative decoding — AIK-2025-S-P-SPECDECODE (<em>New AI Lexicon 2025</em> (3))</li>
+<li>KV cache offloading — <em>no entry in the 2025 collection</em> (related: KV-Cache Sharing, AIK-2025-E-P-KVSHARE)</li>
+<li>Chunked prefill — <em>no entry in the 2025 collection</em></li>
+</ul>
+<h5 id="references-and-sources-1">References and Sources</h5>
+<ol type="1">
+<li><strong>DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving</strong> – arXiv:2401.09670, OSDI 2024.</li>
+<li><strong>FlowKV: A Disaggregated Inference Framework with Low-Latency KV Cache Transfer and Load-Aware Scheduling</strong> – arXiv:2504.03775, 2025.</li>
+<li><strong>Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot</strong> (Qin et al.) – USENIX FAST 2025. <a href="https://www.usenix.org/system/files/fast25-qin.pdf" class="uri">https://www.usenix.org/system/files/fast25-qin.pdf</a> [C07]</li>
+<li><strong>NVIDIA Dynamo: A Low-Latency Distributed Inference Framework for Scaling Reasoning AI Models</strong> – NVIDIA Blog, March 2025.</li>
+<li><strong>LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding</strong> – GitHub (<a href="https://github.com/THUDM/LongBench" class="uri">https://github.com/THUDM/LongBench</a>).</li>
+<li><strong>vLLM Documentation: Disaggregated Prefilling (Experimental)</strong> – vLLM Docs (<a href="https://docs.vllm.ai/" class="uri">https://docs.vllm.ai/</a>).</li>
+<li><strong>Disaggregated Inference: 18 Months Later</strong> – Hao AI Lab retrospective (<a href="https://hao-ai-lab.github.io/blogs/distserve-retro/" class="uri">https://hao-ai-lab.github.io/blogs/distserve-retro/</a>).</li>
+<li><strong>Splitwise: Efficient Generative LLM Inference Using Phase Splitting</strong> (Patel et al.) – arXiv:2311.18677 (November 30, 2023), ISCA 2024. [C01]</li>
+<li><strong>Disaggregation in Large Language Models: the Next Evolution in AI Infrastructure</strong> – InfoQ article (September 29, 2025). <a href="https://www.infoq.com/articles/llms-evolution-ai-infrastructure/" class="uri">https://www.infoq.com/articles/llms-evolution-ai-infrastructure/</a> [C02]</li>
+</ol>
+<h5 id="editorial-notes-1">Editorial Notes</h5>
+<ol type="1">
+<li><strong>Status.</strong> Independently reviewed and accepted by the editor. The dated record is in Appendix G.</li>
+<li><strong>Source-date rule.</strong> Every source used to correct the text was available by November 9, 2025: Splitwise (November 30, 2023), the DistServe OSDI version (June 2024), FlowKV (April 2025), the Mooncake FAST '25 paper (February 2025), and the InfoQ article (September 29, 2025).</li>
+<li><strong>Provenance.</strong> The post links the initial Kimi K2 Thinking draft (A-084); the link is not carried into the entry. The figure's file name indicates Microsoft Copilot as its generator; the post credits no one for it (C08). No review texts are published in the post, so Review Applied? cannot be assessed.</li>
+<li><strong>Figure legend.</strong> Item 2 of the legend ("compressed tensors", A-064) describes KV transfer generically and is left as published. It is not a claim about FlowKV, whose mechanism is corrected at C03.</li>
+<li><strong>Conflict.</strong> The preparer is an Anthropic model, and the post names Claude 4.5 Sonnet as a peer reviewer. No Claude text appears in the post.</li>
+</ol>
+<h5 id="credits-1">Credits</h5>
+<ul>
+<li>Source audits: Claude Opus 5.5 (first audit) and Muse Spark 1.3 (second audit).</li>
+<li>Corrections: Claude Opus 5.5.</li>
+<li>Independent review: GLM 5.3 Flash.</li>
+</ul>
+<p>Accepted by the editor, W.H.L. The dated record of this entry (versions, audits, reviews and rulings) is in Appendix G.</p>
+<h2 id="quantization-ultra-low-precision-inference">Quantization &amp; Ultra-Low-Precision Inference</h2>
+<p><em>Internal Concept ID AIKC-000054 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-quantinfer"></a></p>
+<h3 id="quantization-ultra-low-precision-inference-aik-2025-s-p-quantinfer">Quantization &amp; Ultra-Low-Precision Inference — <code>AIK-2025-S-P-QUANTINFER</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L1-S8</td>
+<td>— (not established)</td>
+<td>2025-11-30</td>
+</tr>
+</tbody>
+</table>
+<h4 id="l1-s8-quantization-ultra-low-precision-inference-type-s">L1-S8 — Quantization &amp; Ultra-Low-Precision Inference (type S)</h4>
+<p><strong>Date of Appearance:</strong> Not established. The installment frames the term as a 2025 term.<br />
+<strong>Public Entry ID:</strong> <code>AIK-2025-S-P-QUANTINFER</code> · <strong>Internal Concept ID:</strong> AIKC-000054<br />
+<em>As published:</em> <strong>Quantization &amp; Ultra-Low-Precision Inference</strong> Definition: Techniques (4-bit, 3-bit, mixed precision) and quant-aware training to run large models on commodity hardware without big accuracy loss. Why 2025: Widespread use in open-source and commercial models to reduce inference cost and enable edge deployment. Example: Post-training quantization + fine-tuning to run a 70B-equivalent model on a single server.</p>
+<h2 id="speculative-decoding">Speculative Decoding</h2>
+<p><em>Internal Concept ID AIKC-000016 · 1 record in 2025</em></p>
+<p><a id="aik-2025-s-p-specdecode"></a></p>
+<h3 id="speculative-decoding-aik-2025-s-p-specdecode">Speculative Decoding — <code>AIK-2025-S-P-SPECDECODE</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S / P</td>
+<td>L3-7</td>
+<td>2022-11-30</td>
+<td>2025-12-02</td>
+</tr>
+</tbody>
+</table>
+<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<h4 id="l3-s7-speculative-decoding-type-s">L3-S7 — Speculative Decoding (type S)</h4>
+<p><strong>Date of Appearance:</strong> November 30, 2022 <em>(corrected — C01; Leviathan, Kalman &amp; Matias, arXiv:2211.17192; Chen et al., arXiv:2302.01318, February 2023)</em></p>
+<p><em>As published:</em> <strong>Definition</strong>: Inference optimization technique where a small "draft" model generates candidate tokens that a larger model verifies in parallel, dramatically reducing latency. <strong>Why 2025</strong>: Became standard in production systems as latency requirements tightened for interactive applications.</p>
+<p><em>Editorial note:</em> the technique predates 2025; its 2025 relevance is production standardization, as the short form's own text describes.</p>
+<h2 id="test-time-compute-scaling">Test-Time Compute Scaling</h2>
+<p><em>Internal Concept ID AIKC-000011 · 1 record in 2025</em></p>
+<p><a id="aik-2025-e-p-ttcscale"></a></p>
+<h3 id="test-time-compute-scaling-aik-2025-e-p-ttcscale">Test-Time Compute Scaling — <code>AIK-2025-E-P-TTCSCALE</code></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Type / Origin</th>
+<th>Parent</th>
+<th>Date of Appearance</th>
+<th>Original publication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E / P</td>
+<td>L3-2</td>
+<td>2024–2025</td>
+<td>2025-12-02</td>
+</tr>
+</tbody>
+</table>
+<p><em>Assembled by Muse Spark 1.3 (assembly handoff of November 14, 2026, SHA-256 1c74801b…5498), from the filed text of record. Claude Opus 5.5 is recused from this text and did not place or check it.</em></p>
+<h4 id="l3-s2-test-time-compute-scaling-type-e">L3-S2 — Test-Time Compute Scaling (type E)</h4>
+<p><strong>Date of Appearance:</strong> 2024–2025 (crystallization; OpenAI o1, September 2024 — as the entry itself records). No appearance correction.</p>
+<p><em>As published:</em> <strong>Definition</strong>: Methods that improve model performance by allocating more computational resources during inference (e.g., longer reasoning chains, more sampling attempts) rather than only during training. <strong>Why 2025</strong>: Became a key alternative to pre-training scaling as models like o1 demonstrated dramatic improvements through inference-time computation.</p>
+<p><em>Note:</em> the full entry is corrected at C06 (restoration — Mathematical Framework equations restored from the published formulas) — see below.</p>
+<h4 id="corrected-full-entry-test-time-compute-scaling-l3-s2">Corrected full entry — Test-Time Compute Scaling (L3-S2)</h4>
+<p><strong>Aikipedia Entry — 2025 Edition</strong> <em>(corrected canonical text v0.3; correction C06 applied, marked [C06])</em></p>
+<h5 id="definition-3">Definition</h5>
+<p>Test-Time Compute Scaling refers to methods that improve AI model performance by allocating additional computational resources during inference rather than only during training. Instead of generating responses immediately, models invest extra time in iterative reasoning, self-correction, verification, and exploration of multiple solution paths before producing final outputs.</p>
+<h5 id="historical-context-1">Historical Context</h5>
+<p>Traditional language models operated on a simple paradigm: generate outputs as quickly as possible using fixed inference budgets. Pre-training scaling laws dominated the field from 2018–2024, with performance improvements achieved primarily by training larger models on more data.</p>
+<p>In September 2024, OpenAI released the o1 model series, which demonstrated that performance consistently improves with more time spent thinking during inference. This marked a fundamental shift: as the field encountered data bottlenecks and diminishing returns from pre-training scaling laws, test-time compute emerged as a key driver of performance improvements.</p>
+<p>By early 2025, the paradigm had crystallized with models like DeepSeek-R1 exploring reinforcement learning approaches to achieve strong reasoning through deep, step-by-step thinking. Multiple research groups published frameworks for achieving test-time scaling, making it accessible beyond closed proprietary systems.</p>
+<h5 id="technical-description-1">Technical Description</h5>
+<p>Test-time compute encompasses several interconnected approaches: <strong>1. Extended Chain-of-Thought (CoT) Reasoning</strong></p>
+<p>Models generate explicit reasoning traces before producing answers, allowing them to work through complex multi-step problems systematically.</p>
+<p><strong>2. Iterative Self-Refinement</strong></p>
+<p>The model generates an initial response, critiques it, identifies errors, and produces improved versions through multiple refinement cycles.</p>
+<p><strong>3. Best-of-N Sampling with Verification</strong></p>
+<ul>
+<li>Generate N candidate solutions</li>
+<li>Evaluate each using a reward model (Outcome-Supervised Reward Model for complete solutions, or Process-Supervised Reward Model for step-by-step evaluation)</li>
+<li>Select the highest-scoring response</li>
+</ul>
+<p><strong>4. Tree Search Strategies</strong></p>
+<p>Models explore multiple reasoning paths simultaneously, backtrack when needed, and search for optimal solutions through the space of possible reasoning chains.</p>
+<p><strong>5. Budget Forcing</strong></p>
+<p>A technique that controls test-time compute by forcefully terminating or lengthening the model's thinking process by appending "Wait" tokens multiple times, leading the model to double-check its answer and often fix incorrect reasoning steps.</p>
+<h5 id="mathematical-framework">Mathematical Framework</h5>
+<p>For a model policy π and input x, traditional inference produces:</p>
+<p>y = π(x)</p>
+<p>Test-time scaling introduces compute budget C:</p>
+<p>y = argmax_{y ∈ 𝒴(x, C)} R(y)</p>
+<p>where 𝒴(x, C) is the set of candidate responses generated using compute budget C, and R is a reward/verification function. [C06 — equations restored from the published formulas (the formula images' alt texts in the stored post); see the register]</p>
+<p>The performance of o1 consistently improves with more reinforcement learning (train-time compute) and with more time spent thinking (test-time compute).</p>
+<h5 id="notable-systems-papers-2025-1">Notable Systems / Papers (2025)</h5>
+<ul>
+<li><strong>OpenAI o1 &amp; o3</strong>: Proprietary reasoning models that demonstrated dramatic improvements on challenging benchmarks through extended thinking time</li>
+<li><strong>s1 (Muennighoff et al., 2025)</strong>: Achieved test-time scaling with just 1,000 training examples and budget forcing, exceeding o1-preview on competition math by up to 27%</li>
+<li><strong>DeepSeek-R1</strong>: Leveraged reinforcement learning to achieve strong reasoning through step-by-step thinking</li>
+<li><strong>Survey by Ji et al. (2025)</strong>: Comprehensive review organizing test-time compute from System-1 to System-2 thinking paradigms</li>
+<li><strong>Zeng et al. (ACL 2025)</strong>: Found that parallel scaling strategies outperform sequential ones, proposing "Shortest Majority Vote" method</li>
+</ul>
+<h5 id="applications-1">Applications</h5>
+<ul>
+<li><strong>Mathematical Problem Solving</strong>: o1 achieved 93% on AIME 2024 with extended inference, placing it among the top 500 students nationally</li>
+<li><strong>Scientific Reasoning</strong>: Outperforming PhD-level experts on specialized knowledge benchmarks</li>
+<li><strong>Code Generation</strong>: Testing and iteratively improving generated code before returning results</li>
+<li><strong>Multi-Step Planning</strong>: Breaking complex tasks into verified sub-steps with correction loops</li>
+<li><strong>Safety-Critical Decisions</strong>: Medical diagnosis, legal analysis where accuracy matters more than speed</li>
+</ul>
+<h5 id="limitations-1">Limitations</h5>
+<ul>
+<li><strong>Increased Latency</strong>: Users must wait longer for responses, unsuitable for real-time applications</li>
+<li><strong>Higher Computational Cost</strong>: More expensive to run, requiring careful cost-quality tradeoffs</li>
+<li><strong>Diminishing Returns</strong>: Research shows that longer chains of thought don't always enhance accuracy; correct solutions are often shorter than incorrect ones</li>
+<li><strong>Verification Challenges</strong>: Reward models can be incorrect, and verifying complex reasoning remains difficult</li>
+<li><strong>Not Universal</strong>: Benefits concentrated in reasoning-heavy domains; less effective for simple retrieval or classification</li>
+</ul>
+<h5 id="open-questions-1">Open Questions</h5>
+<ul>
+<li>How do we design optimal compute allocation strategies that balance quality, cost, and latency?</li>
+<li>Can we predict in advance which problems will benefit most from additional test-time compute?</li>
+<li>How do we ensure that extended reasoning actually improves reliability rather than generating elaborate but incorrect justifications?</li>
+<li>What are the theoretical limits of test-time scaling compared to pre-training scaling?</li>
+<li>How should test-time compute interact with other techniques like retrieval-augmented generation?</li>
+</ul>
+<hr />
+<nav class="pn"><a href="part-ii-training-learning-and-data.html">← Part II. Training, Learning and Data</a><a href="part-iv-alignment-safety-and-interpretability.html">Part IV. Alignment, Safety and Interpretability →</a></nav></article></main>
+<footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
+</body></html>

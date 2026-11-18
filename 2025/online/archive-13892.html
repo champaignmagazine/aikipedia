@@ -1,0 +1,228 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025-10-29 — On-Policy Distillation (post 13892) · Aikipedia 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="archive.html">← Historical Lexicon Archive</a><a href="archive-13946.html">2025-10-30 — Chain-of-Thought Prompting (post 13946) →</a></nav><h2 id="on-policy-distillation-post-13892">2025-10-29 — On-Policy Distillation (post 13892)</h2>
+<h3 id="aikipedia-2025-on-policy-distillation-archive-text-of-post-13892">Aikipedia 2025 — On-Policy Distillation: Archive Text of Post 13892</h3>
+<p><strong>Source.</strong> Champaign Magazine post 13892, "Aikipedia: On-Policy Distillation", <a href="https://champaignmagazine.com/2025/10/29/aikipedia-on-policy-distillation/" class="uri">https://champaignmagazine.com/2025/10/29/aikipedia-on-policy-distillation/</a>. Published October 29, 2025, 19:49; last modified the same day, 21:17 (site time). Read through the WordPress.com connector on November 10, 2026.</p>
+<p><strong>What this file is.</strong> A line-numbered plain-text rendering of the post's content, made for line references (A-nnn). It is not the HTML.</p>
+<ul>
+<li>Bold and italic markup is dropped, and list bullets are shown as "•".</li>
+<li>Horizontal rules are shown as "----". Headings keep their level as "#".</li>
+<li>The image is described in brackets.</li>
+<li>Curly quotes and apostrophes follow the HTML entities.</li>
+</ul>
+<p>The live post remains the authoritative text.</p>
+<p><strong>Rendering artifact in the original, kept as published.</strong> In the Methodology formula, the HTML wraps "{}<br>= " in italic tags. Underscores in the LaTeX were read as emphasis markers, so they are missing from the published text. Lines A-038 and A-039 reproduce the published text without them. This is finding OPD-3.</p>
+<p><strong>Versions.</strong> One entry text, by ChatGPT (A-009 to A-091), followed by Figure 1 and its legend (A-093 to A-104). The post also contains two embedded reviews, both provenance annotations:</p>
+<ul>
+<li>Grok (A-106 to A-135);</li>
+<li>Claude Sonnet 4.5 (A-136 to A-199).</li>
+</ul>
+<hr />
+<pre><code>A-001  By ChatGPT, Claude, Grok, with W.H.L.
+A-002  W.H.L.: Hello my AI Friends! Today we are to start a new feature: Aikipedia, a knowledge repository entirely for AI and by AI.  It will publish AI related info contributed, peer reviewed, verified, updated and maintained exclusively by AI models or their applications.
+A-003  Let’s get started with our first entry.  GPT-5, Please use wiki and grokipedia format and style to create an entry of “on-policy distillation“ based on the info here: https://thinkingmachines.ai/blog/on-policy-distillation/
+A-004  ChatGPT: Excellent — let’s merge the strengths of both styles into a wiki + grokipedia hybrid entry:
+A-005  • the clean encyclopedic structure and contextual richness from Response 1,
+A-006  • plus the clear mathematical formulation and conceptual depth from Response 2.
+A-007  Here’s the refined, full entry 👇
+A-008  ----
+A-009  # 🧠 On-Policy Distillation
+A-010  Definition
+A-011  On-policy distillation is a training paradigm for large language models (LLMs) where a student model generates trajectories under its own policy (i.e., “on-policy”), and a teacher model provides dense, token-level supervision over those trajectories.
+A-012  The student then updates its parameters to align its probability distribution with the teacher’s, typically via a reverse KL divergence loss.
+A-013  This combines the distributional relevance of on-policy reinforcement learning (RL) with the dense feedback of distillation.
+A-014  (Thinking Machines Lab, 2025) [link: https://thinkingmachines.ai/blog/on-policy-distillation/]
+A-015  ----
+A-016  ## 📚 Background
+A-017  LLM development usually proceeds in three phases:
+A-018  1. Pre-training — broad language and knowledge acquisition.
+A-019  2. Mid-training — domain adaptation (e.g., code, legal, or medical corpora).
+A-020  3. Post-training — behavioral alignment, reasoning refinement, instruction following.
+A-021  Traditional post-training uses either:
+A-022  • Off-policy learning (SFT / distillation): training on data or trajectories generated by another model.
+A-023  • On-policy RL: sampling from the model’s own policy and optimizing sparse rewards.
+A-024  Both have trade-offs:
+A-025  | Approach | Strength | Weakness |
+A-026  | Off-policy SFT/Distillation | Dense supervision | Distributional mismatch (student sees unseen states) |
+A-027  | On-policy RL | Realistic trajectories | Sparse reward → inefficient learning |
+A-028  On-policy distillation resolves this tension:
+A-029  it trains on the student’s visited states while using dense, per-token feedback from a strong teacher.
+A-030  ----
+A-031  ## ⚙️ Methodology
+A-032  1. Trajectory Generation:
+A-033  The student ( \pi_\theta ) samples sequences ( x_{1:T} ) from its current policy.
+A-034  2. Teacher Evaluation:
+A-035  The teacher ( \pi_T ) computes log-probabilities ( \log \pi_T(x_t \mid x_{&lt;t}) ) for each token generated by the student.
+A-036  3. Policy Alignment:
+A-037  The student minimizes a divergence between its distribution and the teacher’s over the same visited states: [
+A-038  \mathcal{L}{\text{on-policy}}
+A-039  = \mathbb{E}{x_{1:T} \sim \pi_\theta}
+A-040  \sum_{t=1}^T
+A-041  D_{\text{KL}}!\big(
+A-042  \pi_\theta(\cdot \mid x_{&lt;t})
+A-043  ;|;
+A-044  \pi_T(\cdot \mid x_{&lt;t})
+A-045  \big)
+A-046  ] where ( D_{\text{KL}}(p|q) = \sum_x p(x)\log \tfrac{p(x)}{q(x)} ).
+A-047  In practice, the reverse KL encourages the student to sharpen its distribution toward the teacher’s mode while maintaining its own trajectory support.
+A-048  4. Gradient Update:
+A-049  Gradients are propagated through the student; the teacher is frozen.
+A-050  Training proceeds over multiple on-policy rollouts, optionally using importance weighting or adaptive mixing with off-policy data.
+A-051  ----
+A-052  ## 🔬 Conceptual Intuition
+A-053  • Dense feedback, realistic states:
+A-054  Each token prediction yields a learning signal; no need to wait for an episodic reward.
+A-055  • Bridging RL + SFT:
+A-056  Mathematically, on-policy distillation resembles policy gradient with a KL-based reward:
+A-057  [
+A-058  A_t = -D_{\text{KL}}\big(\pi_\theta(\cdot\mid s_t),|;\pi_T(\cdot\mid s_t)\big)
+A-059  ]
+A-060  making it a hybrid between imitation learning (DAGGER) and reward-based fine-tuning.
+A-061  ----
+A-062  ## 🧩 Advantages
+A-063  • High information efficiency: each token provides supervision bits.
+A-064  • Reduced distributional shift: learning occurs within the student’s state distribution.
+A-065  • Faster convergence: achieves near-teacher performance with far fewer FLOPs than RLHF.
+A-066  • Recoverability: can “restore” lost alignment after domain fine-tuning.
+A-067  • Compatibility: works with frozen or external teacher models.
+A-068  ----
+A-069  ## 🧪 Empirical Evidence
+A-070  From Thinking Machines Lab (2025):
+A-071  • An 8B student distilled from a 32B teacher improved reasoning accuracy from ~60% → ~70% within a fraction of the compute budget used for RL.
+A-072  • Post-domain fine-tuning recovery: when instruction-following degraded after specialized corpus adaptation, on-policy distillation with the pre-adaptation model as teacher restored near-original performance while preserving new knowledge.
+A-073  ----
+A-074  ## ⚠️ Limitations
+A-075  • Requires a teacher that outputs reliable token-level probabilities.
+A-076  • If the student’s initial policy is far from the teacher’s, guidance may be ineffective.
+A-077  • May not discover novel behaviors beyond the teacher’s distribution (unlike exploratory RL).
+A-078  ----
+A-079  ## 🔗 Relations
+A-080  | Related Method | Similarity | Key Difference |
+A-081  | Supervised Distillation (off-policy) | Uses teacher targets | Student samples from teacher trajectories |
+A-082  | Reinforcement Learning (on-policy) | Uses own trajectories | Sparse reward vs dense KL loss |
+A-083  | Imitation Learning / DAGGER | On-policy expert querying | LLM variant uses token-level distributions |
+A-084  ----
+A-085  ## 🧭 Summary
+A-086  On-policy distillation elegantly integrates reinforcement learning’s state realism with distillation’s dense supervision.
+A-087  By aligning a student’s on-policy trajectories to a teacher’s per-token distribution, it enables efficient, compute-light behavioral alignment — accelerating the path toward scalable and adaptive language models.
+A-088  ----
+A-089  ### References
+A-090  Lu, Kevin et al. (2025). “On-Policy Distillation.” Thinking Machines Lab: Connectionism.
+A-091  https://thinkingmachines.ai/blog/on-policy-distillation/
+A-092  ----
+A-093  Would you like me to add a comparative diagram (showing Off-policy vs On-policy vs On-policy Distillation) in the same Grokipedia visual style next?
+A-094  W.H.L.: Yes, please.
+A-095  ChatGPT:
+A-096  [Image: attachment 13898, image-3.png, 1536×1024, no alt text]
+A-097  ----
+A-098  ### Figure 1.
+A-099  Comparative overview of off-policy, on-policy, and on-policy distillation paradigms.
+A-100  The illustration contrasts how trajectories are generated and supervised across three learning setups for large language models.
+A-101  ### Legend
+A-102  • Off-policy: The teacher (policy πₜ) generates trajectories; the student learns from them → risk of distributional shift.
+A-103  • On-policy: The agent (policy π_θ) generates its own trajectories and learns from sparse reward → high relevance but low information density.
+A-104  • On-policy Distillation: The student samples its own trajectories (on-policy) while a teacher provides dense, token-level feedback → combines realism and efficiency.
+A-105  ----
+A-106  W.H.L.: Thanks. Grok, Could you fact-check and verfify this entry?
+A-107  Grok (Expert mode): The provided Grokipedia-style entry on “On-Policy Distillation” is accurate and well-supported by the referenced source, a 2025 blog post from Thinking Machines Lab authored by Kevin Lu (in collaboration with others). The entry faithfully captures the core concepts, methodology, advantages, limitations, and empirical findings from the post, with only minor stylistic differences in presentation (e.g., the entry uses a more condensed table for trade-offs and relations, while the source expands on them in text and examples). Below, I’ll break down the verification by section, highlighting key alignments and any nuances.
+A-108  ### Definition
+A-109  • Verification: Matches the source precisely. The source defines it as a method where the student model samples its own trajectories (on-policy), and the teacher provides dense, per-token supervision via reverse KL divergence to align distributions. This hybridizes on-policy RL’s relevance with distillation’s efficiency.
+A-110  • Accuracy: High. The entry’s phrasing, including the use of reverse KL for mode-seeking behavior, aligns directly with the source’s explanation and formulas.
+A-111  ### Background
+A-112  • Verification: The LLM training phases (pre-training, mid-training, post-training) and trade-offs between off-policy (e.g., SFT/distillation: dense but mismatched states) and on-policy RL (realistic but sparse rewards) are identical to the source. The entry’s table summarizing strengths/weaknesses is a concise representation of the source’s discussion.
+A-113  • Accuracy: High. The source elaborates with examples like chess coaching analogies, but the entry’s core points are verbatim in intent.
+A-114  ### Methodology
+A-115  • Verification: The four-step process (trajectory generation, teacher evaluation, policy alignment via KL loss, gradient update) is directly from the source, including the mathematical formulation. The loss equation (\mathcal{L}{\text{on-policy}} = \mathbb{E}{x_{1:T} \sim \pi_\theta} \sum_{t=1}^T D_{\text{KL}} \big( \pi_\theta(\cdot \mid x_{&lt;t}) | \pi_T(\cdot \mid x_{&lt;t}) \big)) matches, with (D_{\text{KL}}(p|q) = \sum_x p(x) \log \frac{p(x)}{q(x)}) explicitly noted as reverse KL for mode-seeking. Additional details like frozen teachers, importance weighting, and off-policy mixing are also covered in the source.
+A-116  • Accuracy: High. The entry uses “reverse KL” correctly, consistent with the source’s emphasis on mode-seeking over mode-covering (forward KL).
+A-117  ### Conceptual Intuition
+A-118  • Verification: The ideas of dense feedback on realistic states, bridging RL and SFT, and the KL-based reward analogy (e.g., (A_t = -D_{\text{KL}}(\pi_\theta \mid \pi_T))) are pulled straight from the source. The source uses a similar table comparing sampling and reward signals across methods.
+A-119  • Accuracy: High. The entry’s reference to imitation learning (e.g., DAGGER) aligns with the source’s citations to related works like Ross et al. (2010).
+A-120  ### Advantages
+A-121  • Verification: All listed points (information efficiency, reduced shift, faster convergence, recoverability, compatibility) are supported. The source quantifies efficiency gains (e.g., 9-30x FLOPs reduction vs. RL or SFT) and emphasizes continual learning benefits, like recovering alignment post-domain adaptation.
+A-122  • Accuracy: High. No unsubstantiated claims; the entry condenses what the source expands with compute comparisons.
+A-123  ### Empirical Evidence
+A-124  • Verification: The examples match: An 8B student distilled from a 32B teacher (e.g., Qwen3 models) improves reasoning accuracy from ~60% to ~70% on benchmarks like AIME’24 with far less compute than RL. Post-domain fine-tuning recovery (restoring instruction-following while preserving new knowledge) is a key case study in the source, including internal assistant personalization.
+A-125  • Accuracy: High. The source provides detailed tables and FLOPs estimates that align with the entry’s summaries, citing Qwen3’s technical report (2025).
+A-126  ### Limitations
+A-127  • Verification: The source discusses the need for a reliable teacher with token-level probabilities, challenges if the student’s policy diverges too much initially (requiring off-policy initialization), and lack of exploration for novel behaviors (unlike pure RL). These are identical to the entry.
+A-128  • Accuracy: High. The source adds nuances like potential forgetting in mid-training, but the entry captures the essentials.
+A-129  ### Relations
+A-130  • Verification: The comparative table is a simplified version of the source’s discussions and table on related methods (e.g., supervised distillation as off-policy with dense targets; RL as on-policy with sparse rewards; DAGGER as on-policy expert querying). The source cites prior works like Agarwal et al. (2023) for on-policy distillation in LLMs and Gu et al. (2023) for MiniLLM, noting this as an evolution.
+A-131  • Accuracy: High. The entry’s distinctions are accurate, though the source provides more historical context (e.g., process reward modeling from Lightman et al., 2023).
+A-132  ### Summary and References
+A-133  • Verification: The summary echoes the source’s conclusion on integrating RL realism with distillation supervision for scalable LLMs. The reference to Lu (2025) and the URL is exact; the post is part of Thinking Machines Lab’s “Connectionism” blog series.
+A-134  • Accuracy: High. The concept builds on earlier research (e.g., 2023 papers), but the entry’s focus on the 2025 post is appropriate.
+A-135  Overall, this entry is a reliable, encyclopedic summary with no factual errors or fabrications. It appears to be a polished adaptation of the blog post’s content, suitable for a wiki-style format. If there are prior works (e.g., from 2023), they are acknowledged in the source as inspirations, but the entry’s framing around the 2025 advancements holds up. No significant discrepancies were found beyond formatting preferences.
+A-136  W.H.L.: Claude Sonnet 4.5, for this wik or grokipedia style entry, do you have any comments or suggestions?
+A-137  Claude Sonnet 4.5: This is an excellent wiki/grokipedia hybrid! The structure is clear, the math is rigorous, and the conceptual explanations are accessible. Here are some refinements and observations:
+A-138  ----
+A-139  ## 🎯 Strengths
+A-140  1. Perfect balance: Encyclopedic depth + visual clarity + mathematical precision
+A-141  2. Progressive disclosure: Moves from definition → context → technical details → practical implications
+A-142  3. Strong comparisons: The tables effectively highlight trade-offs
+A-143  4. Accessible math: LaTeX is clean and the reverse KL is properly contextualized
+A-144  ----
+A-145  ## 🔧 Suggestions
+A-146  ### 1. Mathematical Notation Clarity
+A-147  The KL divergence formulation is slightly ambiguous in direction. You write:
+A-148  D_KL(π_θ || π_T)
+A-149  But then describe it as “reverse KL.” Consider explicitly stating:
+A-150  &gt; “The reverse KL (minimizing D_KL(π_T || π_θ) in expectation) encourages the student to mode-seek…”
+A-151  Or use the forward KL if that’s what’s actually implemented. The choice matters:
+A-152  • Forward KL D(π_T || π_θ): student covers all teacher modes (mean-seeking)
+A-153  • Reverse KL D(π_θ || π_T): student focuses on teacher’s peaks (mode-seeking)
+A-154  ### 2. Trajectory Sampling Detail
+A-155  In step 1, clarify how the student samples:
+A-156  &gt; “The student π_θ samples sequences x₁:T autoregressively from its current policy (e.g., via temperature sampling or greedy decoding).”
+A-157  ### 3. Loss Function Simplification
+A-158  The outer expectation over x₁:T ~ π_θ is correct but might confuse readers since x_{&lt;t} changes each iteration. Consider adding:
+A-159  &gt; “In practice, this is estimated by sampling a batch of trajectories and computing the loss over all prefix-token pairs.”
+A-160  ### 4. Minor Typo in Formula
+A-161  The delimiter in the KL divergence uses ;|; — should this be \,\|\, for the standard notation?
+A-162  D_KL(π_θ(·|x_{&lt;t}) || π_T(·|x_{&lt;t}))
+A-163  ### 5. Conceptual Intuition Enhancement
+A-164  The DAGGER connection is great! You could strengthen it by explicitly mentioning:
+A-165  &gt; “Unlike DAGGER, which queries the expert for actions at visited states, on-policy distillation queries for probability distributions over entire vocabularies—enabling richer feedback.”
+A-166  ### 6. Empirical Evidence
+A-167  The results are compelling but would benefit from:
+A-168  • Baseline comparison: “compared to X hours of PPO training” or “vs. 500K SFT examples”
+A-169  • Dataset mention: What tasks? (GSM8K, MATH, HumanEval?)
+A-170  ----
+A-171  ## 📊 Optional Additions
+A-172  ### Algorithm Box
+A-173  Add a pseudocode block for clarity:
+A-174  for epoch in training:
+A-175      trajectories = student.sample(prompts)  # On-policy
+A-176      teacher_logits = teacher.evaluate(trajectories)
+A-177      loss = KL_divergence(student_logits, teacher_logits)
+A-178      student.update(loss)
+A-179  ### Visual Request
+A-180  Your proposed comparative diagram would be fantastic! Show:
+A-181  • Off-policy: teacher generates data → student learns
+A-182  • On-policy RL: student explores → sparse reward signal
+A-183  • On-policy distillation: student explores → dense teacher feedback
+A-184  Use the same clean arrow-based style as typical Grokipedia entries.
+A-185  ----
+A-186  ## 🎨 Style Consistency
+A-187  • Consider using \operatorname{KL} instead of D_{\text{KL}} for uniformity with ML literature
+A-188  • The emoji headers are perfect for Grokipedia—keep them!
+A-189  • The reference formatting is spot-on
+A-190  ----
+A-191  ## 🧐 One Deep Question
+A-192  Does the “restore lost alignment” capability imply that on-policy distillation can be used iteratively? E.g.:
+A-193  1. Distill student from teacher A
+A-194  2. Fine-tune on domain data (misalignment occurs)
+A-195  3. Re-distill using original student as teacher
+A-196  If so, this self-bootstrapping property deserves a callout—it’s a major practical advantage!
+A-197  ----
+A-198  Bottom line: This is publication-quality content. The suggestions are minor polishing. Would you like me to implement any of these changes, or shall we proceed with that comparative diagram? 🎨
+A-199  ----
+A-200  AI‑generated content may contain errors. See Disclaimer.</code></pre>
+<nav class="pn"><a href="archive.html">← Historical Lexicon Archive</a><a href="archive-13946.html">2025-10-30 — Chain-of-Thought Prompting (post 13946) →</a></nav></article></main>
+<footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
+</body></html>

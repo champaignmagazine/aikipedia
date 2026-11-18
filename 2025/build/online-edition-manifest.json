@@ -1,0 +1,126 @@
+{
+ "edition": "online",
+ "draft": "v0.22",
+ "register_sha256": "3e7bad424031654aa525fd5f51069a5dfafd9b0ec6ef9b34651cc2629ac667d4",
+ "word_count_method": "whitespace tokens of the combined file",
+ "word_count": 220598,
+ "combined_file": "editions/aikipedia-2025-collection-draft-v0.22_combined_online.md",
+ "combined_separator": "\n\n---\n\n",
+ "combined_separator_note": "the actual string: a blank line, three hyphens, a blank line",
+ "asset_paths": "relative to the draft package root (e.g. assets/cover.png)",
+ "tokenizer": "Python str.split() (all Unicode whitespace)",
+ "build_register": {
+  "sha256": "3e7bad424031654aa525fd5f51069a5dfafd9b0ec6ef9b34651cc2629ac667d4",
+  "what": "Muse Spark 1.3 copy of the Master Register, November 16, 2026, after the closing checks"
+ },
+ "register_stages": [
+  {
+   "stage": "assembly handoff, November 14, 2026 (builds v0.1 to v0.5)",
+   "sha256": "ac23099823fcdb31ac9bcfe6fe42b7fb3a443dbb96f0e2f41c64ca0bf94334de",
+   "recorded_in": "sources/assembly-handoff_manifest.json"
+  },
+  {
+   "stage": "Muse copy, November 16, 2026 (builds v0.6 and v0.7)",
+   "sha256": "b88270eaf85d875585fb50ee2815cc7fce2adcbd2846f89f6c70ee1d7f3f65bc"
+  },
+  {
+   "stage": "Muse copy after the 14:32 CT rulings, November 16, 2026 (builds v0.8 to v0.13)",
+   "sha256": "a55b87b42455a1f9473b9171ef5c850509c55f8987a2786206620f330925b1c5"
+  },
+  {
+   "stage": "Muse copy after the closing checks, November 16, 2026 (builds v0.14 onward)",
+   "sha256": "3e7bad424031654aa525fd5f51069a5dfafd9b0ec6ef9b34651cc2629ac667d4"
+  }
+ ],
+ "per_file_words": {
+  "00_front-matter.md": 13041,
+  "01_tables-of-contents.md": 1349,
+  "10_part-I.md": 10477,
+  "11_part-II.md": 9102,
+  "12_part-III.md": 6997,
+  "13_part-IV.md": 23913,
+  "14_part-V.md": 17968,
+  "15_part-VI.md": 2897,
+  "20_historical-lexicon-archive_online.md": 74818,
+  "21_corrections-and-editorial-notes.md": 3512,
+  "22_references-and-provenance-register.md": 4820,
+  "23_index-of-terms.md": 1290,
+  "30_appendices.md": 50402
+ },
+ "files": [
+  {
+   "file": "00_front-matter.md",
+   "sha256": "b90b08e61747b57437e4e21da10a12503fcf8c81dc7e054fca13168736bc2ba0"
+  },
+  {
+   "file": "01_tables-of-contents.md",
+   "sha256": "1f47627583eb022d729003a92a0bc9f3ba8dfad72a9e468f62461b57c4e46ad4"
+  },
+  {
+   "file": "10_part-I.md",
+   "sha256": "ffcfbc19dfb01e873670ea7c6e578965bcb177ade230a01700229ef2a29b61b8"
+  },
+  {
+   "file": "11_part-II.md",
+   "sha256": "e65f9b9351fcb576e8b34a2585f7051878172fef1ede7552807a188c634638d9"
+  },
+  {
+   "file": "12_part-III.md",
+   "sha256": "29f9e297d36063cb92fd5995251ef4dec9846b2940ccd86fbc0cc8ea712a2d44"
+  },
+  {
+   "file": "13_part-IV.md",
+   "sha256": "8d6f5578cc47217fcf2e2d505e1f23357c9d2bdca63616075b42910585e3a9cb"
+  },
+  {
+   "file": "14_part-V.md",
+   "sha256": "aba4ef17fc1d27cdf4346f2fd95d3e61c8cb33021acd492130b97a96a10f2bb9"
+  },
+  {
+   "file": "15_part-VI.md",
+   "sha256": "40ba779b8983ec891d01cc0c40ab4acf2142742eaac1a1e9698583ffcb4c2eb6"
+  },
+  {
+   "file": "20_historical-lexicon-archive_online.md",
+   "sha256": "6e676a8999d0bd9e2568c36b99988e03bac5a81e35e8744364c7fa83ad860431"
+  },
+  {
+   "file": "21_corrections-and-editorial-notes.md",
+   "sha256": "ef45f090e06367794263743642dba92c08bf54e0d5a423121aca870bdf985d14"
+  },
+  {
+   "file": "22_references-and-provenance-register.md",
+   "sha256": "734426514eb4ac8f94c2d1ca2a4bd9591aebeef22797c4ee007ccaec60195ebf"
+  },
+  {
+   "file": "23_index-of-terms.md",
+   "sha256": "bbd4894d79aac6aa56efc79304ccbea98de803c96056d14356c0cf96dd8ee3b0"
+  },
+  {
+   "file": "30_appendices.md",
+   "sha256": "90b1885cb56a04155101dc41adb93fa7a43e9194b9e14ba504e9dcaa5fb37e1b"
+  }
+ ],
+ "sources": {
+  "assembly_handoff_manifest": "sources/assembly-handoff_manifest.json",
+  "cleared_tasks_manifest": "sources/cleared-tasks_manifest.json",
+  "full_post_transcriptions": {
+   "S-CAI": {
+    "file": "S-CAI_full-post-transcription_post13958_v0.3_header-rev-2026-11-16.md",
+    "sha256": "4a52a7fb5f008c33fe81a1cf763bca9186d631a0f4e0c6b9a5b168c01abeb837"
+   },
+   "S-MOE": {
+    "file": "S-MOE_full-post-transcription_post13998_v0.3_header-rev-2026-11-16.md",
+    "sha256": "b40293c680bbf89ba1d242badd9a2fc269ba81675991498d82dcfd9cef87920b"
+   },
+   "L3": {
+    "file": "L3_full-post-transcription_post14221_v0.2_header-rev-2026-11-16.md",
+    "sha256": "381255671c7ea03ac87c3d8d0333be4dc30acae5ed87002fff6558dcff3f81cf"
+   },
+   "S-CSP": {
+    "file": "S-CSP_full-post-transcription_post14343_v0.2_header-rev-2026-11-16.md",
+    "sha256": "ca5dbf3ca06cc648d8212fce7940037130e7a816a9d9e21e9d140b349bcec948"
+   }
+  }
+ }
+}

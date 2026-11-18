@@ -1,0 +1,142 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Appendix B. AES-ID v1.0 — Identifier Scheme, Permanence Rules and Register Fields · Aikipedia 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="appendix-a-aes-v1-0-aikipedia-annual-collection-editorial-an.html">← Appendix A. AES v1.0 — Aikipedia Annual Collection Editorial and Format Standard</a><a href="appendix-c-provenance-policy-ap-2025-01.html">Appendix C. Provenance Policy AP-2025-01 →</a></nav><h1 id="appendix-b.-aes-id-v1.0-identifier-scheme-permanence-rules-and-register-fields">Appendix B. AES-ID v1.0 — Identifier Scheme, Permanence Rules and Register Fields</h1>
+<p><em>Master Register §1–§2, extracted verbatim from the register of November 14, 2026 (SHA-256 91f17bbd…4011).</em></p>
+<h3 id="the-identifier-scheme-aes-id-v1.0">1. The identifier scheme (AES-ID v1.0)</h3>
+<p>Public Entry ID grammar:</p>
+<p><code>AIK-YYYY-T-O-KEY[-NN]</code></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Meaning</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>AIK</code></td>
+<td>Aikipedia</td>
+<td>Constant</td>
+</tr>
+<tr class="even">
+<td><code>YYYY</code></td>
+<td><strong>Collection year — always</strong></td>
+<td>Never the original publication year; that date is recorded separately (§2)</td>
+</tr>
+<tr class="odd">
+<td><code>T</code></td>
+<td>Record type: <code>F</code> full-length entry · <code>E</code> expanded entry · <code>S</code> short entry · <code>L</code> lexicon installment / collection container</td>
+<td>Fixed at assignment</td>
+</tr>
+<tr class="even">
+<td><code>O</code></td>
+<td>Editorial origin: <code>P</code> originally published in the collection year · <code>N</code> newly commissioned for the collection</td>
+<td>Fixed at assignment</td>
+</tr>
+<tr class="odd">
+<td><code>KEY</code></td>
+<td>Editor-assigned identifying letters (uppercase ASCII letters and digits)</td>
+<td>Assigned in this register, never derived mechanically; established acronyms take priority; otherwise a distinctive stem, generally 3–12 characters; two-letter keys only when the acronym is canonical</td>
+</tr>
+<tr class="even">
+<td><code>NN</code></td>
+<td>Optional collision suffix (<code>-02</code>, <code>-03</code>, …)</td>
+<td>Used only when the full ID (year + type + origin + key) would otherwise collide</td>
+</tr>
+</tbody>
+</table>
+<h4 id="permanence-rules">Permanence rules</h4>
+<ol type="1">
+<li><strong>Two levels of identity.</strong> The <em>Internal Concept ID</em> (<code>AIKC-######</code>, sequential, never reused) identifies a concept across all its texts, years, and editions. The <em>Public Entry ID</em> identifies one specific entry record within a collection. This register is where the two are linked.</li>
+<li><strong>Assignment.</strong> IDs are assigned when a record is accepted into this register. Until then, an entry's metadata reads "To be assigned."</li>
+<li><strong>Never reuse.</strong> Once assigned, an ID is never reused, even if the record is withdrawn; withdrawn records are marked <strong>Retired</strong>.</li>
+<li><strong>Type and origin are assignment-time facts.</strong> Later changes in length, classification, title, or publication status are recorded in the register's fields, never by altering the ID.</li>
+<li><strong>Corrections vs. expansions.</strong> A correction to an existing entry retains its Public Entry ID and receives a new version number. A separately published expansion receives a new Public Entry ID, linked to the same Internal Concept ID.</li>
+<li><strong>Containers and contained entries.</strong> An installment (<code>L</code>) and each entry within it receive separate IDs; contained entries carry the parent installment's ID in the Parent Record field, together with their original sequence within the installment. A concept occurring in several installments receives a separate entry record per occurrence, all linked to one Internal Concept ID; the <code>-NN</code> suffix is used only on a full-ID collision, not merely for repetition.</li>
+<li><strong>Versions are not identifiers.</strong> Version numbers (draft v0.x; collection versions from 1.0 at publication) live in the Version field and in each entry's editorial record.</li>
+<li><strong>IDs identify records, not correctness.</strong> A record's review and publication state is carried by its Status field, never by its identifier.</li>
+<li><strong>Collection scope.</strong> A Public Entry ID identifies a record within one annual collection. If the same concept appears in a later collection (for example, a revised RLVR treatment in Aikipedia 2026), that collection assigns its own Public Entry ID, linked to the same Internal Concept ID; earlier collections' records are not altered.</li>
+<li><strong>Provisional concept IDs.</strong> A provisional concept identity (assigned where a variant's distinctness is unverified — e.g. the "2.0" variants CAI2 and INSTRTUNE2, and concepts whose attestation is unverified) carries a normal Internal Concept ID; provisionality is a classification state recorded in the record details, not a separate ID series. If the concept is later <strong>merged</strong> into another concept, its Internal Concept ID is marked <strong>Retired — merged into AIKC-######</strong>, is never reused, and its entry records are re-pointed to the surviving concept ID, with the re-pointing verified, and the merger recorded in the assignment log (§4). A merger changes no Public Entry ID: the affected occurrence records keep their Public Entry IDs, and only their Internal Concept ID link is re-pointed; the retired ID is retained in this register with its merger history. If it is <strong>withdrawn</strong> without merger, its ID is Retired under rule 3. If its distinctness or attestation is <strong>confirmed</strong>, the provisional marking is removed and the ID continues unchanged. (Rule entered November 11, 2026; merger confirmation entered at the AES-ID v1.0 freeze, November 14, 2026.)</li>
+</ol>
+<h3 id="register-fields">2. Register fields</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Internal Concept ID</td>
+<td><code>AIKC-######</code>; immutable; one per concept</td>
+</tr>
+<tr class="even">
+<td>Public Entry ID</td>
+<td>As §1; one per entry record</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Entry title as published or drafted</td>
+</tr>
+<tr class="even">
+<td>Type / Origin</td>
+<td>The <code>T</code> and <code>O</code> codes, spelled out in the record details</td>
+</tr>
+<tr class="odd">
+<td>Parent Record</td>
+<td>Public ID of the containing installment (<code>L</code> records: —), with the entry's original sequence</td>
+</tr>
+<tr class="even">
+<td>Date of Appearance</td>
+<td>The earliest verified public appearance documented by the available evidence (never inferred from publicity), distinguishing that milestone from any claim of absolute historical priority. Where no sufficiently supported date is established, the field states 'Not established.'</td>
+</tr>
+<tr class="odd">
+<td>Date of Original Publication</td>
+<td>First publication of this <em>text</em> (— for new additions not yet published)</td>
+</tr>
+<tr class="even">
+<td>Date of Collection Publication</td>
+<td>Publication in the annual collection (pending until published)</td>
+</tr>
+<tr class="odd">
+<td>Version</td>
+<td>Current text version</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>One of: <strong>Draft</strong> · <strong>In review</strong> · <strong>Accepted</strong> · <strong>Published</strong> · <strong>Corrected</strong> · <strong>Superseded</strong> · <strong>Retired</strong>. For records at Accepted or beyond, the record details additionally itemize peer-review status, editorial approval, and publication status as three separate facts; a reviewer's acceptance is a recommendation and is never recorded as editorial approval</td>
+</tr>
+<tr class="odd">
+<td>Contributor / Reviewers</td>
+<td>Model name and release number, per the standing identification rule</td>
+</tr>
+<tr class="even">
+<td>Source</td>
+<td>File, URL, or print location of the record's text</td>
+</tr>
+<tr class="odd">
+<td>Base version</td>
+<td>The published text state the canonical text is corrected from, with the basis for the choice — the post's own declaration, the editor's choice, or sole published version (corrected originals only; AES §3). For an installment, stated per occurrence where occurrences differ</td>
+</tr>
+</tbody>
+</table>
+<p>Correction IDs are recorded in the Master Register under the record's details (the register carries no separate correction-ID field).</p>
+<nav class="pn"><a href="appendix-a-aes-v1-0-aikipedia-annual-collection-editorial-an.html">← Appendix A. AES v1.0 — Aikipedia Annual Collection Editorial and Format Standard</a><a href="appendix-c-provenance-policy-ap-2025-01.html">Appendix C. Provenance Policy AP-2025-01 →</a></nav></article></main>
+<footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
+</body></html>

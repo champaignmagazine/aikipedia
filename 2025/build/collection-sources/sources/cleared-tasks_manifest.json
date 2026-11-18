@@ -1,0 +1,45 @@
+{
+ "package": "muse-to-claude_2026-11-14_cleared-tasks",
+ "members": [
+  {
+   "file": "bibliography-10a_muse-v0.1.md",
+   "sha256": "db7d299cceae1a49b3c66a9b1dd93d2b768826118f568663c45e98411a5ffa5c",
+   "bytes": 41237
+  },
+  {
+   "file": "bibliography-entries_muse-v0.1.json",
+   "sha256": "7ac30a3dea0d02102a6519afe52df48edd8d6abe043d879514b6ff7947a9fd54",
+   "bytes": 50079
+  },
+  {
+   "file": "contributor-table-5.5_muse-v0.1.md",
+   "sha256": "5d3a1ed21563fcd6f5fe4cf6fea9f6d29795a6f195782f8351f116c0a04e52d2",
+   "bytes": 9573
+  },
+  {
+   "file": "cover-note_muse-to-claude_2026-11-14_cleared-tasks.md",
+   "sha256": "66e3459d7d6e299a3676e95af24ca4ef568143b261f924ce2f5aa4558fddd68e",
+   "bytes": 4134
+  },
+  {
+   "file": "index-alias-check_muse-v0.1.md",
+   "sha256": "53cf2a7431803e1b7978cb8c897beb53ee7efa6709cc336281dd789c74d4078a",
+   "bytes": 7572
+  },
+  {
+   "file": "see-also-concepts_muse-v0.1.json",
+   "sha256": "2170e016caca4d29175a69c16664e26730919087817cbeeef86d1fdbc2f1556a",
+   "bytes": 1046
+  },
+  {
+   "file": "see-also-harvest_muse-v0.1.json",
+   "sha256": "86a4246c551a09202acbe6f1dbfb26e20b255163f1081d298ad054723078826e",
+   "bytes": 4144
+  },
+  {
+   "file": "title-copyright-pages_muse-v0.1.md",
+   "sha256": "34d0ff865022178da208709302ec64300a4e05e131899723a80cd30d19bfd6c9",
+   "bytes": 3810
+  }
+ ]
+}

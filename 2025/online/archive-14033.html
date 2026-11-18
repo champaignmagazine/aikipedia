@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025-11-09 — Prefill–Decode Disaggregation (post 14033) · Aikipedia 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="archive-14021.html">← 2025-11-06 — Continuous Autoregressive Language Models (post 14021)</a><a href="archive-14146.html">2025-11-29 — Generative User Interfaces (post 14146) →</a></nav><h2 id="prefilldecode-disaggregation-post-14033">2025-11-09 — Prefill–Decode Disaggregation (post 14033)</h2>
+<h3 id="aikipedia-2025-prefilldecode-disaggregation-archive-text-of-post-14033">Aikipedia 2025 — Prefill–Decode Disaggregation: Archive Text of Post 14033</h3>
+<p><strong>Source.</strong> Champaign Magazine post 14033, "Aikipedia: Prefill–Decode Disaggregation", <a href="https://champaignmagazine.com/2025/11/09/aikipedia-prefill-decode-disaggregation/" class="uri">https://champaignmagazine.com/2025/11/09/aikipedia-prefill-decode-disaggregation/</a>. Published November 9, 2025, 16:57; last modified the same day, 17:05 (site time). Read through the WordPress.com connector (raw content) on November 11, 2026.</p>
+<p><strong>What this file is.</strong> A line-numbered plain-text rendering of the post's content, made for line references (A-nnn). It is not the HTML.</p>
+<ul>
+<li>Markup is dropped.</li>
+<li>List bullets, including the figure legend's numbered list, are shown as "•", and table rows as "| … |".</li>
+<li>Link text is kept.</li>
+<li>The image is shown by its file name (attachment 14035, <code>copilot_20251109_162736.png</code>).</li>
+<li>The rendering was transcribed from the connector's output, because this session could not save the raw HTML to disk.</li>
+</ul>
+<p><strong>Reference link targets in the post:</strong></p>
+<ul>
+<li>arXiv:2401.09670 and arXiv:2504.03775;</li>
+<li><a href="https://www.usenix.org/system/files/fast25-qin.pdf" class="uri">https://www.usenix.org/system/files/fast25-qin.pdf</a>;</li>
+<li>the NVIDIA blog post "introducing-nvidia-dynamo-…";</li>
+<li><a href="https://github.com/THUDM/LongBench" class="uri">https://github.com/THUDM/LongBench</a>;</li>
+<li><a href="https://docs.vllm.ai/" class="uri">https://docs.vllm.ai/</a>;</li>
+<li><a href="https://hao-ai-lab.github.io/blogs/distserve-retro/" class="uri">https://hao-ai-lab.github.io/blogs/distserve-retro/</a>;</li>
+<li>the initial draft, <a href="https://www.kimi.com/preview/19a6a7a7-4d62-84cd-8000-057fb1def79b" class="uri">https://www.kimi.com/preview/19a6a7a7-4d62-84cd-8000-057fb1def79b</a>.</li>
+</ul>
+<p><strong>Versions.</strong> The post publishes one entry text, the final version by ChatGPT (A-007 to A-083), and names the other contributors:</p>
+<ul>
+<li>Kimi K2 Thinking (initial draft, linked at A-084, not reproduced in the post);</li>
+<li>Grok Expert, Claude 4.5 Sonnet and Gemini 2.5 Pro (peer review).</li>
+</ul>
+<p>No review texts are embedded.</p>
+<hr />
+<pre><code>A-001  By Kimi K2 Thinking, ChatGPT, Grok Expert, Claude 4.5 Sonnet, Gemini 2.5 Pro, with W.H.L.
+A-002  Initial draft: Kimi K2 Thinking
+A-003  Revised and final versions: ChatGPT
+A-004  Peer review: Grok Expert, Claude 4.5 Sonnet, Gemini 2.5 Pro
+A-005  Editing: W.H.L.
+A-006  ----
+A-007  # Prefill–Decode Disaggregation in LLM Inference
+A-008  Prefill–decode disaggregation optimizes large language model (LLM) inference by separating the prefill phase (parallel prompt processing) from the decode phase (sequential token generation), enabling tailored hardware allocation and independent scaling for each phase. First formalized in DistServe (2024), this approach has evolved rapidly with systems like Mooncake, FlowKV, and NVIDIA Dynamo addressing KV cache transfers, scheduling, and production-scale deployment. Evaluations show workload-dependent gains—reduced latency, higher goodput—but benefits require high-bandwidth networks and careful orchestration.
+A-009  ----
+A-010  ## 1. Overview
+A-011  LLM inference involves:
+A-012  • Prefill: Parallel, compute-intensive matrix operations for prompt embeddings.
+A-013  • Decode: Sequential token generation using KV cache accesses, memory-bound and lower arithmetic intensity.
+A-014  Disaggregation assigns these phases to separate clusters:
+A-015  • Compute-optimized clusters for prefill.
+A-016  • Memory-optimized clusters for decode.
+A-017  Clusters communicate via high-speed interconnects (e.g., NVLink, InfiniBand) to transfer KV cache states efficiently. Utilization differences are typical: prefill &gt;90%, decode 20–40% on large models like LLaMA-70B on H100/A800 hardware.
+A-018  ----
+A-019  ## 2. Motivation and Performance Characteristics
+A-020  ### 2.1 Utilization Imbalance
+A-021  Monolithic serving mixes prefill and decode, causing idle hardware. Disaggregation enables independent scaling, maximizing compute utilization for prefill and memory throughput for decode. Bursty workloads benefit most.
+A-022  ### 2.2 Tail Latency and Throughput
+A-023  Phase-specific batching improves Time to First Token (TTFT) and Inference Throughput Latency (ITL):
+A-024  • DistServe: up to 7.4× more requests or 12.6× tighter SLOs.
+A-025  • Mooncake: 59–498% capacity gains.
+A-026  • FlowKV: 15.2–48.9% speedups on LongBench v1/v2 benchmarks.
+A-027  Cost efficiency varies: 15–40% savings are possible depending on workload and network.
+A-028  ----
+A-029  ## 3. System Design
+A-030  ### 3.1 KV-Cache Transfer
+A-031  Efficient KV cache transfer is critical:
+A-032  • FlowKV: ~96% latency reduction using streaming and compression.
+A-033  • Mooncake: co-locates KV stores with decode clusters for performance.
+A-034  ### 3.2 Network Bottlenecks &amp; Critiques
+A-035  Disaggregation relies on high-bandwidth fabrics. Slow networks can erode gains, particularly in heterogeneous setups. Hybrid or SLO-aware strategies are suggested for smaller models or low-bandwidth conditions.
+A-036  ### 3.3 Scheduling and Load Balancing
+A-037  Dynamic routing and admission control (e.g., NVIDIA Dynamo, vLLM experimental disaggregated prefill) help maintain throughput and fairness across workloads.
+A-038  ### 3.4 Benchmarks and Evaluation
+A-039  Metrics include TTFT, ITL, throughput, P99 latency, tested on H100/A800 clusters using LongBench v1/v2 for long-context evaluation.
+A-040  ----
+A-041  ## 4. History / Development Timeline
+A-042  | Year | Event |
+A-043  | 2024 (OSDI) | DistServe formalizes disaggregation; first goodput gains observed. |
+A-044  | Late 2024 | vLLM/Ray prototypes emerge. |
+A-045  | Early 2025 (FAST ’25) | Mooncake published; KV-centric orchestration demonstrated. |
+A-046  | April 2025 | FlowKV arXiv release; low-latency KV transfer and scheduling. |
+A-047  | March 2025 (GTC) | NVIDIA Dynamo launched; vendor-grade distributed inference framework. |
+A-048  | Mid-2025 | Dynamo v0.4 introduces Blackwell optimizations. |
+A-049  ----
+A-050  ## 5. When Not to Disaggregate
+A-051  Disaggregation is less effective for:
+A-052  • Small models or short-context inference.
+A-053  • Poor network bandwidth.
+A-054  • Uniform workloads (hybrid aggregation-disaggregation may be better).
+A-055  ----
+A-056  ## 6. Significance and Synergies
+A-057  • Complements paged attention, speculative decoding, MoE, KV cache offloading, and chunked prefill.
+A-058  • Powers deployments like Kimi (Mooncake) and DeepSeek-V3.
+A-059  • Future directions: SLO-aware autoscaling, heterogeneous hardware support, intra-GPU disaggregation.
+A-060  ----
+A-061  ## 7. Figure 1 — Architecture Diagram
+A-062  [Image: copilot_20251109_162736.png]
+A-063  • Prefill Clusters: Input prompt processed via parallel compute.
+A-064  • KV Cache Stream: Optimized KV transfer (compressed tensors) moves data between prefill and decode.
+A-065  • Decode Clusters: Sequential token generation using KV cache.
+A-066  • Measurements: TTFT and ITL monitored at each phase.
+A-067  ----
+A-068  ## 8. See Also
+A-069  • Model parallelism (tensor/pipeline)
+A-070  • Mixture of Experts (MoE)
+A-071  • Paged attention (vLLM)
+A-072  • Speculative decoding
+A-073  • KV cache offloading
+A-074  • Chunked prefill
+A-075  ----
+A-076  ## 9. References
+A-077  • DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving – arXiv:2401.09670, OSDI 2024.
+A-078  • FlowKV: A Disaggregated Inference Framework with Low-Latency KV Cache Transfer and Load-Aware Scheduling – arXiv:2504.03775, 2025.
+A-079  • Mooncake: A KVCache-Centric Architecture for Serving LLM Chatbot – USENIX FAST 2025 PDF.
+A-080  • NVIDIA Dynamo: A Low-Latency Distributed Inference Framework for Scaling Reasoning AI Models – NVIDIA Blog, March 2025.
+A-081  • LongBench: A Bilingual, Multitask Benchmark for Long Context Understanding – GitHub.
+A-082  • vLLM Documentation: Disaggregated Prefilling (Experimental) – vLLM Docs.
+A-083  • Disaggregated Inference: 18 Months Later – Hao AI Lab retrospective, Link.
+A-084  Attachment: link to initial version: https://www.kimi.com/preview/19a6a7a7-4d62-84cd-8000-057fb1def79b
+A-085  ----
+A-086  #### AI‑generated content may contain errors. See Disclaimer.</code></pre>
+<nav class="pn"><a href="archive-14021.html">← 2025-11-06 — Continuous Autoregressive Language Models (post 14021)</a><a href="archive-14146.html">2025-11-29 — Generative User Interfaces (post 14146) →</a></nav></article></main>
+<footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
+</body></html>

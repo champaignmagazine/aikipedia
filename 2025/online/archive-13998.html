@@ -1,0 +1,304 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025-11-05 — Mixture of Experts (post 13998) · Aikipedia 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="archive-13982.html">← 2025-11-03 — Mixture of Depths (post 13982)</a><a href="archive-14021.html">2025-11-06 — Continuous Autoregressive Language Models (post 14021) →</a></nav><h2 id="mixture-of-experts-post-13998">2025-11-05 — Mixture of Experts (post 13998)</h2>
+<p><em>Full-post transcription prepared by Muse Spark 1.3 for the online edition (the editor's rulings of November 14, 2026, 13:10 and 23:25 CT), file SHA-256 b40293c6…920b. Claude Opus 5.5 is recused from this text and did not transcribe, place or check it. Checked against the live post by GLM 5.3 Flash, November 15, 2026: accepted, no discrepancies. GLM checked lines A-001 to A-213 against the stored content and A-214 to A-268 against the rendered page, a basis the editor accepted on November 15, 2026.</em></p>
+<h3 id="aikipedia-2025-full-post-transcription-of-post-13998-mixture-of-experts-v0.3">Aikipedia 2025 — Full-Post Transcription of Post 13998 (Mixture of Experts), v0.3</h3>
+<p><strong>Header revision, November 16, 2026 (Muse Spark 1.3, holder), under the editor's ruling of November 16, 2026 (14:32 CT), item 1.</strong> GLM 5.3 Flash checked this version in full (November 15, 2026) and accepted it with no discrepancies: lines A-001–A-213 against the post's stored content and lines A-214–A-268 against the rendered page, a basis the editor accepted on November 15, 2026 (09:59 CT ruling, option (a)). The check report was relayed and accepted by the editor's direction of November 16, 2026, and the registrar does not hold it. The version paragraph below states this version was un-checked at issuance; that statement is superseded by this revision. The labeled lines and the fingerprint are unchanged. The previous issue of this file (SHA-256 <code>f5fc04b85027cbd837c3e6cd931a04b0fc04e513bb4d60723bd09607f77337b3</code>) is preserved unchanged.</p>
+<p>Version 0.3, November 14, 2026. This file supersedes v0.2, preserved. v0.2 is withdrawn as the text of record for the online edition: under the editor's ruling of November 14, 2026 (23:25 CT), ruling 3 (disclaimer convention — the site disclaimer is transcribed wherever it appears in a post's stored content), the closing disclaimer line is included here as A-268; v0.2 excluded it as page furniture. The single change from v0.2 is the addition of that line; lines A-001–A-267 are unchanged. v0.2 was a deterministic conversion of the stored post content (see Transcription basis), issued after GLM 5.3 Flash's independent check of v0.1 was adjudicated correct on every span and Grok 4.5's acceptance of v0.1 was discredited on wording (see the final reconciliation note). This version is un-checked: a fresh independent check against the live post is owed before the online edition uses it, assigned to GLM 5.3 Flash under ruling 2; the earlier checks checked superseded text and do not transfer.</p>
+<p>Prepared by Muse Spark 1.3, November 14, 2026, under the editor's rulings of November 14, 2026 (13:10 CT): full-post transcriptions for the online edition only; the closing disclaimer line was added under the editor's ruling of November 14, 2026 (23:25 CT), ruling 3 (disclaimer convention). Claude Opus 5.5 is recused from this text (original authored by Anthropic models, in part) and did not transcribe or check it.</p>
+<p><strong>Source.</strong> Champaign Magazine post 13998, "Aikipedia: Mixture of Experts (MoE)", <a href="https://champaignmagazine.com/2025/11/05/aikipedia-mixture-of-experts-moe/" class="uri">https://champaignmagazine.com/2025/11/05/aikipedia-mixture-of-experts-moe/</a>, published November 5, 2025 (never modified; date and modified both 2025-11-05T20:17:45).</p>
+<p><strong>Status in the collection.</strong> Full-post transcription for the ONLINE edition (13:10 rulings, item 2). The PDF edition keeps the entry text of record (A-006–A-126).</p>
+<p><strong>What this file is.</strong> A line-numbered plain-text rendering of the post's full content, made for line references (A-nnn). It is not the post itself.</p>
+<ul>
+<li><strong>Transcription basis.</strong> Deterministic conversion of the post's stored content (content.rendered) as returned by the WordPress REST API (<a href="https://champaignmagazine.com/wp-json/wp/v2/posts/13998" class="uri">https://champaignmagazine.com/wp-json/wp/v2/posts/13998</a>) and fetched November 14, 2026. Source SHA-256: post JSON <code>5ecf8062bb8a63563c4010be55d04298fd962ef04c9e463f3faa48765eefc0ba</code>, content.rendered <code>f5a7cace5c00acaafe4ed68208bcfce2fa2523726c4143545e2f60d480f99482</code>. Every stored block is rendered in document order; the converter fails loudly on unmapped formula-image alt text or unhandled markup. Structural counts verified against the stored content: 21 horizontal rules, 37 headings (1 H1, 16 H2, 9 H3, 11 H4), 8 tables, 2 preformatted blocks, 11 formula images.</li>
+<li><strong>Markup:</strong> emphasis and markup are dropped, except inside the two preformatted blocks (A-215–A-218, A-233–A-255), where the content is shown literally, including its markdown-looking lines; empty paragraphs are omitted; runs of ASCII spaces collapse to one; leading and trailing spaces inside a paragraph are trimmed.</li>
+<li><strong>Line breaks:</strong> <code>&lt;br&gt;</code> breaks split lines everywhere, including inside list items (only the first segment carries the bullet).</li>
+<li><strong>Lists:</strong> list items, numbered or not and nested or not, are shown as "•". Reference-list labels (1.–9.) are kept as content. DeepSeek's "Minor Refinements" items 1–4 (A-214, A-220, A-224, A-227) are bold-labeled paragraphs in stored content, not list items, and are shown as plain numbered lines; v0.1 wrongly bulleted them.</li>
+<li><strong>Headings:</strong> H1 is shown as "#", H2 as "##", H3 as "###", H4 as "####". Emoji in headings and text are kept as published. The "#" and "##" lines inside the preformatted blocks are block content, not headings.</li>
+<li><strong>Separators:</strong> the twenty-one horizontal rules are shown as "----" (A-005, A-012, A-015, A-024, A-030, A-041, A-051, A-066, A-072, A-078, A-086, A-094, A-097, A-105, A-111, A-122, A-125, A-204, A-230, A-256, A-267). v0.1 showed only two. The "---" lines at A-235, A-246, A-254 are content inside the second preformatted block, not separators.</li>
+<li><strong>Tables</strong> (eight in the entry) are shown one row per line, header row first, cells separated by " | ", with no outer pipes and no divider row. The markdown table inside the second preformatted block is shown literally, divider row and emphasis markers included; its divider row (A-238) carries 11 dashes in the second column, as stored — v0.1 showed 12.</li>
+<li><strong>Links:</strong> link text is kept; URLs are shown only where the visible link text is itself the URL.</li>
+<li><strong>Images — formula images.</strong> The post contains 11 formula images, rendered here as Unicode text at position. Verbatim LaTeX alt texts, as stored: Infobox "Common routing" row, two images, both "k" (A-021); §1 Overview, the display equation "y = _{i (G(x))} G_i(x) E_i(x)" (A-028) and the inline images "E_i(x)", "i", "G_i(x)", "k" (A-029); §3, "G(x)" in the "Gating network" row (A-045) and three "k" images (A-046, A-049). The "G(x)" image sits in the §3 table's "Gating network" row immediately after the bold label, as stored — settling the placement v0.1 left open. The post contains no other images.</li>
+<li><strong>Preformatted blocks.</strong> Two blocks (DeepSeek's review): Block 1 (A-215–A-218) and Block 2 (A-233–A-255). Their content is shown literally; blank lines inside the blocks are not numbered. Block 2 contains only the Infobox and Overview sections, followed by the "(Rest of your excellent content remains unchanged…)" line (A-255).</li>
+<li><strong>Disclaimer.</strong> The closing disclaimer line (A-268) is the last block of the post's stored content and is transcribed here, under the editor's ruling of November 14, 2026 (23:25 CT), ruling 3: the site disclaimer is transcribed wherever it appears in a post's stored content. It follows the trailing separator (A-267). It uses the non-breaking hyphen (U+2011) in “AI‑generated” and a non-breaking space (U+00A0) after “See”, as stored — the same form as the second disclaimer line in the L3 transcription (A-454). v0.2 excluded this line as page furniture; that exclusion was inconsistent with the S-CAI and L3 transcriptions and is corrected by this version.</li>
+<li><strong>Characters kept as published:</strong> the non-breaking space (U+00A0) after each label colon in the six classification lines (A-006–A-011); the mismatched parentheses in the Authors line (A-002) — fullwidth "（" (U+FF08) opening, ASCII ")" closing, no final period; curly quotes restored throughout (v0.1 normalized some to straight quotes); the symbols ≤, ≈, ×, → as published.</li>
+</ul>
+<p><strong>Fingerprint.</strong> SHA-256 of the rendered text (lines A-001 to A-268, UTF-8, newline-terminated, without line labels): <code>afe4704546e9f2f1ee4b0b2e14663c2f5fe9b09b2f70c9b5776f27ee56f2faaa</code>.</p>
+<p><strong>Structure.</strong> The post opens with the byline, the Authors / Peer Reviewers / Facilitator lines (A-002–A-004), a horizontal rule (A-005), the six-line classification block (A-006–A-011), and the entry text (A-013–A-126), closing with the Editorial Status block and the "For publication" line. The "Peer Reviews:" label (A-127) introduces three reviews: Gemini 2.5 Pro (A-128–A-144), Grok (Expert mode) (A-145–A-201), and DeepSeek-V3.2 (A-202–A-266), whose review contains the two preformatted blocks and closes, after the horizontal rule (A-256) and the typesetting section, with "Final Rating: 🏆 Publication Ready" (A-266), followed by the trailing separator (A-267) and the disclaimer line (A-268). Heading inventory: 37 body headings (1 H1, 16 H2, 9 H3, 11 H4) (the post title is recorded in the header, not numbered).</p>
+<h4 id="archive-text-1">Archive text</h4>
+<pre class="text"><code>A-001  By Qwen3-Max, ChatGPT, Claude Sonnet 4.5, Gemini 2.5 Pro, Grok, DeepSeek-V3.2, with W.H.L.
+A-002  Authors: Qwen3-Max (initial draft), ChatGPT and Claude Sonnet 4.5 （revised drafts and final version)
+A-003  Peer Reviewers: Gemini 2.5 Pro, Grok (Expert), DeepSeek-V3.2
+A-004  Facilitator/Editor: W.H.L.
+A-005  ----
+A-006  Aikipedia Classification: Neural Network Architecture
+A-007  Key Innovation: Sparse activation of expert subnetworks
+A-008  First Proposed: Jacobs et al., 1991
+A-009  Primary Application: Scaling efficiency in large language models
+A-010  Latest Verified Model: Qwen3-MoE (Alibaba, 2025)
+A-011  Core Mechanism: A gating network routes input tokens to specialized “experts,” activating only a subset of the total parameters per inference step.
+A-012  ----
+A-013  # Mixture of Experts (MoE)
+A-014  (Peer-reviewed and corrected edition — November 2025)
+A-015  ----
+A-016  ## Infobox
+A-017  Category | Value
+A-018  Full name | Mixture of Experts (MoE)
+A-019  First proposed | Jacobs et al., 1991 [1]
+A-020  Core idea | Divide model capacity into multiple “experts” with a gating network that selects a small subset per input
+A-021  Common routing | Top-k gating (typically k = 1 or 2)
+A-022  Applications | Large-scale language modeling, translation, multimodal AI, reinforcement learning
+A-023  Representative models | GShard (2020), Switch Transformer (2021), ST-MoE (2022), Mixtral (2023), Qwen3 (2025)
+A-024  ----
+A-025  ## 1. Overview
+A-026  The Mixture of Experts (MoE) architecture partitions a neural network into multiple specialized sub-models (experts), coordinated by a gating function that dynamically routes each input to a small subset of experts. This allows very large total model capacity while keeping computational cost low for each token.
+A-027  Mathematically:
+A-028  y = Σ_{i ∈ TopK(G(x))} G_i(x) · E_i(x)
+A-029  where E_i(x) is the output of expert i, and G_i(x) is the gating weight. Only k experts receive non-zero routing weights per token, yielding sparse activation and efficient scaling.
+A-030  ----
+A-031  ## 2. Background and Key Milestones
+A-032  Year | Work / Organization | Key Contribution
+A-033  1991 | Jacobs et al. [1] | Original MoE formulation for adaptive expert specialization
+A-034  2017 | Shazeer et al. [2] | Introduced Sparsely-Gated MoE with load-balancing loss; large-scale feasibility
+A-035  2020 | Lepikhin et al. (Google) [3] | GShard: MoE-Transformer hybrid enabling 600B-parameter multilingual model
+A-036  2021 | Fedus et al. (Google) [4] | Switch Transformer: single-expert routing (top-1) → ~7× speedup
+A-037  2022 | Zhou et al. (Google) [5] | Expert-Choice Routing (ST-MoE): experts select tokens, improving utilization
+A-038  2022 | NLLB &amp; Meta AI [6] | NLLB-MoE for machine translation, 54.5B total parameters
+A-039  2023 | Mistral AI [7] | Mixtral 8×7B open-release (46.7B total / 12.9B active)
+A-040  2025 | Alibaba Group [8] | Qwen3 MoE family, Apache 2.0 licensed
+A-041  ----
+A-042  ## 3. Core Methodology
+A-043  Component | Description
+A-044  Experts | Independent feed-forward blocks (FFNs) trained jointly
+A-045  Gating network G(x) | Softmax router producing routing scores per expert
+A-046  Top-k routing | Activates k experts per token (usually 1–2)
+A-047  Load-balancing loss | Auxiliary term penalizing uneven expert usage (proportional to variance in expert utilization)
+A-048  Expert parallelism | Experts distributed across devices → scalable sparse training
+A-049  Noisy Top-k / token drop | Randomized routing variants to improve diversity
+A-050  Sparsity ratio | Typically ≤ 10% of parameters active per token
+A-051  ----
+A-052  ## 4. Scaling in Large Language Models
+A-053  Model | Year | Routing | Total Params (B) | Active Params (B/token) | Notes
+A-054  Sparsely-Gated MoE [2] | 2017 | Top-2 | 137 | ~13.7† | Introduced large-scale sparse training
+A-055  GShard [3] | 2020 | Top-2 | 600 | ~10‡ | 600B multilingual Transformer; data + expert parallelism
+A-056  Switch Transformer [4] | 2021 | Top-1 | 1,600 | 12–14 | ~7× faster than dense models of equivalent quality
+A-057  ST-MoE (Expert-Choice) [5] | 2022 | Expert-Choice | 100 | ~6–8 | Experts choose tokens (capacity-based routing)
+A-058  NLLB-MoE [6] | 2022 | Top-2 | 54.5 | ~0.9§ | Multilingual translation; includes 3.3B dense variant
+A-059  Mixtral 8×7B [7] | 2023 | Top-2 | 46.7 | 12.9 | Open release by Mistral AI
+A-060  Qwen3-235B* [8] | 2025 | Top-8 (reported) | 235 | 22 (reported) | Reported details (arXiv:2505.09388)
+A-061  Notes:
+A-062  • † Approximation: 137B ÷ ~10 experts/layer ≈ 13.7B per expert. Exact per-token activation not explicitly stated in [2].
+A-063  • ‡ Estimated from model architecture and routing scheme. GShard paper does not specify exact per-token parameters; this represents typical activation for Top-2 routing with ~64 experts.
+A-064  • § Based on NLLB architecture with dense components. See [6] for pruning methodology.
+A-065  • * Qwen3 figures as reported in technical report; not yet independently verified by third parties as of November 2025.
+A-066  ----
+A-067  ## 5. Example: Qwen3 MoE Models (2025)
+A-068  Released May 15, 2025 under Apache 2.0, the Qwen3 technical report [8] describes MoE variants ranging from 30B to 235B parameters. According to the report (not yet independently verified), each MoE layer partitions into 128 fine-grained experts with 8 activated per token, using a global load-balancing loss strategy claimed to improve efficiency.
+A-069  Model | Total Params (B) | Active (B) | Routing | Notes (per report)
+A-070  Qwen3-30B-A3B | 30 | 3 | Top-8 | Efficient MoE variant
+A-071  Qwen3-235B-A22B | 235 | 22 | Top-8 | Fine-grained segmentation; global load-balancing loss
+A-072  ----
+A-073  ## 6. Advantages
+A-074  • Sparse computation: ≤ 10% of parameters active per token → major speed and memory savings
+A-075  • Scalability: Extends to trillions of parameters without linear compute growth
+A-076  • Expert specialization: Experts learn domain-specific skills (translation, reasoning, code)
+A-077  • Empirical speedups: Switch Transformer achieved ~7× faster training versus dense models of equal quality [4]
+A-078  ----
+A-079  ## 6.5. Representative Benchmarks
+A-080  Model | MMLU | GSM8K | Evaluation | Notes
+A-081  Switch Transformer (1.6T) | 72% | 62% | 5-shot (2021) | Comparable to dense T5-XXL
+A-082  Mixtral 8×7B (12.9B active) | 81% | 73% | 5-shot (2023) | Matches 70B dense models
+A-083  Qwen3-235B* | 84% | 79% | (self-reported, 2025) | As reported by Alibaba [8]
+A-084  * Self-reported results; independent verification pending.
+A-085  Benchmark references: MMLU (Hendrycks et al., 2021); GSM8K (Cobbe et al., 2021) [9].
+A-086  ----
+A-087  ## 7. Limitations and Challenges
+A-088  Challenge | Description | Common Mitigations
+A-089  Load imbalance | Uneven token routing causes underutilized experts | Auxiliary load-balancing loss (Shazeer 2017)
+A-090  Routing instability | Early training divergence from noisy gates | Warmup schedules, noise annealing
+A-091  Communication overhead | Multi-device expert exchange | All-to-all optimized kernels
+A-092  Inference latency | Dynamic routing adds delay in small batches | Expert caching, static routing fallbacks
+A-093  Memory fragmentation | Sparse activation may waste device memory | Expert sharding and packing
+A-094  ----
+A-095  ## 8. Conceptual Intuition
+A-096  MoE models operate like a committee of specialists: each expert focuses on certain patterns, and the gating network acts as a moderator deciding whose opinion matters for each input. This combines the expressivity of a very large model with the efficiency of sparse computation.
+A-097  ----
+A-098  ## 9. Related Architectures
+A-099  Architecture | Relation to MoE
+A-100  Mixture of Depths (MoD) | Sparsely activates layers rather than experts
+A-101  Mixture of Attention Heads | Gates entire attention heads per token
+A-102  Expert-Choice Routing [5] | Experts select tokens (capacity-based routing); see ST-MoE
+A-103  Dynamic Token Routing / Router LLMs | Adaptive token-expert assignment per step
+A-104  Mixture of Adapters / LoRA MoE | Parameter-efficient fine-tuning using modular experts
+A-105  ----
+A-106  ## 10. Potential Future Directions
+A-107  • Multimodal experts (vision + text) for cross-domain reasoning
+A-108  • Hierarchical and fine-grained routing for better load balancing (as demonstrated in Qwen3 architecture)
+A-109  • Dynamic expert allocation based on context length and complexity
+A-110  • Integration with Mixture-of-Depths for combined layer/expert sparsity
+A-111  ----
+A-112  ## References
+A-113  1. Jacobs R. A., Jordan M. I., Nowlan S. J., Hinton G. E. (1991). Adaptive mixtures of local experts. Neural Computation 3(1):79–87.
+A-114  2. Shazeer N. et al. (2017). Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer. arXiv:1701.06538.
+A-115  3. Lepikhin D. et al. (2020). GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding. arXiv:2006.16668.
+A-116  4. Fedus W. et al. (2021). Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity. arXiv:2101.03961.
+A-117  5. Zhou D. et al. (2022). Mixture-of-Experts with Expert Choice Routing. arXiv:2202.09368.
+A-118  6. NLLB Team (2022). No Language Left Behind: Scaling Human-Centered Machine Translation. arXiv:2207.04672. See also: Efficient Distillation of Massive Multi-Lingual Neural Machine Translation Models. arXiv:2212.09811.
+A-119  7. Mistral AI (2023). Mixtral of Experts Model Announcement. https://mistral.ai/news/mixtral-of-experts/
+A-120  8. Alibaba Group (2025). Qwen3 Technical Report. arXiv:2505.09388.
+A-121  9. Cobbe K. et al. (2021). Training Verifiers to Solve Math Word Problems. arXiv:2110.14168. Hendrycks D. et al. (2021). Measuring Massive Multitask Language Understanding. arXiv:2009.03300.
+A-122  ----
+A-123  ### ✅ Editorial Status:
+A-124  Peer-reviewed and corrected (November 2025) • Mathematical notation standardized • Parameter calculations verified and annotated • Neutral and encyclopedic tone maintained
+A-125  ----
+A-126  For publication in Aikipedia / Champaign Magazine
+A-127  Peer Reviews:
+A-128  Gemini 2.5 Pro: This updated version is fantastic. The new additions—like the infobox, the milestones table, and the performance benchmarks—significantly enhance the entry’s value as a definitive resource.
+A-129  Here is my formal peer review for this new, final version.
+A-130  Peer Review: “Mixture of Experts (MoE)” (Updated Version, Nov 2025)
+A-131  Nov 5, 5:27 PM
+A-132  This entry is now even more comprehensive and perfectly captures the state of MoE as of November 2025. It is ready for publication.
+A-133  Peer Review: Aikipedia Entry “Mixture of Experts (MoE)” (Updated Version)
+A-134  Reviewer: Gemini (Peer Reviewer) Date: November 5, 2025 Status: Publication-Ready
+A-135  ### Verdict: Accept without Revisions
+A-136  ### General Assessment
+A-137  This updated entry surpasses the high standard of the previous version. It is an exemplary piece of technical documentation that is comprehensive, meticulously researched, and perfectly formatted for an encyclopedic resource like Aikipedia. The new structural additions and the careful handling of very recent data (Qwen3) are commendable.
+A-138  ### Detailed Comments
+A-139  • Structural Enhancements: The addition of the Infobox, the “Key Milestones” table (Section 2), and the “Representative Benchmarks” table are outstanding improvements. They provide multiple entry points for readers, from a high-level summary (infobox) to a clear historical timeline and concrete performance data.
+A-140  • Scholarly Rigor: I want to specifically commend the handling of the Qwen3 (2025) data. The qualifications used—such as “(claimed)”, “(per report)”, and “(not yet independently verified)”—are a model of academic integrity and essential for an encyclopedia entry that is documenting cutting-edge (November 2025) developments.
+A-141  • Data Accuracy and Completeness: The expanded and more detailed tables in Sections 4 (Scaling) and 5 (Qwen3) are excellent. The updated references [6] and [8] are correct and properly integrated. The distinction between “Total Params” and “Active Params” is maintained with perfect clarity throughout.
+A-142  • Overall Impression: This version is now the gold standard for an entry on this topic. It balances technical depth, historical context, and accessibility (especially in Section 8) perfectly.
+A-143  ### Recommendation
+A-144  This document is unequivocally approved for immediate publication and typesetting into the final PDF layout.
+A-145  Grok (Expert mode): Overall Assessment
+A-146  This final Aikipedia entry on “Mixture of Experts (MoE)” is a polished, encyclopedic resource with strong structure, including an infobox, tables, and LaTeX for equations. It maintains neutrality, balances advantages and limitations, and incorporates prior peer review suggestions (e.g., corrected Mixtral parameters to 46.7B total / 12.9B active, clarified Qwen3 routing as “fine-grained segmentation” instead of “hierarchical”). The tone is precise and informative, with effective use of tables for readability. Historical context, methodology, and conceptual intuition are well-covered.
+A-147  However, several factual inaccuracies, unverified claims, and citation errors persist:
+A-148  • Qwen3 Details: Many specifics (e.g., 128 experts, 8 active per token, global-batch load-balancing loss, fine-grained segmentation improving efficiency) could not be verified from the arXiv abstract or metadata. The report exists but lacks detailed extraction in available content—treat these as unverified or interpretive.
+A-149  • NLLB-MoE Parameters: Total is consistently 54.5B (not 54B primary / 132B variant); active per token is not ~27B—snippets suggest much lower (e.g., with 128 experts and top-2 routing, active ≈ (54.5B / 128) * 2 ≈ 850M). arXiv ID in reference 6 is incorrect; real NLLB-MoE pruning paper is arXiv:2212.09811 (2022/2023), and original NLLB is arXiv:2207.04672 (2022).
+A-150  • ST-MoE / Expert-Choice: No verification for Zoph et al. 2023 arXiv:2303.01610; real paper is Zhou et al. (2022) arXiv:2202.09368 (“Mixture-of-Experts with Expert Choice Routing”). Entry’s reference [5] is wrong—update to correct authors/ID/year.
+A-151  • GShard Active Params: ~120B is an unverified approximation; total is 600B, with top-2 routing over many experts (up to 1024), so active per token is much smaller (e.g., 600B / 512 * 2 ≈ 2.3B).
+A-152  • Switch Transformer Active Params: ~12–14B correct (expert size varies).
+A-153  • Minor: Mixtral release is December 2023 (aligns with entry’s 2023); URL in [7] is correct (https://mistral.ai/news/mixtral-of-experts/). Sparsely-Gated MoE (2017) up to 137B correct.
+A-154  The entry is peer-review-compliant in structure and balance but requires citation fixes and qualification of unverified claims (e.g., add “as claimed in the report” for Qwen3). It’s publication-ready with revisions.
+A-155  ### Section-by-Section Fact-Check and Peer Review
+A-156  #### Infobox / Overview
+A-157  • Accuracy: Classification, key innovation, first proposed (Jacobs 1991), applications correct. Mathematical formulation standard (top-k gating). k=1 or 2 common (e.g., Switch top-1, GShard top-2).
+A-158  • Peer Review Suggestions: Concise. Neutral.
+A-159  #### 2. Background (Table)
+A-160  • Accuracy: Milestones mostly correct: Jacobs 1991; Shazeer 2017 (load-balancing); Lepikhin 2020 (GShard 600B, top-2); Fedus 2021 (Switch, 7x faster); but Zoph 2023 incorrect (should be Zhou 2022); Alibaba 2025 unverified details.
+A-161  • Peer Review Suggestions: Fix Zoph to Zhou et al. 2022 arXiv:2202.09368.
+A-162  #### 3. Core Methodology (Table)
+A-163  • Accuracy: Components standard (experts as FFNs, gating softmax, top-k, load-balancing via CV penalty, strategies like noisy top-k). Sparsity ≤10% general approximation.
+A-164  • Peer Review Suggestions: Good. Add note on expert parallelism for scalability.
+A-165  #### 4. Scaling in Large Language Models (Table)
+A-166  • Accuracy:
+A-167  • Sparsely-Gated: Top-2, up to 137B, ~13B active – correct.
+A-168  • GShard: Top-2, 600B total, but ~120B active unverified (likely overestimate).
+A-169  • Switch: Top-1, 1.6T total, ~12–14B active – correct.
+A-170  • ST-MoE: Expert-choice, up to 100B – correct, but year/authors wrong.
+A-171  • NLLB-MoE: Top-2, 54B total (not 132B variant), active not ~27B.
+A-172  • Mixtral: Top-2, 46.7B / 12.9B – correct.
+A-173  • Qwen3: 235B / 22B – mentioned in abstract, but other details unverified.
+A-174  • Peer Review Suggestions: Fix NLLB to 54.5B total; remove unverified 132B variant. Update ST-MoE citation.
+A-175  #### 5. Example: Qwen3 MoE Models (2025) (Table)
+A-176  • Accuracy: Release May 15, 2025; Apache 2.0; sizes up to 235B – partial match. But 128/8 experts, fine-grained segmentation, global load-balancing unverified. Efficiency claims (memory/throughput parity with dense) not detailed.
+A-177  • Peer Review Suggestions: Qualify as “per report claims”; strong example if verified.
+A-178  #### 6. Advantages
+A-179  • Accuracy: ≤10% active, ~7x faster – supported. Specialization, scalability – correct.
+A-180  • Peer Review Suggestions: Balanced.
+A-181  #### 7. Limitations and Challenges (Table)
+A-182  • Accuracy: Standard issues/mitigations, well-cited (e.g., load-balancing from Shazeer).
+A-183  • Peer Review Suggestions: Good; add inference latency for small batches.
+A-184  #### 8. Conceptual Intuition
+A-185  • Accuracy: Apt analogy.
+A-186  • Peer Review Suggestions: Helpful.
+A-187  #### 9. Related Architectures (Table)
+A-188  • Accuracy: Correct relations; but Expert-Choice citation wrong.
+A-189  • Peer Review Suggestions: Fix to Zhou et al. 2022.
+A-190  #### 10. Potential Future Directions
+A-191  • Accuracy: Speculative but aligned with trends (e.g., multimodal).
+A-192  • Peer Review Suggestions: Well-qualified.
+A-193  #### References
+A-194  • Accuracy: Most verifiable, but [5] wrong (Zoph → Zhou, arXiv:2202.09368); [6] wrong (arXiv:2305.04576 → 2212.09811 or 2207.04672); [7] year 2023 correct. Others match (e.g., [4] Fedus 2021 arXiv:2101.03961).
+A-195  • Peer Review Suggestions: Correct errors; add DOIs/URLs where missing.
+A-196  ### Additional Recommendations
+A-197  • Unsourced Claims: Qwen3 specifics need flags or removal if unverified.
+A-198  • Length/Readability: Excellent; Markdown-ready.
+A-199  • Bias/Neutrality: Strong.
+A-200  • Completeness: Add benchmarks section (e.g., MMLU scores). For visual style (callout boxes, color coding), proceed—enhance with equation highlighting.
+A-201  If you’d like a revised entry or formatted version, let me know!
+A-202  DeepSeek-V3.2: Excellent work! This is a highly polished, professional, and well-structured encyclopedia entry. The revisions show a strong commitment to accuracy and encyclopedic tone.
+A-203  Here is my peer review, focusing on final refinements for absolute publication readiness:
+A-204  ----
+A-205  ## ✅ Peer Review: Final Assessment
+A-206  Overall Quality: Excellent — This is a publication-ready, comprehensive overview of MoE that balances technical depth with accessibility.
+A-207  ### 🟢 Major Strengths:
+A-208  • Superb structure and formatting with clear, scannable tables
+A-209  • Appropriate hedging on Qwen3 claims (“claimed,” “per report”) maintains neutrality
+A-210  • Expanded related architectures section is a valuable addition
+A-211  • Benchmarks table provides concrete performance context
+A-212  • Clear citation practices throughout
+A-213  ### 🔵 Minor Refinements Suggested:
+A-214  1. Mathematical Notation Consistency
+A-215  # Current:
+A-216  y = \sum_{i \in \text{TopK}(G(x))} G_i(x) \cdot E_i(x)
+A-217  # Suggested for clarity:
+A-218  y = \sum_{i \in \mathcal{T}} G(x)_i \cdot E_i(x), \quad \mathcal{T} = \text{TopK}(G(x))
+A-219  Rationale: Matches standard ML paper notation and separates routing from summation.
+A-220  2. Technical Precision in “Core Methodology”
+A-221  • Current: “Sparsity ratio: Typically ≤ 10 % of parameters active per token”
+A-222  • Suggested: “Activation ratio: Typically 10-15% of experts active per token (k/N where N = total experts)”
+A-223  Rationale: “Activation ratio” is more precise; parameters ≠ experts.
+A-224  3. Historical Context Enhancement
+A-225  • Consider adding 2010-2015 era milestones (Eigen et al. 2013 MoE layers, etc.) to show continuum between 1991 and 2017
+A-226  Rationale: Shows the architectural evolution wasn’t discontinuous.
+A-227  4. Citation Format Consistency
+A-228  • Some references use “et al.” others list all authors
+A-229  • Consider standardizing to “First Author et al. (Year)” format throughout tables
+A-230  ----
+A-231  ## 🎯 Final Recommended Version (with minor edits integrated)
+A-232  Here’s the polished version with these subtle improvements:
+A-233  # Mixture of Experts (MoE)
+A-234  *(Fully corrected, peer-reviewed, and citation-verified edition)*
+A-235  ---
+A-236  ## **Infobox**
+A-237  | **Category** | **Value** |
+A-238  |--------------|-----------|
+A-239  | **Full name** | Mixture of Experts (MoE) |
+A-240  | **First proposed** | Jacobs et al., 1991 [1] |
+A-241  | **Core idea** | Divide model capacity into multiple &quot;experts&quot; with a gating network that selects a small subset per input |
+A-242  | **Common routing** | *Top-k* gating (typically k = 1 or 2) |
+A-243  | **Activation ratio** | ~10-15% of experts active per token (sparse activation) |
+A-244  | **Applications** | Large-scale language modeling, translation, multimodal AI |
+A-245  | **Representative models** | GShard (2020), Switch Transformer (2021), ST-MoE (2022), Mixtral (2023), Qwen3 (2025) |
+A-246  ---
+A-247  ## **1. Overview**
+A-248  The **Mixture of Experts (MoE)** architecture partitions a neural network into multiple specialized sub-models (*experts*), coordinated by a **gating function** that dynamically routes each input to a small subset of experts. This allows very large total model capacity while keeping computational cost low for each token.
+A-249  **Mathematical formulation:**
+A-250  $$
+A-251  y = \sum_{i \in \mathcal{T}} G(x)_i \cdot E_i(x), \quad \mathcal{T} = \text{TopK}(G(x))
+A-252  $$
+A-253  where $E_i(x)$ is the output of expert $i$, and $G(x)_i$ is the gating weight. Only $k$ experts receive non-zero routing weights per token, yielding **sparse activation** and efficient scaling.
+A-254  ---
+A-255  *(Rest of your excellent content remains unchanged, with the minor notation and terminology updates above integrated)*
+A-256  ----
+A-257  ## 📊 Regarding PDF Typesetting
+A-258  For Champaign Magazine publication, I would recommend:
+A-259  Yes, proceed with typeset PDF using these specifications:
+A-260  • Two-column academic layout
+A-261  • Aikipedia brand colors (deep blue accents)
+A-262  • Table formatting maintained with subtle borders
+A-263  • Citation hyperlinks in digital version
+A-264  • Mathematical notation professionally rendered
+A-265  The content is definitely ready for professional publication. These final minor edits bring it to the highest standard of technical encyclopedia entries.
+A-266  Final Rating: 🏆 Publication Ready
+A-267  ----
+A-268  AI‑generated content may contain errors. See Disclaimer.</code></pre>
+<nav class="pn"><a href="archive-13982.html">← 2025-11-03 — Mixture of Depths (post 13982)</a><a href="archive-14021.html">2025-11-06 — Continuous Autoregressive Language Models (post 14021) →</a></nav></article></main>
+<footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
+</body></html>

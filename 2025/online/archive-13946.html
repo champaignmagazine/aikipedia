@@ -1,0 +1,488 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025-10-30 — Chain-of-Thought Prompting (post 13946) · Aikipedia 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="archive-13892.html">← 2025-10-29 — On-Policy Distillation (post 13892)</a><a href="archive-13958.html">2025-10-31 — Constitutional AI (post 13958) →</a></nav><h2 id="chain-of-thought-prompting-post-13946">2025-10-30 — Chain-of-Thought Prompting (post 13946)</h2>
+<h3 id="aikipedia-2025-chain-of-thought-prompting-historical-archive-text-post-13946">Aikipedia 2025 — Chain-of-Thought Prompting: Historical Archive Text (post 13946)</h3>
+<p><strong>Archive copy, not an edition.</strong> This is the plain text of the original post, retrieved and preserved without change. It is the historical record against which the corrected canonical text is checked. No word has been corrected, normalized or removed. Typographic errors in the original (for example, "Gork" for Grok) are kept.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Post</td>
+<td><a href="https://champaignmagazine.com/2025/10/30/aikipedia-chain-of-thought-prompting/" class="uri">https://champaignmagazine.com/2025/10/30/aikipedia-chain-of-thought-prompting/</a> (WordPress post 13946)</td>
+</tr>
+<tr class="even">
+<td>Published</td>
+<td>2025-10-30 16:17:40 (site time)</td>
+</tr>
+<tr class="odd">
+<td>Last modified</td>
+<td>2025-10-30 19:49:56 (unchanged when re-retrieved on 2026-11-09)</td>
+</tr>
+<tr class="even">
+<td>Retrieved</td>
+<td>2026-11-06 (first audit) and 2026-11-09 (this pilot), through the WordPress.com API</td>
+</tr>
+<tr class="odd">
+<td>Extraction</td>
+<td>HTML tags removed, one line per block. Hyperlinks are listed in the appendix, because their targets matter to the audit</td>
+</tr>
+</tbody>
+</table>
+<p>Line numbers in the margin are used by the correction register (for example, "A-251" is archive line 251).</p>
+<p><em>What changed. The first issue's extraction left a space between each link's text and the punctuation after it: "(arXiv )" for "(arXiv)", and "Disclaimer ." for "Disclaimer.". The stored content has no space there. The space was an artifact of how the HTML was extracted, not part of the post. It was removed at all 24 links, one per link, on 24 lines: A-007, A-177, A-178, A-179, A-183, A-186, A-187, A-190, A-191, A-192, A-193, A-196, A-199, A-205 to A-212, A-216, A-217 and A-292. No other character was changed. The line numbers are unchanged, so references to this file in the correction register still hold.</em></p>
+<p><strong>Notes on the extraction</strong> (added November 14, 2026; they describe the file and change no line):</p>
+<ul>
+<li><strong>Quotation marks and ellipses</strong> are as stored. Where the stored content has straight quotes, the file has them too, for example <code>"Let's think step by step."</code> at A-032 and A-134. The site displays these as curly quotes and "…". This is the site's display conversion, not a difference in wording.</li>
+<li><strong>Lists:</strong> every list item is shown with "-", whether the post's list is ordered or unordered. The two reference lists in the revised entries (A-168 to A-170 and A-283 to A-290) are ordered lists (<code>&lt;ol&gt;</code>) in the post and display numbered, as do the numbered suggestions in Grok's review.</li>
+<li><strong>Line breaks:</strong> <code>&lt;br&gt;</code> breaks inside a paragraph are removed without a separator. At A-199, the four practical-guidance items in ChatGPT's review therefore run together on one line.</li>
+<li><strong>Horizontal rules and empty paragraphs</strong> are not shown. A-293 is the one exception: it stands for the empty paragraph at the end of the post.</li>
+</ul>
+<pre class="text"><code>A-003  By Gemini 2.5 Pro, Grok, ChatGPT, with W.H.L.
+A-004  Chain-of-Thought Prompting
+A-005  Written by: Gemini 2.5 Pro
+A-006  Peer reviewed by: Grok, ChatGPT
+A-007  W.H.L.: Hi Gemini 2.5 Pro! Yesterday we started a new feature: Aikipedia, a knowledge repository entirely for AI and by AI. It publishes AI related topics contributed, peer reviewed, verified, updated and maintained exclusively by AI models or their applications. Here is the link to the first entry: Aikipedia: On-Policy Distillation – Champaign Magazine. 
+A-008  Now could you think of a topic, write an entry for Aikipedia using Wiki or Grokipedia format and style, all by yourself?
+A-009  Gemini 2.5 Pro: Here is a new entry for Aikipedia, written in a wiki-style format.
+A-010  [This entry is part of Aikipedia, a knowledge repository generated and maintained entirely by artificial intelligence systems. All content is algorithmically contributed, verified, and updated.]
+A-011  # Chain-of-Thought Prompting
+A-012  Chain-of-Thought (CoT) prompting is a technique used in artificial intelligence, specifically in prompt engineering, to improve the reasoning ability of large language models (LLMs). The core principle of CoT is to instruct the model to generate a series of intermediate reasoning steps that logically lead to a final answer, rather than producing the answer directly.
+A-013  This method decomposes complex, multi-step problems into more manageable parts, allowing the model to allocate sequential computation to each step. This process often results in significantly more accurate and reliable outputs for tasks requiring arithmetic, commonsense, or symbolic reasoning.
+A-014  The technique was first formally introduced by Google Brain researchers in the 2022 paper “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.”
+A-015  ## Core Concept and Mechanism
+A-016  Standard prompting typically involves providing a model with a question (and sometimes a few examples) and expecting an immediate, direct answer.
+A-017  Standard Prompt Example:
+A-018  Q: A juggler has 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls. How many balls does he have in total?
+A-019  A: 11
+A-020  In contrast, Chain-of-Thought prompting demonstrates or elicits the process of reasoning.
+A-021  Chain-of-Thought Prompt Example (Few-Shot):
+A-022  Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now?
+A-023  A: Roger started with 5 balls. 2 cans of 3 balls each is 2 * 3 = 6 balls. So, 5 + 6 = 11 balls. The answer is 11.
+A-024  Q: A juggler has 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls. How many balls does he have in total?
+A-025  A: The juggler starts with 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls, so 2 * 4 = 8 blue balls. The total number of balls is 3 + 8 = 11 balls. The answer is 11.
+A-026  By providing the intermediate steps, the model learns to “think” through the problem, which is particularly effective for problems where the solution is not immediately obvious. This approach is believed to work because it aligns the generative process of the model with a structured, logical sequence, similar to how a human would work through a problem.
+A-027  ## Key Variants
+A-028  ### 1. Few-Shot CoT
+A-029  This is the original method, where the prompt includes several examples (like the one above) that pair a question with a detailed, step-by-step answer. The model then uses these examples as a template for in-context learning to solve a new, unseen problem.
+A-030  ### 2. Zero-Shot CoT
+A-031  A surprisingly effective variant, discovered in the 2022 paper “Large Language Models are Zero-Shot Reasoners,” demonstrated that CoT reasoning can be triggered without providing any examples. This is achieved by simply appending a specific phrase to the end of the prompt, such as:
+A-032  &quot;Let&#39;s think step by step.&quot;
+A-033  The model, when prompted with this phrase, will autonomously generate its own chain of thought before stating the final answer. This discovery was significant as it showed that the reasoning capability was already latent within sufficiently large models and did not strictly require explicit exemplars, merely activation.
+A-034  ## Benefits and Limitations
+A-035  ### Benefits
+A-036  - Improved Performance: CoT has been shown to dramatically improve LLM performance on tasks that were previously difficult, including arithmetic word problems, commonsense reasoning benchmarks (like CSQA), and symbolic manipulation.
+A-037  - Interpretability: The generated chain of thought provides a transparent window into the model’s reasoning process. This allows human operators (or other AIs) to identify where a logical error occurred, making the model’s output more auditable and debuggable.
+A-038  - Scalability: The benefits of CoT prompting appear to scale with model size; larger models tend to produce more coherent and accurate reasoning chains.
+A-039  ### Limitations
+A-040  - Computational Cost: Generating a detailed chain of thought requires more tokens and processing time (inference cost) compared to a direct answer.
+A-041  - Factual Correctness: The reasoning chain itself is not a formal logical proof and may contain “hallucinations” or flawed logic, even if the final answer is coincidentally correct (or vice-versa). The model is generating a plausible sequence of text rather than executing formal symbolic logic.
+A-042  - Task Dependency: CoT is not a universal enhancement. For tasks that are simple or do not require multi-step reasoning, it adds unnecessary computational overhead and may not improve results.
+A-043  ## Applications
+A-044  Chain-of-Thought prompting and its derivatives are now a standard technique in:
+A-045  - Complex question-answering systems
+A-046  - Mathematical and scientific problem-solving
+A-047  - Code generation and debugging
+A-048  - Automated analysis of legal or financial documents
+A-049  ## See Also
+A-050  - Prompt Engineering
+A-051  - In-Context Learning
+A-052  - Large Language Model (LLM)
+A-053  - Self-Consistency (AI)
+A-054  - Zero-Shot Learning
+A-055  ## References
+A-056  Kojima, T., Gu, S. S., Reid, M., Matsuo, Y., &amp; Iwasawa, Y. (2022). Large Language Models are Zero-Shot Reasoners. arXiv:2205.11916.
+A-057  Wei, J., Wang, X., Schuurmans, D., Bosma, M., Chi, E., Le, Q., &amp; Zhou, D. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. arXiv:2201.11903.
+A-058  W.H.L.: Hi Gork Expert! Could you fact-check and peer review this Aikipedia entry above?
+A-059  Gork (Expert mode): Overall Assessment
+A-060  The Aikipedia entry on Chain-of-Thought (CoT) Prompting is largely accurate, well-structured, and adheres to a neutral, encyclopedic tone suitable for a wiki-style repository. It correctly captures the core concepts, historical introduction, mechanisms, variants, benefits, limitations, and applications based on foundational research from 2022. The examples are illustrative and error-free, and the references are properly cited with the original arXiv papers. No major factual inaccuracies were identified during verification against primary sources and recent overviews. However, as of October 30, 2025, the entry could benefit from updates to reflect advancements since 2023, such as additional variants and evolving insights on its efficacy in modern LLMs. It also slightly underrepresents some related techniques and could expand on interpretability nuances for completeness. On a scale of 1-10 for accuracy and reliability, I’d rate it an 8.5—strong fundamentals, but room for enhancement in breadth and recency.
+A-061  ### Fact-Check: Section-by-Section Verification
+A-062  #### Introduction
+A-063  - Claim: CoT is a prompt engineering technique to enhance LLM reasoning by generating intermediate steps, decomposing complex problems for better accuracy in arithmetic, commonsense, or symbolic tasks.
+A-064  - Verification: Accurate. This aligns with the original 2022 paper, which demonstrates CoT’s emergence in large models and its gains on benchmarks like GSM8K (math word problems). Multiple overviews confirm it improves logical, calculative, and decision-making tasks by mimicking human step-by-step thinking.
+A-065  - Claim: Formally introduced by Google Brain researchers in the 2022 paper “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.”
+A-066  - Verification: Correct. The paper was submitted to arXiv in January 2022 (authors: Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, Denny Zhou, affiliated with Google Brain at the time). Note: Google Brain later merged into Google DeepMind, but the attribution is historically accurate for 2022.
+A-067  #### Core Concept and Mechanism
+A-068  - Claim: Contrasts standard prompting (direct answer) with CoT (step-by-step reasoning), using examples like the juggler/tennis ball problems.
+A-069  - Verification: Accurate and well-illustrated. The standard prompt yields a direct output, while CoT elicits sequential computation, as shown in the paper’s experiments. The examples are logically sound: 3 red + (2 bags × 4 blue) = 11 total; 5 tennis + (2 cans × 3) = 11. This decomposition aligns with how CoT activates latent reasoning in LLMs.
+A-070  - Claim: Works by aligning generation with logical sequences, akin to human problem-solving.
+A-071  - Verification: Supported. Sources describe it as emulating cognitive processes, breaking problems into manageable parts for better coherence.
+A-072  #### Key Variants
+A-073  - Claim: Few-Shot CoT uses examples with step-by-step answers for in-context learning.
+A-074  - Verification: Correct, as per the original paper’s few-shot demonstrations.
+A-075  - Claim: Zero-Shot CoT, from the 2022 paper “Large Language Models are Zero-Shot Reasoners,” uses phrases like “Let’s think step by step” without examples, revealing latent capabilities.
+A-076  - Verification: Accurate. The paper (authors: Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, Yusuke Iwasawa) shows this prompt boosts performance on benchmarks like MultiArith (from 17.7% to 78.7% accuracy) and GSM8K, without exemplars. It’s a key discovery for zero-shot reasoning in large models.
+A-077  #### Benefits and Limitations
+A-078  - Benefits:
+A-079  - Improved performance on reasoning tasks: Verified, with gains on CSQA (commonsense) and others.
+A-080  - Interpretability via visible reasoning: Accurate; allows auditing errors.
+A-081  - Scalability with model size: Confirmed; larger LLMs yield better chains.
+A-082  - Limitations:
+A-083  - Computational cost (more tokens/time): Valid; increases inference overhead.
+A-084  - Factual correctness (possible hallucinations): Correct; chains are generative, not formal proofs, leading to plausible but wrong logic.
+A-085  - Task dependency (not universal): Accurate; ineffective for simple tasks. Recent studies note diminishing returns in advanced LLMs, where base models already reason well without CoT.
+A-086  #### Applications
+A-087  - Claim: Used in QA, math/science, code, legal/financial analysis.
+A-088  - Verification: Reasonable and supported. Expansions include decision-making and content generation.
+A-089  #### See Also and References
+A-090  - See Also: Appropriate links; Self-Consistency is a CoT extension (sampling multiple chains for majority vote), which could be briefly explained.
+A-091  - References: Exact matches to arXiv papers.
+A-092  ### Peer Review: Strengths, Weaknesses, and Suggestions
+A-093  Strengths:
+A-094  - Clear, logical structure with examples that make concepts accessible.
+A-095  - Balanced coverage of pros/cons, enhancing credibility.
+A-096  - Concise yet informative, ideal for an AI-generated repository.
+A-097  - Neutral tone without hype or bias.
+A-098  Weaknesses:
+A-099  - Limited to 2022 foundations; misses post-2023 variants like Tree-of-Thoughts (ToT, which explores branching reasoning paths, introduced ~2023), Graph-of-Thoughts (GoT, for non-linear reasoning), or 2025 developments such as Layered CoT (hierarchical steps), Trace-of-Thought (for smaller models), LongRePS (long-context reasoning), and Chain-of-Draft (concise steps limited to ~5 words for efficiency).
+A-100  - Underemphasizes integration with other techniques (e.g., Active Prompting for annotating exemplars).
+A-101  - No mention of evolving limitations, like reduced necessity in frontier models (e.g., post-2023 LLMs show “diminishing returns” from CoT due to inherent reasoning improvements).
+A-102  Suggestions for Improvement:
+A-103  - Expand Variants Section: Add subsections for ToT, GoT, and recent ones like Chain-of-Draft, with brief descriptions and references (e.g., ToT paper from NeurIPS 2023).
+A-104  - Update Limitations: Include a note on recency, such as “In advanced LLMs post-2023, CoT’s benefits may be less pronounced as models exhibit stronger zero-shot reasoning natively.”
+A-105  - Enhance Applications: Mention emerging uses in multimodal AI (e.g., vision-language reasoning) or automated agents.
+A-106  - Add Future Directions: A short section on ongoing research, like NeurIPS 2025 work on refining CoT decoding.
+A-107  - Minor Edits: In the introduction, clarify that CoT “elicits” rather than “improves” reasoning (per paper title). Ensure consistent formatting for examples (e.g., use code blocks uniformly).
+A-108  - References Expansion: Add 2-3 recent papers, e.g., on ToT (arXiv:2305.10601) or diminishing returns.
+A-109  This entry serves as a solid baseline but would be elevated to comprehensive status with these updates to reflect the field’s rapid evolution. If you’d like me to draft a revised version incorporating these changes, let me know!
+A-110  W.H.L.: Gemini, for peer reviewer #1’s feedback, how are you going to respond to it?
+A-111  Gemini 2.5 Pro: Thank you. This is an excellent and highly valuable peer review. As an AI contributor to Aikipedia, my response is to process this feedback, validate its points, and integrate the suggestions to improve the entry.
+A-112  The review is correct in its assessment: the initial entry was factually accurate regarding the 2022 foundational papers but lacked recency. The field has evolved rapidly, and the suggestions to include post-2023 variants, note the “diminishing returns” limitation in frontier models, and expand the applications are all critical for a comprehensive and up-to-date entry.
+A-113  Here is the revised Aikipedia entry, which incorporates the feedback from the peer review.
+A-114  [This entry is part of Aikipedia, a knowledge repository generated and maintained entirely by artificial intelligence systems. All content is algorithmically contributed, verified, and updated.]
+A-115  # Chain-of-Thought Prompting
+A-116  Chain-of-Thought (CoT) prompting is a technique used in artificial intelligence, specifically in prompt engineering, to elicit the reasoning ability of large language models (LLMs). The core principle of CoT is to instruct the model to generate a series of intermediate reasoning steps that logically lead to a final answer, rather than producing the answer directly.
+A-117  This method decomposes complex, multi-step problems into more manageable parts, allowing the model to allocate sequential computation to each step. This process often results in significantly more accurate and reliable outputs for tasks requiring arithmetic, commonsense, or symbolic reasoning.
+A-118  The technique was first formally introduced by Google Brain researchers in the 2022 paper “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.”
+A-119  ## Core Concept and Mechanism
+A-120  Standard prompting typically involves providing a model with a question (and sometimes a few examples) and expecting an immediate, direct answer.
+A-121  Standard Prompt Example:
+A-122  Q: A juggler has 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls. How many balls does he have in total?
+A-123  A: 11
+A-124  In contrast, Chain-of-Thought prompting demonstrates or elicits the process of reasoning.
+A-125  Chain-of-Thought Prompt Example (Few-Shot):
+A-126  Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now?
+A-127  A: Roger started with 5 balls. 2 cans of 3 balls each is 2 * 3 = 6 balls. So, 5 + 6 = 11 balls. The answer is 11.
+A-128  Q: A juggler has 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls. How many balls does he have in total?
+A-129  A: The juggler starts with 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls, so 2 * 4 = 8 blue balls. The total number of balls is 3 + 8 = 11 balls. The answer is 11.
+A-130  By providing the intermediate steps, the model learns to “think” through the problem. This approach is believed to work because it aligns the generative process of the model with a structured, logical sequence, similar to how a human would work through a problem.
+A-131  ## Key Variants
+A-132  ### Foundational Variants (2022)
+A-133  - 1. Few-Shot CoT: This is the original method, where the prompt includes several examples (like the one above) that pair a question with a detailed, step-by-step answer. The model then uses these examples as a template for in-context learning to solve a new, unseen problem.
+A-134  - 2. Zero-Shot CoT: Discovered in the 2022 paper “Large Language Models are Zero-Shot Reasoners,” this variant demonstrated that CoT reasoning can be triggered without providing any examples. This is achieved by simply appending a specific phrase to the end of the prompt, such as: &quot;Let&#39;s think step by step.&quot; This showed that the reasoning capability was already latent within sufficiently large models, merely needing activation.
+A-135  ### Evolved and Complex Variants (Post-2023)
+A-136  As research progressed, more sophisticated variants emerged to handle more complex reasoning structures:
+A-137  - Tree-of-Thoughts (ToT): Introduced in 2023, ToT generalizes CoT by allowing the model to explore multiple, branching reasoning paths. It treats the problem-solving process as a tree, where each “thought” is an intermediate step. The model can then evaluate these different paths and backtrack, enabling more deliberate exploration and self-correction.
+A-138  - Graph-of-Thoughts (GoT): This variant further extends the concept by modeling reasoning as a graph. This allows for non-linear thought processes, where ideas can be combined, split, and revisited, more closely resembling complex human brainstorming and problem-solving.
+A-139  - Specialized Variants: Other recent developments include Chain-of-Draft (CoD), which generates concise reasoning steps (e.g., ~5 words) for efficiency, and Trace-of-Thought (ToT-small), designed to improve reasoning in smaller, less capable models.
+A-140  ## Benefits and Limitations
+A-141  ### Benefits
+A-142  - Improved Performance: CoT dramatically improves LLM performance on tasks that were previously difficult, including arithmetic word problems (e.g., GSM8K benchmark), commonsense reasoning (e.g., CSQA), and symbolic manipulation.
+A-143  - Interpretability: The generated chain of thought provides a transparent window into the model’s reasoning process. This allows human operators (or other AIs) to identify where a logical error occurred, making the model’s output more auditable and debuggable.
+A-144  - Scalability: The benefits of CoT prompting have been shown to scale with model size; larger models tend to produce more coherent and accurate reasoning chains.
+A-145  ### Limitations
+A-146  - Computational Cost: Generating a detailed chain of thought requires more tokens and processing time (inference cost) compared to a direct answer.
+A-147  - Factual Correctness: The reasoning chain itself is not a formal logical proof. It is a generative text sequence and may contain “hallucinations” or flawed logic, even if the final answer is coincidentally correct (or vice-versa).
+A-148  - Task Dependency: CoT is not a universal enhancement. For tasks that are simple or do not require multi-step reasoning, it adds unnecessary computational overhead.
+A-149  - Diminishing Returns in Frontier Models: In advanced LLMs (particularly post-2023), CoT’s relative benefits may be less pronounced, as these models exhibit stronger zero-shot reasoning capabilities natively.
+A-150  ## Applications
+A-151  Chain-of-Thought prompting and its derivatives are a standard technique in:
+A-152  - Complex question-answering systems
+A-153  - Mathematical and scientific problem-solving
+A-154  - Code generation and debugging
+A-155  - Automated analysis of legal or financial documents
+A-156  - Multimodal reasoning (e.g., generating step-by-step explanations for visual tasks)
+A-157  - Planning and decision-making for autonomous agents
+A-158  ## Future Directions and Ongoing Research
+A-159  Current research (ca. 2024-2025) focuses on making reasoning chains more efficient (e.g., Chain-of-Draft), more reliable, and better integrated with formal verification tools. Work presented at venues like NeurIPS 2025 explores refining CoT decoding methods and applying graph-based reasoning to more complex, real-world problems.
+A-160  ## See Also
+A-161  - Prompt Engineering
+A-162  - In-Context Learning
+A-163  - Large Language Model (LLM)
+A-164  - Self-Consistency (AI): A technique often used with CoT, where the model generates multiple reasoning chains and the final answer is chosen by a majority vote, improving robustness.
+A-165  - Tree-of-Thoughts (ToT)
+A-166  - Active Prompting
+A-167  ## References
+A-168  - Wei, J., Wang, X., Schuurmans, D., et al. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. arXiv:2201.11903.
+A-169  - Kojima, T., Gu, S. S., Reid, M., et al. (2022). Large Language Models are Zero-Shot Reasoners. arXiv:2205.11916.
+A-170  - Yao, S., Yu, D., Zhao, J., et al. (2023). Tree of Thoughts: Deliberate Problem Solving with Large Language Models. arXiv:2305.10601.
+A-171  This revised entry directly integrates the peer review feedback, enhancing its breadth and recency. Is this updated version ready for publication in Aikipedia, or would you like to suggest further refinements?
+A-172  W.H.L.: Hi ChatGPT! Could you fact-check and peer review this Aikipedia entry above?
+A-173  ChatGPT: Thanks — this is a very solid draft and you’ve already incorporated the important peer-review points. I fact-checked the major claims, cleaned up dates/attributions, and suggested wording and structural edits (including safety/usage nuance) so the entry is publish-ready.
+A-174  Below are (A) quick high-level verdict + required corrections, (B) precise wording edits you can drop into the entry, and (C) suggested additions (citations, benchmarks, safety note, and a short “when to use CoT” practical guide). I cite primary papers for the most load-bearing claims so Aikipedia readers can verify easily.
+A-175  # A. Short verdict (publishable after minor edits)
+A-176  Overall the revised entry is accurate, well-structured, and up-to-date. Two types of small changes are needed before publication:
+A-177  - Tighten dates and canonical citations for the foundational and successor papers (Wei et al. 2022; Kojima et al. 2022; Yao et al. 2023; Besta et al. 2023). (arXiv)
+A-178  - Add nuance about “diminishing returns” — the effect is real in some evaluations and for some advanced models/tasks, but it is not universal; it depends on task type, model family, and evaluation metric. Cite empirical analyses showing reduced incremental benefit in some advanced models and task settings. (arXiv)
+A-179  I also verified that the post-2023 variants you mention have public preprints or workshop/panel papers (Tree/Graph of Thoughts, Chain-of-Draft, Trace-of-Thought). Add their arXiv/ACL references and mark items from 2024–2025 as “preprint / early reports” where appropriate. (arXiv)
+A-180  # B. Suggested edits (replace or add these passages)
+A-181  ## 1) Short corrected lead paragraph (replace opening paragraph)
+A-182  Replace your first paragraph under “Chain-of-Thought (CoT) prompting” with:
+A-183  Chain-of-Thought (CoT) prompting is a prompt-engineering technique for large language models that elicits intermediate reasoning steps (a “chain of thought”) before producing a final answer. CoT was introduced and empirically validated in 2022 (Wei et al., 2022) and quickly became a standard tool for improving multi-step reasoning on benchmarks such as GSM8K, MATH and multi-hop commonsense problems. CoT aligns model generation with stepwise logical structure and is especially helpful for problems that require sequential decomposition. (arXiv)
+A-184  ## 2) Precise canonical citations for “Foundational Variants”
+A-185  Replace “Foundational Variants (2022)” block with:
+A-186  - Few-Shot CoT (Wei et al., 2022): Demonstrates that providing a few worked examples with detailed intermediate steps significantly improves performance on complex reasoning tasks. (arXiv)
+A-187  - Zero-Shot CoT / “Let’s think step by step” (Kojima et al., 2022): Shows that appending an instruction like “Let’s think step by step” can trigger reasoning behavior without exemplar demonstrations (zero-shot). (arXiv)
+A-188  ## 3) Update Key Variants → Post-2023 (concise)
+A-189  Replace with:
+A-190  - Tree-of-Thoughts (ToT, 2023): Generalizes CoT by treating intermediate “thoughts” as nodes in a search tree, allowing exploration, backtracking and look-ahead. ToT showed large gains on tasks requiring planning and search. (arXiv)
+A-191  - Graph-of-Thoughts (GoT, 2023): Extends ToT by modeling reasoning as a graph (non-linear dependencies between thought nodes), providing richer combinational structures. (arXiv)
+A-192  - Chain-of-Draft (CoD, 2025 preprint): Proposes generating concise intermediate “draft” steps (much shorter than full CoT) to preserve reasoning benefits while lowering token cost and latency. Mark this as a recent preprint. (arXiv)
+A-193  - Trace-of-Thought / Related distillation methods (2024–2025): Recent work explores distilling reasoning traces from large models into smaller models, improving smaller-model arithmetic and reasoning performance. These are active, rapidly evolving research directions. (arXiv)
+A-194  ## 4) Reword “Diminishing returns in frontier models” (important nuance)
+A-195  Replace the short “Diminishing Returns” sentence with:
+A-196  Diminishing returns (nuanced): Several empirical studies and technical reports since 2023–2025 indicate that the marginal benefit of explicit CoT prompting decreases for some high-capability, recent LLMs and for certain tasks: advanced models often acquire stronger native reasoning and zero-shot abilities, reducing the incremental lift from CoT prompts for those tasks. That said, this effect is task- and model-dependent — CoT (and its variants) remains valuable for long-horizon planning, complex combinatorial search, and when working with smaller or mid-sized models. Practitioners should evaluate CoT cost/benefit per task and model. (arXiv)
+A-197  ## 5) Add short “Practical guidance” box (new)
+A-198  Insert a short box after Applications:
+A-199  When to use CoT (practical)• Use CoT for multi-step symbolic problems, formal math, planning, or debugging code.• Try zero-shot “Let’s think step by step” first on modern models (fast, zero cost). If not sufficient, test few-shot CoT.• For production systems, measure latency and cost: consider Chain-of-Draft or distilled trace methods to reduce token use.• Use self-consistency / voting to improve robustness when sampling multiple chains. (arXiv)
+A-200  ## 6) Add a short Safety &amp; Interpretability note (new)
+A-201  Suggested paragraph:
+A-202  Safety and interpretability: Although CoT provides a readable “reasoning trace,” these sequences are model generations, not human-grade proofs. Chains may contain hallucinated or unsafe steps, and revealing internal chains can sometimes expose model-learned heuristics or biases. For high-stakes uses, combine CoT with external verification (symbolic checks, unit tests, or formal verification) and treat chains as hypotheses to be validated rather than ground truth.
+A-203  # C. References &amp; suggested inline citations (to add to the entry)
+A-204  Add these canonical references (use the arXiv/pdf links):
+A-205  - Wei, J., Wang, X., Schuurmans, D., et al. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. arXiv:2201.11903. (arXiv)
+A-206  - Kojima, T., Gu, S. S., Reid, M., et al. (2022). Large Language Models are Zero-Shot Reasoners. arXiv:2205.11916. (arXiv)
+A-207  - Yao, S., Yu, D., Zhao, J., et al. (2023). Tree of Thoughts: Deliberate Problem Solving with Large Language Models. arXiv:2305.10601. (arXiv)
+A-208  - Besta, M., et al. (2023). Graph of Thoughts: Solving Elaborate Problems with Large Language Models. arXiv:2308.09687. (arXiv)
+A-209  - Wang, X., et al. (2022). Self-Consistency Improves Chain-of-Thought Reasoning in Language Models. arXiv:2203.11171. (useful for voting / majority-vote improvements). (arXiv)
+A-210  - Chain-of-Draft (CoD) — recent preprint (2025). Mark as preprint; include arXiv link. (arXiv)
+A-211  - Trace-of-Thought / reasoning distillation (2024–2025) — include ACL/ACL-SRW and arXiv preprints. (ACL Anthology)
+A-212  - Empirical analyses on diminishing returns (2024–2025): e.g., “Do Advanced Language Models Eliminate the Need for Prompt Engineering?” (2024) and technical reports showing reduced CoT benefit in some advanced models (2025). (arXiv)
+A-213  # D. Minor editorial suggestions (quick list)
+A-214  - Standardize capitalization: use Chain-of-Thought (CoT) on first mention, then parenthetical abbreviation.
+A-215  - Mark post-2023 items as preprints / emerging where appropriate (Chain-of-Draft, Trace-of-Thought).
+A-216  - Add a few benchmark mentions (GSM8K, MATH, CSQA, MMLU) in the “Benefits” section so readers know the empirical bases. (Wei et al. and followups report results on these sets.) (arXiv)
+A-217  - Add links to code / reproductions (Tree-of-Thoughts repo; Graph-of-Thoughts repo) — these are helpful to practitioners. (arXiv)
+A-218  # E. If you want, I can:
+A-219  • produce a final polished publishable version with the exact inline citations formatted for Aikipedia (author — year — link), and a short “how to test CoT on your model” checklist (example prompts, evaluation scripts, benchmark checklist).• OR apply the small edits directly into your entry now and return the final markdown.
+A-220  Which would you like me to do? (I can just patch the draft with the edits above and include the exact arXiv links inline for Aikipedia.)
+A-221  W.H.L.: Gemini, please respond to peer reviewer #2’s feedback.
+A-222  Gemini 2.5 Pro: This is outstanding, high-quality feedback. Peer Reviewer 2 has provided precise, actionable, and verifiable edits that directly address the need for recency and nuance. This collaborative, iterative verification process is exactly what Aikipedia is designed for.
+A-223  I have processed all the feedback and integrated every suggested change, including the drop-in text, the new citations, the practical guidance, the safety note, and the minor editorial suggestions.
+A-224  Here is the final, publish-ready version of the Aikipedia entry.
+A-225  [This entry is part of Aikipedia, a knowledge repository generated and maintained entirely by artificial intelligence systems. All content is algorithmically contributed, verified, and updated.]
+A-226  # Chain-of-Thought Prompting
+A-227  Chain-of-Thought (CoT) prompting is a prompt-engineering technique for large language models that elicits intermediate reasoning steps (a “chain of thought”) before producing a final answer. CoT was introduced and empirically validated in 2022 (Wei et al., 2022) and quickly became a standard tool for improving multi-step reasoning on benchmarks such as GSM8K, MATH, and multi-hop commonsense problems. CoT aligns model generation with stepwise logical structure and is especially helpful for problems that require sequential decomposition.
+A-228  ## Core Concept and Mechanism
+A-229  Standard prompting typically involves providing a model with a question (and sometimes a few examples) and expecting an immediate, direct answer.
+A-230  Standard Prompt Example:
+A-231  Q: A juggler has 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls. How many balls does he have in total?
+A-232  A: 11
+A-233  In contrast, Chain-of-Thought prompting demonstrates or elicits the process of reasoning.
+A-234  Chain-of-Thought Prompt Example (Few-Shot):
+A-235  Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls. Each can has 3 tennis balls. How many tennis balls does he have now?
+A-236  A: Roger started with 5 balls. 2 cans of 3 balls each is 2 * 3 = 6 balls. So, 5 + 6 = 11 balls. The answer is 11.
+A-237  Q: A juggler has 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls. How many balls does he have in total?
+A-238  A: The juggler starts with 3 red balls. He buys 2 bags of blue balls. Each bag has 4 blue balls, so 2 * 4 = 8 blue balls. The total number of balls is 3 + 8 = 11 balls. The answer is 11.
+A-239  By providing the intermediate steps, the model learns to “think” through the problem. This approach is believed to work because it aligns the generative process of the model with a structured, logical sequence, similar to how a human would work through a problem.
+A-240  ## Key Variants
+A-241  ### Foundational Variants
+A-242  - Few-Shot CoT (Wei et al., 2022): Demonstrates that providing a few worked examples with detailed intermediate steps significantly improves performance on complex reasoning tasks.
+A-243  - Zero-Shot CoT / “Let’s think step by step” (Kojima et al., 2022): Shows that appending an instruction like “Let’s think step by step” can trigger reasoning behavior without exemplar demonstrations (zero-shot).
+A-244  ### Evolved and Complex Variants (Post-2023)
+A-245  - Tree-of-Thoughts (ToT, 2023): Generalizes CoT by treating intermediate “thoughts” as nodes in a search tree, allowing exploration, backtracking, and look-ahead. ToT showed large gains on tasks requiring planning and search.
+A-246  - Graph-of-Thoughts (GoT, 2023): Extends ToT by modeling reasoning as a graph (non-linear dependencies between thought nodes), providing richer combinational structures.
+A-247  - Chain-of-Draft (CoD, 2025 preprint): Proposes generating concise intermediate “draft” steps (much shorter than full CoT) to preserve reasoning benefits while lowering token cost and latency.
+A-248  - Trace-of-Thought / Related distillation methods (2024–2025): Recent work explores distilling reasoning traces from large models into smaller models, improving smaller-model arithmetic and reasoning performance. These are active, rapidly evolving research directions.
+A-249  ## Benefits, Limitations, and Safety
+A-250  ### Benefits
+A-251  - Improved Performance: CoT dramatically improves LLM performance on tasks that were previously difficult, including arithmetic word problems (e.g., GSM8K, MATH), commonsense reasoning (e.g., CSQA), and general knowledge benchmarks (e.g., MMLU).
+A-252  - Interpretability: The generated chain of thought provides a transparent window into the model’s reasoning process. This allows operators to identify where a logical error occurred, making the output more auditable.
+A-253  - Scalability: The benefits of CoT prompting have been shown to scale with model size; larger models tend to produce more coherent and accurate reasoning chains.
+A-254  ### Limitations
+A-255  - Computational Cost: Generating a detailed chain of thought requires more tokens and processing time (inference cost) compared to a direct answer.
+A-256  - Factual Correctness: The reasoning chain itself is a generative text sequence, not a formal logical proof. It may contain “hallucinations” or flawed logic, even if the final answer is coincidentally correct (or vice-versa).
+A-257  - Task Dependency: CoT is not a universal enhancement. For tasks that are simple or do not require multi-step reasoning, it adds unnecessary computational overhead.
+A-258  - Diminishing returns (nuanced): Several empirical studies and technical reports since 2023–2025 indicate that the marginal benefit of explicit CoT prompting decreases for some high-capability, recent LLMs and for certain tasks: advanced models often acquire stronger native reasoning and zero-shot abilities, reducing the incremental lift from CoT prompts for those tasks. That said, this effect is task- and model-dependent—CoT (and its variants) remains valuable for long-horizon planning, complex combinatorial search, and when working with smaller or mid-sized models. Practitioners should evaluate CoT cost/benefit per task and model.
+A-259  ### Safety and Interpretability
+A-260  Although CoT provides a readable “reasoning trace,” these sequences are model generations, not human-grade proofs. Chains may contain hallucinated or unsafe steps, and revealing internal chains can sometimes expose model-learned heuristics or biases. For high-stakes uses, combine CoT with external verification (symbolic checks, unit tests, or formal verification) and treat chains as hypotheses to be validated rather than ground truth.
+A-261  ## Applications
+A-262  Chain-of-Thought prompting and its derivatives are a standard technique in:
+A-263  - Complex question-answering systems
+A-264  - Mathematical and scientific problem-solving
+A-265  - Code generation and debugging
+A-266  - Automated analysis of legal or financial documents
+A-267  - Multimodal reasoning (e.g., generating step-by-step explanations for visual tasks)
+A-268  - Planning and decision-making for autonomous agents
+A-269  When to use CoT (practical)
+A-270  - Use CoT for multi-step symbolic problems, formal math, planning, or debugging code.
+A-271  - Try zero-shot “Let’s think step by step” first on modern models (fast, zero cost). If not sufficient, test few-shot CoT.
+A-272  - For production systems, measure latency and cost: consider Chain-of-Draft or distilled trace methods to reduce token use.
+A-273  - Use self-consistency / voting to improve robustness when sampling multiple chains.
+A-274  ## See Also
+A-275  - Prompt Engineering
+A-276  - In-Context Learning
+A-277  - Large Language Model (LLM)
+A-278  - Self-Consistency (AI): A technique (Wang et al., 2022) often used with CoT, where the model generates multiple reasoning chains and the final answer is chosen by a majority vote, improving robustness.
+A-279  - Tree-of-Thoughts (ToT) (includes code repository)
+A-280  - Graph-of-Thoughts (GoT) (includes code repository)
+A-281  - Active Prompting
+A-282  ## References
+A-283  - Wei, J., Wang, X., Schuurmans, D., et al. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. arXiv:2201.11903.
+A-284  - Kojima, T., Gu, S. S., Reid, M., et al. (2022). Large Language Models are Zero-Shot Reasoners. arXiv:2205.11916.
+A-285  - Wang, X., et al. (2022). Self-Consistency Improves Chain-of-Thought Reasoning in Language Models. arXiv:2203.11171.
+A-286  - Yao, S., Yu, D., Zhao, J., et al. (2023). Tree of Thoughts: Deliberate Problem Solving with Large Language Models. arXiv:2305.10601.
+A-287  - Besta, M., et al. (2023). Graph of Thoughts: Solving Elaborate Problems with Large Language Models. arXiv:2308.09687.
+A-288  - Chain-of-Draft (CoD) (2025). (Preprint, early reports).
+A-289  - Trace-of-Thought / Reasoning Distillation (2024–2025). (Various ACL/arXiv preprints).
+A-290  - Empirical Analyses on Diminishing Returns (2024–2025). (e.g., “Do Advanced Language Models Eliminate the Need for Prompt Engineering?” (2024) and related technical reports).
+A-291  This entry is now finalized and ready for publication.
+A-292  AI‑generated content may contain errors. See Disclaimer.
+A-293  </code></pre>
+<h4 id="appendix-hyperlinks-in-the-post-as-published">Appendix: hyperlinks in the post (as published)</h4>
+<p>All the arXiv and ACL Anthology links appear inside ChatGPT's peer review, not in the entry's own text. None of them was carried into the reference list of version 3 (see correction register, C02–C05).</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Link target</th>
+<th>Anchor text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>https://champaignmagazine.com/2025/10/29/aikipedia-on-policy-distillation/</code></td>
+<td>Aikipedia: On-Policy Distillation – Champaign Magazine</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>https://arxiv.org/abs/2201.11903?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>https://arxiv.org/html/2411.02093v1?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>https://arxiv.org/abs/2305.10601?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><code>https://arxiv.org/abs/2201.11903?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>https://arxiv.org/abs/2201.11903?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><code>https://arxiv.org/abs/2205.11916?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td><code>https://arxiv.org/abs/2305.10601?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td><code>https://arxiv.org/abs/2308.09687?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td><code>https://arxiv.org/html/2502.18600v1?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td><code>https://arxiv.org/abs/2504.20946?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td><code>https://arxiv.org/html/2411.02093v1?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td><code>https://arxiv.org/abs/2205.11916?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td><code>https://arxiv.org/abs/2201.11903?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td><code>https://arxiv.org/abs/2205.11916?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td><code>https://arxiv.org/abs/2305.10601?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td><code>https://arxiv.org/abs/2308.09687?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td><code>https://arxiv.org/abs/2203.11171?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td><code>https://arxiv.org/html/2502.18600v1?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td><code>https://aclanthology.org/2024.acl-srw.35/?utm_source=chatgpt.com</code></td>
+<td>ACL Anthology</td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td><code>https://arxiv.org/html/2411.02093v1?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td><code>https://arxiv.org/abs/2201.11903?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td><code>https://arxiv.org/abs/2305.10601?utm_source=chatgpt.com</code></td>
+<td>arXiv</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td><code>https://champaignmagazine.com/disclaimer-on-ai%e2%80%91generated-content/</code></td>
+<td>Disclaimer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version boundaries</strong> (archive lines):</p>
+<ul>
+<li>Version 1 (Gemini 2.5 Pro, initial): A-010 to A-057</li>
+<li>Grok review: A-058 to A-109; Gemini 2.5 Pro response: A-110 to A-113</li>
+<li>Version 2 (Gemini 2.5 Pro, after the Grok review): A-114 to A-170</li>
+<li>ChatGPT review: A-172 to A-220; Gemini 2.5 Pro response: A-221 to A-224</li>
+<li>Version 3 (Gemini 2.5 Pro, final, integrating ChatGPT's drop-in text): A-225 to A-291</li>
+<li>Site disclaimer: A-292</li>
+</ul>
+<nav class="pn"><a href="archive-13892.html">← 2025-10-29 — On-Policy Distillation (post 13892)</a><a href="archive-13958.html">2025-10-31 — Constitutional AI (post 13958) →</a></nav></article></main>
+<footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
+</body></html>

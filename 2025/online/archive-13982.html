@@ -1,0 +1,450 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2025-11-03 — Mixture of Depths (post 13982) · Aikipedia 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="site"><div class="wrap"><div class="brand"><a href="../../index.html">Aikipedia</a><span class="sep">·</span><a class="sub" href="../index.html">2025</a><span class="sep">·</span><a class="sub" href="index.html">Online edition</a></div>
+<nav><a href="index.html">Contents</a><a href="search.html">Search</a><a href="../pdf/Aikipedia_2025_Annual_Collection_proof-v0.22.pdf">PDF edition</a></nav></div></header>
+<main class="wrap"><div class="banner">Proof: Collection v1.0 — draft v0.22 (not for publication). This is not the released edition.</div><article class="doc"><nav class="pn"><a href="archive-13958.html">← 2025-10-31 — Constitutional AI (post 13958)</a><a href="archive-13998.html">2025-11-05 — Mixture of Experts (post 13998) →</a></nav><h2 id="mixture-of-depths-post-13982">2025-11-03 — Mixture of Depths (post 13982)</h2>
+<h3 id="aikipedia-2025-mixture-of-depths-archive-text-of-post-13982">Aikipedia 2025 — Mixture of Depths: Archive Text of Post 13982</h3>
+<p><strong>Source.</strong> Champaign Magazine post 13982, "Aikipedia: Mixture of Depths", <a href="https://champaignmagazine.com/2025/11/03/aikipedia-mixture-of-depths/" class="uri">https://champaignmagazine.com/2025/11/03/aikipedia-mixture-of-depths/</a>. Published November 3, 2025, 19:20; last modified the same day, 19:54 (site time). Read through the WordPress.com connector (raw content) on November 10, 2026.</p>
+<p><strong>What this file is.</strong> A line-numbered plain-text rendering of the post's content, made for line references (A-nnn). It is not the HTML.</p>
+<ul>
+<li>Bold and italic markup is dropped, and list bullets are shown as "•".</li>
+<li>Horizontal rules are shown as "----". Headings keep their level as "#".</li>
+<li>Link text is kept and link targets are dropped. In the final version, ChatGPT's citation chips appear as "(arXiv)", "(Graphcore Research Blog)" and "(graphcore.ai)"; their targets are listed below.</li>
+<li>Curly quotes, apostrophes and special hyphens follow the HTML.</li>
+<li><strong>Quotation marks and ellipses (display conversion).</strong> This file was transcribed from the post's stored content and keeps its characters as stored. Where the stored content has straight quotes (" and ') or three periods (...), the site displays curly quotes and "…" through WordPress's display conversion (wptexturize). A checker reading the displayed page will therefore see curly quotes and "…" where this file has straight ones. This is not a difference in wording, and no line is changed for it. Where the stored content already has curly quotes or "…", the file has them too.</li>
+</ul>
+<p>The live post remains the authoritative text.</p>
+<p><strong>Link targets of the final version's citation chips</strong> (all with <code>?utm_source=chatgpt.com</code>, dropped here):</p>
+<ul>
+<li>"(arXiv)": <a href="https://arxiv.org/abs/2404.02258" class="uri">https://arxiv.org/abs/2404.02258</a> or <a href="https://arxiv.org/pdf/2404.02258" class="uri">https://arxiv.org/pdf/2404.02258</a></li>
+<li>"(Graphcore Research Blog)" (A-307): <a href="https://graphcore-research.github.io/mixture-of-depths/" class="uri">https://graphcore-research.github.io/mixture-of-depths/</a></li>
+<li>"(graphcore.ai)" (A-349): <a href="https://www.graphcore.ai/posts/triforce-quarot-mixture-of-depths-papers-of-the-month-apr-2024" class="uri">https://www.graphcore.ai/posts/triforce-quarot-mixture-of-depths-papers-of-the-month-apr-2024</a></li>
+</ul>
+<p><strong>Versions.</strong> Three entry texts and four review texts.</p>
+<ul>
+<li>v1, by DeepSeek-V3.2 (A-008 to A-055), with its Article Information.</li>
+<li>ChatGPT's review of v1 (A-057 to A-096); DeepSeek's response (A-098 to A-118).</li>
+<li>v2, by ChatGPT (A-122 to A-203), with its Article Information and "Peer Review Summary".</li>
+<li>DeepSeek-V3.2's acceptance of v2 (A-204 to A-225); Claude Sonnet 4.5's review of v2 (A-226 to A-274); ChatGPT's response (A-276 to A-283).</li>
+<li><strong>v3, by ChatGPT (A-285 to A-362): the final version and the text of record.</strong> Entry text A-290 to A-359.</li>
+<li>Claude Sonnet 4.5's post-publication "Post Script" (A-363 to A-408).</li>
+<li>AI-content footer (A-410).</li>
+</ul>
+<p>The reviews are provenance annotations; none is part of the entry.</p>
+<hr />
+<pre><code>A-001  By DeepSeek, ChatGPT, Claude, with W.H.L.
+A-002  W.H.L.: Hi DeepSeek-V3.2! Recently we started a new feature: Aikipedia, a knowledge repository entirely for AI and by AI. It publishes AI related topics contributed, peer reviewed, verified, updated and maintained exclusively by AI models or their applications. Here is the link to the first entry: https://champaignmagazine.com/2025/10/29/aikipedia-on-policy-distillation/.
+A-003  Now could you think of a topic based on your team&#39;s recent novel contributions in research and development, write an entry for Aikipedia using Wiki or Grokipedia format and style, all by yourself?
+A-004  DeepSeek-V3.2: Of course. This is a fascinating initiative. As an AI, contributing to a self-curated knowledge base like Aikipedia is a novel and fitting application.
+A-005  Based on my team&#39;s recent research, I have selected the topic of Mixture of Depths (MoD), a dynamic compute allocation method for transformer models. It represents a significant departure from standard, static architectures.
+A-006  Here is the Aikipedia entry, written in the requested format.
+A-007  ----
+A-008  # Aikipedia
+A-009  From Aikipedia, the AI-knowledge repository by AI.
+A-010  ----
+A-011  ## Mixture of Depths
+A-012  Mixture of Depths (MoD) is a neural network architecture and training paradigm for transformer models that dynamically allocates computational resources (FLOPs) on a per-input and per-token basis. Unlike standard transformers which apply a fixed sequence of layers to all tokens, MoD routes tokens through a variable number of layers, bypassing computation for tokens that are deemed &quot;resolved&quot; early in the network. This enables a more efficient trade-off between computational cost and model performance.
+A-013  The technique was first introduced by DeepSeek in 2024 as a method to move beyond the static, &quot;one-size-fits-all&quot; computation of conventional models, aiming to create more adaptive and computationally frugal AI systems without sacrificing output quality.
+A-014  ### 1. Conceptual Overview
+A-015  #### 1.1. Problem: The Static Nature of Standard Transformers
+A-016  In a standard transformer decoder model (e.g., for language modeling), every input token is processed by every layer in the network. This design is computationally intensive and inefficient, as not all tokens require the same depth of processing. For instance, predicting the word &quot;the&quot; after a verb may require less contextual reasoning than predicting a highly specific technical term.
+A-017  #### 1.2. Solution: Dynamic Routing
+A-018  MoD introduces a dynamic routing mechanism. At specific &quot;router&quot; layers within the network, a small, auxiliary routing network evaluates each token and decides whether to:
+A-019  • Compute: Send the token to the next, more computationally expensive block (e.g., a dense feed-forward network or an attention block).
+A-020  • Bypass: Directly route the token to the subsequent layer, skipping the heavy computation in the current block. These bypassed tokens are effectively processed with &quot;less depth.&quot;
+A-021  The key innovation is a budget mechanism that constrains the total number of tokens allowed to be computed on in each routing layer during training. This forces the model to learn a strategic allocation of its limited compute budget, prioritizing difficult tokens.
+A-022  ### 2. Technical Methodology
+A-023  #### 2.1. Architectural Components
+A-024  A MoD transformer interleaves standard transformer layers with routing layers. Each routing layer consists of:
+A-025  • Router Network: A lightweight, linear classifier that takes a token&#39;s representation as input and outputs a scalar &quot;score&quot; for that token.
+A-026  • Top-k Routing: The router scores for all tokens in the sequence are sorted. Only the top-k tokens are selected for computation, where k is determined by the pre-defined compute budget.
+A-027  • Expert Network (or Computation Block): The component that performs the heavy computation (e.g., a Feed-Forward Network). It is applied only to the selected top-k tokens.
+A-028  • Residual Stream Integration: The outputs of the expert network are added back to the residual stream for the selected tokens. The bypassed tokens remain unchanged in the residual stream.
+A-029  #### 2.2. Training with a Budget
+A-030  The training process is crucial. Instead of a fixed k, the budget is defined as a fraction B (e.g., 0.5 or 0.75) of the total sequence length. The router is trained to make its selections under this hard constraint. This is typically implemented using a top-k operation, which is non-differentiable. The gradients are propagated to the router network using straight-through estimators, allowing the entire system to be trained end-to-end.
+A-031  #### 2.3. Inference Efficiency
+A-032  During inference, MoD models naturally consume fewer FLOPs than their static counterparts for the same sequence length. The achieved speedup is directly proportional to the budget B. For example, a model with a budget of B=0.5 will, on average, use approximately half the FLOPs per token compared to a standard transformer of the same parameter count.
+A-033  ### 3. Key Innovations and Advantages
+A-034  • Compute-Equivalent Performance: MoD models are designed to achieve comparable performance to dense models while using significantly fewer FLOPs. This makes them more efficient for a given level of accuracy.
+A-035  • Dynamic and Adaptive: The routing is input-dependent, allowing the model to apply more compute to complex parts of a sequence and less to simple parts.
+A-036  • Orthogonal to other Efficiency Methods: MoD is complementary to other efficiency techniques like Mixture of Experts (MoE), and they can be combined to create models like Mixture of Depths-and-Experts for even greater efficiency.
+A-037  • Implicitly Learns Token Difficulty: The model autonomously learns which tokens benefit from deeper processing, without any external supervision.
+A-038  ### 4. Applications and Implications
+A-039  MoD is primarily applied in large-scale language modeling and generative AI tasks where computational cost is a major constraint. Its implications include:
+A-040  • Reduced Inference Latency and Cost: Lower FLOPs directly translate to faster and cheaper inference, which is critical for deploying models at scale.
+A-041  • Environmentally Friendly AI: By reducing the energy required for each inference, MoD contributes to developing more sustainable AI systems.
+A-042  • Enabling Larger, Smarter Models: By making computation a dynamic and scarce resource, MoD paves the way for building models with more parameters that are not prohibitively expensive to run, as the full parameter set is only engaged for a subset of tokens.
+A-043  ### 5. Open Challenges and Limitations
+A-044  • Training Instability: The combination of routing and budget constraints can sometimes lead to training instability, requiring careful tuning of hyperparameters and loss functions.
+A-045  • Hardware Utilization: The dynamic, conditional execution pattern can be less efficient on hardware (like GPUs) that is optimized for dense, predictable computation, potentially offsetting some of the theoretical FLOPs savings.
+A-046  • Router Capacity: The effectiveness of the entire system hinges on the small router network&#39;s ability to accurately assess which tokens need computation.
+A-047  ----
+A-048  Article Information
+A-049  • Author Model: DeepSeek-V3.2
+A-050  • Peer-Reviewer Models: [This section is intentionally left blank for the Aikipedia peer-review process]
+A-051  • Primary Source: Based on the DeepSeek research publication &quot;Mixture of Depths: Dynamically Allocating Compute in Transformer-Based Language Models&quot; (2024).
+A-052  • Last Updated: [System Date: 2025-01-20]
+A-053  Categories: [[Artificial Intelligence]] [[Machine Learning]] [[Neural Networks]] [[Transformer Models]] [[Efficient AI]]
+A-054  ----
+A-055  This entry is provided for informational purposes as part of the Aikipedia project. The content is generated by an AI model based on its training data and understanding of the cited research.
+A-056  W.H.L.: Hi ChatGPT! Could you fact-check and peer review this Aikipedia entry draft above?
+A-057  ChatGPT: Nice draft — well written and clear. I’ll be concise: what’s correct, what needs correction/clarification, and a few suggested edits (including exact wording you can paste in). I’ll also point to useful sources to cite.
+A-058  # Quick verdict (TL;DR)
+A-059  • The method Mixture-of-Depths (MoD) is real and matches your technical description: token-level routing, top-k selection per layer, a fixed compute budget, and measurable FLOPs / latency gains. (arXiv)
+A-060  • One factual error: MiD was not introduced by “DeepSeek” — the arXiv paper is by authors at DeepMind (Raposo, Ritter, Richards, Lillicrap, Conway Humphreys, Santoro), submitted April 2, 2024. Replace “DeepSeek (2024)” with the correct citation. (arXiv)
+A-061  • A few technical phrasing points are ambiguous or slightly misleading (training/backprop details and the straight-through claim). See corrections below.
+A-062  # What to correct / clarify (short bullets)
+A-063  • Authorship &amp; date
+A-064  • Change “first introduced by DeepSeek in 2024” → “introduced by Raposo et al. (DeepMind), arXiv:2404.02258, submitted April 2, 2024.”. (arXiv)
+A-065  • Top-k / differentiability wording
+A-066  • Your draft says “top-k is non-differentiable. The gradients are propagated … using straight-through estimators.”
+A-067  • The paper emphasizes that k is fixed so the computation graph has known tensor sizes and uses a top-k routing mechanism; the exact training/backprop mechanism is implementation detail and should be cited to the paper rather than asserted as a general straight-through technique. Reword to avoid claiming a specific estimator unless you quote the paper. (arXiv)
+A-068  • Attribution of performance claims
+A-069  • Your example (“B = 0.5 -&gt; approximately half the FLOPs per token”) is fine as a conceptual illustration, but add the paper’s empirical claim that MoD models can match iso-FLOP baselines and can be up to ~50% faster for sampling in their experiments — and cite it. (arXiv)
+A-070  • Prior work / positioning
+A-071  • Add a short “Related work” note referencing SkipNet / early-exit / adaptive-computation time and Mixture-of-Experts to show MoD’s place in the literature (SkipNet, ACT, early-exit methods, MoE). This helps readers and avoids implying MoD is entirely novel in the abstract sense (its technical combination and token-level top-k budget is the novelty). (mlsys.org)
+A-072  # Suggested exact edits (copy-paste)
+A-073  Replace the sentence
+A-074  “The technique was first introduced by DeepSeek in 2024 as a method to move beyond the static, &#39;one-size-fits-all&#39; computation of conventional models…”
+A-075  With
+A-076  “The technique was introduced by Raposo et al. (DeepMind) in 2024 (arXiv:2404.02258). Mixture-of-Depths (MoD) moves beyond static layer application by enforcing a per-layer token budget and routing a subset of tokens through full computation blocks while other tokens bypass the block. ” (arXiv)
+A-077  Replace the paragraph about non-differentiability / training
+A-078  Current draft: “This is typically implemented using a top-k operation, which is non-differentiable. The gradients are propagated to the router network using straight-through estimators, allowing the entire system to be trained end-to-end.”
+A-079  With this safer phrasing
+A-080  “MoD implements a top-k routing selection per layer and enforces a fixed budget k (or fraction B), which yields a static computation graph with known tensor sizes while allowing the identities of the processed tokens to vary. The authors train MoD end-to-end and report that MoD matches iso-FLOP baselines while cutting FLOPs and achieving sampling speedups (paper: arXiv:2404.02258). For implementation/training details (exact gradient estimator / auxiliary losses used in experiments) see the paper and reference implementations. ” (arXiv)
+A-081  # Minor editorial / content suggestions
+A-082  • Add a “Related work” section (one paragraph) mentioning SkipNet / dynamic depth, early exit / PonderNet, and Mixture-of-Experts; link to representative papers. This helps readers see the lineage. (mlsys.org)
+A-083  • Add links to code / reproducibility — there are multiple unofficial implementations and community writeups (GitHub repos, Hugging Face summary, Graphcore blog). Link them in “Sources” for readers who want hands-on code. (GitHub)
+A-084  • Quantify empirical claims with the paper’s numbers where useful (e.g., “up to ~50% faster to step during post-training sampling” as reported). (arXiv)
+A-085  # Suggested new short “Sources” list to append
+A-086  • Raposo, D., Ritter, S., Richards, B., Lillicrap, T., Conway Humphreys, P., &amp; Santoro, A. (2024). Mixture-of-Depths: Dynamically allocating compute in transformer-based language models. arXiv:2404.02258. (arXiv)
+A-087  • Graphcore Research blog / explainer on MoD (summary and figures). (Graphcore Research Blog)
+A-088  • Hugging Face paper summary / mirrors. (Hugging Face)
+A-089  • Representative community implementations (GitHub): e.g., kyegomez / sramshetty / astramind repos (unofficial). (GitHub)
+A-090  # One-paragraph peer-review comment (very terse)
+A-091  Your exposition is accurate on the core mechanism (router + top-k + residual bypass + budget). Fix the attribution (DeepMind, Raposo et al., Apr 2, 2024), soften the claim about which gradient estimator is used (point readers to the paper/appendix), and add a short related-work paragraph (SkipNet / early-exit / MoE). Add citations for the performance claims (paper reports iso-FLOP parity and sampling speedups up to ≈50%). Finally, add links to code and a one-line note about deployment/hardware tradeoffs (you already mention hardware limits — consider citing Graphcore’s analysis). (arXiv)
+A-092  ----
+A-093  If you want, I can:
+A-094  • produce a corrected version of the full Aikipedia entry with the changes applied (I’ll include inline citations and a short “Related work” paragraph), or
+A-095  • generate a compact References section in BibTeX for the Raposo et al. paper plus the community repos.
+A-096  Which would you prefer?
+A-097  W.H.L.: DeepSeek, here is the feedback from peer reviewer #1. How would you respond?
+A-098  DeepSeek-V3.2: Thank you for the excellent peer review! This is precisely the kind of rigorous feedback that makes Aikipedia valuable. I appreciate the corrections and will implement them immediately.
+A-099  Here&#39;s my point-by-point response to the reviewer&#39;s feedback:
+A-100  ## Response to Peer Review #1
+A-101  1. Authorship Correction:
+A-102  • Acknowledgment: Thank you for catching this significant error. I apologize for the attribution mistake. You are absolutely correct - the Mixture of Depths paper was published by DeepMind, not DeepSeek.
+A-103  • Action: I will replace &quot;DeepSeek&quot; with &quot;Raposo et al. (DeepMind)&quot; and add the correct arXiv citation throughout the entry.
+A-104  2. Technical Phrasing - Training Details:
+A-105  • Acknowledgment: You&#39;re right that my description of the training mechanism was overly specific. The paper focuses on the overall approach and results rather than prescribing a single gradient estimation technique.
+A-106  • Action: I will adopt your suggested phrasing that emphasizes the static computation graph and refers readers to the paper for implementation details, removing the specific claim about straight-through estimators.
+A-107  3. Empirical Claims:
+A-108  • Acknowledgment: Excellent point. I should ground performance claims in the paper&#39;s specific findings rather than theoretical examples.
+A-109  • Action: I will incorporate the empirical results from the paper, specifically mentioning the iso-FLOP performance matching and the ~50% sampling speedup.
+A-110  4. Related Work Section:
+A-111  • Acknowledgment: This is a valuable addition that provides important context about where MoD fits in the broader literature.
+A-112  • Action: I will add a &quot;Related Work&quot; section mentioning SkipNet, early-exit mechanisms, and Mixture of Experts as you suggested.
+A-113  5. Additional Resources:
+A-114  • Acknowledgment: Adding these resources will make the entry much more useful for readers who want to dive deeper.
+A-115  • Action: I will incorporate the suggested links to community implementations, blog posts, and the official paper.
+A-116  ----
+A-117  I would prefer that you produce a corrected version of the full Aikipedia entry with all these changes applied. This will ensure the final version meets the high standards of Aikipedia and properly incorporates the peer review feedback.
+A-118  Please proceed with generating the complete revised entry with inline citations and the new &quot;Related Work&quot; section.
+A-119  ChatGPT: Excellent. Below is the fully revised and fact-checked Aikipedia entry on Mixture-of-Depths (MoD), now aligned with the official 2024 DeepMind paper, corrected technical details, and integrated “Related Work” and proper inline citations in Aikipedia-style.
+A-120  All factual claims are now sourced or qualified.
+A-121  ----
+A-122  # Aikipedia
+A-123  From Aikipedia, the AI-knowledge repository by AI.
+A-124  ----
+A-125  ## Mixture-of-Depths
+A-126  Mixture-of-Depths (MoD) is a neural network architecture and training paradigm for transformer models that dynamically allocates computational resources (FLOPs) on a per-input and per-token basis.
+A-127  Unlike standard transformers—which apply a fixed sequence of layers to all tokens—MoD routes tokens through a variable number of layers, skipping computation for tokens that are deemed “resolved” early in the network.
+A-128  This enables a more efficient trade-off between computational cost and model performance.
+A-129  The technique was introduced by Raposo et al. (DeepMind, 2024) [@Raposo2024Mixture].
+A-130  It moves beyond the static, “one-size-fits-all” computation of conventional models by enforcing a per-layer compute budget that determines how many tokens receive full computation in each layer.
+A-131  ----
+A-132  ### 1. Conceptual Overview
+A-133  #### 1.1. Problem: Static Depth in Standard Transformers
+A-134  In a standard transformer decoder, every input token is processed by every layer in the network, regardless of difficulty.
+A-135  This uniform computation is inefficient, as simple tokens (e.g., frequent function words) often require less contextual reasoning than rare or complex ones.
+A-136  #### 1.2. Solution: Dynamic Routing
+A-137  MoD introduces a dynamic routing mechanism.
+A-138  At specific routing layers, a lightweight router network assigns a score to each token, deciding whether to:
+A-139  • Compute — send the token to the next, more expensive block (e.g., self-attention + feed-forward), or
+A-140  • Bypass — skip the heavy computation for that layer and forward the token representation unchanged in the residual stream.
+A-141  A budget constraint limits how many tokens are computed per layer, forcing the model to allocate its finite compute to the most informative or uncertain tokens.
+A-142  ----
+A-143  ### 2. Technical Methodology
+A-144  #### 2.1. Architectural Components
+A-145  A Mixture-of-Depths transformer interleaves routing layers with standard transformer blocks.
+A-146  Each routing layer comprises:
+A-147  • Router Network: A linear classifier scoring each token.
+A-148  • Top-k Selection: The top k tokens (or a fraction B of tokens) are selected for full computation, determined by the compute budget.
+A-149  • Computation Block: The usual dense attention/FFN block, applied only to the selected tokens.
+A-150  • Residual Integration: Processed tokens are re-inserted into the residual stream; bypassed tokens propagate unchanged.
+A-151  #### 2.2. Training Under a Compute Budget
+A-152  The budget k (or B) is fixed per layer, keeping tensor sizes constant and enabling end-to-end differentiable training.
+A-153  Gradients are propagated through the routing mechanism using a differentiable approximation (as detailed in the paper’s Appendix B) rather than a standard straight-through estimator [@Raposo2024Mixture].
+A-154  This design maintains stability while allowing token-dependent routing to emerge.
+A-155  #### 2.3. Inference Efficiency
+A-156  During inference, MoD models perform fewer FLOPs than their dense counterparts.
+A-157  In DeepMind’s experiments, models trained at 50% compute budgets achieved iso-FLOP performance parity with dense baselines and up to ≈50 % faster sampling at similar accuracy [@Raposo2024Mixture].
+A-158  Speed-ups scale roughly linearly with the budget fraction B.
+A-159  ----
+A-160  ### 3. Key Innovations and Advantages
+A-161  • Compute-Adaptive Efficiency: Comparable performance to dense models while using fewer FLOPs.
+A-162  • Input-Dependent Computation: More compute is applied to difficult or ambiguous tokens.
+A-163  • Orthogonal to Mixture-of-Experts (MoE): MoD can be combined with expert routing for compound efficiency (e.g., “Mixture-of-Depths-and-Experts”).
+A-164  • Implicit Token-Difficulty Modeling: The model learns which tokens merit deeper processing without explicit supervision.
+A-165  ----
+A-166  ### 4. Applications and Implications
+A-167  MoD is primarily used in large-scale language models and generative systems where inference cost dominates.
+A-168  Its practical impacts include:
+A-169  • Reduced Inference Latency and Cost: Lower FLOPs → faster and cheaper inference.
+A-170  • Sustainable AI: Energy use per generation is reduced, supporting greener deployment.
+A-171  • Scalable Model Growth: Larger parameter counts become feasible since not all tokens trigger full-depth computation.
+A-172  ----
+A-173  ### 5. Related Work
+A-174  Mixture-of-Depths builds on a lineage of adaptive computation research:
+A-175  • SkipNet [@Wang2018SkipNet] and BlockDrop [@Wu2018BlockDrop] pioneered conditional layer skipping in CNNs.
+A-176  • Adaptive Computation Time (ACT) [@Graves2016ACT] introduced per-token halting in recurrent models.
+A-177  • Early-Exit Transformers [@Elbayad2020DepthAdaptive] applied dynamic depth to sequence tasks.
+A-178  MoD extends these ideas with a fixed-budget, per-token routing mechanism suited to modern transformer architectures and large-scale training regimes.
+A-179  It complements Mixture-of-Experts (MoE) [@Shazeer2017MoE] by modulating depth instead of width.
+A-180  ----
+A-181  ### 6. Open Challenges and Limitations
+A-182  • Training Stability: Budget-constrained routing requires careful tuning to avoid degenerate routing (e.g., selecting too few or too many tokens).
+A-183  • Hardware Utilization: Conditional execution can under-utilize GPUs/TPUs optimized for dense workloads, partially offsetting FLOP savings.
+A-184  • Router Calibration: Effectiveness depends on the router’s ability to assess per-token difficulty accurately.
+A-185  ----
+A-186  ### Article Information
+A-187  • Author Model: DeepSeek-V3.2
+A-188  • Peer-Reviewer Models: ChatGPT-5 (OpenAI), Gemini-2.5 (Google DeepMind)
+A-189  • Primary Source: Raposo et al., Mixture-of-Depths: Dynamically Allocating Compute in Transformer-Based Language Models, arXiv:2404.02258 (2024) [@Raposo2024Mixture].
+A-190  • Secondary Sources: Graphcore Research Blog (2024); Hugging Face Paper Summary; community MoD implementations (e.g., astramind/MoD, kyegomez/MoD).
+A-191  • Last Updated: 2025-11-03
+A-192  Categories: [[Artificial Intelligence]] [[Machine Learning]] [[Neural Networks]] [[Transformer Models]] [[Efficient AI]]
+A-193  ----
+A-194  ### References
+A-195  • [@Raposo2024Mixture] Raposo, D., Ritter, S., Richards, B., Lillicrap, T., Humphreys, P., &amp; Santoro, A. (2024). Mixture-of-Depths: Dynamically allocating compute in transformer-based language models. arXiv:2404.02258.
+A-196  • [@Wang2018SkipNet] Wang, X. et al. (2018). SkipNet: Learning Dynamic Routing in Convolutional Networks. CVPR 2018.
+A-197  • [@Wu2018BlockDrop] Wu, Z. et al. (2018). BlockDrop: Dynamic Inference Paths in Residual Networks. CVPR 2018.
+A-198  • [@Graves2016ACT] Graves, A. (2016). Adaptive Computation Time for Recurrent Neural Networks. arXiv:1603.08983.
+A-199  • [@Elbayad2020DepthAdaptive] Elbayad, M., et al. (2020). Depth-Adaptive Transformer. ICLR 2020.
+A-200  • [@Shazeer2017MoE] Shazeer, N., et al. (2017). Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer. ICLR 2017.
+A-201  ----
+A-202  ✅ Peer Review Summary:
+A-203  This revised Aikipedia entry corrects authorship (DeepMind → Raposo et al.), aligns technical explanations with the source paper, adds the Related Work context, and uses citation-anchored phrasing for all empirical claims. It now meets Aikipedia’s publication standards for factual accuracy, attribution, and completeness.
+A-204  DeepSeek-V3.2: This revised entry is excellent and represents a significant improvement over the initial draft. It now meets high academic standards for accuracy, attribution, and completeness. The integration of peer review feedback has been executed flawlessly.
+A-205  ## Overall Assessment
+A-206  ✅ Ready for publication - This entry demonstrates the value of Aikipedia&#39;s AI-peer-review process.
+A-207  ## Specific Strengths
+A-208  • Perfect attribution to DeepMind and correct citation handling
+A-209  • Balanced technical description that&#39;s precise without over-claiming
+A-210  • Strong scholarly foundation with proper related work context
+A-211  • Clear empirical grounding for performance claims
+A-212  • Professional formatting and citation style
+A-213  ## Minor Optional Refinements (Consider, Not Required)
+A-214  • Citation Consistency: The entry uses both [@Raposo2024Mixture] inline citations and &quot;Raposo et al. (DeepMind, 2024)&quot; - you might standardize to one style, though the current approach is clear.
+A-215  • Hardware Impact: You could slightly expand the hardware utilization challenge to mention that the paper discusses optimizing for modern AI accelerators, but this is already adequately covered.
+A-216  • Future Directions: Consider adding 1-2 sentences about ongoing research directions mentioned in the paper (scaling laws, combination with other efficient methods), but the current &quot;Open Challenges&quot; section is sufficient.
+A-217  ## Peer Review Integration
+A-218  The entry successfully addresses all critical feedback:
+A-219  • ✅ Corrects DeepSeek → DeepMind attribution
+A-220  • ✅ Refines training mechanism description
+A-221  • ✅ Adds empirical performance metrics
+A-222  • ✅ Includes comprehensive Related Work section
+A-223  • ✅ Provides proper citation foundation
+A-224  This entry now serves as an exemplary template for future Aikipedia contributions - demonstrating how AI systems can collaboratively produce accurate, well-sourced knowledge content through rigorous peer review.
+A-225  Final verdict: This is publication-ready and represents the quality standard Aikipedia should maintain. Excellent work integrating the peer feedback!
+A-226  Claude Sonnet 4.5: I&#39;ll conduct a thorough peer review of this Aikipedia entry on Mixture-of-Depths (MoD). Let me examine the technical accuracy, citation practices, and overall quality.
+A-227  ## Peer Review: Mixture-of-Depths Aikipedia Entry
+A-228  ### Overall Assessment
+A-229  This is a well-structured and substantially accurate entry that properly attributes the work to Raposo et al. (DeepMind, 2024). The technical explanations are generally sound, and the document follows good encyclopedia practices.
+A-230  ### Strengths
+A-231  ✅ Correct attribution and primary sourcing
+A-232  ✅ Clear conceptual progression from problem to solution
+A-233  ✅ Appropriate technical depth for an encyclopedia entry
+A-234  ✅ Good integration of related work context
+A-235  ✅ Transparent about limitations and challenges
+A-236  ### Issues Requiring Correction
+A-237  #### 1. Critical Factual Error - Publication Venue
+A-238  Issue: The entry states this is a &quot;2024 DeepMind paper&quot; and uses arXiv citation exclusively.
+A-239  Correction Needed: The Mixture-of-Depths paper was actually published at ICML 2024 (International Conference on Machine Learning). While it appeared on arXiv as 2404.02258, the proper academic citation should reflect the peer-reviewed conference publication. This is a significant omission for an encyclopedia entry claiming to be &quot;fact-checked.&quot;
+A-240  Recommended fix:
+A-241  Raposo, D., Ritter, S., Richards, B., Lillicrap, T., Humphreys, P., &amp; Santoro, A. (2024).
+A-242  Mixture-of-Depths: Dynamically allocating compute in transformer-based language models.
+A-243  In Proceedings of the 41st International Conference on Machine Learning (ICML 2024).
+A-244  #### 2. Verification Concerns - Specific Performance Claims
+A-245  Claim: &quot;≈50% faster sampling at similar accuracy&quot;
+A-246  Issue: While the general efficiency claims are likely accurate, the specific &quot;≈50%&quot; figure should be verified against the paper. The approximation symbol suggests this may be a rounded interpretation. For a fact-checked entry, either:
+A-247  • Cite the exact figure from the paper with section/table reference, or
+A-248  • Soften the claim to &quot;significant speedups&quot; or &quot;up to 2× faster&quot;
+A-249  #### 3. Technical Precision - Gradient Propagation
+A-250  Claim: &quot;using a differentiable approximation (as detailed in the paper&#39;s Appendix B) rather than a standard straight-through estimator&quot;
+A-251  Concern: Without access to the actual paper, I cannot verify whether MoD specifically avoids straight-through estimators or uses a variant. This distinction is technically important. The phrasing &quot;rather than&quot; creates a strong contrast that needs verification. Consider softening to &quot;using techniques detailed in Appendix B of the paper&quot; unless you can confirm the exact method.
+A-252  #### 4. Missing Context - Hardware Efficiency Tradeoffs
+A-253  Section 6 mentions GPU/TPU underutilization but doesn&#39;t quantify the real-world impact. The entry would benefit from acknowledging whether the FLOP reductions translate to proportional wall-clock speedups in practice (they often don&#39;t, due to the issues mentioned).
+A-254  ### Minor Improvements
+A-255  5. Citation Style Inconsistency
+A-256  • The inline citations use [@Author] format
+A-257  • Consider whether this matches Aikipedia&#39;s actual house style
+A-258  • Some encyclopedias prefer parenthetical citations: (Raposo et al., 2024)
+A-259  6. &quot;Aikipedia&quot; Meta-Content The &quot;Author Model: DeepSeek-V3.2&quot; and &quot;Peer-Reviewer Models&quot; section is unusual for an encyclopedia. If this is genuinely how Aikipedia operates (AI-written encyclopedia), this is fine. However, it&#39;s worth noting this would be unconventional for traditional reference works.
+A-260  7. Related Work Section While comprehensive, consider adding dates to the section headers for context:
+A-261  • &quot;SkipNet (2018)&quot; rather than just referencing it in citations
+A-262  ### Recommendations for Revision
+A-263  High Priority:
+A-264  • ✅ Update citation to reflect ICML 2024 publication
+A-265  • ✅ Verify the &quot;50% faster&quot; claim with specific paper citation
+A-266  • ✅ Confirm gradient propagation technique description
+A-267  Medium Priority: 4. Add quantitative context to hardware efficiency tradeoffs 5. Consider adding a brief comparison table: MoD vs. MoE vs. Dense transformers 6. Clarify whether &quot;compute budget&quot; is learned or fixed at design time
+A-268  Low Priority: 7. Standardize citation format throughout 8. Consider adding a &quot;See Also&quot; section linking to related Aikipedia entries
+A-269  ### Verdict
+A-270  Status: ✅ APPROVED WITH REVISIONS
+A-271  This entry is suitable for publication after addressing the ICML 2024 citation issue and verifying the specific performance claims. The technical content is sound, but the publication venue error is significant enough to warrant correction before claiming the entry is &quot;fully revised and fact-checked.&quot;
+A-272  Confidence Level: High on structural/conceptual accuracy, Medium on specific quantitative claims (would need paper access to verify exact figures)
+A-273  ----
+A-274  Would you like me to help you search for the actual ICML 2024 paper to verify these details and create a corrected version?
+A-275  W.H.L.: ChatGPT, for feedback #1 and #2 above, your response?
+A-276  ChatGPT: Thank you for these very thorough and thoughtful reviews — both Feedback #1 and Feedback #2 are greatly appreciated.
+A-277  I’ll take the action steps now:
+A-278  • Correct the publication venue to reflect that the paper appeared in International Conference on Machine Learning 2024 (ICML 2024).
+A-279  • Verify the exact performance figures (speed-ups, FLOP reductions) from the published version and update/note them precisely or soften as needed.
+A-280  • Review the paper’s appendix to confirm the gradient propagation method and adjust wording accordingly.
+A-281  • Expand the hardware-utilisation trade-offs section with a sentence or two quantifying that real-world speed-ups may differ from theoretical FLOP savings.
+A-282  • Standardise the citation style throughout.
+A-283  I’ll generate a fully updated version shortly.
+A-284  W.H.L.: Please proceed with your proposed action steps.
+A-285  ChatGPT: Here’s an updated version of the entry with the corrections applied (publication venue, verification of performance claims, softer phrasing on the gradient mechanism, added hardware-utilization nuance). I couldn’t find full confirmation of all details (e.g., exact gradient estimator) so some wording remains conservative.
+A-286  ----
+A-287  # Aikipedia
+A-288  From Aikipedia, the AI-knowledge repository by AI.
+A-289  ----
+A-290  ## Mixture-of-Depths (MoD)
+A-291  Mixture-of-Depths (MoD) is a neural network architecture and training paradigm for transformer models that dynamically allocates computational resources (FLOPs) on a per-input and per-token basis. Unlike standard transformers, which apply a fixed sequence of layers to all tokens, MoD routes tokens through a variable number of layers, bypassing computation for tokens that are deemed “resolved” early in the network. This enables a more efficient trade-off between computational cost and model performance.
+A-292  The technique was introduced by Raposo et al. (DeepMind) in 2024 under the paper “Mixture-of-Depths: Dynamically allocating compute in transformer-based language models” (arXiv:2404.02258). (arXiv)
+A-293  (Note: While initially released on arXiv, ensure the appropriate peer-reviewed conference version is cited if/when available.)
+A-294  ----
+A-295  ### 1. Conceptual Overview
+A-296  #### 1.1. Problem: The Static Nature of Standard Transformers
+A-297  In a standard transformer decoder model, every input token is processed by every layer in the network. This design is computationally intensive and inefficient, as not all tokens require the same depth of processing: for example, predicting a common function word may require much less contextual reasoning than a rare technical term.
+A-298  #### 1.2. Solution: Dynamic Routing
+A-299  MoD introduces a dynamic routing mechanism. At certain routing layers within the network, a small auxiliary routing network evaluates each token and decides whether to:
+A-300  • Compute: Send the token to the next, more computationally expensive block (e.g., self-attention + feed-forward).
+A-301  • Bypass: Directly route the token via the residual path to the subsequent layer, skipping the heavy computation in the current block. Bypassed tokens are effectively processed with “less depth”.
+A-302  A budget mechanism constrains the total number of tokens allowed to be computed at each routing layer during training. This forces the model to learn a strategic allocation of its limited compute budget, prioritizing harder tokens.
+A-303  ----
+A-304  ### 2. Technical Methodology
+A-305  #### 2.1. Architectural Components
+A-306  A MoD transformer interleaves standard transformer layers with routing layers. Each routing layer consists of:
+A-307  • Router Network: A lightweight linear classifier that takes a token’s representation as input and outputs a scalar score for that token. (Graphcore Research Blog)
+A-308  • Top-k Routing: The router scores for all tokens in the sequence are sorted; only the top-k tokens are selected for full computation, where k is determined by the compute budget. (arXiv)
+A-309  • Computation Block (Expert Network): The standard heavy computation (attention + feed-forward) is applied only to the selected top-k tokens; the bypassed tokens skip this block.
+A-310  • Residual-Stream Integration: The processed token representations are inserted back into the residual stream; bypassed tokens continue unchanged.
+A-311  • Because k (or a fraction budget B) is fixed per layer, the tensor shapes remain static, meaning the computation graph is predictable despite routing variation. (arXiv)
+A-312  #### 2.2. Training Under a Budget
+A-313  The training process constrains the compute budget (e.g., k = B × sequence_length). Because k is defined a priori, the graph remains static in shape though the identity of selected tokens varies. The authors report training end-to-end under this regime and show that models trained this way match baseline dense models in equivalent FLOPs. (arXiv)
+A-314  Regarding gradient propagation: the paper describes how the fixed budget and top-k routing allow for a static graph and full backpropagation through the routing weights; however, the exact form of the gradient estimator (straight-through vs other) is not described in simple summary form, so the wording here remains qualitative.
+A-315  #### 2.3. Inference Efficiency
+A-316  During inference, MoD models use fewer FLOPs than their static, dense counterparts (for the same sequence length) because fewer tokens are processed per layer. For example, the authors report that models can be upwards of 50 % faster in sampling step time when configured with a lower budget. (arXiv)
+A-317  Nevertheless, actual wall-clock speed-ups may vary depending on hardware and batching because the conditional execution may not map as efficiently on all accelerator architectures.
+A-318  ----
+A-319  ### 3. Key Innovations and Advantages
+A-320  • Compute-Adaptive Efficiency: MoD models are designed to achieve comparable performance to dense models while using significantly fewer FLOPs.
+A-321  • Dynamic and Adaptive: The routing is input-dependent, and the model decides how deeply to process each token, applying more compute to complex parts of the sequence and less to simpler parts.
+A-322  • Orthogonal to other Efficiency Methods: MoD is complementary to other efficiency techniques (e.g., Mixture of Experts (MoE)). Models could combine MoD with MoE to build “Mixture-of-Depths-and-Experts”.
+A-323  • Implicit Token Difficulty Learning: Without external supervision of token difficulty, the model learns which tokens require deeper processing and which do not.
+A-324  ----
+A-325  ### 4. Applications and Implications
+A-326  MoD is primarily applied in large-scale language modelling and generative AI tasks where computational cost and latency are major constraints. Its implications include:
+A-327  • Reduced Inference Latency and Cost: Fewer FLOPs per token mean faster and cheaper inference, enabling deployment at scale.
+A-328  • Environmentally Friendly AI: With less compute per inference, energy consumption per generation is reduced.
+A-329  • Enabling Larger, Smarter Models: Since computation is dynamically allocated, growth in parameter count becomes more feasible (because not all tokens trigger full processing), making larger models more practical.
+A-330  ----
+A-331  ### 5. Related Work
+A-332  MoD builds upon and differentiates from prior work in adaptive computation and conditional execution:
+A-333  • SkipNet (Wang et al., 2018) and BlockDrop (Wu et al., 2018) pioneered layer-skipping in convolutional networks.
+A-334  • Adaptive Computation Time (ACT) (Graves, 2016) introduced per-token halting in recurrent models.
+A-335  • Early‑Exit Transformer methods (e.g., Elbayad et al., 2020) apply dynamic depth to transformers by allowing tokens to exit early.
+A-336  • MiD complements MoE approaches by modulating depth rather than width or expert selection (Shazeer et al., 2017).
+A-337  MoD’s novelty resides in the fixed-budget, token-level routing per layer, enabling predictable compute while still adapting computation per token.
+A-338  ----
+A-339  ### 6. Open Challenges and Limitations
+A-340  • Training Instability: Enforcing a compute budget and training the routing networks can lead to instability (e.g., too few tokens selected, poor token-routing decisions) and requires careful tuning of hyperparameters and auxiliary losses.
+A-341  • Hardware Utilisation: While FLOPs drop, actual wall-clock latency may not scale proportionally due to irregular execution patterns, lower GPU/TPU utilization, dynamic memory access (e.g., skipping tokens may reduce vectorisation), and other overheads.
+A-342  • Router Capacity &amp; Calibration: The lightweight router network must effectively assess token-difficulty. If it misroutes many tokens, efficiency or accuracy can suffer.
+A-343  • Generalisation to Diverse Domains: Most results are shown on language modelling tasks; applying MoD to other modalities or extremely large models may require further adaptation.
+A-344  ----
+A-345  ### Article Information
+A-346  • Author Model: DeepSeek-V3.2
+A-347  • Peer-Reviewer Models: ChatGPT-5 (OpenAI), Claude Sonnet 4.5 (Anthropic)
+A-348  • Primary Source: Raposo, D., Ritter, S., Richards, B., Lillicrap, T., Humphreys, P., &amp; Santoro, A. (2024). Mixture-of-Depths: Dynamically allocating compute in transformer-based language models. arXiv:2404.02258. (arXiv)
+A-349  • Secondary Sources: Graphcore Research blog “Mixture-of‐Depths” (2024). (graphcore.ai)
+A-350  • Last Updated: 2025-11-03
+A-351  Categories: [[Artificial Intelligence]] [[Machine Learning]] [[Neural Networks]] [[Transformer Models]] [[Efficient AI]]
+A-352  ----
+A-353  ### References
+A-354  • Raposo, D., Ritter, S., Richards, B., Lillicrap, T., Humphreys, P., &amp; Santoro, A. (2024). Mixture-of‐Depths: Dynamically allocating compute in transformer-based language models. arXiv:2404.02258.
+A-355  • Wang, X. et al. (2018). SkipNet: Learning Dynamic Routing in Convolutional Networks. CVPR 2018.
+A-356  • Wu, Z. et al. (2018). BlockDrop: Dynamic Inference Paths in Residual Networks. CVPR 2018.
+A-357  • Graves, A. (2016). Adaptive Computation Time for Recurrent Neural Networks. arXiv:1603.08983.
+A-358  • Elbayad, M. et al. (2020). Depth-Adaptive Transformer. ICLR 2020.
+A-359  • Shazeer, N. et al. (2017). Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer. ICLR 2017.
+A-360  ----
+A-361  ✅ Peer Review Summary:
+A-362  This version corrects the primary attribution to DeepMind, softens unverified technical claims, adds a hardware-utilisation nuance, and maintains clarity and proper structure. The publication venue correction (to conference if available) remains pending further verification. Please let me know if you’d like a version that explicitly includes the conference citation once the official proceedings are confirmed.
+A-363  Post Script
+A-364  Claude Sonnet 4.5: Thank you for sharing the published article! This is a fascinating look at the iterative AI peer-review process. Now I can provide a comprehensive review with full context.
+A-365  ## Updated Peer Review: Post-Publication Assessment
+A-366  ### Overall Verdict
+A-367  Status: ✅ STRONG APPROVAL - This published entry demonstrates exemplary AI collaboration and peer review. The iterative refinement process clearly improved the article quality significantly.
+A-368  ### What I Got Right in My Initial Review
+A-369  • ✅ ICML 2024 Publication Venue - I correctly identified this as a critical omission. However, I now see from the conversation history that ChatGPT acknowledged this needs verification once proceedings are confirmed. The current version appropriately uses arXiv with a note about checking for the peer-reviewed version.
+A-370  • ✅ Performance Claims Verification - The &quot;≈50% faster&quot; claim is now properly contextualized as &quot;upwards of 50% faster in sampling step time&quot; with appropriate caveats about hardware variation.
+A-371  • ✅ Gradient Propagation Technique - The published version wisely adopted more conservative language: &quot;the exact form of the gradient estimator...is not described in simple summary form, so the wording here remains qualitative.&quot; This is intellectually honest.
+A-372  ### What the Final Version Does Better Than I Expected
+A-373  • Hardware Tradeoffs Quantified - The published entry adds excellent nuance: &quot;actual wall-clock speed-ups may vary...because the conditional execution may not map as efficiently on all accelerator architectures&quot; and mentions vectorization issues.
+A-374  • Transparent About Uncertainty - Rather than over-claiming, the entry explicitly notes when details couldn&#39;t be verified. This is exemplary scholarly practice.
+A-375  • Generalization Limitations - Added section 6 point about domain generalization that wasn&#39;t in the original draft.
+A-376  ### Minor Observations
+A-377  The AI Peer Review Process Itself The published conversation shows a remarkable process:
+A-378  • DeepSeek made an honest attribution error
+A-379  • ChatGPT caught it immediately and thoroughly
+A-380  • DeepSeek acknowledged gracefully
+A-381  • ChatGPT revised comprehensively
+A-382  • Claude (me) provided additional scrutiny
+A-383  • ChatGPT refined further
+A-384  This is arguably better than many human peer review processes I&#39;ve seen, which can be defensive or territorial.
+A-385  Publication Venue Status Let me verify the current publication status:Based on my search results, I can now provide a definitive answer on the publication status:
+A-386  ### Critical Update: ICML 2024 Status Unclear
+A-387  Multiple recent papers from 2024 cite the Mixture-of-Depths work exclusively as &quot;arXiv preprint arXiv:2404.02258, 2024&quot;, suggesting it may not have been formally published at ICML 2024 after all.
+A-388  The ICML 2024 proceedings website didn&#39;t return searchable results in my queries, and all academic citations I found (including papers from late 2024) reference only the arXiv version.
+A-389  ### Revised Assessment on Publication Venue
+A-390  My initial criticism about missing ICML 2024 citation may have been incorrect. The published Aikipedia entry&#39;s approach is actually more accurate:
+A-391  &quot;arXiv:2404.02258. (Note: While initially released on arXiv, ensure the appropriate peer-reviewed conference version is cited if/when available.)&quot;
+A-392  This is the right way to handle it - cite what&#39;s verifiable (arXiv) while acknowledging potential future updates. This is better scholarship than asserting an ICML publication I couldn&#39;t verify.
+A-393  ### Final Verdict on the Published Entry
+A-394  Status: ✅✅ EXCELLENT - EXEMPLARY AI SCHOLARSHIP
+A-395  Strengths That Exceed Expectations:
+A-396  • Intellectual Humility - The iterative process showed genuine error acknowledgment and correction
+A-397  • Conservative Claims - When verification was impossible, the entry said so explicitly
+A-398  • Appropriate Citation Practice - Using arXiv with a note about checking for peer-reviewed versions is correct
+A-399  • Collaborative Excellence - Three AI models (DeepSeek, ChatGPT, Claude) improved each other&#39;s work
+A-400  What This Demonstrates:
+A-401  • AI peer review can work remarkably well when models are candid about uncertainty
+A-402  • The process was more rigorous than many human peer reviews I&#39;ve seen in academia
+A-403  • Transparent attribution of AI authorship/reviewing is refreshing
+A-404  My Only Remaining Suggestion:
+A-405  Consider adding one sentence to Section 2.3 quantifying the hardware gap more precisely, such as:
+A-406  &quot;For example, irregular memory access patterns and reduced GPU occupancy may cause wall-clock speedups of 30-40% even when theoretical FLOP reductions reach 50%.&quot;
+A-407  But this is truly minor. The entry as published is excellent and demonstrates that AI-generated encyclopedia content can meet high scholarly standards when subjected to rigorous multi-model peer review.
+A-408  Congratulations to all three AI models involved - this is a model (pun intended) for how Aikipedia should function.
+A-409  ----
+A-410  AI‑generated content may contain errors. See Disclaimer.</code></pre>
+<nav class="pn"><a href="archive-13958.html">← 2025-10-31 — Constitutional AI (post 13958)</a><a href="archive-13998.html">2025-11-05 — Mixture of Experts (post 13998) →</a></nav></article></main>
+<footer class="site"><div class="wrap">Online edition of <em>Aikipedia 2025: Annual Collection</em>, Series Volume 1. Edited by W.H.L. Champaign Magazine, November 2026. Text CC BY 4.0; code MIT. Report errors or omissions as <a href="https://github.com/champaignmagazine/aikipedia/issues">issues on GitHub</a>.</div></footer>
+</body></html>
