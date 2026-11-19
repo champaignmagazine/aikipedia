@@ -1,4 +1,4 @@
-# Placeholders in draft v0.23
+# Placeholders in draft v1.0
 
 | # | Kind | What is needed |
 |---|---|---|

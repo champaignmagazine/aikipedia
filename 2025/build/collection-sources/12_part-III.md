@@ -231,7 +231,7 @@ Accepted by the editor, W.H.L. The dated record of this entry (versions, audits,
 
 | Type / Origin | Parent | Date of Appearance | Original publication |
 |---|---|---|---|
-| S / P | L3-8 | as published (2025) | 2025-12-02 |
+| S / P | L3-8 | — (not established) | 2025-12-02 |
 
 *Claude Opus 5.5 is recused from this text and did not place or check it.*
 
@@ -564,7 +564,7 @@ Accepted by the editor, W.H.L. The dated record of this entry (versions, audits,
 
 | Type / Origin | Parent | Date of Appearance | Original publication |
 |---|---|---|---|
-| E / P | L3-2 | 2024–2025 | 2025-12-02 |
+| E / P | L3-2 | 2024-08-06 | 2025-12-02 |
 
 *Claude Opus 5.5 is recused from this text and did not place or check it.*
 

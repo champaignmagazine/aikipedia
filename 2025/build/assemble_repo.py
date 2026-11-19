@@ -7,6 +7,10 @@ if R.exists(): shutil.rmtree(R)
 (R / '2025' / 'pdf').mkdir(parents=True); (R / '2025' / 'build').mkdir(parents=True)
 subprocess.run(['python3', str(TS / 'build_site.py'), str(SRC), str(R / '2025' / 'online'), PDF.name], check=True)
 shutil.copy(PDF, R / '2025' / 'pdf' / PDF.name)
+# the printed edition URL .../2025/pdf/ must serve a page: a short landing page that links to (and forwards to) the PDF
+(R / '2025' / 'pdf' / 'index.html').write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aikipedia 2025: Annual Collection — PDF edition</title><meta http-equiv="refresh" content="0; url={PDF.name}"></head>
+<body><p><a href="{PDF.name}">Aikipedia 2025: Annual Collection — PDF edition</a></p></body></html>''', encoding='utf-8')
 ed = re.search(r'edition: "([^"]+)"', (SRC / '00_front-matter.md').read_text(encoding='utf-8')).group(1)
 proof = 'draft' in ed
 B = R / '2025' / 'build'
@@ -67,7 +71,7 @@ Material quoted from third-party sources remains subject to its own terms. Code 
 ''')
 (R / 'CHANGELOG.md').write_text(f'''# Changelog
 
-## 2025 collection, Series Volume 1 · {"proof, " + ed if proof else "first release · November 2026"}
+## 2025 collection, Series Volume 1 · {"proof, " + ed if proof else "first release · November 18, 2026"}
 
 *Aikipedia 2025: Annual Collection* is published in two editions, built from the same sources:
 
@@ -94,7 +98,7 @@ Later years get their own folders when their collections are prepared.
 
 ## Status
 
-*Aikipedia 2025: Annual Collection* (Series Volume 1). {"This is a proof (" + ed + "); it is not the released edition." if proof else "Released November 2026."} See [CHANGELOG.md](CHANGELOG.md).
+*Aikipedia 2025: Annual Collection* (Series Volume 1). {"This is a proof (" + ed + "); it is not the released edition." if proof else "Released November 18, 2026."} See [CHANGELOG.md](CHANGELOG.md).
 
 - [Online edition](https://champaignmagazine.github.io/aikipedia/2025/online/)
 - [PDF edition](https://champaignmagazine.github.io/aikipedia/2025/pdf/{PDF.name})

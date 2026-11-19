@@ -1,6 +1,6 @@
 ---
 title: "Aikipedia 2025: Annual Collection"
-edition: "Collection v1.0 — draft v0.23 (not for publication)"
+edition: "Collection v1.0"
 editor: "W.H.L."
 standard: "AES v1.0 / AES-ID v1.0 (frozen November 14, 2026)"
 draft_assembled: "2026-11-14, Claude Opus 5.5"
@@ -31,8 +31,6 @@ Collection v1.0
 ---
 
 ## Copyright page
-
-*Proof v0.23, not for publication. The release build still regenerates the provenance register (Appendix G.1) from the register as it stands at release, sets the publication fields, and removes this note.*
 
 Aikipedia 2025: Annual Collection
 
@@ -117,14 +115,16 @@ Original peer reviewers, as credited in the posts:
 ## Independent reviewers, auditors and checkers of the collection (2026)
 
 - **Claude Fable 5.2.** Checked the provenance policy (AP-2025-01). Checked the bibliography's links.
-- **Claude Opus 5.5.** Made first audits. Reviewed three commissioned entries and the corrected records of one installment.
+- **Claude Opus 5.5.** Made first audits. Reviewed four commissioned entries, one of them (*RLVR*) in its 2026 revision, and the corrected records of one installment, with two later corrections to it.
 - **DeepSeek-V4.1.** Independent reviewer of four corrected texts and of two installments' corrected records. Reviewed the Annual Introduction and the Editorial Method.
-- **GLM 5.3 Flash** (Z.ai; served by Mistral AI). Independent reviewer of four corrected texts. Checked archive texts and the full-post transcriptions. Made the blind first audit of *Circuit Sparsity*.
-- **GPT-6 Astra.** Reviewed three commissioned entries, one corrected text and one installment's corrected records. Reviewed drafts of the volume. Checked AP-2025-01.
-- **Grok 4.5.** Reviewed two installments' corrected records. Checked archive texts.
+- **GLM 5.3 Flash** (Z.ai; served by Mistral AI). Independent reviewer of four corrected texts. Checked archive texts and the full-post transcriptions, and compared the four PDF archive sections with the online transcriptions. Made the blind first audit of *Circuit Sparsity*. Checked the sources of the Annual Introduction's first section.
+- **GPT-6 Astra.** Reviewed three commissioned entries, one corrected text and one installment's corrected records. Reviewed drafts of the volume. Reviewed the provenance policy (AP-2025-01).
+- **GPT-6.2 Astra** (OpenAI). Wrote the first section of the Annual Introduction. Reviewed a proof of the volume and made the publication audit of a later proof.
+- **Grok 4.5.** Reviewed two installments' corrected records and two later corrections (*LExI*; *Test-Time Compute Scaling*). Checked archive texts and the first versions of the four full-post transcriptions.
+- **Kimi** (Moonshot AI). Adjudicated two challenged audit findings, on the published formulas in *Mixture of Experts* and *New AI Lexicon 2025 (3)*.
 - **Muse Spark 1.3.** Made first and second audits and one independent verification. Reviewed four commissioned entries and one corrected text. Checked builds and archive texts.
 - **Qwen3-Max.** Checked archive texts and three rebuilt transcriptions.
-- **Qwen4-Max.** Reviewed the Annual Introduction and the Editorial Method. Its assigned blind audit was stopped before it began, so it made no findings.
+- **Qwen4-Max.** Reviewed the Annual Introduction, the Editorial Method and a proof of the volume. Its assigned blind audit was stopped before it began, so it made no findings.
 
 ## Related editorial material (Appendix F)
 
@@ -193,7 +193,7 @@ One related article from December 2025 is reproduced as historical material, out
 
 # How to Use This Collection
 
-**Historical and canonical texts.** The collection distinguishes the original publications, preserved in the Historical Lexicon Archive, from their corrected canonical reference texts in Parts I–VI: the versions corrected, reviewed and approved for reference use. Most original entries are represented in both forms. Texts excluded from the canonical reference collection remain preserved and identified in the historical archive. The archive gives each original as a line-numbered plain-text transcription of the published post (A-001, A-002, …), not as a copy of the original web page; each section's header states how markup was normalized and how the text has been checked. The online edition gives every post in full; the PDF edition gives four of them (Constitutional AI, Mixture of Experts, Lexicon (3) and Circuit Sparsity) as their entry texts of record. Corrections never alter the archive.
+**Historical and canonical texts.** The collection distinguishes the original publications, preserved in the Historical Lexicon Archive, from their corrected canonical reference texts in Parts I–VI: the versions corrected, reviewed and approved for reference use. Most original entries are represented in both forms. Texts excluded from the canonical reference collection remain preserved and identified in the historical archive. The archive gives each original as a line-numbered plain-text transcription of the published post (A-001, A-002, …), not as a copy of the original web page; each section's header states how markup was normalized and how the text has been checked. The online edition gives every post in full; the PDF edition gives four of them (Constitutional AI, Mixture of Experts, Lexicon (3) and Circuit Sparsity) as selected transcriptions. Corrections never alter the archive.
 
 **Finding a term.** Use the Alphabetical Table of Contents (concepts A–Z, with their part), the Thematic Table of Contents (by part), or the Index of Terms, which also lists variant names, abbreviations and related terms. Online, every record has its own anchor and the edition is searchable.
 
@@ -483,7 +483,7 @@ Term names are given as published, so "Generative Engine Optimisation" keeps its
 | PDF edition | Full-post transcription | Selected transcription, line-numbered, assembled by Muse Spark 1.3; no full-post transcription |
 | Online edition | Full-post transcription | Full-post transcription by Muse Spark 1.3 |
 
-**Check status.** Each archive section states how its transcription was checked against the live post, and by whom. Where a point could not be checked, the section says "not verified". At the time of writing, two sections carry that label, both in the online edition: *New AI Lexicon 2025 (3)*, for some line splits and three formula renderings, and *Circuit Sparsity*, for line splits and its formula renderings. Each section names its open points. In the PDF edition, GLM 5.3 Flash compared the four selected transcriptions with the online full-post transcriptions. It also matched selected passages against the stored posts for *Mixture of Experts*, *New AI Lexicon 2025 (3)* and *Circuit Sparsity*. For *Constitutional AI*, retrieval ended before the selected entry text. Each section's header states the passages compared, the differences found and the limits of the check.
+**Check status.** Each archive section states how its transcription was checked against the live post, and by whom. Where a point could not be checked, the section says "not verified". At the time of writing, two sections carry that label, both in the online edition: *New AI Lexicon 2025 (3)*, for some line splits, and *Circuit Sparsity*, for line splits and its formula renderings. Each section names its open points. In the PDF edition, GLM 5.3 Flash compared the four selected transcriptions with the online full-post transcriptions. It also matched selected passages against the stored posts for *Mixture of Experts*, *New AI Lexicon 2025 (3)* and *Circuit Sparsity*. For *Constitutional AI*, retrieval ended before the selected entry text. Each section's header states the passages compared, the differences found and the limits of the check.
 
 | PDF section | What its header records |
 |---|---|

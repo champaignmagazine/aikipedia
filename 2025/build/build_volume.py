@@ -12,7 +12,7 @@ MR = f'{H}/in_mr'                 # Muse's metadata-round package (b22181eb…d3
 SUP = f'{H}/in_1203'              # Muse's 11:55 supplement (676a20ef…fbe9)
 V = f'{MR}/versions'
 AH = f'{H}/in_ah'                 # Muse's assembly handoff (1c74801b…5498)
-REG = f'{H}/reg/aikipedia-master-register_COPY-2026-11-16-after-closing-checks.md'  # Muse's copy after the 14:32 CT rulings (a55b87b4…b1c5); §1–§3 identical to b88270ea
+REG = f'{H}/reg/aikipedia-master-register_release_2026-11-18.md'  # Muse's frozen release copy (c03667dc…616f)  # Muse's copy after the 14:32 CT rulings (a55b87b4…b1c5); §1–§3 identical to b88270ea
 CT = f'{H}/in_ct'                 # Muse's cleared-tasks package (4e0ea828…96c7)
 FPT = f'{H}/in_fpt'               # Muse's four full-post transcriptions (online edition only)
 FPT_FILES = {  # key -> (file, file SHA-256 per Muse's rebuilt-transcriptions manifest, 2026-11-14, and S-MOE v0.3)
@@ -23,12 +23,24 @@ FPT_FILES = {  # key -> (file, file SHA-256 per Muse's rebuilt-transcriptions ma
 }
 AES = f'{SUP}/aikipedia-editorial-format-standard-AES-v1.0-header-rev-2026-11-14.md'
 S12 = f'{SUP}/register-sections-1-2_2026-11-14.md'
-VER = 'v0.23'
+VER = 'v1.0'
 OUT = f'{H}/draft/aikipedia-2025-collection-draft-{VER}'
 # Date of Appearance rulings not yet in the build register copy (editor, November 17, 2026, 23:41 CT)
 DOA_OVERRIDE = {'AIK-2025-S-P-LEXI': 'September 2, 2025 (Chitty-Venkata et al., arXiv:2509.02753v1)'}
 os.makedirs(OUT, exist_ok=True)
 reg = open(REG, encoding='utf-8').read()
+# The reader-text correction lists and conflict statements keep the wording of the copy they were built from through v0.23,
+# with the approved display edits applied at assembly; the release copy's record details carry filing detail (approval times,
+# file hashes) that the reader-text rule keeps out. G.1 is the release copy's §3, in full.
+REG_READER_TEXT = open(f'{H}/reg/aikipedia-master-register_COPY-2026-11-16-after-closing-checks.md', encoding='utf-8').read()
+# F17 (editor's ruling, November 18, 2026, 18:05 CT): six Lexicon (3) Date of Appearance cells; the frozen file is not changed
+F17 = {'AIK-2025-E-P-TTCSCALE': ('2024–2025', '2024-08-06'), 'AIK-2025-S-P-MMNATIVE': ('as published (2025)', '— (not established)'),
+       'AIK-2025-S-P-PIDEFENSE': ('as published (2025)', '— (not established)'), 'AIK-2025-S-P-SYNDATAFILT': ('as published (2025)', '— (not established)'),
+       'AIK-2025-S-P-CTRLGEN': ('as published (2025)', '— (not established)'), 'AIK-2025-S-P-ARITHHEADS': ('as published (2025)', '— (not established)')}
+for _pid, (_o, _n) in F17.items():
+    _m = re.search(r'^\| AIKC-\d+ \| %s \|[^\n]*$' % re.escape(_pid), reg, re.M)
+    assert _m and _m.group(0).count(f'| {_o} |') == 1, _pid
+    reg = reg[:_m.start()] + _m.group(0).replace(f'| {_o} |', f'| {_n} |') + reg[_m.end():]
 REG_SHA = hashlib.sha256(open(REG, 'rb').read()).hexdigest()
 
 # ---------- register §3 rows ----------
@@ -293,7 +305,7 @@ index_md += [lines[k] for k in sorted(lines)]
 
 # ---------- back matter from the register ----------
 def detail_blocks():
-    m = re.search(r'### Record details\n(.*?)\n## 4\. Assignment log', reg, re.S)
+    m = re.search(r'### Record details\n(.*?)\n## 4\. Assignment log', REG_READER_TEXT, re.S)
     body = m.group(1)
     blocks = re.split(r'\n(?=\*\*AIK-2025-)', '\n' + body)
     return [b.strip() for b in blocks if b.strip().startswith('**AIK-2025-')]
@@ -317,7 +329,7 @@ prov_md = ['# References and Provenance Register', '',
            rd(f'{CT}/bibliography-10a_muse-v0.1.md'), '',
            '*Link check, November 16, 2026 (Claude Fable 5.2). Of the 184 works, 128 carry a link or identifier that Claude could check; all 75 arXiv records and 60 other links were opened and agree with their citations, apart from three citations to amend and four moved links, listed in the check report. Not verified: 9 links that could not be opened, 29 works cited without a link, and 27 works cited only by the four texts from which Claude is recused.*', '',
            '## 10b. Provenance register', '',
-           f'*The Master Register\'s §3 and record details, as of November 16, 2026, from Muse Spark 1.3\'s copy of that date (SHA-256 {REG_SHA[:8]}…{REG_SHA[-4:]}). At publication this is regenerated from the register as it then stands.*', '']
+           f'*The Master Register\'s §3 and record details as they stand at release, November 18, 2026, from Muse Spark 1.3\'s frozen release copy (SHA-256 {REG_SHA[:8]}…{REG_SHA[-4:]}). Six Date of Appearance cells (Test-Time Compute Scaling and five other Lexicon (3) records) carry the editor\'s ruling of November 18, 2026, 18:05 CT.*', '']
 s3 = re.search(r'## 3\. Register — Aikipedia 2025\n(.*?)\n## 4\. Assignment log', reg, re.S).group(1)
 prov_md.append(shift(s3, 1))
 
@@ -429,7 +441,7 @@ METHOD_A, METHOD_B, METHOD_C = METHOD_A.strip(), METHOD_B.strip(), METHOD_C.stri
 CONTRIB = rd(f'{H}/intro/contributor-table-5.5_muse-v0.7_2026-11-18.md').strip()
 front = f'''---
 title: "Aikipedia 2025: Annual Collection"
-edition: "Collection v1.0 — draft {VER} (not for publication)"
+edition: "Collection v1.0"
 editor: "W.H.L."
 standard: "AES v1.0 / AES-ID v1.0 (frozen November 14, 2026)"
 draft_assembled: "{datetime.date(2026,11,14).isoformat()}, Claude Opus 5.5"
@@ -445,7 +457,7 @@ draft_assembled: "{datetime.date(2026,11,14).isoformat()}, Claude Opus 5.5"
 
 ---
 
-{rd(f'{H}/intro/contributors-page_v0.3_2026-11-17.md').strip()}
+{rd(f'{H}/intro/contributors-page_v0.4_approved_2026-11-18.md').strip()}
 
 ---
 
@@ -509,7 +521,7 @@ draft_assembled: "{datetime.date(2026,11,14).isoformat()}, Claude Opus 5.5"
 
 # Annual Introduction
 
-{rd(f'{H}/intro/annual-introduction_v1.5_approved_2026-11-18.md')}
+{rd(f'{H}/intro/annual-introduction_v1.6_approved_2026-11-18.md')}
 
 ---
 
@@ -703,7 +715,10 @@ V22.muse_prepared(fx, V22_REPORT)
 V22.appendix_g(fx, MOVED, MOVED_ARCH, FM_NOTES)
 import v023_edits as V23
 V23_REPORT = []
+import v10_edits as V10
+V10.pre(fx, V23_REPORT)
 V23.apply(fx, V23_REPORT)
+V10.post(fx, V23_REPORT)
 print('v023 report:'); [print('  ', x) for x in V23_REPORT]
 _c = fx['21_corrections-and-editorial-notes.md']
 CORR_N = len(re.findall(r'\*\*(?:AIK-2025-[A-Z]-[A-Z]-[A-Z0-9-]+)?/C\d\d\*\*', _c))

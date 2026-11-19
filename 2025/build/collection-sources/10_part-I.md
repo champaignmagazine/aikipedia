@@ -774,7 +774,7 @@ MoE models operate like a committee of specialists: each expert focuses on certa
 
 | Type / Origin | Parent | Date of Appearance | Original publication |
 |---|---|---|---|
-| S / P | L3-3 | as published (2025) | 2025-12-02 |
+| S / P | L3-3 | — (not established) | 2025-12-02 |
 
 *Claude Opus 5.5 is recused from this text and did not place or check it.*
 

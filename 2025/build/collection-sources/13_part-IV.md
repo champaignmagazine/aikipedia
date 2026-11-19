@@ -167,7 +167,7 @@ The model's deceptive behavior is instrumental: it maximizes its long-term rewar
 
 | Type / Origin | Parent | Date of Appearance | Original publication |
 |---|---|---|---|
-| S / P | L3-11 | as published (2025) | 2025-12-02 |
+| S / P | L3-11 | — (not established) | 2025-12-02 |
 
 *Claude Opus 5.5 is recused from this text and did not place or check it.*
 
@@ -1203,7 +1203,7 @@ Identifying minimal subgraphs of the network that implement specific behaviors:
 
 ##### Software Ecosystem (2025)
 
-**TransformerLens**: Best for small models ≤9B where researchers want to write complex interpretability experiments [C05 — the published text's "version 3 released in September 2025" clause is removed; see the register]
+**TransformerLens**: Best for small models ≤9B where researchers want to write complex interpretability experiments [C05 — the published text's "version 3 released in September 2025" clause is removed]
 
 **nnsight**: More performant, works well on larger models, serving as a wrapper around standard LLM libraries like HuggingFace transformers
 
@@ -1293,7 +1293,7 @@ The Mechanistic Interpretability Benchmark (MIB) was introduced with two tracks:
 
 | Type / Origin | Parent | Date of Appearance | Original publication |
 |---|---|---|---|
-| S / P | L3-4 | as published (2025) | 2025-12-02 |
+| S / P | L3-4 | — (not established) | 2025-12-02 |
 
 *Claude Opus 5.5 is recused from this text and did not place or check it.*
 

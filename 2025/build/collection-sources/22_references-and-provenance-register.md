@@ -2,8 +2,7 @@
 
 ## Consolidated bibliography
 
-*Compiled by Muse Spark 1.3, November 14, 2026, from the entries' own References, Primary Sources, and References and Secondary Sources sections in Parts I–VI of draft v0.3, and from the inline References lists in the short records' as-published lines. 184 works, deduplicated, from 199 citation instances in 30 records. Citations are given as the entries cite them, with per-entry labels, correction markers, and entry-specific glosses removed; no metadata has been added. 36 works are cited without a DOI, arXiv identifier, or URL, as the entries cite them. Works named only in entry prose (author–year mentions, Notable Systems sections) are not included; the Historical Lexicon Archive's reference lists are preserved in the archive sections and are not duplicated here. Link checking is the builder's step; the independent reviewer samples.*
-
+*Each work is listed once, with the records that cite it.*
 
 - Agarwal, R., Singh, A., Zhang, L. M., et al. "Many-Shot In-Context Learning." NeurIPS 2024. arXiv:2404.11018. https://arxiv.org/abs/2404.11018 *Cited by: `AIK-2025-F-N-CONTEXTROT`.*
 - Agarwal, R., Vieillard, N., Zhou, Y., Stanczyk, P., Ramos, S., Geist, M., & Bachem, O. (2024). On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes. *ICLR 2024*. arXiv:2306.13649 (v1 June 23, 2023). https://arxiv.org/abs/2306.13649 *Cited by: `AIK-2025-F-P-ONPOLDISTIL`.*

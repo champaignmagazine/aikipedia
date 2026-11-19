@@ -1,6 +1,6 @@
 # Historical Lexicon Archive
 
-*The Historical Lexicon Archive preserves the sixteen original Aikipedia publications of 2025, in date order, each as a full-post, line-numbered plain-text transcription of the published post, including its drafts, embedded reviews and dialogue. The transcriptions preserve the textual record; they are not copies of the original web pages, and each section's header states how markup, lists, links and special characters were normalized. The full-post transcriptions of Constitutional AI, Mixture of Experts, Lexicon (3) and Circuit Sparsity were prepared by Muse Spark 1.3 for this edition (13:10 CT rulings); the PDF edition gives those four as their entry texts of record. The canonical, corrected text is in the thematic parts (AES v1.0 §1, Amendment A). Line labels (A-nnn) are the archive's apparatus; the originals are set apart typographically from the canonical text.*
+*The Historical Lexicon Archive preserves the sixteen original Aikipedia publications of 2025, in date order, each as a full-post, line-numbered plain-text transcription of the published post, including its drafts, embedded reviews and dialogue. The transcriptions preserve the textual record; they are not copies of the original web pages, and each section's header states how markup, lists, links and special characters were normalized. The full-post transcriptions of Constitutional AI, Mixture of Experts, Lexicon (3) and Circuit Sparsity were prepared by Muse Spark 1.3 for this edition; the PDF edition gives those four as selected transcriptions. The canonical, corrected text is in the thematic parts (AES v1.0 §1, Amendment A). Line labels (A-nnn) are the archive's apparatus; the originals are set apart typographically from the canonical text.*
 
 *Checking against the live posts.* The transcriptions received fidelity checks against their live posts. Each section records the scope and outcome. Some line splits and formula renderings in Lexicon (3) and Circuit Sparsity remain not verified. Every check was a fidelity check only, not a substantive review. The checks were made under the checking briefs of November 14, 2026. On-Policy Distillation, Prefill–Decode Disaggregation and Lexicons (1) and (7) were checked by GLM 5.3 Flash. Mixture of Depths and Generative User Interfaces were checked by Grok 4.5, and GLM cross-sampled Generative User Interfaces. Continuous Autoregressive Language Models and Lexicon (5) were checked by Qwen3-Max. Lexicon (6) was checked by Muse Spark 1.3. Chain-of-Thought Prompting was checked by GLM and, for its final part, by Qwen3-Max. Lexicons (2) and (4) were checked by GLM, and each was corrected after its check (heading levels in Lexicon (2); one word in Lexicon (4)). Chain-of-Thought Prompting was also corrected after its check: a stray space at each of its 24 links was removed. The four sections held by Muse Spark 1.3 record their own status. Each section's header gives its file history.
 
@@ -1846,7 +1846,6 @@ A-069  • License & Attribution: Based on the CALM preprint and open-source rep
 - List bullets, including the figure legend's numbered list, are shown as "•", and table rows as "| … |".
 - Link text is kept.
 - The image is shown by its file name (attachment 14035, `copilot_20251109_162736.png`).
-- The rendering was transcribed from the connector's output, because this session could not save the raw HTML to disk.
 
 **Reference link targets in the post:**
 - arXiv:2401.09670 and arXiv:2504.03775;
@@ -1966,7 +1965,6 @@ A-086  #### AI‑generated content may contain errors. See Disclaimer.
 **What this file is.** A line-numbered plain-text rendering of the post's content, made for line references (A-nnn). It is not the HTML.
 - Markup is dropped, and empty superscript tags are omitted.
 - List bullets are shown as "•", table rows as "| … |", and block quotes as ">".
-- The rendering was transcribed from the connector's output, because this session could not save the raw HTML to disk.
 - **Quotation marks and ellipses (display conversion).** This file was transcribed from the post's stored content and keeps its characters as stored. Where the stored content has straight quotes (" and ') or three periods (...), the site displays curly quotes and "…" through WordPress's display conversion (wptexturize). A checker reading the displayed page will therefore see curly quotes and "…" where this file has straight ones. This is not a difference in wording, and no line is changed for it. Where the stored content already has curly quotes or "…", the file has them too.
 
 

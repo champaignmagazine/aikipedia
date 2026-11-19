@@ -1,16 +1,16 @@
 {
  "edition": "pdf",
- "draft": "v0.23",
- "register_sha256": "3e7bad424031654aa525fd5f51069a5dfafd9b0ec6ef9b34651cc2629ac667d4",
+ "draft": "v1.0",
+ "register_sha256": "c03667dcd220cbe268ae7e0329f42f327807680a13f057e5eb8b38d78db7616f",
  "word_count_method": "whitespace tokens of the combined file",
- "word_count": 212435,
- "combined_file": "editions/aikipedia-2025-collection-draft-v0.23_combined_pdf.md",
+ "word_count": 214051,
+ "combined_file": "editions/aikipedia-2025-collection-draft-v1.0_combined_pdf.md",
  "combined_separator": "\n\n---\n\n",
  "combined_separator_note": "the actual string: a blank line, three hyphens, a blank line",
  "asset_paths": "relative to the draft package root (e.g. assets/cover.png)",
  "tokenizer": "Python str.split() (all Unicode whitespace)",
  "build_register": {
-  "sha256": "3e7bad424031654aa525fd5f51069a5dfafd9b0ec6ef9b34651cc2629ac667d4",
+  "sha256": "c03667dcd220cbe268ae7e0329f42f327807680a13f057e5eb8b38d78db7616f",
   "what": "Muse Spark 1.3 copy of the Master Register, November 16, 2026, after the closing checks"
  },
  "register_stages": [
@@ -29,28 +29,28 @@
   },
   {
    "stage": "Muse copy after the closing checks, November 16, 2026 (builds v0.14 onward)",
-   "sha256": "3e7bad424031654aa525fd5f51069a5dfafd9b0ec6ef9b34651cc2629ac667d4"
+   "sha256": "c03667dcd220cbe268ae7e0329f42f327807680a13f057e5eb8b38d78db7616f"
   }
  ],
  "per_file_words": {
-  "00_front-matter.md": 12968,
+  "00_front-matter.md": 13033,
   "01_tables-of-contents.md": 1349,
   "10_part-I.md": 9716,
   "11_part-II.md": 9352,
   "12_part-III.md": 6937,
-  "13_part-IV.md": 22545,
+  "13_part-IV.md": 22542,
   "14_part-V.md": 17478,
   "15_part-VI.md": 2987,
-  "20_historical-lexicon-archive.md": 60329,
+  "20_historical-lexicon-archive.md": 60287,
   "21_corrections-and-editorial-notes.md": 3454,
-  "22_references-and-provenance-register.md": 4949,
+  "22_references-and-provenance-register.md": 4832,
   "23_index-of-terms.md": 1290,
-  "30_appendices.md": 59069
+  "30_appendices.md": 60782
  },
  "files": [
   {
    "file": "00_front-matter.md",
-   "sha256": "ce9dfee410244dc3d57dba89499166000fa4708b6a55c713661e55472458ea51"
+   "sha256": "b6fd446879ef454d839ea86babf3f027be940be48f5fd94e25dec872ae049270"
   },
   {
    "file": "01_tables-of-contents.md",
@@ -58,19 +58,19 @@
   },
   {
    "file": "10_part-I.md",
-   "sha256": "7a5a703b6c00ea56c8ff23e0d572827a3de708d1e5296f4e3d02f7751b668b56"
+   "sha256": "508465b051f780a25b91879caf64673181a03ab5d38b2e28941d651947fdbd96"
   },
   {
    "file": "11_part-II.md",
-   "sha256": "8d73affefd1d3f36a63fafde0ff81cffe44f45dcd7e1b8c93e37ebd371425aea"
+   "sha256": "38a48a5ea8650125fec6bd37e6c6b8af9986c28c01a8b3a5da881da9e320cd77"
   },
   {
    "file": "12_part-III.md",
-   "sha256": "7a481a2d56bedd1ee3ad6b50cabb3c9414173a4e10dcb7667074f9538e2e14a7"
+   "sha256": "1cf51eaae7c0dfa6ade054cba000933268aade18442e46ddc5ec1359fe260b2b"
   },
   {
    "file": "13_part-IV.md",
-   "sha256": "34d367a9407d95cae81dc714dc124f4641adac7092ace93bab54629e5491fccc"
+   "sha256": "f6c2f874c1c49856326587316856ce6014ddf4055f12d11298a52bb032d927c6"
   },
   {
    "file": "14_part-V.md",
@@ -82,7 +82,7 @@
   },
   {
    "file": "20_historical-lexicon-archive.md",
-   "sha256": "1c759216bad37ac86e44dfb0a9f0dccb83bd3bbf65c59902af45bdd38a4f810c"
+   "sha256": "95e5218807bdeae7dcc3e415829215c75e7ab1ec78119ac1b22f39ab4227e62f"
   },
   {
    "file": "21_corrections-and-editorial-notes.md",
@@ -90,7 +90,7 @@
   },
   {
    "file": "22_references-and-provenance-register.md",
-   "sha256": "a33a1cbe903bfc28cc00e2e7e44c6a26f2b7cb1fc4a00778d8687e5504797052"
+   "sha256": "0683ba4df7688b11758f4ef738782d4939813ebc75d262e7dc630985d8f6dad9"
   },
   {
    "file": "23_index-of-terms.md",
@@ -98,7 +98,7 @@
   },
   {
    "file": "30_appendices.md",
-   "sha256": "fa6d0e19ffee3222fc0f9ecf36a93e58b2bced8a9f56b09ce79e2ca33eae3684"
+   "sha256": "c8b62464fb7914d6fc4bb703785dbbf2fce1f01944a7fd3b3017056d866ed7d0"
   }
  ],
  "sources": {
