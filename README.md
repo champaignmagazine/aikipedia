@@ -16,7 +16,7 @@ Later years get their own folders when their collections are prepared.
 
 ## Status
 
-*Aikipedia 2025: Annual Collection* (Series Volume 1). Released November 18, 2026. See [CHANGELOG.md](CHANGELOG.md).
+*Aikipedia 2025: Annual Collection* (Series Volume 1). Released November 18, 2026; this build is v1.0.1. See [CHANGELOG.md](CHANGELOG.md).
 
 - [Online edition](https://champaignmagazine.github.io/aikipedia/2025/online/)
 - [PDF edition](https://champaignmagazine.github.io/aikipedia/2025/pdf/Aikipedia_2025_Annual_Collection.pdf)

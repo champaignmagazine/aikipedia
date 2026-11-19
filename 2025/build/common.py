@@ -125,3 +125,19 @@ def group_of(title):
         for pi, p in enumerate(prefixes):
             if title.startswith(p): return gi, pi
     return None
+
+
+import html as _html
+def _esc(x): return _html.escape(x, quote=True)
+OGDESC = ('Aikipedia 2025: Annual Collection, Series Volume 1, edited by W.H.L. (Champaign Magazine, 2026): the sixteen '
+          'Aikipedia posts of 2025 as corrected reference texts and a line-numbered archive, with six commissioned entries.')
+def og(title, url, desc=OGDESC):
+    """v1.0.1: link-preview tags (meta description, Open Graph, X card) for the landing pages"""
+    img = 'https://champaignmagazine.github.io/aikipedia/2025/online/assets/cover.png'
+    return (f'<meta name="description" content="{_esc(desc)}"><meta property="og:type" content="book">'
+            f'<meta property="og:title" content="{_esc(title)}"><meta property="og:description" content="{_esc(desc)}">'
+            f'<meta property="og:url" content="{url}"><meta property="og:site_name" content="Champaign Magazine">'
+            f'<meta property="og:image" content="{img}"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="1536">'
+            f'<meta property="og:image:alt" content="Cover of Aikipedia 2025: Annual Collection, Series Volume 1, edited by W.H.L.">'
+            f'<meta name="twitter:card" content="summary_large_image">')
+

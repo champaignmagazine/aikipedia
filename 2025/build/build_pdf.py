@@ -399,14 +399,27 @@ def running_heads(src, dst, pages):
             c.save(); buf.seek(0); page.merge_page(PdfReader(buf).pages[0])
             page.compress_content_streams()
     # bookmarks: Chrome joins a wrapped heading's lines without a space ("WeCould"); restore each title from the heading text
-    heads = {re.sub(r'\s+', '', t): t for t in HEADINGS}
+    # v1.0.1: matched without regard to case (Part titles and lexicon record heads are set in capitals by CSS, so the
+    # bookmark's case differs from the heading text); the spaces are restored and the bookmark's own case is kept
+    heads = {re.sub(r'\s+', '', t).lower(): t for t in HEADINGS}
+    def respace(orig, head):
+        chars = [c for c in orig if not c.isspace()]; out = []; j = 0
+        for c in head:
+            if c.isspace():
+                if out and out[-1] != ' ': out.append(' ')
+            else: out.append(chars[j]); j += 1
+        return ''.join(out).strip()
     from pypdf.generic import NameObject, TextStringObject
     def walk(node):
         while node is not None:
             node = node.get_object(); t = node.get('/Title')
             if t is not None:
-                k = re.sub(r'\s+', '', str(t))
-                if k in heads and heads[k] != str(t): node[NameObject('/Title')] = TextStringObject(heads[k]); FIXED.append(heads[k])
+                k = re.sub(r'\s+', '', str(t)).lower()
+                if k in heads:
+                    new = respace(str(t), heads[k])
+                    # a Part heading's numeral and title are separate elements with no space between them
+                    new = re.sub(r'^(PART [IVX]+)(?=[A-Z][a-z])', r'\1 ', new)
+                    if new != str(t): node[NameObject('/Title')] = TextStringObject(new); FIXED.append(new)
             if node.get('/First') is not None: walk(node['/First'])
             node = node.get('/Next')
     ol = w._root_object.get('/Outlines')

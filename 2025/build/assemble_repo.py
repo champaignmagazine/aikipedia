@@ -21,22 +21,23 @@ shutil.copy(H / 'scripts' / 'build_volume.py', B / 'build_volume.py')
 shutil.copy(SRC / 'editions' / 'pdf.json', B / 'pdf-edition-manifest.json'); shutil.copy(SRC / 'editions' / 'online.json', B / 'online-edition-manifest.json')
 STY = '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">'
 BAN = f'<div class="banner">Proof: {ed}. Not yet released.</div>' if proof else ''
-def land(title, css, body, up=''):
+sys.path.insert(0, str(TS)); from common import og  # v1.0.1: link-preview tags
+def land(title, css, body, up='', url=''):
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title}</title>{STY}<link rel="stylesheet" href="{css}"></head><body>
+<title>{title}</title>{og(title, url)}{STY}<link rel="stylesheet" href="{css}"></head><body>
 <header class="site"><div class="wrap"><div class="brand"><a href="{up}index.html">Aikipedia</a></div><nav><a href="https://champaignmagazine.com">Champaign Magazine</a></nav></div></header>
 <main class="wrap">{BAN}{body}</main><footer class="site"><div class="wrap">Edited by W.H.L. Text CC BY 4.0; code MIT. <a href="https://github.com/champaignmagazine/aikipedia">Source on GitHub</a> · <a href="https://github.com/champaignmagazine/aikipedia/issues">Report an error</a>.</div></footer></body></html>'''
 YEAR = '''<p class="kicker">Aikipedia · Series Volume 1</p><h1>Aikipedia 2025: Annual Collection</h1>
 <p class="lede">The sixteen Aikipedia publications of 2025 as corrected reference texts and as a historical archive, with six entries commissioned for the collection. Edited by W.H.L.; Champaign Magazine, November 2026.</p>
 <div class="two"><div class="box"><h3><a href="online/index.html">Online edition</a></h3><p>The complete collection as web pages, with search, and full-post transcriptions of all sixteen original posts in the Historical Lexicon Archive.</p></div>
-<div class="box"><h3><a href="pdf/%s">PDF edition</a></h3><p>The collection as a 7 × 10 in book, with selected transcriptions in the archive for four posts. The two editions differ only there.</p></div></div>''' % PDF.name
-(R / '2025' / 'index.html').write_text(land('Aikipedia 2025: Annual Collection', 'online/assets/style.css', YEAR, '../'), encoding='utf-8')
+<div class="box"><h3><a href="pdf/%s">PDF edition</a></h3><p>The collection as a 7 × 10 in book: twelve posts in full in the archive and selected transcriptions of the other four. The two editions differ only there.</p></div></div>''' % PDF.name
+(R / '2025' / 'index.html').write_text(land('Aikipedia 2025: Annual Collection', 'online/assets/style.css', YEAR, '../', 'https://champaignmagazine.github.io/aikipedia/2025/'), encoding='utf-8')
 ROOT = '''<p class="kicker">Champaign Magazine</p><h1>Aikipedia</h1>
 <p class="lede">A knowledge repository devoted to emerging AI terms and concepts, written by leading AI models and edited by W.H.L., collected each year in an annual volume.</p>
 <h2><a href="2025/index.html">2025 · Series Volume 1</a></h2>
 <div class="two"><div class="box"><h3><a href="2025/online/index.html">Online edition</a></h3><p>All entries, the historical archive and search.</p></div>
 <div class="box"><h3><a href="2025/pdf/%s">PDF edition</a></h3><p>The annual collection as a book.</p></div></div>''' % PDF.name
-(R / 'index.html').write_text(land('Aikipedia · Annual Collections', '2025/online/assets/style.css', ROOT), encoding='utf-8')
+(R / 'index.html').write_text(land('Aikipedia · Annual Collections', '2025/online/assets/style.css', ROOT, '', 'https://champaignmagazine.github.io/aikipedia/'), encoding='utf-8')
 (R / 'LICENSE').write_text('''MIT License
 
 Copyright (c) 2026 Champaign Magazine
@@ -69,9 +70,20 @@ Attribute as: *Aikipedia 2025: Annual Collection*, edited by W.H.L., Champaign M
 
 Material quoted from third-party sources remains subject to its own terms. Code (the build scripts, stylesheets and site scripts) is licensed separately under the MIT License; see `LICENSE`.
 ''')
+V101 = '''## 2025 collection · v1.0.1 · November 18, 2026
+
+A corrected build of the first release, approved by the editor on November 18, 2026, at 21:25 CT. No entry's text, correction or count changed.
+
+- **PDF bookmarks.** Nineteen bookmark titles had lost a space where their headings wrap or are set in parts: the six Part titles, such as "PART IModels andArchitectures", and thirteen lexicon and corrected-entry headings, such as "(TYPES)" for "(TYPE S)". Their spaces are restored. No bookmark changed its page.
+- **Annual Introduction.** A note under the table of parts says that its word counts are rounded to the nearest hundred, so they need not add up exactly to the totals in the text.
+- **Landing pages.** The root, 2025 and online-edition landing pages carry a description and link-preview tags. The 2025 landing page describes the PDF edition's archive as "twelve posts in full in the archive and selected transcriptions of the other four".
+
+The first release, v1.0, is tagged `v1.0`.
+
+''' if ed.endswith('v1.0.1') else ''
 (R / 'CHANGELOG.md').write_text(f'''# Changelog
 
-## 2025 collection, Series Volume 1 · {"proof, " + ed if proof else "first release · November 18, 2026"}
+{V101}## 2025 collection, Series Volume 1 · {"proof, " + ed if proof else "first release · November 18, 2026"}
 
 *Aikipedia 2025: Annual Collection* is published in two editions, built from the same sources:
 
@@ -98,7 +110,7 @@ Later years get their own folders when their collections are prepared.
 
 ## Status
 
-*Aikipedia 2025: Annual Collection* (Series Volume 1). {"This is a proof (" + ed + "); it is not the released edition." if proof else "Released November 18, 2026."} See [CHANGELOG.md](CHANGELOG.md).
+*Aikipedia 2025: Annual Collection* (Series Volume 1). {"This is a proof (" + ed + "); it is not the released edition." if proof else ("Released November 18, 2026; this build is v1.0.1." if ed.endswith("v1.0.1") else "Released November 18, 2026.")} See [CHANGELOG.md](CHANGELOG.md).
 
 - [Online edition](https://champaignmagazine.github.io/aikipedia/2025/online/)
 - [PDF edition](https://champaignmagazine.github.io/aikipedia/2025/pdf/{PDF.name})

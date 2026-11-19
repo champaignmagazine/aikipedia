@@ -78,13 +78,15 @@ CSS = (TS / 'site' / 'style.css').read_text()
 shutil.copy(SRC / 'assets' / 'cover.png', OUT / 'assets' / 'cover.png')
 shutil.copy(TS / 'site' / 'search.js', OUT / 'assets' / 'search.js')
 
-def page(title, body, prev=None, nxt=None):
+from common import og  # v1.0.1: link-preview tags
+
+def page(title, body, prev=None, nxt=None, head=''):
     pn = ''
     if prev or nxt:
         pn = '<nav class="pn">' + (f'<a href="{prev[0]}">← {E(prev[1])}</a>' if prev else '<span></span>') + (f'<a href="{nxt[0]}">{E(nxt[1])} →</a>' if nxt else '<span></span>') + '</nav>'
     pdf = f'<a href="../pdf/{E(PDFNAME)}">PDF edition</a>' if PDFNAME else ''
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{E(title)} · Aikipedia 2025</title>
+<title>{E(title)} · Aikipedia 2025</title>{head}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css"></head><body>
@@ -124,7 +126,7 @@ home = f'''<div class="home"><div><p class="kicker">Aikipedia · Series Volume 1
 <p>The sixteen Aikipedia publications of 2025 as corrected reference texts and as a historical archive, with six entries commissioned for the collection. This online edition carries the full-post transcriptions of all sixteen original posts.</p>
 <p><a class="btn" href="search.html">Search the collection</a>{pdfl}</p>
 <h2>Contents</h2><ul class="toc">{''.join(rows)}</ul></div><img class="cover" src="assets/cover.png" alt="Cover of Aikipedia 2025: Annual Collection"></div>'''
-(OUT / 'index.html').write_text(page('Contents', home), encoding='utf-8')
+(OUT / 'index.html').write_text(page('Contents', home, head=og('Aikipedia 2025: Annual Collection — Online edition', 'https://champaignmagazine.github.io/aikipedia/2025/online/')), encoding='utf-8')
 
 # search data: one item per record (h3 with an AIK id in the parts), one per archive post, one per other section
 items = []

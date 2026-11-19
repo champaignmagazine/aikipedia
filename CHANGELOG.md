@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025 collection · v1.0.1 · November 18, 2026
+
+A corrected build of the first release, approved by the editor on November 18, 2026, at 21:25 CT. No entry's text, correction or count changed.
+
+- **PDF bookmarks.** Nineteen bookmark titles had lost a space where their headings wrap or are set in parts: the six Part titles, such as "PART IModels andArchitectures", and thirteen lexicon and corrected-entry headings, such as "(TYPES)" for "(TYPE S)". Their spaces are restored. No bookmark changed its page.
+- **Annual Introduction.** A note under the table of parts says that its word counts are rounded to the nearest hundred, so they need not add up exactly to the totals in the text.
+- **Landing pages.** The root, 2025 and online-edition landing pages carry a description and link-preview tags. The 2025 landing page describes the PDF edition's archive as "twelve posts in full in the archive and selected transcriptions of the other four".
+
+The first release, v1.0, is tagged `v1.0`.
+
 ## 2025 collection, Series Volume 1 · first release · November 18, 2026
 
 *Aikipedia 2025: Annual Collection* is published in two editions, built from the same sources:

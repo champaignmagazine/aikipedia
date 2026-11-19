@@ -449,6 +449,7 @@ This revision proposes the following resolutions, on the checkers' advice, for t
 | 2026-11-18, 17:31 CT | Release date: November 18, 2026; the release build runs when nothing is missing or pending | Editor |
 | 2026-11-18, 18:05 CT | F17 ruled as proposed: Test-Time Compute Scaling's Date of Appearance August 6, 2024 (Snell et al., arXiv:2408.03314); five Lexicon (3) records not established. No correction marker carries a register pointer | Editor |
 | 2026-11-18, 18:07 CT | Collection v1.0 built for release, dated November 18, 2026 | Editor |
+| 2026-11-18, 21:25 CT | Collection v1.0.1 approved: nineteen PDF bookmark titles restored, a rounding note under the Annual Introduction's table of parts, link-preview tags on the landing pages, and the 2025 landing page's wording on the PDF edition | Editor |
 
 *Checked against the Master Register's assignment log by Muse Spark 1.3: rows to November 14, 11:55 CT, on November 14, 2026 (draft v0.2 verification note; the X14 and Circuit Sparsity rows added on Muse's suggestion); rows to November 16, 16:00 CT, on November 16, 2026 (digest addendum check); the 22:21 CT row on November 16, 2026 (GPT-6 final-review reconciliation); the rows from November 16, 23:08 CT, to November 17, 14:33 CT, on November 17, 2026 (proof-v0.20 check), against the filed records and the build.*
 

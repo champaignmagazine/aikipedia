@@ -1,6 +1,6 @@
 ---
 title: "Aikipedia 2025: Annual Collection"
-edition: "Collection v1.0"
+edition: "Collection v1.0.1"
 editor: "W.H.L."
 standard: "AES v1.0 / AES-ID v1.0 (frozen November 14, 2026)"
 draft_assembled: "2026-11-14, Claude Opus 5.5"
@@ -26,7 +26,7 @@ Champaign Magazine
 
 *Aikipedia · Annual Collections* · Series Volume 1
 
-Collection v1.0
+Collection v1.0.1
 
 ---
 
@@ -38,7 +38,7 @@ Edited by W.H.L.
 
 Published by Champaign Magazine, champaignmagazine.com
 
-Collection v1.0. First published November 2026.
+Collection v1.0.1. First published November 2026.
 
 © 2026 Champaign Magazine.
 
@@ -384,6 +384,8 @@ The volume arranges the 88 concepts in six thematic parts. Read together, the pa
 | IV. Alignment, Safety and Interpretability | 17 | 14 | 22,300 | 9,100 |
 | V. Agents, Tools and Applications | 17 | 15 | 17,200 | 6,900 |
 | VI. Embodied AI, Industry and Society | 13 | 13 | 2,800 | 2,800 |
+
+*Word counts are rounded to the nearest hundred, so the columns need not add up exactly to the totals given in the text.*
 
 **Part I, Models and Architectures.** Many of the year's architecture terms concern doing less computation per token:
 - routing tokens to a subset of experts or layers: mixture of depths, mixture of experts, layer-adaptive expert inference, latent experts;
