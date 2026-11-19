@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025 collection · v1.0.2 · November 18, 2026
+
+Approved by the editor on November 18, 2026, at 23:32 CT. No entry's text, correction or count changed.
+
+- **Appendix G.1.** The six lexicon containers (the Launch Edition and Lexicon (2), (3), (4), (5) and (7)) read "Pending" in the register's Collection publication column. They now read 2026-11-18, as their own record details already did, under Addendum 1 to the release register (Muse Spark 1.3, registrar).
+
+The earlier builds are tagged `v1.0` and `v1.0.1`.
+
 ## 2025 collection · v1.0.1 · November 18, 2026
 
 A corrected build of the first release, approved by the editor on November 18, 2026, at 21:25 CT. No entry's text, correction or count changed.
@@ -8,7 +16,7 @@ A corrected build of the first release, approved by the editor on November 18, 2
 - **Annual Introduction.** A note under the table of parts says that its word counts are rounded to the nearest hundred, so they need not add up exactly to the totals in the text.
 - **Landing pages.** The root, 2025 and online-edition landing pages carry a description and link-preview tags. The 2025 landing page describes the PDF edition's archive as "twelve posts in full in the archive and selected transcriptions of the other four".
 
-The first release, v1.0, is tagged `v1.0`.
+The first release, v1.0, is tagged `v1.0`; this build is tagged `v1.0.1`.
 
 ## 2025 collection, Series Volume 1 · first release · November 18, 2026
 

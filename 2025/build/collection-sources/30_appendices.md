@@ -450,6 +450,7 @@ This revision proposes the following resolutions, on the checkers' advice, for t
 | 2026-11-18, 18:05 CT | F17 ruled as proposed: Test-Time Compute Scaling's Date of Appearance August 6, 2024 (Snell et al., arXiv:2408.03314); five Lexicon (3) records not established. No correction marker carries a register pointer | Editor |
 | 2026-11-18, 18:07 CT | Collection v1.0 built for release, dated November 18, 2026 | Editor |
 | 2026-11-18, 21:25 CT | Collection v1.0.1 approved: nineteen PDF bookmark titles restored, a rounding note under the Annual Introduction's table of parts, link-preview tags on the landing pages, and the 2025 landing page's wording on the PDF edition | Editor |
+| 2026-11-18, 23:32 CT | Addendum 1 to the release register (Muse Spark 1.3) approved: the six lexicon containers' collection publication dates in G.1 read 2026-11-18, as their record details do; Collection v1.0.2 built with only that change | Editor |
 
 *Checked against the Master Register's assignment log by Muse Spark 1.3: rows to November 14, 11:55 CT, on November 14, 2026 (draft v0.2 verification note; the X14 and Circuit Sparsity rows added on Muse's suggestion); rows to November 16, 16:00 CT, on November 16, 2026 (digest addendum check); the 22:21 CT row on November 16, 2026 (GPT-6 final-review reconciliation); the rows from November 16, 23:08 CT, to November 17, 14:33 CT, on November 17, 2026 (proof-v0.20 check), against the filed records and the build.*
 
@@ -1127,7 +1128,7 @@ A-500  AI‑generated content may contain errors. See Disclaimer.
 | AIKC-000007 | AIK-2025-F-P-COTPROMPT | Chain-of-Thought Prompting | F | P | — | 2022-01-28 | 2025-10-30 | 2026-11-18 | v0.4.2 (accepted; metadata-only revision of v0.4.1) | Accepted |
 | AIKC-000008 | AIK-2025-F-P-MOE | Mixture of Experts (MoE) | F | P | — | 1991 | 2025-11-05 | 2026-11-18 | v0.5.2 (accepted; metadata-only revision of v0.5.1) | Accepted |
 | AIKC-000009 | AIK-2025-F-P-CONSTAI | Constitutional AI | F | P | — | 2022-12-15 | 2025-10-31 | 2026-11-18 | v0.5.2 (accepted; metadata-only revision of v0.5.1) | Accepted |
-| — (container) | AIK-2025-L-P-LEX2025N3 | New AI Lexicon 2025 (3) | L | P | — | — | 2025-12-02 | Pending | Records v0.3.2 (accepted; metadata-only revision of v0.3.1) | Accepted |
+| — (container) | AIK-2025-L-P-LEX2025N3 | New AI Lexicon 2025 (3) | L | P | — | — | 2025-12-02 | 2026-11-18 | Records v0.3.2 (accepted; metadata-only revision of v0.3.1) | Accepted |
 | AIKC-000010 | AIK-2025-E-P-COMPOUNDAI | Compound AI Systems | E | P | AIK-2025-L-P-LEX2025N3 (1) | 2024-02-18 | 2025-12-02 | 2026-11-18 | Records v0.3.2 | Accepted |
 | AIKC-000011 | AIK-2025-E-P-TTCSCALE | Test-Time Compute Scaling | E | P | AIK-2025-L-P-LEX2025N3 (2) | 2024-08-06 | 2025-12-02 | 2026-11-18 | Records v0.3.2 | Accepted |
 | AIKC-000012 | AIK-2025-S-P-MMNATIVE | Multimodal Native Architecture | S | P | AIK-2025-L-P-LEX2025N3 (3) | — (not established) | 2025-12-02 | 2026-11-18 | Records v0.3.2 | Accepted |
@@ -1144,7 +1145,7 @@ A-500  AI‑generated content may contain errors. See Disclaimer.
 | AIKC-000023 | AIK-2025-F-P-PDDISAGG | Prefill–Decode Disaggregation | F | P | — | 2024-01-18 | 2025-11-09 | 2026-11-18 | v0.2.2 (accepted; metadata-only revision of v0.2.1) | Accepted |
 | AIKC-000024 | AIK-2025-F-P-GENUI | Generative User Interfaces (GenUI) | F | P | — | 2023-10-11 | 2025-11-29 | 2026-11-18 | v0.2.3 (accepted; metadata-only revision of v0.2.2) | Accepted |
 | AIKC-000025 | AIK-2025-F-P-ONPOLDISTIL | On-Policy Distillation | F | P | — | 2024-01-17 | 2025-10-29 | 2026-11-18 | v0.3.2 (accepted; metadata-only revision of v0.3.1) | Accepted |
-| — (container) | AIK-2025-L-P-LEX2025N2 | New AI Lexicon 2025 (2) | L | P | — | — | 2025-12-01 | Pending | Records v0.2.3 (accepted; metadata-only revision of v0.2.2) | Accepted |
+| — (container) | AIK-2025-L-P-LEX2025N2 | New AI Lexicon 2025 (2) | L | P | — | — | 2025-12-01 | 2026-11-18 | Records v0.2.3 (accepted; metadata-only revision of v0.2.2) | Accepted |
 | AIKC-000026 | AIK-2025-E-P-WORLDMODEL | World Model (LLM-Integrated) | E | P | AIK-2025-L-P-LEX2025N2 (1) | 2018-03 (documented milestone) | 2025-12-01 | 2026-11-18 | Records v0.2.3 | Accepted |
 | AIKC-000027 | AIK-2025-E-P-KVSHARE | KV-Cache Sharing (On-Device Inference) | E | P | AIK-2025-L-P-LEX2025N2 (2) | — (not established) | 2025-12-01 | 2026-11-18 | Records v0.2.3 | Accepted |
 | AIKC-000028 | AIK-2025-S-P-NESTEDLEARN | Nested Learning (Continual AI) | S | P | AIK-2025-L-P-LEX2025N2 (3) | — (not established) | 2025-12-01 | 2026-11-18 | Records v0.2.3 | Accepted |
@@ -1158,7 +1159,7 @@ A-500  AI‑generated content may contain errors. See Disclaimer.
 | AIKC-000036 | AIK-2025-S-P-SOFTROBOT | Soft Robotics / Dexterous Manipulation | S | P | AIK-2025-L-P-LEX2025N2 (11) | — (not established) | 2025-12-01 | 2026-11-18 | Records v0.2.3 | Accepted |
 | AIKC-000037 | AIK-2025-S-P-VERTICALAI | Vertical AI Integration | S | P | AIK-2025-L-P-LEX2025N2 (12) | — (not established) | 2025-12-01 | 2026-11-18 | Records v0.2.3 | Accepted |
 | AIKC-000038 | AIK-2025-F-P-MOD | Mixture of Depths | F | P | — | 2024-04-02 | 2025-11-03 | 2026-11-18 | v0.3.2 (accepted; metadata-only revision of v0.3.1) | Accepted |
-| — (container) | AIK-2025-L-P-LEX2025LAUNCH | New AI Lexicon 2025 — Launch Edition | L | P | — | — | 2025-11-30 | Pending | Records v0.3 (accepted; C11 added November 13, 2026; C12 added November 18, 2026) | Accepted |
+| — (container) | AIK-2025-L-P-LEX2025LAUNCH | New AI Lexicon 2025 — Launch Edition | L | P | — | — | 2025-11-30 | 2026-11-18 | Records v0.3 (accepted; C11 added November 13, 2026; C12 added November 18, 2026) | Accepted |
 | AIKC-000039 | AIK-2025-S-P-MOLE | Mixture of Latent Experts (MoLE / MoLAE) | S | P | AIK-2025-L-P-LEX2025LAUNCH (M1) | — (not established) | 2025-11-30 | 2026-11-18 | Records v0.3 | Accepted |
 | AIKC-000040 | AIK-2025-S-P-DROPUPCYCLE | Drop-Upcycling (Sparse MoE Training) | S | P | AIK-2025-L-P-LEX2025LAUNCH (M2) | 2025-02 | 2025-11-30 | 2026-11-18 | Records v0.3 | Accepted |
 | AIKC-000041 | AIK-2025-S-P-LEXI | LExI — Layer-Adaptive Expert Inference | S | P | AIK-2025-L-P-LEX2025LAUNCH (M3) | 2025-09-02 | 2025-11-30 | 2026-11-18 | Records v0.3 | Accepted |
@@ -1185,7 +1186,7 @@ A-500  AI‑generated content may contain errors. See Disclaimer.
 | AIKC-000058 | AIK-2025-S-P-ALIGNPATTERN | Alignment Patterns: Constitutional, Preference-Modeling, & Red-Teaming | S | P | AIK-2025-L-P-LEX2025LAUNCH (S13) | — (not established) | 2025-11-30 | 2026-11-18 | Records v0.3 | Accepted |
 | AIKC-000059 | AIK-2025-S-P-LONGCONTEXT | Long-Context & Windowing Techniques | S | P | AIK-2025-L-P-LEX2025LAUNCH (S14) | — (not established) | 2025-11-30 | 2026-11-18 | Records v0.3 | Accepted |
 | AIKC-000060 | AIK-2025-S-P-SAFETYEVAL | Model Safety Evaluation Suites & LLM-Based Evaluators | S | P | AIK-2025-L-P-LEX2025LAUNCH (S15) | — (not established) | 2025-11-30 | 2026-11-18 | Records v0.3 | Accepted |
-| — (container) | AIK-2025-L-P-LEX2025N5 | New AI Lexicon 2025 (5) | L | P | — | — | 2025-12-05 | Pending | Records v0.1.1 (accepted; metadata-only revision of v0.1) | Accepted |
+| — (container) | AIK-2025-L-P-LEX2025N5 | New AI Lexicon 2025 (5) | L | P | — | — | 2025-12-05 | 2026-11-18 | Records v0.1.1 (accepted; metadata-only revision of v0.1) | Accepted |
 | AIKC-000061 | AIK-2025-E-P-HIVEMIND | Artificial Hivemind | E | P | AIK-2025-L-P-LEX2025N5 (D1) | 2025-10-27 | 2025-12-05 | 2026-11-18 | Records v0.1.1 | Accepted |
 | AIKC-000062 | AIK-2025-S-P-SSRL | Self-Supervised RL | S | P | AIK-2025-L-P-LEX2025N5 (D2) | — (not established) | 2025-12-05 | 2026-11-18 | Records v0.1.1 | Accepted |
 | AIKC-000063 | AIK-2025-S-P-MEMSINK | Memorization Sinks | S | P | AIK-2025-L-P-LEX2025N5 (D3) | 2025-07-14 | 2025-12-05 | 2026-11-18 | Records v0.1.1 | Accepted |
@@ -1198,7 +1199,7 @@ A-500  AI‑generated content may contain errors. See Disclaimer.
 | AIKC-000070 | AIK-2025-E-P-EPROCESS | E-Processes / Game-Theoretic Statistics | E | P | AIK-2025-L-P-LEX2025N5 (D10) | — (not established) | 2025-12-05 | 2026-11-18 | Records v0.1.1 | Accepted |
 | AIKC-000071 | AIK-2025-S-P-SOCCHOICE | Social Choice Fairness | S | P | AIK-2025-L-P-LEX2025N5 (D11) | — (not established) | 2025-12-05 | 2026-11-18 | Records v0.1.1 | Accepted |
 | AIKC-000072 | AIK-2025-S-P-HDLD | High-Dimensional Learning Dynamics | S | P | AIK-2025-L-P-LEX2025N5 (D12) | — (not established) | 2025-12-05 | 2026-11-18 | Records v0.1.1 | Accepted |
-| — (container) | AIK-2025-L-P-LEX2025N7 | New AI Lexicon 2025 (7) | L | P | — | — | 2025-12-12 | Pending | Records v0.1.1 (accepted; metadata-only revision of v0.1) | Accepted |
+| — (container) | AIK-2025-L-P-LEX2025N7 | New AI Lexicon 2025 (7) | L | P | — | — | 2025-12-12 | 2026-11-18 | Records v0.1.1 (accepted; metadata-only revision of v0.1) | Accepted |
 | AIKC-000052 | AIK-2025-E-P-AGENTICAI-02 | Agentic AI | E | P | AIK-2025-L-P-LEX2025N7 (K1) | — (not established) | 2025-12-12 | 2026-11-18 | Records v0.1.1 | Accepted |
 | AIKC-000009 | AIK-2025-S-P-CONSTAI | Constitutional AI | S | P | AIK-2025-L-P-LEX2025N7 (K2) | 2022-12-15 | 2025-12-12 | 2026-11-18 | Records v0.1.1 | Accepted |
 | AIKC-000051 | AIK-2025-S-P-RAG-02 | Retrieval-Augmented Generation (RAG) | S | P | AIK-2025-L-P-LEX2025N7 (K3) | 2020-05 | 2025-12-12 | 2026-11-18 | Records v0.1.1 | Accepted |
@@ -1211,7 +1212,7 @@ A-500  AI‑generated content may contain errors. See Disclaimer.
 | AIKC-000076 | AIK-2025-S-P-EDGEAI-02 | Edge AI | S | P | AIK-2025-L-P-LEX2025N7 (K10) | — (not established) | 2025-12-12 | 2026-11-18 | Records v0.1.1 | Accepted |
 | AIKC-000077 | AIK-2025-S-P-FRUGALAI-02 | Frugal AI | S | P | AIK-2025-L-P-LEX2025N7 (K11) | — (not established) | 2025-12-12 | 2026-11-18 | Records v0.1.1 | Accepted |
 | AIKC-000078 | AIK-2025-S-P-SYNDATA | Synthetic Data | S | P | AIK-2025-L-P-LEX2025N7 (K12) | — (not established) | 2025-12-12 | 2026-11-18 | Records v0.1.1 | Accepted |
-| — (container) | AIK-2025-L-P-LEX2025N4 | New AI Lexicon 2025 (4) | L | P | — | — | 2025-12-03 | Pending | Records v0.4.3 (accepted; metadata-only revision of v0.4.2) | Accepted |
+| — (container) | AIK-2025-L-P-LEX2025N4 | New AI Lexicon 2025 (4) | L | P | — | — | 2025-12-03 | 2026-11-18 | Records v0.4.3 (accepted; metadata-only revision of v0.4.2) | Accepted |
 | AIKC-000079 | AIK-2025-S-P-VIBECODE | Vibe Coding | S | P | AIK-2025-L-P-LEX2025N4 (G1) | 2025-02-02 | 2025-12-03 | 2026-11-18 | Records v0.4.3 | Accepted |
 | AIKC-000080 | AIK-2025-S-P-AIWASHING | AI Washing | S | P | AIK-2025-L-P-LEX2025N4 (G2) | — (not established) | 2025-12-03 | 2026-11-18 | Records v0.4.3 | Accepted |
 | AIKC-000081 | AIK-2025-S-P-SHADOWAI | Shadow AI | S | P | AIK-2025-L-P-LEX2025N4 (G3) | — (not established) | 2025-12-03 | 2026-11-18 | Records v0.4.3 | Accepted |

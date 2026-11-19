@@ -1,6 +1,6 @@
 ---
 title: "Aikipedia 2025: Annual Collection"
-edition: "Collection v1.0.1"
+edition: "Collection v1.0.2"
 editor: "W.H.L."
 standard: "AES v1.0 / AES-ID v1.0 (frozen November 14, 2026)"
 draft_assembled: "2026-11-14, Claude Opus 5.5"
@@ -26,7 +26,7 @@ Champaign Magazine
 
 *Aikipedia · Annual Collections* · Series Volume 1
 
-Collection v1.0.1
+Collection v1.0.2
 
 ---
 
@@ -38,7 +38,7 @@ Edited by W.H.L.
 
 Published by Champaign Magazine, champaignmagazine.com
 
-Collection v1.0.1. First published November 2026.
+Collection v1.0.2. First published November 2026.
 
 © 2026 Champaign Magazine.
 
